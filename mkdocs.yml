@@ -1,3 +1,45 @@
-site_name: My Docs
+site_name: R-Type Documentation
 theme:
   name: material
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  font:
+    text: Ubuntu
+    code: Roboto Mono
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Network:
+      - Protocol: network.md
+  - Getting Started:
+      - Installation: installation.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+extra:
+  generator: false
+
+extra_css:
+  - style/extra.css
