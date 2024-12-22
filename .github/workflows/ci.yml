@@ -1,40 +1,16 @@
-name: Deploy Doxygen Documentation
+name: Doxygen GitHub Pages Deploy Action
 
 on:
   push:
     branches:
-      - main  # Adjust to your default branch
+      - main
 
 jobs:
-  generate-docs:
-    runs-on: ubuntu-24.04
-
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        persist-credentials: false  # Disable default GitHub token for the checkout
-
-    - name: Set up Doxygen
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz  # Install Doxygen and Graphviz
-
-    - name: Generate Doxygen documentation
-      run: doxygen Doxyfile  # Replace with your Doxyfile name if different
-
-    - name: Set up Git for deployment
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-    - name: Deploy to GitHub Pages
-      run: |
-        # Use the Personal Access Token (PAT) to authenticate and push changes
-        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
-        git fetch
-        git checkout -B gh-pages
-        cp -R ./html/* .  # Copy your documentation to the root of the repo (adjust if needed)
-        git add .
-        git commit -m "Deploy Doxygen documentation"
-        git push origin gh-pages
+      - uses: DenverCoder1/doxygen-github-pages-action@v2.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
