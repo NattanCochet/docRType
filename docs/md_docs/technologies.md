@@ -15,7 +15,7 @@ Before kicking off the programming of our R-Type we had compare and choose a spe
 We ultimately chose C++ because of its high performance, wide array of very useful libraries and the one where we're the most experienced in.
 
 <p align="center">
-  <img src="../docs/assets/cpp-logo.png" alt="R-Type" width="277" height="300">
+  <img src="docs/assets/cpp-logo.png" alt="R-Type" width="277" height="300">
 </p>
 
 ------
@@ -34,7 +34,7 @@ During our project we had to choose between several C++ graphical libs :
 | **OGRE (Object-Oriented Graphics Rendering Engine)** | High-performance 3D graphics | Cross-platform | Moderate          | Detailed, developer-focused | 3D games, simulation         |
 
 <p align="center">
-  <img src="../docs/assets/sfml-logo.png" alt="R-Type" width="600">
+  <img src="docs/assets/sfml-logo.png" alt="R-Type" width="600">
 </p>
 
 But in the end we chose SFML due to its ease of use, cross-platform compatibility and that it fit our use case the most as we needed to make a 2D game.
