@@ -5,7 +5,7 @@
 **R-Type** is a cross-platform arcade-style shoot-'em-up game, faithfully reimagined with modern C++ and networking capabilities. Designed for both **Windows** and **Linux**, this version of R-Type delivers seamless multiplayer experiences using the **UDP network protocol**, ensuring low-latency communication and real-time synchronization for fast-paced gameplay.
 
 <p align="center">
-  <img src="docs/assets/rtype.jpg" alt="R-Type" width="600">
+  <img src="./docs/assets/rtype.jpg" alt="R-Type" width="600">
 </p>
 
 ### Key Features
