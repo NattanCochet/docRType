@@ -3,7 +3,7 @@ name: Deploy Doxygen Documentation
 on:
   push:
     branches:
-      - main
+      - main  # Adjust to your default branch
 
 jobs:
   generate-docs:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Doxygen
       run: |
         sudo apt-get update
-        sudo apt-get install -y doxygen graphviz git  # Install Doxygen and Graphviz
+        sudo apt-get install -y doxygen graphviz  # Install Doxygen and Graphviz
 
     - name: Generate Doxygen documentation
       run: doxygen Doxyfile  # Replace with your Doxyfile name if different
@@ -24,5 +24,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GH_TOKEN }}  # Use the secret you created
         publish_dir: ./html  # Adjust to your Doxygen output directory (default: ./html)
