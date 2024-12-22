@@ -1,0 +1,11 @@
+<map id="ErrorKeyNotFound" name="ErrorKeyNotFound">
+<area shape="rect" id="Node000001" title="Exception class for handling errors when a key is not found." alt="" coords="5,422,150,508"/>
+<area shape="rect" id="Node000002" href="$classAError.html" title="Custom exception class for handling errors." alt="" coords="40,265,115,372"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,387,80,422,75,422,75,387"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="12,136,101,202"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,216,73,265,68,266,61,217"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="126,136,192,202"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="144,203,117,252,112,250,139,201"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="103,5,216,87"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="162,101,162,136,156,136,156,101"/>
+</map>

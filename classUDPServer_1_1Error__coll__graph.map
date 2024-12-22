@@ -1,0 +1,5 @@
+<map id="UDPServer::Error" name="UDPServer::Error">
+<area shape="rect" id="Node000001" title="A custom exception class used to report errors in the UDP server." alt="" coords="5,120,115,227"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="15,5,105,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,87,63,120,58,120,58,87"/>
+</map>

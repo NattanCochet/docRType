@@ -1,0 +1,5 @@
+<map id="LinearShooter" name="LinearShooter">
+<area shape="rect" id="Node000001" title="A class representing a linear shooter bot." alt="" coords="5,181,118,308"/>
+<area shape="rect" id="Node000002" href="$classABot.html" title="Abstract base class for a bot in the game." alt="" coords="20,5,103,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,147,64,181,59,181,59,147"/>
+</map>

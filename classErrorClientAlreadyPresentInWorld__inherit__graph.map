@@ -1,0 +1,7 @@
+<map id="ErrorClientAlreadyPresentInWorld" name="ErrorClientAlreadyPresentInWorld">
+<area shape="rect" id="Node000001" title="Exception class for handling the case where a client is already present in the world." alt="" coords="5,275,184,406"/>
+<area shape="rect" id="Node000002" href="$classAError.html" title="Custom exception class for handling errors." alt="" coords="57,120,132,227"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,242,98,275,92,275,92,242"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="50,5,140,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,87,98,120,92,120,92,87"/>
+</map>

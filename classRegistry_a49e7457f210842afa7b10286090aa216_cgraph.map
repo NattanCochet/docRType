@@ -1,0 +1,7 @@
+<map id="Registry::emplace_component" name="Registry::emplace_component">
+<area shape="rect" id="Node000001" title="Constructs and adds a component to an entity with the specified parameters." alt="" coords="5,5,200,31"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="248,5,414,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,16,232,16,232,21,200,21"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="462,5,632,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="414,16,446,16,446,21,414,21"/>
+</map>

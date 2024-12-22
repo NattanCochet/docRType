@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="22cm" height="14cm" viewBox="99 105 424 280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="400" y="120" width="113.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="400" y="120" width="113.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="456.575" y="139">Component</text>
+    <rect style="fill: #ffffff" x="400" y="148" width="113.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="400" y="148" width="113.15" height="8"/>
+    <rect style="fill: #ffffff" x="400" y="156" width="113.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="400" y="156" width="113.15" height="8"/>
+    <rect style="fill: #ffffff" x="467.15" y="106" width="54" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="467.15" y="106" width="54" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="473.15" y="120">T:</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="100" y="200" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="100" y="200" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="197.4" y="219">Entity</text>
+    <rect style="fill: #ffffff" x="100" y="228" width="194.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="100" y="228" width="194.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="103" y="242">+Components: Component *</text>
+    <rect style="fill: #ffffff" x="100" y="248" width="194.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="100" y="248" width="194.8" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="300" y="340" width="76.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="340" width="76.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="338.3" y="359">System</text>
+    <rect style="fill: #ffffff" x="300" y="368" width="76.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="368" width="76.6" height="8"/>
+    <rect style="fill: #ffffff" x="300" y="376" width="76.6" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="376" width="76.6" height="8"/>
+    <rect style="fill: #ffffff" x="330.6" y="326" width="54" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 6; stroke: #000000" x="330.6" y="326" width="54" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="336.6" y="340">T:</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="373.821,142 340.399,142 340.399,228 295.806,228 "/>
+    <polygon style="fill: #000000" points="398.993,142 384.993,146.8 370.993,142 384.993,137.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="398.993,142 384.993,146.8 370.993,142 384.993,137.2 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="366.993" y="139">*</text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="299.806" y="225">1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="338.3,324.998 338.3,300 197.4,300 197.4,261.458 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="205.4,275.222 197.4,259.222 189.4,275.222 "/>
+    <polygon style="fill: #000000" points="269.85,300 269.85,292 277.85,296 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="338.3,324.998 338.3,300 456.575,300 456.575,169.472 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="464.575,183.236 456.575,167.236 448.575,183.236 "/>
+    <polygon style="fill: #000000" points="399.438,300 399.438,292 407.438,296 "/>
+  </g>
+</svg>

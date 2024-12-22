@@ -1,0 +1,9 @@
+<map id="Registry::register_components" name="Registry::register_components">
+<area shape="rect" id="Node000001" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="5,23,123,64"/>
+<area shape="rect" id="Node000002" href="$classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="178,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,33,162,28,163,33,123,38"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="171,55,341,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="123,48,156,52,155,58,123,53"/>
+<area shape="rect" id="Node000003" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="389,5,535,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,16,373,16,373,21,334,21"/>
+</map>

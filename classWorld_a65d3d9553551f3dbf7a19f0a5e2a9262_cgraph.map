@@ -1,0 +1,9 @@
+<map id="World::generateWorldWithID" name="World::generateWorldWithID">
+<area shape="rect" id="Node000001" title="Generates the world for the next level with integer ranges." alt="" coords="5,70,188,96"/>
+<area shape="rect" id="Node000002" href="$classSpawnRuleGenerator.html#a97e1d5b6a44ca88f01319f1979048545" title="Creates a spawn rule function based on entity IDs." alt="" coords="236,5,433,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,67,231,48,233,53,154,72"/>
+<area shape="rect" id="Node000003" href="$classGenerateWorld.html#a356f4fe562ea57c25e57e3a4e937d7b9" title="Generates a 2D world using Perlin noise and a user&#45;defined function." alt="" coords="236,70,432,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,80,220,80,220,86,188,86"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac561334bf47b82bad5430cbbcc6203ca" title="Gets the seed for a specific level." alt="" coords="255,120,414,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,94,255,113,253,118,162,99"/>
+</map>

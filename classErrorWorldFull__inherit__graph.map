@@ -1,0 +1,7 @@
+<map id="ErrorWorldFull" name="ErrorWorldFull">
+<area shape="rect" id="Node000001" title="Exception class for handling the &quot;world full&quot; error." alt="" coords="5,275,125,361"/>
+<area shape="rect" id="Node000002" href="$classAError.html" title="Custom exception class for handling errors." alt="" coords="28,120,103,227"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,242,68,275,63,275,63,242"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="20,5,110,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="68,87,68,120,63,120,63,87"/>
+</map>

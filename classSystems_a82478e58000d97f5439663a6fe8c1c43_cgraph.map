@@ -1,0 +1,56 @@
+<map id="Systems::loadSystemsInWorld" name="Systems::loadSystemsInWorld">
+<area shape="rect" id="Node000001" title="Loads all systems into the world." alt="" coords="5,260,203,285"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="251,86,439,112"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,258,165,192,204,153,249,121,259,116,261,121,252,125,208,158,169,196,116,261"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="510,234,635,260"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="136,283,189,303,251,319,304,328,346,332,387,330,438,319,494,296,541,267,544,271,497,301,440,324,387,335,345,337,303,333,250,324,187,308,134,288"/>
+<area shape="rect" id="Node000007" href="$classSystems.html#a45d56c8c881d53766e35443cebd0086a" title="A system that handles damage calculations and application to entities." alt="" coords="261,185,429,210"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="140,256,250,219,273,213,274,218,251,224,142,262"/>
+<area shape="rect" id="Node000008" href="$classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="258,37,432,62"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="109,258,127,221,157,170,198,117,222,93,249,71,256,67,259,72,252,76,226,96,202,120,162,173,132,223,113,260"/>
+<area shape="rect" id="Node000011" href="$classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82" title="A system that processes the hitbox components for entities." alt="" coords="267,234,423,260"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="203,259,251,254,252,259,204,265"/>
+<area shape="rect" id="Node000012" href="$classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="268,385,422,410"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="124,283,180,322,252,363,284,377,282,382,249,368,177,326,121,288"/>
+<area shape="rect" id="Node000014" href="$classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="257,284,433,309"/>
+<area shape="poly" id="edge22_Node000001_Node000014" title=" " alt="" coords="204,280,241,283,241,289,203,285"/>
+<area shape="rect" id="Node000015" href="$classRegistry.html#a0352d3443bb37960c776b8fa581d512f" title="Registers a system function to be executed in the world." alt="" coords="286,484,404,525"/>
+<area shape="poly" id="edge26_Node000001_Node000015" title=" " alt="" coords="114,284,133,321,163,371,203,424,252,470,273,483,271,487,249,474,199,428,158,374,128,324,109,287"/>
+<area shape="rect" id="Node000016" href="$classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="262,136,428,161"/>
+<area shape="poly" id="edge27_Node000001_Node000016" title=" " alt="" coords="119,257,174,214,211,190,250,170,264,164,266,169,252,175,214,195,177,219,122,261"/>
+<area shape="rect" id="Node000017" href="$classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="265,434,424,460"/>
+<area shape="poly" id="edge31_Node000001_Node000017" title=" " alt="" coords="116,284,168,350,207,388,252,421,261,425,259,430,249,425,204,392,165,353,112,287"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="488,185,658,210"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,110,440,121,456,133,465,147,474,159,489,171,497,176,494,181,485,176,470,163,461,150,452,137,438,125,415,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="423,110,441,121,453,133,460,146,466,172,471,197,478,209,489,221,498,227,494,232,485,225,474,212,466,199,461,173,455,148,448,137,437,125,421,115"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="487,71,658,111"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="439,93,471,92,472,97,439,98"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="706,71,868,111"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="659,88,691,88,691,94,659,94"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="429,195,472,195,472,200,429,200"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="408,209,496,228,494,233,407,214"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="423,61,441,72,453,84,460,97,466,123,471,148,478,160,489,172,493,175,489,179,485,176,474,163,466,150,461,124,455,99,448,87,437,76,421,65"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="425,61,441,72,456,90,463,110,466,148,468,185,475,203,489,221,498,228,494,232,485,225,470,206,463,187,461,148,458,111,451,93,437,76,422,65"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="420,60,472,70,471,75,419,66"/>
+<area shape="rect" id="Node000009" href="$classWorld.html#a26b4683ede7d756b2f783561d13b00bc" title="Gets the clock used to track the world&#39;s time." alt="" coords="517,136,628,161"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="417,61,440,71,456,84,465,97,474,109,488,121,503,128,501,133,486,125,470,113,461,100,452,87,438,76,415,66"/>
+<area shape="rect" id="Node000010" href="$classVirtualKeyBoard.html#afed46be98962959fa50e40ca144fe6b9" title="Checks if a specific control key is pressed." alt="" coords="491,5,654,46"/>
+<area shape="poly" id="edge14_Node000008_Node000010" title=" " alt="" coords="432,38,475,33,476,39,433,43"/>
+<area shape="poly" id="edge17_Node000011_Node000003" title=" " alt="" coords="407,231,494,212,496,217,408,236"/>
+<area shape="poly" id="edge18_Node000011_Node000004" title=" " alt="" coords="424,244,495,244,495,250,424,250"/>
+<area shape="poly" id="edge20_Node000012_Node000004" title=" " alt="" coords="398,382,438,363,462,341,485,316,541,268,545,272,489,320,466,345,440,368,400,387"/>
+<area shape="rect" id="Node000013" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="500,330,646,356"/>
+<area shape="poly" id="edge21_Node000012_Node000013" title=" " alt="" coords="401,382,501,357,502,363,402,387"/>
+<area shape="poly" id="edge23_Node000014_Node000003" title=" " alt="" coords="415,281,438,270,452,258,461,246,470,232,485,219,494,215,497,219,489,224,474,236,465,249,456,262,440,275,417,285"/>
+<area shape="poly" id="edge24_Node000014_Node000004" title=" " alt="" coords="407,280,494,261,496,266,408,285"/>
+<area shape="poly" id="edge25_Node000014_Node000013" title=" " alt="" coords="412,307,492,324,491,329,411,312"/>
+<area shape="poly" id="edge28_Node000016_Node000003" title=" " alt="" coords="408,159,496,178,494,184,407,164"/>
+<area shape="poly" id="edge30_Node000016_Node000004" title=" " alt="" coords="417,159,440,170,456,183,465,196,474,209,489,221,497,225,494,230,485,225,470,212,461,199,452,186,438,175,415,164"/>
+<area shape="poly" id="edge29_Node000016_Node000009" title=" " alt="" coords="428,146,502,146,502,151,428,151"/>
+<area shape="poly" id="edge33_Node000017_Node000003" title=" " alt="" coords="424,431,437,421,455,397,462,373,463,348,461,323,458,297,459,271,467,246,485,220,487,218,490,222,489,223,472,248,464,272,464,297,466,322,468,348,467,374,459,399,441,425,427,436"/>
+<area shape="poly" id="edge34_Node000017_Node000004" title=" " alt="" coords="421,431,437,421,456,397,464,373,469,346,485,316,510,289,537,267,540,271,514,293,489,319,474,348,469,374,461,400,441,425,423,436"/>
+<area shape="rect" id="Node000018" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="504,404,642,445"/>
+<area shape="poly" id="edge32_Node000017_Node000018" title=" " alt="" coords="425,436,488,430,489,435,425,442"/>
+<area shape="rect" id="Node000019" href="$classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="508,469,637,494"/>
+<area shape="poly" id="edge35_Node000017_Node000019" title=" " alt="" coords="425,456,493,467,493,472,425,462"/>
+</map>

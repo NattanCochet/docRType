@@ -1,0 +1,7 @@
+<map id="ErrorGenerationMap" name="ErrorGenerationMap">
+<area shape="rect" id="Node000001" title="Exception class for handling errors during map generation." alt="" coords="5,275,159,361"/>
+<area shape="rect" id="Node000002" href="$classAError.html" title="Custom exception class for handling errors." alt="" coords="45,120,120,227"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,242,85,275,80,275,80,242"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="38,5,127,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,87,85,120,80,120,80,87"/>
+</map>

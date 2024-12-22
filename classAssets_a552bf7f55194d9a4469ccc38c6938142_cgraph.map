@@ -1,0 +1,5 @@
+<map id="Assets::Assets" name="Assets::Assets">
+<area shape="rect" id="Node000001" title="Default constructor for Assets." alt="" coords="5,5,115,31"/>
+<area shape="rect" id="Node000002" href="$classAssets.html#abfe784b31b6d3e7d52fb481d6aed05b6" title="Loads a sprite into the assets container." alt="" coords="163,5,294,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,16,147,16,147,21,115,21"/>
+</map>

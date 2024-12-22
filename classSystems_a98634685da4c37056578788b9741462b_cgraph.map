@@ -1,0 +1,7 @@
+<map id="Systems::linearSystem" name="Systems::linearSystem">
+<area shape="rect" id="Node000001" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="5,31,159,56"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="217,5,342,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,31,201,26,202,31,159,36"/>
+<area shape="rect" id="Node000003" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="207,55,353,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,50,192,54,191,59,158,55"/>
+</map>

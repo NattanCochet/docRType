@@ -1,0 +1,11 @@
+<map id="Systems::controllableSystem" name="Systems::controllableSystem">
+<area shape="rect" id="Node000001" title="A system that processes controllable components for player input." alt="" coords="5,55,194,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="242,5,412,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,51,249,32,250,38,163,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="265,55,390,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,65,249,65,249,70,194,70"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="242,104,413,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,78,230,98,228,103,153,84"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="461,104,622,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="414,122,445,122,445,128,414,128"/>
+</map>

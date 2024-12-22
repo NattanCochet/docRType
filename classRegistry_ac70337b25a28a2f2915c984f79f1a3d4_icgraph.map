@@ -1,0 +1,12 @@
+<map id="Registry::entity_from_index" name="Registry::entity_from_index">
+<area shape="rect" id="Node000001" title="Converts an entity index to an entity object." alt="" coords="555,22,694,62"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="126,5,276,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,40,277,25,277,20,540,35"/>
+<area shape="rect" id="Node000004" href="$classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="348,55,507,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="540,56,508,60,507,55,539,50"/>
+<area shape="rect" id="Node000003" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,55,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="111,34,55,43,55,37,110,29"/>
+<area shape="rect" id="Node000005" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,55,300,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="332,70,300,70,300,65,332,65"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="90,55,55,50,56,44,91,49"/>
+</map>

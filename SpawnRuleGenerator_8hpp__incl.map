@@ -1,0 +1,9 @@
+<map id="server/Logic/include/SpawnRuleGenerator.hpp" name="server/Logic/include/SpawnRuleGenerator.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,189,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,44,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,48,49,85,45,81,82,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="68,94,139,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="106,46,106,78,101,78,101,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="163,94,241,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,44,176,82,173,86,126,48"/>
+</map>

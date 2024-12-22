@@ -1,0 +1,7 @@
+<map id="SpawnRuleGenerator::createFunctionForRuleWithEnum" name="SpawnRuleGenerator::createFunctionForRuleWithEnum">
+<area shape="rect" id="Node000001" title="Creates a spawn rule function based on the ENTITIES enumeration." alt="" coords="256,23,473,64"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#aedf9044caf224e78a1f26da468ba811a" title="Generates the world for the next level with floating point ranges." alt="" coords="5,5,208,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,34,208,31,208,25,240,29"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a8b9c97dadf51c8bf7c5a0c2fa70bfe2a" title="Generates the world for the next level with integer ranges." alt="" coords="5,55,208,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,58,208,61,208,55,240,52"/>
+</map>

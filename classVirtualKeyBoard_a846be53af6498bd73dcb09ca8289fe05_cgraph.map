@@ -1,0 +1,5 @@
+<map id="VirtualKeyBoard::setIsCharging" name="VirtualKeyBoard::setIsCharging">
+<area shape="rect" id="Node000001" title="Set if user is charging a shoot or not." alt="" coords="5,5,206,31"/>
+<area shape="rect" id="Node000002" href="$classVirtualKeyBoard.html#aaafb933c8c0aaefb9bd5bc3c8b39677a" title="Get if the user is charging a shoot or not." alt="" coords="254,5,435,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,16,238,16,238,21,206,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Systems::damageSystem" name="Systems::damageSystem">
+<area shape="rect" id="Node000001" title="A system that handles damage calculations and application to entities." alt="" coords="5,31,174,56"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="222,5,392,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,31,206,27,206,33,174,36"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="244,55,370,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,50,230,56,229,62,174,55"/>
+</map>
