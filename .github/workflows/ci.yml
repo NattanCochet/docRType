@@ -21,9 +21,18 @@ jobs:
         doxyfile-path: "./Doxyfile"
         working-directory: "."
     
+    - name: Copy docs and html
+      run: |
+        mkdir gh-pages
+        cp -r html/* gh-pages/
+        cp -r docs gh-pages/docs
+        
+        # Debug: Show what we're about to deploy
+        echo "Contents of gh-pages directory:"
+        ls -la gh-pages
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
-        keep_files: true
+        publish_dir: ./gh-pages
