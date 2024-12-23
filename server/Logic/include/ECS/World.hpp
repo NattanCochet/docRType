@@ -24,6 +24,7 @@
 #include "../Components/Drawable.hpp"
 #include "../Components/ABot.hpp"
 #include "../Components/Bots/LinearShooter.hpp"
+#include "../Components/Bots/NewShooter.hpp"
 #include "../Components/Controllable.hpp"
 #include "../Components/Clock.hpp"
 #include "../Error/ErrorPasswordIncorrect.hpp"

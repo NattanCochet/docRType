@@ -20,7 +20,9 @@ int Systems::drawableSystem(World &world)
     std::size_t index = 0;
 
     for (auto &d : drawable) {
-        if (d && d.has_value() && controllable.size() > 0) {
+        if (velocity.size() == 0) {
+            d->setTextRect(sf::IntRect(0 * d->getRect()[0], 0, d->getRect()[0], d->getRect()[1]));
+        } else if (d && d.has_value() && controllable.size() > 0) {
             if (controllable[index] && controllable[index].has_value()) {
                 std::vector<int> frames;
                 VirtualKeyBoard &keyboard = world.getVirtualKeyBoardFromClientID(controllable[index]->getClientID());
@@ -36,8 +38,7 @@ int Systems::drawableSystem(World &world)
                     world.getClock().restart();
                 }
             }
-        }
-        else if (d && d.has_value() && velocity[index] && velocity[index].has_value() && d->getIsAnimate()) {
+        } else if (d && d.has_value() && velocity[index] && velocity[index].has_value() && d->getIsAnimate()) {
             std::vector<int> frames;
             if (velocity[index]->getSpeed().x > 0) {
                 frames = d->getFrameRight();

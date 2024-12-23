@@ -26,4 +26,5 @@ void Systems::loadSystemsInWorld(World &world)
     r.register_systems(this->hitboxSystem);
     r.register_systems(this->drawableSystem);
     r.register_systems(this->ProjectileSystem);
+    r.register_systems(this->NewShooterSystem);
 }

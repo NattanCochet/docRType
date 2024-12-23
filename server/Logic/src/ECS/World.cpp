@@ -31,6 +31,7 @@ std::size_t clientID, std::string password)
     this->_r.register_components<Hitbox>();
     this->_r.register_components<Drawable>();
     this->_r.register_components<Clock>();
+    this->_r.register_components<NewShooter>();
 }
 
 World::World()
@@ -55,6 +56,7 @@ World::World()
     this->_r.register_components<Hitbox>();
     this->_r.register_components<Drawable>();
     this->_r.register_components<Clock>();
+    this->_r.register_components<NewShooter>();
 }
 
 bool World::isWorldIsClient() const noexcept

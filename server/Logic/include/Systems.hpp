@@ -104,7 +104,7 @@ class Systems {
         /**
          * @brief A system that processes the linear motion of entities, like movement or shooting.
          *
-         * This system updates entities' positions or actions along a linear trajectory.
+         * This system handles ennemies with a linear trajectory and shooting pattern.
          *
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
@@ -130,6 +130,17 @@ class Systems {
          * @return An integer indicating the success or status of the system.
          */
         static int ProjectileSystem(World &world);
+
+
+        /**
+         * @brief A system that processes a new shooter for tutorial purposes.
+         *
+         * This system is responsible for creating an ennemy that teleports randomly on the screen
+         *
+         * @param world A reference to the World object containing the entities to update.
+         * @return An integer indicating the success or status of the system.
+         */
+        static int NewShooterSystem(World &world);
 
     private:
         /**
