@@ -10,5 +10,6 @@ var searchData=
   ['hitboxsystem_7',['hitboxSystem',['../classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82',1,'Systems']]],
   ['hitboxsystem_2ecpp_8',['HitBoxSystem.cpp',['../HitBoxSystem_8cpp.html',1,'']]],
   ['home_2emd_9',['home.md',['../home_8md.html',1,'']]],
-  ['how_5fto_5finstall_2emd_10',['how_to_install.md',['../how__to__install_8md.html',1,'']]]
+  ['how_20to_20add_20content_10',['How to add content',['../md_docs_2md__docs_2zznew__ennemy.html',1,'']]],
+  ['how_5fto_5finstall_2emd_11',['how_to_install.md',['../how__to__install_8md.html',1,'']]]
 ];

@@ -1,0 +1,7 @@
+<map id="Systems::NewShooterSystem" name="Systems::NewShooterSystem">
+<area shape="rect" id="Node000001" title="A system that processes a new shooter for tutorial purposes." alt="" coords="5,31,200,56"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="258,5,384,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,30,242,25,243,30,201,35"/>
+<area shape="rect" id="Node000003" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="248,55,394,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,52,232,55,232,60,200,57"/>
+</map>

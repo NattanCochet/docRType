@@ -1,25 +1,28 @@
 <map id="ComponentArray::size" name="ComponentArray::size">
-<area shape="rect" id="Node000001" title="Returns the number of elements in the array." alt="" coords="616,128,763,154"/>
-<area shape="rect" id="Node000002" href="$classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="402,29,558,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="657,121,615,94,567,69,538,58,540,53,569,64,618,89,660,117"/>
-<area shape="rect" id="Node000006" href="$classComponentArray.html#a43ef98c31d981ccaa4849a24c825221c" title="Grows the array to ensure that it can accommodate an element at the specified position." alt="" coords="396,79,565,104"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="616,126,537,108,539,102,618,121"/>
-<area shape="rect" id="Node000007" href="$classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="404,128,557,154"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="601,144,557,144,557,138,601,138"/>
-<area shape="rect" id="Node000010" href="$classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="392,177,568,203"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="618,160,539,179,537,174,616,155"/>
-<area shape="rect" id="Node000011" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="170,227,320,252"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="662,165,620,194,569,218,505,234,439,243,321,247,321,241,439,238,504,229,567,213,618,189,659,161"/>
+<area shape="rect" id="Node000001" title="Returns the number of elements in the array." alt="" coords="634,153,781,179"/>
+<area shape="rect" id="Node000002" href="$classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="412,29,567,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="682,144,639,105,585,69,559,58,561,53,588,64,643,101,686,140"/>
+<area shape="rect" id="Node000006" href="$classComponentArray.html#a43ef98c31d981ccaa4849a24c825221c" title="Grows the array to ensure that it can accommodate an element at the specified position." alt="" coords="404,79,574,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="663,149,585,118,549,107,551,102,587,113,665,144"/>
+<area shape="rect" id="Node000007" href="$classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="412,128,566,154"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="618,159,566,152,567,147,619,153"/>
+<area shape="rect" id="Node000010" href="$classSystems.html#af70598a4167338db56cbfdacf6d1827d" title="A system that processes a new shooter for tutorial purposes." alt="" coords="392,177,586,203"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="619,179,587,182,587,177,618,173"/>
+<area shape="rect" id="Node000011" href="$classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="401,227,577,252"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="664,188,587,218,550,229,549,224,585,213,662,183"/>
+<area shape="rect" id="Node000012" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="170,252,320,278"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="688,193,645,233,617,253,587,267,517,284,445,290,376,288,316,281,317,276,376,282,445,285,516,279,585,262,615,248,642,229,684,189"/>
 <area shape="rect" id="Node000003" href="$classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="187,22,304,62"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,45,304,45,304,40,387,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,45,305,45,305,40,396,40"/>
 <area shape="rect" id="Node000004" href="$classWorld.html#afa39d4e6f714a7a3691ac0c656f5e8a8" title="Default constructor." alt="" coords="5,5,99,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="171,36,98,27,99,21,171,30"/>
 <area shape="rect" id="Node000005" href="$classWorld.html#ab74e693f047056ccffdee70a85936418" title="Constructs a new World with specific parameters." alt="" coords="5,55,99,80"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="171,55,99,64,98,59,171,49"/>
-<area shape="rect" id="Node000008" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="147,177,344,203"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="401,160,311,179,309,174,400,155"/>
-<area shape="rect" id="Node000009" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="27,201,77,227"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="132,207,78,214,77,209,131,202"/>
-<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="377,193,344,193,344,188,377,188"/>
-<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="154,230,77,220,77,215,155,225"/>
+<area shape="rect" id="Node000008" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="147,203,344,228"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="417,161,393,167,283,205,281,200,391,162,415,155"/>
+<area shape="rect" id="Node000009" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="27,227,77,252"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="132,232,78,239,77,234,131,227"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="377,205,345,208,344,203,376,199"/>
+<area shape="poly" id="edge12_Node000011_Node000008" title=" " alt="" coords="385,232,344,228,345,223,386,227"/>
+<area shape="poly" id="edge14_Node000012_Node000009" title=" " alt="" coords="154,256,77,245,77,240,155,250"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network_20convention_0',['Design pattern and network convention',['../md_docs_2md__docs_2uecs__and__udp.html',1,'']]]
+  ['installing_20the_20project_0',['Installing the project',['../md_docs_2md__docs_2how__to__install.html',1,'']]]
 ];

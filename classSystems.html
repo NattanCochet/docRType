@@ -117,7 +117,7 @@ Collaboration diagram for Systems:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystems__coll__graph.png" border="0" usemap="#aSystems_coll__map" alt="Collaboration graph"/></div>
 <map name="aSystems_coll__map" id="aSystems_coll__map">
-<area shape="rect" title="A class that contains all the systems for managing game logic related to entities in the ECS architec..." alt="" coords="5,5,156,275"/>
+<area shape="rect" title="A class that contains all the systems for managing game logic related to entities in the ECS architec..." alt="" coords="5,5,156,295"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -159,6 +159,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a77fd1819a1530ccf9dd906f7de620478" id="r_a77fd1819a1530ccf9dd906f7de620478"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77fd1819a1530ccf9dd906f7de620478">ProjectileSystem</a> (<a class="el" href="classWorld.html">World</a> &amp;world)</td></tr>
 <tr class="memdesc:a77fd1819a1530ccf9dd906f7de620478"><td class="mdescLeft">&#160;</td><td class="mdescRight">A system that processes projectile and its collisions.  <br /></td></tr>
 <tr class="separator:a77fd1819a1530ccf9dd906f7de620478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70598a4167338db56cbfdacf6d1827d" id="r_af70598a4167338db56cbfdacf6d1827d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af70598a4167338db56cbfdacf6d1827d">NewShooterSystem</a> (<a class="el" href="classWorld.html">World</a> &amp;world)</td></tr>
+<tr class="memdesc:af70598a4167338db56cbfdacf6d1827d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A system that processes a new shooter for tutorial purposes.  <br /></td></tr>
+<tr class="separator:af70598a4167338db56cbfdacf6d1827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class that contains all the systems for managing game logic related to entities in the ECS architecture. </p>
@@ -491,7 +494,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>A system that processes the linear motion of entities, like movement or shooting. </p>
-<p>This system updates entities' positions or actions along a linear trajectory.</p>
+<p>This system handles ennemies with a linear trajectory and shooting pattern.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>A reference to the <a class="el" href="classWorld.html" title="Represents a game world that manages clients, levels, and world state.">World</a> object containing the entities to update. </td></tr>
@@ -558,60 +561,64 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSystems_a82478e58000d97f5439663a6fe8c1c43_cgraph.png" border="0" usemap="#aclassSystems_a82478e58000d97f5439663a6fe8c1c43_cgraph" alt=""/></div>
 <map name="aclassSystems_a82478e58000d97f5439663a6fe8c1c43_cgraph" id="aclassSystems_a82478e58000d97f5439663a6fe8c1c43_cgraph">
-<area shape="rect" title="Loads all systems into the world." alt="" coords="5,260,203,285"/>
-<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="251,86,439,112"/>
-<area shape="poly" title=" " alt="" coords="112,258,165,192,204,153,249,121,259,116,261,121,252,125,208,158,169,196,116,261"/>
-<area shape="rect" href="classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="510,234,635,260"/>
-<area shape="poly" title=" " alt="" coords="136,283,189,303,251,319,304,328,346,332,387,330,438,319,494,296,541,267,544,271,497,301,440,324,387,335,345,337,303,333,250,324,187,308,134,288"/>
-<area shape="rect" href="classSystems.html#a45d56c8c881d53766e35443cebd0086a" title="A system that handles damage calculations and application to entities." alt="" coords="261,185,429,210"/>
-<area shape="poly" title=" " alt="" coords="140,256,250,219,273,213,274,218,251,224,142,262"/>
-<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="258,37,432,62"/>
-<area shape="poly" title=" " alt="" coords="109,258,127,221,157,170,198,117,222,93,249,71,256,67,259,72,252,76,226,96,202,120,162,173,132,223,113,260"/>
-<area shape="rect" href="classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82" title="A system that processes the hitbox components for entities." alt="" coords="267,234,423,260"/>
-<area shape="poly" title=" " alt="" coords="203,259,251,254,252,259,204,265"/>
-<area shape="rect" href="classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="268,385,422,410"/>
-<area shape="poly" title=" " alt="" coords="124,283,180,322,252,363,284,377,282,382,249,368,177,326,121,288"/>
-<area shape="rect" href="classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="257,284,433,309"/>
-<area shape="poly" title=" " alt="" coords="204,280,241,283,241,289,203,285"/>
-<area shape="rect" href="classRegistry.html#a0352d3443bb37960c776b8fa581d512f" title="Registers a system function to be executed in the world." alt="" coords="286,484,404,525"/>
-<area shape="poly" title=" " alt="" coords="114,284,133,321,163,371,203,424,252,470,273,483,271,487,249,474,199,428,158,374,128,324,109,287"/>
-<area shape="rect" href="classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="262,136,428,161"/>
-<area shape="poly" title=" " alt="" coords="119,257,174,214,211,190,250,170,264,164,266,169,252,175,214,195,177,219,122,261"/>
-<area shape="rect" href="classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="265,434,424,460"/>
-<area shape="poly" title=" " alt="" coords="116,284,168,350,207,388,252,421,261,425,259,430,249,425,204,392,165,353,112,287"/>
-<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="488,185,658,210"/>
-<area shape="poly" title=" " alt="" coords="417,110,440,121,456,133,465,147,474,159,489,171,497,176,494,181,485,176,470,163,461,150,452,137,438,125,415,115"/>
-<area shape="poly" title=" " alt="" coords="423,110,441,121,453,133,460,146,466,172,471,197,478,209,489,221,498,227,494,232,485,225,474,212,466,199,461,173,455,148,448,137,437,125,421,115"/>
-<area shape="rect" href="classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="487,71,658,111"/>
-<area shape="poly" title=" " alt="" coords="439,93,471,92,472,97,439,98"/>
-<area shape="rect" href="classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="706,71,868,111"/>
-<area shape="poly" title=" " alt="" coords="659,88,691,88,691,94,659,94"/>
-<area shape="poly" title=" " alt="" coords="429,195,472,195,472,200,429,200"/>
-<area shape="poly" title=" " alt="" coords="408,209,496,228,494,233,407,214"/>
-<area shape="poly" title=" " alt="" coords="423,61,441,72,453,84,460,97,466,123,471,148,478,160,489,172,493,175,489,179,485,176,474,163,466,150,461,124,455,99,448,87,437,76,421,65"/>
-<area shape="poly" title=" " alt="" coords="425,61,441,72,456,90,463,110,466,148,468,185,475,203,489,221,498,228,494,232,485,225,470,206,463,187,461,148,458,111,451,93,437,76,422,65"/>
-<area shape="poly" title=" " alt="" coords="420,60,472,70,471,75,419,66"/>
-<area shape="rect" href="classWorld.html#a26b4683ede7d756b2f783561d13b00bc" title="Gets the clock used to track the world&#39;s time." alt="" coords="517,136,628,161"/>
-<area shape="poly" title=" " alt="" coords="417,61,440,71,456,84,465,97,474,109,488,121,503,128,501,133,486,125,470,113,461,100,452,87,438,76,415,66"/>
-<area shape="rect" href="classVirtualKeyBoard.html#afed46be98962959fa50e40ca144fe6b9" title="Checks if a specific control key is pressed." alt="" coords="491,5,654,46"/>
-<area shape="poly" title=" " alt="" coords="432,38,475,33,476,39,433,43"/>
-<area shape="poly" title=" " alt="" coords="407,231,494,212,496,217,408,236"/>
-<area shape="poly" title=" " alt="" coords="424,244,495,244,495,250,424,250"/>
-<area shape="poly" title=" " alt="" coords="398,382,438,363,462,341,485,316,541,268,545,272,489,320,466,345,440,368,400,387"/>
-<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="500,330,646,356"/>
-<area shape="poly" title=" " alt="" coords="401,382,501,357,502,363,402,387"/>
-<area shape="poly" title=" " alt="" coords="415,281,438,270,452,258,461,246,470,232,485,219,494,215,497,219,489,224,474,236,465,249,456,262,440,275,417,285"/>
-<area shape="poly" title=" " alt="" coords="407,280,494,261,496,266,408,285"/>
-<area shape="poly" title=" " alt="" coords="412,307,492,324,491,329,411,312"/>
-<area shape="poly" title=" " alt="" coords="408,159,496,178,494,184,407,164"/>
-<area shape="poly" title=" " alt="" coords="417,159,440,170,456,183,465,196,474,209,489,221,497,225,494,230,485,225,470,212,461,199,452,186,438,175,415,164"/>
-<area shape="poly" title=" " alt="" coords="428,146,502,146,502,151,428,151"/>
-<area shape="poly" title=" " alt="" coords="424,431,437,421,455,397,462,373,463,348,461,323,458,297,459,271,467,246,485,220,487,218,490,222,489,223,472,248,464,272,464,297,466,322,468,348,467,374,459,399,441,425,427,436"/>
-<area shape="poly" title=" " alt="" coords="421,431,437,421,456,397,464,373,469,346,485,316,510,289,537,267,540,271,514,293,489,319,474,348,469,374,461,400,441,425,423,436"/>
-<area shape="rect" href="classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="504,404,642,445"/>
-<area shape="poly" title=" " alt="" coords="425,436,488,430,489,435,425,442"/>
-<area shape="rect" href="classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="508,469,637,494"/>
-<area shape="poly" title=" " alt="" coords="425,456,493,467,493,472,425,462"/>
+<area shape="rect" title="Loads all systems into the world." alt="" coords="5,285,203,310"/>
+<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="254,86,442,112"/>
+<area shape="poly" title=" " alt="" coords="110,283,130,250,161,206,201,160,249,121,257,116,260,121,252,125,205,164,165,209,134,253,115,286"/>
+<area shape="rect" href="classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="516,244,641,269"/>
+<area shape="poly" title=" " alt="" coords="203,289,445,270,500,264,501,269,445,275,203,294"/>
+<area shape="rect" href="classSystems.html#a45d56c8c881d53766e35443cebd0086a" title="A system that handles damage calculations and application to entities." alt="" coords="264,234,432,260"/>
+<area shape="poly" title=" " alt="" coords="169,282,267,261,268,266,170,287"/>
+<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="261,37,435,62"/>
+<area shape="poly" title=" " alt="" coords="107,284,124,242,153,185,195,124,220,96,249,72,255,68,258,72,252,76,224,99,199,127,158,187,129,244,112,286"/>
+<area shape="rect" href="classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82" title="A system that processes the hitbox components for entities." alt="" coords="270,185,426,210"/>
+<area shape="poly" title=" " alt="" coords="125,282,181,251,250,219,269,213,271,218,252,224,183,256,128,287"/>
+<area shape="rect" href="classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="271,484,424,509"/>
+<area shape="poly" title=" " alt="" coords="115,310,134,343,165,386,205,432,252,470,260,474,257,479,249,475,201,436,161,390,130,346,110,312"/>
+<area shape="rect" href="classSystems.html#af70598a4167338db56cbfdacf6d1827d" title="A system that processes a new shooter for tutorial purposes." alt="" coords="251,434,445,460"/>
+<area shape="poly" title=" " alt="" coords="119,309,172,363,210,394,252,421,264,426,261,431,249,425,207,399,169,367,115,313"/>
+<area shape="rect" href="classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="260,385,436,410"/>
+<area shape="poly" title=" " alt="" coords="128,309,183,340,252,371,271,378,269,383,250,376,181,344,125,313"/>
+<area shape="rect" href="classRegistry.html#a0352d3443bb37960c776b8fa581d512f" title="Registers a system function to be executed in the world." alt="" coords="289,533,406,574"/>
+<area shape="poly" title=" " alt="" coords="113,310,130,351,159,407,200,467,225,495,252,520,276,534,274,538,249,524,221,499,196,471,155,410,125,353,108,312"/>
+<area shape="rect" href="classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="265,136,431,161"/>
+<area shape="poly" title=" " alt="" coords="115,283,169,228,207,197,249,170,261,164,264,169,252,175,210,201,172,232,119,286"/>
+<area shape="rect" href="classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="268,336,428,361"/>
+<area shape="poly" title=" " alt="" coords="170,309,268,329,267,334,169,314"/>
+<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="494,185,664,210"/>
+<area shape="poly" title=" " alt="" coords="423,110,446,121,462,133,471,147,480,159,495,171,503,176,500,181,491,176,476,163,467,150,458,137,444,125,420,115"/>
+<area shape="poly" title=" " alt="" coords="429,110,447,121,459,133,466,146,472,171,478,197,484,209,495,221,514,234,511,239,491,225,480,212,473,198,467,173,461,148,454,136,443,125,426,115"/>
+<area shape="rect" href="classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="493,71,664,111"/>
+<area shape="poly" title=" " alt="" coords="443,93,477,92,478,97,443,98"/>
+<area shape="rect" href="classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="712,71,874,111"/>
+<area shape="poly" title=" " alt="" coords="665,88,697,88,697,94,665,94"/>
+<area shape="poly" title=" " alt="" coords="411,231,500,212,501,217,412,236"/>
+<area shape="poly" title=" " alt="" coords="432,248,501,251,501,256,432,253"/>
+<area shape="poly" title=" " alt="" coords="429,61,447,72,459,84,466,97,472,123,477,148,484,160,495,172,499,175,495,179,491,176,480,163,472,150,467,124,461,99,454,87,443,76,426,65"/>
+<area shape="poly" title=" " alt="" coords="431,61,447,72,462,90,470,109,473,147,475,184,482,203,495,221,511,234,508,238,491,225,477,205,470,185,468,147,465,111,457,93,443,76,428,65"/>
+<area shape="poly" title=" " alt="" coords="424,60,478,70,477,76,423,66"/>
+<area shape="rect" href="classWorld.html#a26b4683ede7d756b2f783561d13b00bc" title="Gets the clock used to track the world&#39;s time." alt="" coords="523,136,634,161"/>
+<area shape="poly" title=" " alt="" coords="423,61,446,71,462,84,471,97,480,109,494,121,509,128,507,133,492,125,476,113,467,100,458,87,444,76,420,66"/>
+<area shape="rect" href="classVirtualKeyBoard.html#afed46be98962959fa50e40ca144fe6b9" title="Checks if a specific control key is pressed." alt="" coords="497,5,660,46"/>
+<area shape="poly" title=" " alt="" coords="435,38,481,33,482,38,436,43"/>
+<area shape="poly" title=" " alt="" coords="426,195,478,195,478,200,426,200"/>
+<area shape="poly" title=" " alt="" coords="404,209,446,219,513,237,511,242,444,224,403,214"/>
+<area shape="poly" title=" " alt="" coords="423,484,443,470,459,450,467,430,469,388,470,344,476,321,491,297,519,274,523,279,495,301,481,323,475,345,474,388,472,431,464,453,447,474,426,488"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="506,434,652,460"/>
+<area shape="poly" title=" " alt="" coords="411,480,500,461,501,466,412,485"/>
+<area shape="poly" title=" " alt="" coords="428,431,443,421,456,407,463,392,468,362,472,331,479,314,491,297,522,274,525,278,495,301,484,317,478,332,473,363,468,394,460,410,447,425,431,436"/>
+<area shape="poly" title=" " alt="" coords="445,444,490,444,490,450,445,450"/>
+<area shape="poly" title=" " alt="" coords="428,382,443,372,457,355,464,338,467,303,470,267,477,248,491,229,508,216,512,220,495,233,482,250,476,268,473,304,469,340,462,358,447,376,431,386"/>
+<area shape="poly" title=" " alt="" coords="425,382,443,372,460,355,468,337,475,317,491,297,525,274,528,279,495,301,480,320,472,339,464,357,447,376,427,387"/>
+<area shape="poly" title=" " alt="" coords="412,409,501,428,500,433,411,414"/>
+<area shape="poly" title=" " alt="" coords="412,159,501,178,500,184,411,164"/>
+<area shape="poly" title=" " alt="" coords="423,159,446,170,462,183,472,195,480,208,495,221,520,235,518,239,491,225,476,212,467,199,458,186,444,175,420,164"/>
+<area shape="poly" title=" " alt="" coords="432,146,507,146,507,151,432,151"/>
+<area shape="poly" title=" " alt="" coords="365,333,443,270,466,248,492,229,520,214,522,219,494,233,470,252,447,274,368,337"/>
+<area shape="poly" title=" " alt="" coords="392,332,444,314,535,274,537,279,446,319,393,337"/>
+<area shape="rect" href="classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="510,311,648,351"/>
+<area shape="poly" title=" " alt="" coords="427,340,494,335,494,340,428,345"/>
+<area shape="rect" href="classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="514,376,643,401"/>
+<area shape="poly" title=" " alt="" coords="426,359,499,372,499,377,425,364"/>
 </map>
 </div>
 <div class="dynheader">
@@ -620,6 +627,67 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classSystems_a82478e58000d97f5439663a6fe8c1c43_icgraph.png" border="0" usemap="#aclassSystems_a82478e58000d97f5439663a6fe8c1c43_icgraph" alt=""/></div>
 <map name="aclassSystems_a82478e58000d97f5439663a6fe8c1c43_icgraph" id="aclassSystems_a82478e58000d97f5439663a6fe8c1c43_icgraph">
 <area shape="rect" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af70598a4167338db56cbfdacf6d1827d" name="af70598a4167338db56cbfdacf6d1827d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70598a4167338db56cbfdacf6d1827d">&#9670;&#160;</a></span>NewShooterSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Systems::NewShooterSystem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classWorld.html">World</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A system that processes a new shooter for tutorial purposes. </p>
+<p>This system is responsible for creating an ennemy that teleports randomly on the screen</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world</td><td>A reference to the <a class="el" href="classWorld.html" title="Represents a game world that manages clients, levels, and world state.">World</a> object containing the entities to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating the success or status of the system. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="NewShooterSystem_8cpp_source.html#l00012">12</a> of file <a class="el" href="NewShooterSystem_8cpp_source.html">NewShooterSystem.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSystems_af70598a4167338db56cbfdacf6d1827d_cgraph.png" border="0" usemap="#aclassSystems_af70598a4167338db56cbfdacf6d1827d_cgraph" alt=""/></div>
+<map name="aclassSystems_af70598a4167338db56cbfdacf6d1827d_cgraph" id="aclassSystems_af70598a4167338db56cbfdacf6d1827d_cgraph">
+<area shape="rect" title="A system that processes a new shooter for tutorial purposes." alt="" coords="5,31,200,56"/>
+<area shape="rect" href="classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="258,5,384,31"/>
+<area shape="poly" title=" " alt="" coords="200,30,242,25,243,30,201,35"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="248,55,394,80"/>
+<area shape="poly" title=" " alt="" coords="201,52,232,55,232,60,200,57"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSystems_af70598a4167338db56cbfdacf6d1827d_icgraph.png" border="0" usemap="#aclassSystems_af70598a4167338db56cbfdacf6d1827d_icgraph" alt=""/></div>
+<map name="aclassSystems_af70598a4167338db56cbfdacf6d1827d_icgraph" id="aclassSystems_af70598a4167338db56cbfdacf6d1827d_icgraph">
+<area shape="rect" title="A system that processes a new shooter for tutorial purposes." alt="" coords="348,5,542,31"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
+<area shape="poly" title=" " alt="" coords="332,21,300,21,300,16,332,16"/>
 <area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
@@ -826,6 +894,7 @@ Here is the caller graph for this function:</div>
 <li>server/Logic/src/Systems/<a class="el" href="HitBoxSystem_8cpp_source.html">HitBoxSystem.cpp</a></li>
 <li>server/Logic/src/Systems/<a class="el" href="LinearShooterSystem_8cpp_source.html">LinearShooterSystem.cpp</a></li>
 <li>server/Logic/src/Systems/<a class="el" href="LoadSystems_8cpp_source.html">LoadSystems.cpp</a></li>
+<li>server/Logic/src/Systems/<a class="el" href="NewShooterSystem_8cpp_source.html">NewShooterSystem.cpp</a></li>
 <li>server/Logic/src/Systems/<a class="el" href="ProjectileSystem_8cpp_source.html">ProjectileSystem.cpp</a></li>
 <li>server/Logic/src/Systems/<a class="el" href="VelocitySystem_8cpp_source.html">VelocitySystem.cpp</a></li>
 <li>server/Logic/src/Systems/<a class="el" href="VitalitySystem_8cpp_source.html">VitalitySystem.cpp</a></li>

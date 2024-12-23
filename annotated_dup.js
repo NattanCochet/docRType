@@ -23,6 +23,7 @@ var annotated_dup =
     [ "GJKAlgorithm", "classGJKAlgorithm.html", "classGJKAlgorithm" ],
     [ "Hitbox", "classHitbox.html", "classHitbox" ],
     [ "LinearShooter", "classLinearShooter.html", "classLinearShooter" ],
+    [ "NewShooter", "classNewShooter.html", "classNewShooter" ],
     [ "Position", "classPosition.html", "classPosition" ],
     [ "Projectile", "classProjectile.html", "classProjectile" ],
     [ "Registry", "classRegistry.html", "classRegistry" ],

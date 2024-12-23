@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['installing_20the_20project_0',['Installing the project',['../md_docs_2md__docs_2how__to__install.html',1,'']]]
+  ['how_20to_20add_20content_0',['How to add content',['../md_docs_2md__docs_2zznew__ennemy.html',1,'']]]
 ];

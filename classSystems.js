@@ -8,6 +8,7 @@ var classSystems =
     [ "hitboxSystem", "classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82", null ],
     [ "linearSystem", "classSystems.html#a98634685da4c37056578788b9741462b", null ],
     [ "loadSystemsInWorld", "classSystems.html#a82478e58000d97f5439663a6fe8c1c43", null ],
+    [ "NewShooterSystem", "classSystems.html#af70598a4167338db56cbfdacf6d1827d", null ],
     [ "ProjectileSystem", "classSystems.html#a77fd1819a1530ccf9dd906f7de620478", null ],
     [ "velocitySystem", "classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d", null ],
     [ "vitalitySystem", "classSystems.html#a61384d19199030b0a1384d646db68c3b", null ]

@@ -51,6 +51,13 @@ var NAVTREE =
     [ "Communication Protocol", "md_docs_2md__docs_2zprotocol__commands.html", [
       [ "Commands Table", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md25", null ]
     ] ],
+    [ "How to add content", "md_docs_2md__docs_2zznew__ennemy.html", [
+      [ "Ennemies", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md27", [
+        [ "Child class", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md28", null ],
+        [ "Choosing a sprite sheet", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md29", null ],
+        [ "Adding the entity", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md30", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -79,8 +86,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ABot_8cpp.html",
-"classErrorKeyNotFound.html#acb5e1c6e72be74158703a59a337eccc4",
-"classVitality.html#a845675dcec617cf6edc8dcc0e3a734ad"
+"classErrorGenerationMap.html#a8b2ee9c75f96f07f3403fd344833a09e",
+"classVirtualKeyBoard.html#ad84ac5bb5d4caf1329eecaa0c26d43f2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

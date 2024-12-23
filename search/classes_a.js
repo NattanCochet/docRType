@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['spawnrulegenerator_0',['SpawnRuleGenerator',['../classSpawnRuleGenerator.html',1,'']]],
-  ['systems_1',['Systems',['../classSystems.html',1,'']]]
+  ['registry_0',['Registry',['../classRegistry.html',1,'']]]
 ];
