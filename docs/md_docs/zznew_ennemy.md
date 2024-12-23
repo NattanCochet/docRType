@@ -4,7 +4,7 @@
 
 To create a new ennemy you'll need to follow these steps :
 
-- Creating a [ABot](../classABot.html) child class
+- Creating a [ABot](./classABot.html) child class
 
 - Choosing the sprite sheet of the ennemy
 
@@ -36,7 +36,7 @@ class NewShooter : public ABot {
 
 When done correctly it should look like this.
 
-When inhereting from the [ABot](../classABot.html) class you get two members by default :
+When inhereting from the [ABot](./classABot.html) class you get two members by default :
 
 - _clock which is a clock that tracks the bots actions such as when it shoots, etc...
 - _delay which is a float that tells how much time before it shoots
