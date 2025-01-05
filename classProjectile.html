@@ -116,48 +116,39 @@ Collaboration diagram for Projectile:</div>
 <div class="dyncontent">
 <div class="center"><img src="classProjectile__coll__graph.png" border="0" usemap="#aProjectile_coll__map" alt="Collaboration graph"/></div>
 <map name="aProjectile_coll__map" id="aProjectile_coll__map">
-<area shape="rect" title="A class representing a projectile with various properties." alt="" coords="5,5,161,275"/>
+<area shape="rect" title="A class representing a projectile with various properties." alt="" coords="5,5,146,336"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c98b35ce69943809c3c4b2507dda546" id="r_a6c98b35ce69943809c3c4b2507dda546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c98b35ce69943809c3c4b2507dda546">Projectile</a> (float _damage, float _loadingTime, bool _isRebound, bool _canHoldCharging, float _reductionDamage, float _damageFallOff)</td></tr>
-<tr class="memdesc:a6c98b35ce69943809c3c4b2507dda546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classProjectile.html" title="A class representing a projectile with various properties.">Projectile</a> object with specified properties.  <br /></td></tr>
-<tr class="separator:a6c98b35ce69943809c3c4b2507dda546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0668989b4af11105ea235699eff363eb" id="r_a0668989b4af11105ea235699eff363eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0668989b4af11105ea235699eff363eb">Projectile</a> (float damage, bool isRebound, bool canHoldCharging, float damageFallOff, std::size_t entityIDBelong)</td></tr>
+<tr class="memdesc:a0668989b4af11105ea235699eff363eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classProjectile.html" title="A class representing a projectile with various properties.">Projectile</a> object with specified properties.  <br /></td></tr>
+<tr class="separator:a0668989b4af11105ea235699eff363eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94903e021fa2edab60ba3836ca0b937d" id="r_a94903e021fa2edab60ba3836ca0b937d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94903e021fa2edab60ba3836ca0b937d">~Projectile</a> ()</td></tr>
 <tr class="memdesc:a94903e021fa2edab60ba3836ca0b937d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classProjectile.html" title="A class representing a projectile with various properties.">Projectile</a> class.  <br /></td></tr>
 <tr class="separator:a94903e021fa2edab60ba3836ca0b937d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ecaf16a9dd46fc304b2898cde182004" id="r_a6ecaf16a9dd46fc304b2898cde182004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ecaf16a9dd46fc304b2898cde182004">setDamage</a> (float newDmg)</td></tr>
 <tr class="memdesc:a6ecaf16a9dd46fc304b2898cde182004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the damage dealt by the projectile.  <br /></td></tr>
 <tr class="separator:a6ecaf16a9dd46fc304b2898cde182004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83566fc7e250ec3b843b2877499679cc" id="r_a83566fc7e250ec3b843b2877499679cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83566fc7e250ec3b843b2877499679cc">setLoadingTime</a> (float newLoadTime)</td></tr>
-<tr class="memdesc:a83566fc7e250ec3b843b2877499679cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the loading time for the projectile.  <br /></td></tr>
-<tr class="separator:a83566fc7e250ec3b843b2877499679cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e91be76dcd55143890b3ccc0d0a71d5" id="r_a5e91be76dcd55143890b3ccc0d0a71d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e91be76dcd55143890b3ccc0d0a71d5">setIsRebound</a> (bool newRebound)</td></tr>
 <tr class="memdesc:a5e91be76dcd55143890b3ccc0d0a71d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the projectile can rebound.  <br /></td></tr>
 <tr class="separator:a5e91be76dcd55143890b3ccc0d0a71d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a657dbb7ff378ee9f9b91d9934e5a3139" id="r_a657dbb7ff378ee9f9b91d9934e5a3139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a657dbb7ff378ee9f9b91d9934e5a3139">setHoldCharging</a> (bool newCharge)</td></tr>
 <tr class="memdesc:a657dbb7ff378ee9f9b91d9934e5a3139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the projectile can hold charging.  <br /></td></tr>
 <tr class="separator:a657dbb7ff378ee9f9b91d9934e5a3139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8faa1c6c5d84bfab47fb2c6ed92064b5" id="r_a8faa1c6c5d84bfab47fb2c6ed92064b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8faa1c6c5d84bfab47fb2c6ed92064b5">setReductionDamage</a> (float newDmgReduction)</td></tr>
-<tr class="memdesc:a8faa1c6c5d84bfab47fb2c6ed92064b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the damage reduction applied to the projectile.  <br /></td></tr>
-<tr class="separator:a8faa1c6c5d84bfab47fb2c6ed92064b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6f6e9b93c658d8f1c6cde112df1a30" id="r_ace6f6e9b93c658d8f1c6cde112df1a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace6f6e9b93c658d8f1c6cde112df1a30">setDamageFallOff</a> (float newDmgFalloff)</td></tr>
 <tr class="memdesc:ace6f6e9b93c658d8f1c6cde112df1a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the damage fall-off of the projectile.  <br /></td></tr>
 <tr class="separator:ace6f6e9b93c658d8f1c6cde112df1a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbde566219a9233b33d39a59fe21a38c" id="r_adbde566219a9233b33d39a59fe21a38c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbde566219a9233b33d39a59fe21a38c">setStack</a> (int newStack)</td></tr>
 <tr class="memdesc:adbde566219a9233b33d39a59fe21a38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stack count of the projectile.  <br /></td></tr>
 <tr class="separator:adbde566219a9233b33d39a59fe21a38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fcce10bff999b4472d5627f23e53ee" id="r_af4fcce10bff999b4472d5627f23e53ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4fcce10bff999b4472d5627f23e53ee">setEntityIDBelong</a> (std::size_t newID)</td></tr>
+<tr class="memdesc:af4fcce10bff999b4472d5627f23e53ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entity ID belong to this new ID.  <br /></td></tr>
+<tr class="separator:af4fcce10bff999b4472d5627f23e53ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb012bf61be056dea63c7c12f4ceb2a" id="r_afcb012bf61be056dea63c7c12f4ceb2a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcb012bf61be056dea63c7c12f4ceb2a">getDamage</a> (void)</td></tr>
 <tr class="memdesc:afcb012bf61be056dea63c7c12f4ceb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the damage dealt by the projectile.  <br /></td></tr>
 <tr class="separator:afcb012bf61be056dea63c7c12f4ceb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532efe9793539babd168c6005d56917d" id="r_a532efe9793539babd168c6005d56917d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a532efe9793539babd168c6005d56917d">getLoadingTime</a> (void)</td></tr>
-<tr class="memdesc:a532efe9793539babd168c6005d56917d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the loading time of the projectile.  <br /></td></tr>
-<tr class="separator:a532efe9793539babd168c6005d56917d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c50b7b1596715a55010aa4a4520eee3" id="r_a5c50b7b1596715a55010aa4a4520eee3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c50b7b1596715a55010aa4a4520eee3">getReductionDmg</a> (void)</td></tr>
-<tr class="memdesc:a5c50b7b1596715a55010aa4a4520eee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the damage reduction applied to the projectile.  <br /></td></tr>
-<tr class="separator:a5c50b7b1596715a55010aa4a4520eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6e6fe2e2ac94eeda822133a1bc2639" id="r_abd6e6fe2e2ac94eeda822133a1bc2639"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd6e6fe2e2ac94eeda822133a1bc2639">getDmgFalloff</a> (void)</td></tr>
 <tr class="memdesc:abd6e6fe2e2ac94eeda822133a1bc2639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the damage fall-off of the projectile.  <br /></td></tr>
 <tr class="separator:abd6e6fe2e2ac94eeda822133a1bc2639"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +158,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a674bae09f0b0111a7f487881c4882413" id="r_a674bae09f0b0111a7f487881c4882413"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a674bae09f0b0111a7f487881c4882413">getCanHoldCharge</a> (void)</td></tr>
 <tr class="memdesc:a674bae09f0b0111a7f487881c4882413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the projectile can hold charging.  <br /></td></tr>
 <tr class="separator:a674bae09f0b0111a7f487881c4882413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a490e70cdb041db8941ddd51fa42bb760" id="r_a490e70cdb041db8941ddd51fa42bb760"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a490e70cdb041db8941ddd51fa42bb760">getEntityIDBelong</a> (void)</td></tr>
+<tr class="memdesc:a490e70cdb041db8941ddd51fa42bb760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entity ID belong of this projectile.  <br /></td></tr>
+<tr class="separator:a490e70cdb041db8941ddd51fa42bb760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44b7355c8d389e5d56c6b158a38e19bf" id="r_a44b7355c8d389e5d56c6b158a38e19bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b7355c8d389e5d56c6b158a38e19bf">getStack</a> (void)</td></tr>
 <tr class="memdesc:a44b7355c8d389e5d56c6b158a38e19bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stack count of the projectile.  <br /></td></tr>
 <tr class="separator:a44b7355c8d389e5d56c6b158a38e19bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,8 +171,8 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Projectile_8hpp_source.html#l00021">21</a> of file <a class="el" href="Projectile_8hpp_source.html">Projectile.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6c98b35ce69943809c3c4b2507dda546" name="a6c98b35ce69943809c3c4b2507dda546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c98b35ce69943809c3c4b2507dda546">&#9670;&#160;</a></span>Projectile()</h2>
+<a id="a0668989b4af11105ea235699eff363eb" name="a0668989b4af11105ea235699eff363eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0668989b4af11105ea235699eff363eb">&#9670;&#160;</a></span>Projectile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,32 +180,27 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Projectile::Projectile </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_damage</em></span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>damage</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_loadingTime</em></span>, </td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isRebound</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_isRebound</em></span>, </td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>canHoldCharging</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_canHoldCharging</em></span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>damageFallOff</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_reductionDamage</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_damageFallOff</em></span>&#160;)</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>entityIDBelong</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -219,12 +208,11 @@ Public Member Functions</h2></td></tr>
 <p>Constructs a new <a class="el" href="classProjectile.html" title="A class representing a projectile with various properties.">Projectile</a> object with specified properties. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_damage</td><td>The initial damage of the projectile. </td></tr>
-    <tr><td class="paramname">_loadingTime</td><td>The initial loading time for the projectile. </td></tr>
-    <tr><td class="paramname">_isRebound</td><td>Whether the projectile can rebound. </td></tr>
-    <tr><td class="paramname">_canHoldCharging</td><td>Whether the projectile can hold charging. </td></tr>
-    <tr><td class="paramname">_reductionDamage</td><td>The initial damage reduction applied to the projectile. </td></tr>
-    <tr><td class="paramname">_damageFallOff</td><td>The initial damage fall-off of the projectile. </td></tr>
+    <tr><td class="paramname">damage</td><td>The initial damage of the projectile. </td></tr>
+    <tr><td class="paramname">isRebound</td><td>Whether the projectile can rebound. </td></tr>
+    <tr><td class="paramname">canHoldCharging</td><td>Whether the projectile can hold charging. </td></tr>
+    <tr><td class="paramname">damageFallOff</td><td>The initial damage fall-off of the projectile. </td></tr>
+    <tr><td class="paramname">entityIDBelong</td><td>The ID of the shooter </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,7 +238,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for the <a class="el" href="classProjectile.html" title="A class representing a projectile with various properties.">Projectile</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00025">25</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00024">24</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +283,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the damage dealt by the projectile. </p>
 <dl class="section return"><dt>Returns</dt><dd>The damage value of the projectile. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00057">57</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00058">58</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -317,18 +305,18 @@ Public Member Functions</h2></td></tr>
 <p>Gets the damage fall-off of the projectile. </p>
 <dl class="section return"><dt>Returns</dt><dd>The damage fall-off value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00065">65</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00068">68</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a532efe9793539babd168c6005d56917d" name="a532efe9793539babd168c6005d56917d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a532efe9793539babd168c6005d56917d">&#9670;&#160;</a></span>getLoadingTime()</h2>
+<a id="a490e70cdb041db8941ddd51fa42bb760" name="a490e70cdb041db8941ddd51fa42bb760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a490e70cdb041db8941ddd51fa42bb760">&#9670;&#160;</a></span>getEntityIDBelong()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float Projectile::getLoadingTime </td>
+          <td class="memname">std::size_t Projectile::getEntityIDBelong </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -336,10 +324,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the loading time of the projectile. </p>
-<dl class="section return"><dt>Returns</dt><dd>The loading time value of the projectile. </dd></dl>
+<p>Gets the entity ID belong of this projectile. </p>
+<dl class="section return"><dt>Returns</dt><dd>The entity ID belong to the projectile </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00061">61</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00063">63</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -361,29 +349,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets whether the projectile can rebound. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the projectile can rebound, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00077">77</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a5c50b7b1596715a55010aa4a4520eee3" name="a5c50b7b1596715a55010aa4a4520eee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c50b7b1596715a55010aa4a4520eee3">&#9670;&#160;</a></span>getReductionDmg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float Projectile::getReductionDmg </td>
-          <td>(</td>
-          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the damage reduction applied to the projectile. </p>
-<dl class="section return"><dt>Returns</dt><dd>The damage reduction value. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00069">69</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00078">78</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -405,7 +371,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the stack count of the projectile. </p>
 <dl class="section return"><dt>Returns</dt><dd>The stack count of the projectile. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00081">81</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00083">83</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -432,7 +398,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00029">29</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00028">28</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -463,6 +429,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af4fcce10bff999b4472d5627f23e53ee" name="af4fcce10bff999b4472d5627f23e53ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4fcce10bff999b4472d5627f23e53ee">&#9670;&#160;</a></span>setEntityIDBelong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Projectile::setEntityIDBelong </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>newID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the entity ID belong to this new ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newID</td><td>The new ID to assign </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00048">48</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a657dbb7ff378ee9f9b91d9934e5a3139" name="a657dbb7ff378ee9f9b91d9934e5a3139"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a657dbb7ff378ee9f9b91d9934e5a3139">&#9670;&#160;</a></span>setHoldCharging()</h2>
 
@@ -486,7 +479,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00037">37</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00038">38</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>
@@ -513,61 +506,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00041">41</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a83566fc7e250ec3b843b2877499679cc" name="a83566fc7e250ec3b843b2877499679cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83566fc7e250ec3b843b2877499679cc">&#9670;&#160;</a></span>setLoadingTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Projectile::setLoadingTime </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newLoadTime</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the loading time for the projectile. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newLoadTime</td><td>The new loading time value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00045">45</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a8faa1c6c5d84bfab47fb2c6ed92064b5" name="a8faa1c6c5d84bfab47fb2c6ed92064b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8faa1c6c5d84bfab47fb2c6ed92064b5">&#9670;&#160;</a></span>setReductionDamage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Projectile::setReductionDamage </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newDmgReduction</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the damage reduction applied to the projectile. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newDmgReduction</td><td>The new damage reduction value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00049">49</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00043">43</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>

@@ -6,5 +6,5 @@ var searchData=
   ['noisetype_5fperlin_3',['NoiseType_Perlin',['../classFastNoiseLite.html#a92524ce8eee37bd74571a624244d3b0aa48814718aab8aa15024a1a6fb6e99985',1,'FastNoiseLite']]],
   ['noisetype_5fvalue_4',['NoiseType_Value',['../classFastNoiseLite.html#a92524ce8eee37bd74571a624244d3b0aa238407d71dbf00170b5880527a0280c2',1,'FastNoiseLite']]],
   ['noisetype_5fvaluecubic_5',['NoiseType_ValueCubic',['../classFastNoiseLite.html#a92524ce8eee37bd74571a624244d3b0aa2ffe2220039377d96e1d7e6db8a76430',1,'FastNoiseLite']]],
-  ['nothing_6',['NOTHING',['../classSpawnRuleGenerator.html#ad8315336f4a58ac14746141657c8a2a4a9e023924afe4e6eeb2da3a6d0288b1e9',1,'SpawnRuleGenerator']]]
+  ['nothing_6',['NOTHING',['../classWorld.html#aa8fbd772bdb7d74f051762fc724085d1a5753f0b8959142a9042bc8fe8b0525d5',1,'World::NOTHING'],['../classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a47d701b1f6bde71e9bd106e2186311a7',1,'SpawnRule::Generator::NOTHING']]]
 ];

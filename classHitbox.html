@@ -202,12 +202,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a2f37ced3992e368d0b797a67bf33f2" id="r_a2a2f37ced3992e368d0b797a67bf33f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a2f37ced3992e368d0b797a67bf33f2">isCollisionWithIDInDirection</a> (std::size_t id, <a class="el" href="#a0a84c2a7660f7ee53c1075dfd1d7cce2">DIRECTION</a> direction)</td></tr>
 <tr class="memdesc:a2a2f37ced3992e368d0b797a67bf33f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the hitbox is colliding with a specific ID in a specific direction.  <br /></td></tr>
 <tr class="separator:a2a2f37ced3992e368d0b797a67bf33f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a613c360433630de1fbe18cb4387f5" id="r_a45a613c360433630de1fbe18cb4387f5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45a613c360433630de1fbe18cb4387f5">getAllCollisionIDs</a> () const</td></tr>
+<tr class="memdesc:a45a613c360433630de1fbe18cb4387f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method retun all the entity ID for each collision.  <br /></td></tr>
+<tr class="separator:a45a613c360433630de1fbe18cb4387f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing a hitbox for collision detection. </p>
 <p>This class defines a hitbox, which can be either a rectangle or a circle. It stores the position, size, rotation, and collision information, and provides methods to check for collisions and manage collision data. </p>
 
-<p class="definition">Definition at line <a class="el" href="Hitbox_8hpp_source.html#l00023">23</a> of file <a class="el" href="Hitbox_8hpp_source.html">Hitbox.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Hitbox_8hpp_source.html#l00024">24</a> of file <a class="el" href="Hitbox_8hpp_source.html">Hitbox.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a0a84c2a7660f7ee53c1075dfd1d7cce2" name="a0a84c2a7660f7ee53c1075dfd1d7cce2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a84c2a7660f7ee53c1075dfd1d7cce2">&#9670;&#160;</a></span>DIRECTION</h2>
@@ -241,7 +244,7 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="Hitbox_8hpp_source.html#l00038">38</a> of file <a class="el" href="Hitbox_8hpp_source.html">Hitbox.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Hitbox_8hpp_source.html#l00039">39</a> of file <a class="el" href="Hitbox_8hpp_source.html">Hitbox.hpp</a>.</p>
 
 </div>
 </div>
@@ -265,7 +268,7 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="Hitbox_8hpp_source.html#l00029">29</a> of file <a class="el" href="Hitbox_8hpp_source.html">Hitbox.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Hitbox_8hpp_source.html#l00030">30</a> of file <a class="el" href="Hitbox_8hpp_source.html">Hitbox.hpp</a>.</p>
 
 </div>
 </div>
@@ -389,6 +392,28 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="Hitbox_8cpp_source.html#l00090">90</a> of file <a class="el" href="Hitbox_8cpp_source.html">Hitbox.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a45a613c360433630de1fbe18cb4387f5" name="a45a613c360433630de1fbe18cb4387f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45a613c360433630de1fbe18cb4387f5">&#9670;&#160;</a></span>getAllCollisionIDs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::size_t &gt; Hitbox::getAllCollisionIDs </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method retun all the entity ID for each collision. </p>
+<dl class="section return"><dt>Returns</dt><dd>List of all ID as vector </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Hitbox_8cpp_source.html#l00149">149</a> of file <a class="el" href="Hitbox_8cpp_source.html">Hitbox.cpp</a>.</p>
 
 </div>
 </div>

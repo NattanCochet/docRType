@@ -1,7 +1,0 @@
-<map id="SpawnRuleGenerator::createFunctionForRuleWithID" name="SpawnRuleGenerator::createFunctionForRuleWithID">
-<area shape="rect" id="Node000001" title="Creates a spawn rule function based on entity IDs." alt="" coords="236,23,433,64"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#a6a68f326ceec5aaec3a6b4ec6a62e61e" title="Generates the world for the next level with floating point ranges." alt="" coords="5,5,188,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,34,188,31,188,25,220,29"/>
-<area shape="rect" id="Node000003" href="$classWorld.html#a65d3d9553551f3dbf7a19f0a5e2a9262" title="Generates the world for the next level with integer ranges." alt="" coords="5,55,188,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,58,188,61,188,56,220,52"/>
-</map>

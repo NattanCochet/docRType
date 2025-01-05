@@ -49,14 +49,30 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Communication Protocol", "md_docs_2md__docs_2zprotocol__commands.html", [
-      [ "Commands Table", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md25", null ]
+      [ "Commands Table", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md25", null ],
+      [ "Commands Details", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md26", [
+        [ "CLIENT_JOIN", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md27", null ],
+        [ "CLIENT_LEAVE", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md29", null ],
+        [ "CLIENT_SHOOT", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md31", null ],
+        [ "CLIENT_MOVEMENT", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md33", null ],
+        [ "CLIENT_START_GAME", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md35", null ],
+        [ "CLIENT_SELECT_SHIP", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md37", null ],
+        [ "SERVER_ENTITY_NEW", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md39", null ],
+        [ "SERVER_ENTITY_DEAD", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md41", null ],
+        [ "SERVER_GAME_END", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md43", null ],
+        [ "SERVER_MOVEMENT", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md45", null ],
+        [ "SERVER_UPDATE_STATS", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md47", null ]
+      ] ]
     ] ],
     [ "How to add content", "md_docs_2md__docs_2zznew__ennemy.html", [
-      [ "Ennemies", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md27", [
-        [ "Child class", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md28", null ],
-        [ "Choosing a sprite sheet", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md29", null ],
-        [ "Adding the entity", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md30", null ]
+      [ "Ennemies", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md49", [
+        [ "Child class", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md50", null ],
+        [ "Choosing a sprite sheet", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md51", null ],
+        [ "Adding the entity", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md52", null ]
       ] ]
+    ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -86,8 +102,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ABot_8cpp.html",
-"classErrorGenerationMap.html#a8b2ee9c75f96f07f3403fd344833a09e",
-"classVirtualKeyBoard.html#ad84ac5bb5d4caf1329eecaa0c26d43f2"
+"classCreateEntity.html#aa15ceb585be911e861161e396e771617",
+"classSpawnRule_1_1Generator.html#aee092e84b299c0c07fd448e502468863",
+"md_docs_2md__docs_2zprotocol__commands.html#autotoc_md26"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

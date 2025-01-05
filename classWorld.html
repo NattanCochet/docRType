@@ -101,6 +101,7 @@ $(function(){initNavTree('classWorld.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classWorld-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">World Class Reference</div></div>
@@ -120,6 +121,14 @@ Collaboration diagram for World:</div>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa8fbd772bdb7d74f051762fc724085d1" id="r_aa8fbd772bdb7d74f051762fc724085d1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1">STATE</a> { <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1a5753f0b8959142a9042bc8fe8b0525d5">NOTHING</a> = 0
+, <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1ad42a51e87b32f6cd0ff662e8c9d8d887">HOLD</a> = 1
+, <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1aa28ba56904acee529fee98d753c488ee">PLAY</a> = 2
+ }</td></tr>
+<tr class="separator:aa8fbd772bdb7d74f051762fc724085d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab74e693f047056ccffdee70a85936418" id="r_ab74e693f047056ccffdee70a85936418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74e693f047056ccffdee70a85936418">World</a> (bool client, bool isPublic, int nbrPlayerMax, std::string nameRoom, std::size_t clientID, std::string password=&quot;&quot;)</td></tr>
@@ -152,15 +161,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29cd47706e3a22d30d7f30c09578ff6e" id="r_a29cd47706e3a22d30d7f30c09578ff6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29cd47706e3a22d30d7f30c09578ff6e">changeParametersOfWorld</a> (bool client, bool isPublic, int nbrPlayerMax, std::string nameRoom, std::string password=&quot;&quot;) noexcept</td></tr>
 <tr class="memdesc:a29cd47706e3a22d30d7f30c09578ff6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the parameters of the world.  <br /></td></tr>
 <tr class="separator:a29cd47706e3a22d30d7f30c09578ff6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addb520f55f7b63e762801db277862461" id="r_addb520f55f7b63e762801db277862461"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addb520f55f7b63e762801db277862461">getClientsID</a> () const noexcept</td></tr>
-<tr class="memdesc:addb520f55f7b63e762801db277862461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of client IDs in the world.  <br /></td></tr>
-<tr class="separator:addb520f55f7b63e762801db277862461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956ffe1e83921305880998fc7114d07c" id="r_a956ffe1e83921305880998fc7114d07c"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::size_t, <a class="el" href="classClientInWorld.html">ClientInWorld</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a956ffe1e83921305880998fc7114d07c">getClientsID</a> () noexcept</td></tr>
+<tr class="memdesc:a956ffe1e83921305880998fc7114d07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of client IDs in the world.  <br /></td></tr>
+<tr class="separator:a956ffe1e83921305880998fc7114d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab614b1aab9b306cfc6f238b2b4dd596c" id="r_ab614b1aab9b306cfc6f238b2b4dd596c"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab614b1aab9b306cfc6f238b2b4dd596c">addClientInWorld</a> (std::size_t clientID, std::string password)</td></tr>
 <tr class="memdesc:ab614b1aab9b306cfc6f238b2b4dd596c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a client to the world.  <br /></td></tr>
 <tr class="separator:ab614b1aab9b306cfc6f238b2b4dd596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c24fc079abb5b0e9d6c5121a56c6c65" id="r_a3c24fc079abb5b0e9d6c5121a56c6c65"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c24fc079abb5b0e9d6c5121a56c6c65">deleteClientInWorld</a> (std::size_t clientID)</td></tr>
-<tr class="memdesc:a3c24fc079abb5b0e9d6c5121a56c6c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a client from the world.  <br /></td></tr>
-<tr class="separator:a3c24fc079abb5b0e9d6c5121a56c6c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d13ac992f4b223d6aa26c20ad78dd06" id="r_a5d13ac992f4b223d6aa26c20ad78dd06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classClientInWorld.html">ClientInWorld</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d13ac992f4b223d6aa26c20ad78dd06">deleteClientInWorld</a> (std::size_t clientID)</td></tr>
+<tr class="memdesc:a5d13ac992f4b223d6aa26c20ad78dd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a client from the world.  <br /></td></tr>
+<tr class="separator:a5d13ac992f4b223d6aa26c20ad78dd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0abf8973d0f04f7c3c12eccf295a18" id="r_aec0abf8973d0f04f7c3c12eccf295a18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec0abf8973d0f04f7c3c12eccf295a18">isClientIDPresentAsBool</a> (std::size_t clientID) noexcept</td></tr>
 <tr class="memdesc:aec0abf8973d0f04f7c3c12eccf295a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a client with the given ID is present in the world.  <br /></td></tr>
 <tr class="separator:aec0abf8973d0f04f7c3c12eccf295a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,28 +197,71 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac561334bf47b82bad5430cbbcc6203ca" id="r_ac561334bf47b82bad5430cbbcc6203ca"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac561334bf47b82bad5430cbbcc6203ca">getSeedForLevel</a> (const std::size_t &amp;level)</td></tr>
 <tr class="memdesc:ac561334bf47b82bad5430cbbcc6203ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the seed for a specific level.  <br /></td></tr>
 <tr class="separator:ac561334bf47b82bad5430cbbcc6203ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a68f326ceec5aaec3a6b4ec6a62e61e" id="r_a6a68f326ceec5aaec3a6b4ec6a62e61e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a68f326ceec5aaec3a6b4ec6a62e61e">generateWorldWithID</a> (std::size_t level, std::pair&lt; float, float &gt; &amp;beginAndEndGenerationInX, std::pair&lt; float, float &gt; &amp;beginAndEndGenerationInY)</td></tr>
-<tr class="memdesc:a6a68f326ceec5aaec3a6b4ec6a62e61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the world for the next level with floating point ranges.  <br /></td></tr>
-<tr class="separator:a6a68f326ceec5aaec3a6b4ec6a62e61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d3d9553551f3dbf7a19f0a5e2a9262" id="r_a65d3d9553551f3dbf7a19f0a5e2a9262"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65d3d9553551f3dbf7a19f0a5e2a9262">generateWorldWithID</a> (std::size_t level, std::pair&lt; int, int &gt; &amp;beginAndEndGenerationInX, std::pair&lt; int, int &gt; &amp;beginAndEndGenerationInY)</td></tr>
-<tr class="memdesc:a65d3d9553551f3dbf7a19f0a5e2a9262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the world for the next level with integer ranges.  <br /></td></tr>
-<tr class="separator:a65d3d9553551f3dbf7a19f0a5e2a9262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b9c97dadf51c8bf7c5a0c2fa70bfe2a" id="r_a8b9c97dadf51c8bf7c5a0c2fa70bfe2a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classSpawnRuleGenerator.html#ad8315336f4a58ac14746141657c8a2a4">SpawnRuleGenerator::ENTITIES</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b9c97dadf51c8bf7c5a0c2fa70bfe2a">generateWorldWithEnum</a> (std::size_t level, std::pair&lt; int, int &gt; &amp;beginAndEndGenerationInX, std::pair&lt; int, int &gt; &amp;beginAndEndGenerationInY)</td></tr>
-<tr class="memdesc:a8b9c97dadf51c8bf7c5a0c2fa70bfe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the world for the next level with integer ranges.  <br /></td></tr>
-<tr class="separator:a8b9c97dadf51c8bf7c5a0c2fa70bfe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedf9044caf224e78a1f26da468ba811a" id="r_aedf9044caf224e78a1f26da468ba811a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="classSpawnRuleGenerator.html#ad8315336f4a58ac14746141657c8a2a4">SpawnRuleGenerator::ENTITIES</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedf9044caf224e78a1f26da468ba811a">generateWorldWithEnum</a> (std::size_t level, std::pair&lt; float, float &gt; &amp;beginAndEndGenerationInX, std::pair&lt; float, float &gt; &amp;beginAndEndGenerationInY)</td></tr>
-<tr class="memdesc:aedf9044caf224e78a1f26da468ba811a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the world for the next level with floating point ranges.  <br /></td></tr>
-<tr class="separator:aedf9044caf224e78a1f26da468ba811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15aa67c6383710c5ff40439a21253e0" id="r_af15aa67c6383710c5ff40439a21253e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15aa67c6383710c5ff40439a21253e0">spawnEntitiesInWorld</a> (std::size_t level, std::size_t spawnAfterWindow, int sizeWorld)</td></tr>
+<tr class="memdesc:af15aa67c6383710c5ff40439a21253e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn entities in world after generated world.  <br /></td></tr>
+<tr class="separator:af15aa67c6383710c5ff40439a21253e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cabb49a605210f62fa7a059931f941" id="r_af8cabb49a605210f62fa7a059931f941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8cabb49a605210f62fa7a059931f941">resetFinishedLevel</a> ()</td></tr>
+<tr class="memdesc:af8cabb49a605210f62fa7a059931f941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the boolean to indicates if the world if finished or not.  <br /></td></tr>
+<tr class="separator:af8cabb49a605210f62fa7a059931f941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32ac616256090c756acd32770cdac215" id="r_a32ac616256090c756acd32770cdac215"><td class="memItemLeft" align="right" valign="top">std::list&lt; std::tuple&lt; std::string, float, float, float, float, float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32ac616256090c756acd32770cdac215">getInformationOfEachEntity</a> ()</td></tr>
 <tr class="memdesc:a32ac616256090c756acd32770cdac215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get All <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a>, Type, Rotation and Rect for send to client.  <br /></td></tr>
 <tr class="separator:a32ac616256090c756acd32770cdac215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad285af93f6dccf8d392f259da7cc80d9" id="r_ad285af93f6dccf8d392f259da7cc80d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCreateEntity.html">CreateEntity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad285af93f6dccf8d392f259da7cc80d9">getClassCreateEntity</a> () noexcept</td></tr>
+<tr class="memdesc:ad285af93f6dccf8d392f259da7cc80d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Class to create entity.  <br /></td></tr>
+<tr class="separator:ad285af93f6dccf8d392f259da7cc80d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade1c78fa2777558080b12c0200eabd46" id="r_ade1c78fa2777558080b12c0200eabd46"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade1c78fa2777558080b12c0200eabd46">getWidthWindow</a> () const noexcept</td></tr>
+<tr class="separator:ade1c78fa2777558080b12c0200eabd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09855d85d6afae3af3a8e9c9a697b00e" id="r_a09855d85d6afae3af3a8e9c9a697b00e"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09855d85d6afae3af3a8e9c9a697b00e">getHeightWindow</a> () const noexcept</td></tr>
+<tr class="separator:a09855d85d6afae3af3a8e9c9a697b00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabec2b8f296f40aa91b99eae028e2288" id="r_aabec2b8f296f40aa91b99eae028e2288"><td class="memItemLeft" align="right" valign="top">const std::pair&lt; std::size_t, std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabec2b8f296f40aa91b99eae028e2288">getSizeWindow</a> () const noexcept</td></tr>
+<tr class="separator:aabec2b8f296f40aa91b99eae028e2288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f4214e2c37f7ced5560dcb63c9242e" id="r_a17f4214e2c37f7ced5560dcb63c9242e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17f4214e2c37f7ced5560dcb63c9242e">setWidthWindow</a> (const std::size_t &amp;newWidthWindow) noexcept</td></tr>
+<tr class="separator:a17f4214e2c37f7ced5560dcb63c9242e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93545cfcb7c2317caf1caea3ff060e3" id="r_ab93545cfcb7c2317caf1caea3ff060e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab93545cfcb7c2317caf1caea3ff060e3">setHeightWindow</a> (const std::size_t &amp;newHeightWindow) noexcept</td></tr>
+<tr class="separator:ab93545cfcb7c2317caf1caea3ff060e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ed6f7781d5b95d866a7319b4c4a685" id="r_a38ed6f7781d5b95d866a7319b4c4a685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38ed6f7781d5b95d866a7319b4c4a685">setSizeWindow</a> (const std::pair&lt; std::size_t, std::size_t &gt; &amp;newSizeWindow) noexcept</td></tr>
+<tr class="separator:a38ed6f7781d5b95d866a7319b4c4a685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1392405d95427aeef10cc63998024b" id="r_a2f1392405d95427aeef10cc63998024b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1392405d95427aeef10cc63998024b">applyFonctionInWorld</a> ()</td></tr>
+<tr class="separator:a2f1392405d95427aeef10cc63998024b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc6d1055894203b91b6441eee28e9ca" id="r_aafc6d1055894203b91b6441eee28e9ca"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc6d1055894203b91b6441eee28e9ca">getCurrentLevel</a> () const noexcept</td></tr>
+<tr class="separator:aafc6d1055894203b91b6441eee28e9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756e8869003194b9abbc264f77be5260" id="r_a756e8869003194b9abbc264f77be5260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a756e8869003194b9abbc264f77be5260">setCurrentLevel</a> (const std::size_t &amp;newLevel) noexcept</td></tr>
+<tr class="separator:a756e8869003194b9abbc264f77be5260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7ee64b9d8109ded4a8507c0f249e70" id="r_a3d7ee64b9d8109ded4a8507c0f249e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d7ee64b9d8109ded4a8507c0f249e70">setStateOfTheWorld</a> (const <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1">STATE</a> &amp;newState) noexcept</td></tr>
+<tr class="separator:a3d7ee64b9d8109ded4a8507c0f249e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9527f167bb20046427c7f4dc9a2bbe" id="r_a9a9527f167bb20046427c7f4dc9a2bbe"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1">STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9527f167bb20046427c7f4dc9a2bbe">getStateOfTheWorld</a> () const noexcept</td></tr>
+<tr class="separator:a9a9527f167bb20046427c7f4dc9a2bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86cd7092266709e4203c2416857b6e7" id="r_ac86cd7092266709e4203c2416857b6e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpawnRule_1_1Generator.html">SpawnRule::Generator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac86cd7092266709e4203c2416857b6e7">getClassSpawnRuleGenerator</a> () noexcept</td></tr>
+<tr class="separator:ac86cd7092266709e4203c2416857b6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a game world that manages clients, levels, and world state. </p>
 <p>The <code><a class="el" href="classWorld.html" title="Represents a game world that manages clients, levels, and world state.">World</a></code> class handles the state of the game world, including client management, world generation, and interaction with various game components like players, bots, and levels. </p>
 
-<p class="definition">Definition at line <a class="el" href="World_8hpp_source.html#l00045">45</a> of file <a class="el" href="World_8hpp_source.html">World.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="World_8hpp_source.html#l00048">48</a> of file <a class="el" href="World_8hpp_source.html">World.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa8fbd772bdb7d74f051762fc724085d1" name="aa8fbd772bdb7d74f051762fc724085d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8fbd772bdb7d74f051762fc724085d1">&#9670;&#160;</a></span>STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1">World::STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa8fbd772bdb7d74f051762fc724085d1a5753f0b8959142a9042bc8fe8b0525d5" name="aa8fbd772bdb7d74f051762fc724085d1a5753f0b8959142a9042bc8fe8b0525d5"></a>NOTHING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8fbd772bdb7d74f051762fc724085d1ad42a51e87b32f6cd0ff662e8c9d8d887" name="aa8fbd772bdb7d74f051762fc724085d1ad42a51e87b32f6cd0ff662e8c9d8d887"></a>HOLD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8fbd772bdb7d74f051762fc724085d1aa28ba56904acee529fee98d753c488ee" name="aa8fbd772bdb7d74f051762fc724085d1aa28ba56904acee529fee98d753c488ee"></a>PLAY&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="World_8hpp_source.html#l00051">51</a> of file <a class="el" href="World_8hpp_source.html">World.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab74e693f047056ccffdee70a85936418" name="ab74e693f047056ccffdee70a85936418"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab74e693f047056ccffdee70a85936418">&#9670;&#160;</a></span>World() <span class="overload">[1/2]</span></h2>
 
@@ -268,15 +320,17 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_ab74e693f047056ccffdee70a85936418_cgraph.png" border="0" usemap="#aclassWorld_ab74e693f047056ccffdee70a85936418_cgraph" alt=""/></div>
 <map name="aclassWorld_ab74e693f047056ccffdee70a85936418_cgraph" id="aclassWorld_ab74e693f047056ccffdee70a85936418_cgraph">
-<area shape="rect" title="Constructs a new World with specific parameters." alt="" coords="5,31,99,56"/>
-<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="147,23,264,64"/>
-<area shape="poly" title=" " alt="" coords="99,41,131,41,131,46,99,46"/>
-<area shape="rect" href="classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="320,5,475,31"/>
-<area shape="poly" title=" " alt="" coords="264,33,303,28,304,33,265,38"/>
-<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="312,55,482,80"/>
-<area shape="poly" title=" " alt="" coords="265,48,297,52,296,58,264,53"/>
-<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="530,5,677,31"/>
-<area shape="poly" title=" " alt="" coords="475,16,515,16,515,21,475,21"/>
+<area shape="rect" title="Constructs a new World with specific parameters." alt="" coords="5,46,99,72"/>
+<area shape="rect" href="classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="147,5,333,46"/>
+<area shape="poly" title=" " alt="" coords="99,48,131,42,132,48,100,53"/>
+<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="181,71,298,111"/>
+<area shape="poly" title=" " alt="" coords="100,64,167,76,166,81,99,70"/>
+<area shape="rect" href="classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="388,53,544,78"/>
+<area shape="poly" title=" " alt="" coords="298,82,373,73,373,79,299,87"/>
+<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="381,102,551,128"/>
+<area shape="poly" title=" " alt="" coords="299,95,366,102,365,107,298,100"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="599,53,746,78"/>
+<area shape="poly" title=" " alt="" coords="544,63,584,63,584,68,544,68"/>
 </map>
 </div>
 
@@ -299,21 +353,23 @@ Here is the call graph for this function:</div>
 
 <p>Default constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00037">37</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00046">46</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_afa39d4e6f714a7a3691ac0c656f5e8a8_cgraph.png" border="0" usemap="#aclassWorld_afa39d4e6f714a7a3691ac0c656f5e8a8_cgraph" alt=""/></div>
 <map name="aclassWorld_afa39d4e6f714a7a3691ac0c656f5e8a8_cgraph" id="aclassWorld_afa39d4e6f714a7a3691ac0c656f5e8a8_cgraph">
-<area shape="rect" title="Default constructor." alt="" coords="5,31,99,56"/>
-<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="147,23,264,64"/>
-<area shape="poly" title=" " alt="" coords="99,41,131,41,131,46,99,46"/>
-<area shape="rect" href="classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="320,5,475,31"/>
-<area shape="poly" title=" " alt="" coords="264,33,303,28,304,33,265,38"/>
-<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="312,55,482,80"/>
-<area shape="poly" title=" " alt="" coords="265,48,297,52,296,58,264,53"/>
-<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="530,5,677,31"/>
-<area shape="poly" title=" " alt="" coords="475,16,515,16,515,21,475,21"/>
+<area shape="rect" title="Default constructor." alt="" coords="5,46,99,72"/>
+<area shape="rect" href="classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="147,5,333,46"/>
+<area shape="poly" title=" " alt="" coords="99,48,131,42,132,48,100,53"/>
+<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="181,71,298,111"/>
+<area shape="poly" title=" " alt="" coords="100,64,167,76,166,81,99,70"/>
+<area shape="rect" href="classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erases the element at the specified position." alt="" coords="388,53,544,78"/>
+<area shape="poly" title=" " alt="" coords="298,82,373,73,373,79,299,87"/>
+<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="381,102,551,128"/>
+<area shape="poly" title=" " alt="" coords="299,95,366,102,365,107,298,100"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="599,53,746,78"/>
+<area shape="poly" title=" " alt="" coords="544,63,584,63,584,68,544,68"/>
 </map>
 </div>
 
@@ -376,17 +432,31 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The client ID added to the world. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00108">108</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00126">126</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_ab614b1aab9b306cfc6f238b2b4dd596c_cgraph.png" border="0" usemap="#aclassWorld_ab614b1aab9b306cfc6f238b2b4dd596c_cgraph" alt=""/></div>
 <map name="aclassWorld_ab614b1aab9b306cfc6f238b2b4dd596c_cgraph" id="aclassWorld_ab614b1aab9b306cfc6f238b2b4dd596c_cgraph">
-<area shape="rect" title="Adds a client to the world." alt="" coords="5,42,164,68"/>
-<area shape="rect" href="classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="212,5,373,46"/>
-<area shape="poly" title=" " alt="" coords="164,41,196,37,196,42,164,46"/>
-<area shape="rect" href="classWorld.html#aff3988b4920975c42b2b518dc96a5dba" title="Checks if the world is full (has reached the maximum number of players)." alt="" coords="230,70,354,96"/>
-<area shape="poly" title=" " alt="" coords="164,63,215,70,214,75,164,68"/>
+<area shape="rect" title="Adds a client to the world." alt="" coords="5,115,164,140"/>
+<area shape="rect" href="classCreateEntity.html#aeb1da25c99068d51fe44b3a751fdc0c6" title=" " alt="" coords="212,57,381,83"/>
+<area shape="poly" title=" " alt="" coords="134,111,231,85,232,90,136,117"/>
+<area shape="rect" href="classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="216,107,377,148"/>
+<area shape="poly" title=" " alt="" coords="164,125,200,125,200,130,164,130"/>
+<area shape="rect" href="classWorld.html#aff3988b4920975c42b2b518dc96a5dba" title="Checks if the world is full (has reached the maximum number of players)." alt="" coords="234,172,358,198"/>
+<area shape="poly" title=" " alt="" coords="136,138,232,165,231,170,134,144"/>
+<area shape="rect" href="classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="429,24,595,50"/>
+<area shape="poly" title=" " alt="" coords="381,54,413,49,414,55,382,60"/>
+<area shape="rect" href="classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="437,92,587,118"/>
+<area shape="poly" title=" " alt="" coords="381,81,422,88,421,93,380,86"/>
+<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="645,5,815,31"/>
+<area shape="poly" title=" " alt="" coords="595,27,629,24,629,29,596,32"/>
+<area shape="rect" href="classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="661,55,799,96"/>
+<area shape="poly" title=" " alt="" coords="587,92,645,84,646,90,588,97"/>
+<area shape="rect" href="classComponentArray.html#a48ad724f8d6a9ea7f15ef19dfe28c12b" title="Inserts a value at the specified position." alt="" coords="643,120,817,146"/>
+<area shape="poly" title=" " alt="" coords="588,112,628,117,627,122,587,117"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="657,169,803,195"/>
+<area shape="poly" title=" " alt="" coords="544,116,644,156,664,162,662,167,642,161,542,121"/>
 </map>
 </div>
 <div class="dynheader">
@@ -397,6 +467,61 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Adds a client to the world." alt="" coords="103,5,261,31"/>
 <area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
 <area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2f1392405d95427aeef10cc63998024b" name="a2f1392405d95427aeef10cc63998024b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f1392405d95427aeef10cc63998024b">&#9670;&#160;</a></span>applyFonctionInWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::applyFonctionInWorld </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00463">463</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWorld_a2f1392405d95427aeef10cc63998024b_cgraph.png" border="0" usemap="#aclassWorld_a2f1392405d95427aeef10cc63998024b_cgraph" alt=""/></div>
+<map name="aclassWorld_a2f1392405d95427aeef10cc63998024b_cgraph" id="aclassWorld_a2f1392405d95427aeef10cc63998024b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,183,190,208"/>
+<area shape="rect" href="classRegistry.html#abd98861de8af147af3522e84f8be589c" title="Retrieves the list of system functions registered in the registry." alt="" coords="256,5,404,31"/>
+<area shape="poly" title=" " alt="" coords="106,181,157,118,194,81,236,48,262,35,264,39,239,52,198,85,161,121,110,184"/>
+<area shape="rect" href="classMyClock.html#a3fef18ee0e8fca49bfa18fb7e1edafe5" title=" " alt="" coords="705,239,876,264"/>
+<area shape="poly" title=" " alt="" coords="108,207,126,241,155,286,193,333,239,375,298,411,348,431,402,442,471,453,568,473,609,471,631,465,656,453,680,437,702,417,737,369,762,320,778,278,783,280,767,322,742,372,706,420,684,441,659,458,633,470,609,477,567,478,471,458,401,447,346,436,295,416,236,379,190,337,151,289,122,244,103,210"/>
+<area shape="rect" href="classMyClock.html#a1c5df76e56c7ca9796b49eb6f1fef5e9" title=" " alt="" coords="508,124,620,150"/>
+<area shape="poly" title=" " alt="" coords="190,181,492,143,493,148,190,187"/>
+<area shape="rect" href="classWorld.html#af8cabb49a605210f62fa7a059931f941" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="245,208,416,234"/>
+<area shape="poly" title=" " alt="" coords="190,203,230,207,230,213,190,208"/>
+<area shape="rect" href="classMyClock.html#a5dfb974c7c0a8a4cd547239e1973fa91" title=" " alt="" coords="507,75,621,100"/>
+<area shape="poly" title=" " alt="" coords="110,180,161,134,197,110,237,92,303,76,371,70,435,70,492,74,491,80,435,75,371,75,304,81,239,97,200,115,165,138,113,184"/>
+<area shape="rect" href="classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6" title=" " alt="" coords="243,107,418,132"/>
+<area shape="poly" title=" " alt="" coords="139,180,273,135,275,140,140,185"/>
+<area shape="rect" href="classWorld.html#af15aa67c6383710c5ff40439a21253e0" title="Spawn entities in world after generated world." alt="" coords="238,339,423,364"/>
+<area shape="poly" title=" " alt="" coords="118,207,239,293,295,328,292,333,236,298,115,211"/>
+<area shape="rect" href="classMyClock.html#a2b57d08c560cf7820c1817d0d7f03d90" title=" " alt="" coords="279,257,382,283"/>
+<area shape="poly" title=" " alt="" coords="134,206,238,244,264,251,263,256,237,249,132,211"/>
+<area shape="rect" href="classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="471,174,657,214"/>
+<area shape="poly" title=" " alt="" coords="415,208,455,204,456,209,416,214"/>
+<area shape="poly" title=" " alt="" coords="623,94,659,109,695,135,727,166,774,224,770,228,723,170,691,139,656,114,621,99"/>
+<area shape="poly" title=" " alt="" coords="418,123,493,129,492,134,418,129"/>
+<area shape="poly" title=" " alt="" coords="417,105,491,95,492,100,418,110"/>
+<area shape="rect" href="classSpawnRule_1_1Generator.html#aae8a8c9cfcfa58d744aa0f75a93fe309" title="Get Entity where the id which match whit entity ID." alt="" coords="489,403,639,444"/>
+<area shape="poly" title=" " alt="" coords="375,362,482,395,480,401,374,367"/>
+<area shape="rect" href="classSpawnRule_1_1Generator.html#a1552e1efa10cd6d303b878fea72a1c0b" title="Check if have enought place to spawn an entity depend on its size." alt="" coords="471,288,657,329"/>
+<area shape="poly" title=" " alt="" coords="404,335,455,326,456,331,405,341"/>
+<area shape="rect" href="classAError.html#ab59278ee4a9a03ce50648d1c66473abb" title="Returns the error message." alt="" coords="518,353,610,379"/>
+<area shape="poly" title=" " alt="" coords="423,355,504,360,503,365,423,360"/>
+<area shape="poly" title=" " alt="" coords="382,265,690,253,690,258,382,271"/>
 </map>
 </div>
 
@@ -456,7 +581,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00087">87</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00105">105</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -494,7 +619,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00173">173</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00199">199</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -531,7 +656,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00181">181</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00207">207</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -545,14 +670,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a3c24fc079abb5b0e9d6c5121a56c6c65" name="a3c24fc079abb5b0e9d6c5121a56c6c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c24fc079abb5b0e9d6c5121a56c6c65">&#9670;&#160;</a></span>deleteClientInWorld()</h2>
+<a id="a5d13ac992f4b223d6aa26c20ad78dd06" name="a5d13ac992f4b223d6aa26c20ad78dd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d13ac992f4b223d6aa26c20ad78dd06">&#9670;&#160;</a></span>deleteClientInWorld()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t World::deleteClientInWorld </td>
+          <td class="memname"><a class="el" href="classClientInWorld.html">ClientInWorld</a> World::deleteClientInWorld </td>
           <td>(</td>
           <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>clientID</em></span></td><td>)</td>
           <td></td>
@@ -567,17 +692,23 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The client ID removed from the world. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The class <a class="el" href="classClientInWorld.html">ClientInWorld</a> removed from the world. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00129">129</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00149">149</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classWorld_a3c24fc079abb5b0e9d6c5121a56c6c65_cgraph.png" border="0" usemap="#aclassWorld_a3c24fc079abb5b0e9d6c5121a56c6c65_cgraph" alt=""/></div>
-<map name="aclassWorld_a3c24fc079abb5b0e9d6c5121a56c6c65_cgraph" id="aclassWorld_a3c24fc079abb5b0e9d6c5121a56c6c65_cgraph">
-<area shape="rect" title="Removes a client from the world." alt="" coords="5,13,178,38"/>
-<area shape="rect" href="classWorld.html#acb6f683454d39689e509cda33c2a884a" title="Gets the presence status of a client by their ID as an integer." alt="" coords="226,5,405,46"/>
-<area shape="poly" title=" " alt="" coords="178,23,210,23,210,28,178,28"/>
+<div class="center"><img src="classWorld_a5d13ac992f4b223d6aa26c20ad78dd06_cgraph.png" border="0" usemap="#aclassWorld_a5d13ac992f4b223d6aa26c20ad78dd06_cgraph" alt=""/></div>
+<map name="aclassWorld_a5d13ac992f4b223d6aa26c20ad78dd06_cgraph" id="aclassWorld_a5d13ac992f4b223d6aa26c20ad78dd06_cgraph">
+<area shape="rect" title="Removes a client from the world." alt="" coords="5,100,178,125"/>
+<area shape="rect" href="classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="242,5,380,46"/>
+<area shape="poly" title=" " alt="" coords="124,96,225,55,239,50,241,55,227,60,126,101"/>
+<area shape="rect" href="classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="226,70,396,96"/>
+<area shape="poly" title=" " alt="" coords="177,98,210,94,210,99,178,103"/>
+<area shape="rect" href="classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="230,120,392,161"/>
+<area shape="poly" title=" " alt="" coords="178,121,215,125,214,131,178,126"/>
+<area shape="rect" href="classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="247,185,375,210"/>
+<area shape="poly" title=" " alt="" coords="121,123,227,170,248,177,246,182,225,175,119,128"/>
 </map>
 </div>
 
@@ -600,219 +731,96 @@ Here is the call graph for this function:</div>
 
 <p>Generates the next seed for the next level. </p>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00203">203</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
-
-</div>
-</div>
-<a id="aedf9044caf224e78a1f26da468ba811a" name="aedf9044caf224e78a1f26da468ba811a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedf9044caf224e78a1f26da468ba811a">&#9670;&#160;</a></span>generateWorldWithEnum() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="classSpawnRuleGenerator.html#ad8315336f4a58ac14746141657c8a2a4">SpawnRuleGenerator::ENTITIES</a> &gt; &gt; World::generateWorldWithEnum </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::pair&lt; float, float &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::pair&lt; float, float &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInY</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generates the world for the next level with floating point ranges. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>The level number. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInX</td><td>The range for world generation along the X-axis. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInY</td><td>The range for world generation along the Y-axis.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A 2D vector representing the world with ENUM of entities. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00265">265</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00229">229</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classWorld_aedf9044caf224e78a1f26da468ba811a_cgraph.png" border="0" usemap="#aclassWorld_aedf9044caf224e78a1f26da468ba811a_cgraph" alt=""/></div>
-<map name="aclassWorld_aedf9044caf224e78a1f26da468ba811a_cgraph" id="aclassWorld_aedf9044caf224e78a1f26da468ba811a_cgraph">
-<area shape="rect" title="Generates the world for the next level with floating point ranges." alt="" coords="5,70,208,96"/>
-<area shape="rect" href="classSpawnRuleGenerator.html#ae0b68cd88f75304818bb53c5f2987b42" title="Creates a spawn rule function based on the ENTITIES enumeration." alt="" coords="256,5,473,46"/>
-<area shape="poly" title=" " alt="" coords="167,67,254,47,255,53,168,72"/>
-<area shape="rect" href="classGenerateWorld.html#a356f4fe562ea57c25e57e3a4e937d7b9" title="Generates a 2D world using Perlin noise and a user&#45;defined function." alt="" coords="266,70,462,96"/>
-<area shape="poly" title=" " alt="" coords="208,80,250,80,250,86,208,86"/>
-<area shape="rect" href="classWorld.html#ac561334bf47b82bad5430cbbcc6203ca" title="Gets the seed for a specific level." alt="" coords="285,120,444,145"/>
-<area shape="poly" title=" " alt="" coords="178,94,279,113,278,119,177,99"/>
+<div class="center"><img src="classWorld_af0e0b79b93c01844040f61ae8c837b2f_icgraph.png" border="0" usemap="#aclassWorld_af0e0b79b93c01844040f61ae8c837b2f_icgraph" alt=""/></div>
+<map name="aclassWorld_af0e0b79b93c01844040f61ae8c837b2f_icgraph" id="aclassWorld_af0e0b79b93c01844040f61ae8c837b2f_icgraph">
+<area shape="rect" title="Generates the next seed for the next level." alt="" coords="456,47,642,88"/>
+<area shape="rect" href="classWorld.html#af8cabb49a605210f62fa7a059931f941" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="238,5,408,31"/>
+<area shape="poly" title=" " alt="" coords="440,47,384,34,386,29,442,41"/>
+<area shape="rect" href="classWorld.html#afa39d4e6f714a7a3691ac0c656f5e8a8" title="Default constructor." alt="" coords="276,55,370,80"/>
+<area shape="poly" title=" " alt="" coords="441,70,370,70,370,65,441,65"/>
+<area shape="rect" href="classWorld.html#ab74e693f047056ccffdee70a85936418" title="Constructs a new World with specific parameters." alt="" coords="276,104,370,130"/>
+<area shape="poly" title=" " alt="" coords="441,94,370,109,369,104,440,88"/>
+<area shape="rect" href="classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
+<area shape="poly" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8b9c97dadf51c8bf7c5a0c2fa70bfe2a" name="a8b9c97dadf51c8bf7c5a0c2fa70bfe2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b9c97dadf51c8bf7c5a0c2fa70bfe2a">&#9670;&#160;</a></span>generateWorldWithEnum() <span class="overload">[2/2]</span></h2>
+<a id="ad285af93f6dccf8d392f259da7cc80d9" name="ad285af93f6dccf8d392f259da7cc80d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad285af93f6dccf8d392f259da7cc80d9">&#9670;&#160;</a></span>getClassCreateEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="classSpawnRuleGenerator.html#ad8315336f4a58ac14746141657c8a2a4">SpawnRuleGenerator::ENTITIES</a> &gt; &gt; World::generateWorldWithEnum </td>
+          <td class="memname"><a class="el" href="classCreateEntity.html">CreateEntity</a> &amp; World::getClassCreateEntity </td>
           <td>(</td>
-          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::pair&lt; int, int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::pair&lt; int, int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInY</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Generates the world for the next level with integer ranges. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>The level number. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInX</td><td>The range for world generation along the X-axis. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInY</td><td>The range for world generation along the Y-axis.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A 2D vector representing the world with ENUM of entities. </dd></dl>
+<p>Get Class to create entity. </p>
+<dl class="section return"><dt>Returns</dt><dd>The class <a class="el" href="classCreateEntity.html">CreateEntity</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00254">254</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00399">399</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classWorld_a8b9c97dadf51c8bf7c5a0c2fa70bfe2a_cgraph.png" border="0" usemap="#aclassWorld_a8b9c97dadf51c8bf7c5a0c2fa70bfe2a_cgraph" alt=""/></div>
-<map name="aclassWorld_a8b9c97dadf51c8bf7c5a0c2fa70bfe2a_cgraph" id="aclassWorld_a8b9c97dadf51c8bf7c5a0c2fa70bfe2a_cgraph">
-<area shape="rect" title="Generates the world for the next level with integer ranges." alt="" coords="5,70,208,96"/>
-<area shape="rect" href="classSpawnRuleGenerator.html#ae0b68cd88f75304818bb53c5f2987b42" title="Creates a spawn rule function based on the ENTITIES enumeration." alt="" coords="256,5,473,46"/>
-<area shape="poly" title=" " alt="" coords="167,67,254,47,255,53,168,72"/>
-<area shape="rect" href="classGenerateWorld.html#a356f4fe562ea57c25e57e3a4e937d7b9" title="Generates a 2D world using Perlin noise and a user&#45;defined function." alt="" coords="266,70,462,96"/>
-<area shape="poly" title=" " alt="" coords="208,80,250,80,250,86,208,86"/>
-<area shape="rect" href="classWorld.html#ac561334bf47b82bad5430cbbcc6203ca" title="Gets the seed for a specific level." alt="" coords="285,120,444,145"/>
-<area shape="poly" title=" " alt="" coords="178,94,279,113,278,119,177,99"/>
+<div class="center"><img src="classWorld_ad285af93f6dccf8d392f259da7cc80d9_icgraph.png" border="0" usemap="#aclassWorld_ad285af93f6dccf8d392f259da7cc80d9_icgraph" alt=""/></div>
+<map name="aclassWorld_ad285af93f6dccf8d392f259da7cc80d9_icgraph" id="aclassWorld_ad285af93f6dccf8d392f259da7cc80d9_icgraph">
+<area shape="rect" title="Get Class to create entity." alt="" coords="687,31,869,56"/>
+<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,31,639,56"/>
+<area shape="poly" title=" " alt="" coords="672,46,640,46,640,41,672,41"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
+<area shape="poly" title=" " alt="" coords="435,46,404,46,404,41,435,41"/>
+<area shape="rect" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
+<area shape="poly" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
+<area shape="poly" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6a68f326ceec5aaec3a6b4ec6a62e61e" name="a6a68f326ceec5aaec3a6b4ec6a62e61e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a68f326ceec5aaec3a6b4ec6a62e61e">&#9670;&#160;</a></span>generateWorldWithID() <span class="overload">[1/2]</span></h2>
+<a id="ac86cd7092266709e4203c2416857b6e7" name="ac86cd7092266709e4203c2416857b6e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86cd7092266709e4203c2416857b6e7">&#9670;&#160;</a></span>getClassSpawnRuleGenerator()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt; int &gt; &gt; World::generateWorldWithID </td>
+          <td class="memname"><a class="el" href="classSpawnRule_1_1Generator.html">SpawnRule::Generator</a> &amp; World::getClassSpawnRuleGenerator </td>
           <td>(</td>
-          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::pair&lt; float, float &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::pair&lt; float, float &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInY</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Generates the world for the next level with floating point ranges. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>The level number. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInX</td><td>The range for world generation along the X-axis. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInY</td><td>The range for world generation along the Y-axis.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A 2D vector representing the world with ID of entities. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00232">232</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classWorld_a6a68f326ceec5aaec3a6b4ec6a62e61e_cgraph.png" border="0" usemap="#aclassWorld_a6a68f326ceec5aaec3a6b4ec6a62e61e_cgraph" alt=""/></div>
-<map name="aclassWorld_a6a68f326ceec5aaec3a6b4ec6a62e61e_cgraph" id="aclassWorld_a6a68f326ceec5aaec3a6b4ec6a62e61e_cgraph">
-<area shape="rect" title="Generates the world for the next level with floating point ranges." alt="" coords="5,70,188,96"/>
-<area shape="rect" href="classSpawnRuleGenerator.html#a97e1d5b6a44ca88f01319f1979048545" title="Creates a spawn rule function based on entity IDs." alt="" coords="236,5,433,46"/>
-<area shape="poly" title=" " alt="" coords="152,67,231,48,233,53,154,72"/>
-<area shape="rect" href="classGenerateWorld.html#a356f4fe562ea57c25e57e3a4e937d7b9" title="Generates a 2D world using Perlin noise and a user&#45;defined function." alt="" coords="236,70,432,96"/>
-<area shape="poly" title=" " alt="" coords="188,80,220,80,220,86,188,86"/>
-<area shape="rect" href="classWorld.html#ac561334bf47b82bad5430cbbcc6203ca" title="Gets the seed for a specific level." alt="" coords="255,120,414,145"/>
-<area shape="poly" title=" " alt="" coords="163,94,255,113,253,118,162,99"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a65d3d9553551f3dbf7a19f0a5e2a9262" name="a65d3d9553551f3dbf7a19f0a5e2a9262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65d3d9553551f3dbf7a19f0a5e2a9262">&#9670;&#160;</a></span>generateWorldWithID() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt; std::vector&lt; int &gt; &gt; World::generateWorldWithID </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::pair&lt; int, int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::pair&lt; int, int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>beginAndEndGenerationInY</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generates the world for the next level with integer ranges. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>The level number. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInX</td><td>The range for world generation along the X-axis. </td></tr>
-    <tr><td class="paramname">beginAndEndGenerationInY</td><td>The range for world generation along the Y-axis.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A 2D vector representing the world with ID of entities. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00243">243</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classWorld_a65d3d9553551f3dbf7a19f0a5e2a9262_cgraph.png" border="0" usemap="#aclassWorld_a65d3d9553551f3dbf7a19f0a5e2a9262_cgraph" alt=""/></div>
-<map name="aclassWorld_a65d3d9553551f3dbf7a19f0a5e2a9262_cgraph" id="aclassWorld_a65d3d9553551f3dbf7a19f0a5e2a9262_cgraph">
-<area shape="rect" title="Generates the world for the next level with integer ranges." alt="" coords="5,70,188,96"/>
-<area shape="rect" href="classSpawnRuleGenerator.html#a97e1d5b6a44ca88f01319f1979048545" title="Creates a spawn rule function based on entity IDs." alt="" coords="236,5,433,46"/>
-<area shape="poly" title=" " alt="" coords="152,67,231,48,233,53,154,72"/>
-<area shape="rect" href="classGenerateWorld.html#a356f4fe562ea57c25e57e3a4e937d7b9" title="Generates a 2D world using Perlin noise and a user&#45;defined function." alt="" coords="236,70,432,96"/>
-<area shape="poly" title=" " alt="" coords="188,80,220,80,220,86,188,86"/>
-<area shape="rect" href="classWorld.html#ac561334bf47b82bad5430cbbcc6203ca" title="Gets the seed for a specific level." alt="" coords="255,120,414,145"/>
-<area shape="poly" title=" " alt="" coords="163,94,255,113,253,118,162,99"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00458">458</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -848,22 +856,12 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>clientID if the client is present, -1 otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00151">151</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classWorld_acb6f683454d39689e509cda33c2a884a_icgraph.png" border="0" usemap="#aclassWorld_acb6f683454d39689e509cda33c2a884a_icgraph" alt=""/></div>
-<map name="aclassWorld_acb6f683454d39689e509cda33c2a884a_icgraph" id="aclassWorld_acb6f683454d39689e509cda33c2a884a_icgraph">
-<area shape="rect" title="Gets the presence status of a client by their ID as an integer." alt="" coords="226,5,405,46"/>
-<area shape="rect" href="classWorld.html#a3c24fc079abb5b0e9d6c5121a56c6c65" title="Removes a client from the world." alt="" coords="5,13,178,38"/>
-<area shape="poly" title=" " alt="" coords="210,28,178,28,178,23,210,23"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00177">177</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
-<a id="addb520f55f7b63e762801db277862461" name="addb520f55f7b63e762801db277862461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addb520f55f7b63e762801db277862461">&#9670;&#160;</a></span>getClientsID()</h2>
+<a id="a956ffe1e83921305880998fc7114d07c" name="a956ffe1e83921305880998fc7114d07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956ffe1e83921305880998fc7114d07c">&#9670;&#160;</a></span>getClientsID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -872,10 +870,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::size_t &gt; World::getClientsID </td>
+          <td class="memname">std::unordered_map&lt; std::size_t, <a class="el" href="classClientInWorld.html">ClientInWorld</a> &gt; &amp; World::getClientsID </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -886,9 +884,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Gets the list of client IDs in the world. </p>
-<dl class="section return"><dt>Returns</dt><dd>A vector containing the client IDs. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A unordered_map containing clientID and class <a class="el" href="classClientInWorld.html">ClientInWorld</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00098">98</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00116">116</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -910,24 +908,80 @@ Here is the caller graph for this function:</div>
 <p>Gets the clock used to track the world's time. </p>
 <dl class="section return"><dt>Returns</dt><dd>The world's clock. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00168">168</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00194">194</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_a26b4683ede7d756b2f783561d13b00bc_icgraph.png" border="0" usemap="#aclassWorld_a26b4683ede7d756b2f783561d13b00bc_icgraph" alt=""/></div>
 <map name="aclassWorld_a26b4683ede7d756b2f783561d13b00bc_icgraph" id="aclassWorld_a26b4683ede7d756b2f783561d13b00bc_icgraph">
-<area shape="rect" title="Gets the clock used to track the world&#39;s time." alt="" coords="570,31,682,56"/>
-<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="348,5,522,31"/>
-<area shape="poly" title=" " alt="" coords="554,37,522,32,523,27,555,31"/>
-<area shape="rect" href="classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="352,55,518,80"/>
-<area shape="poly" title=" " alt="" coords="555,55,519,60,518,54,554,50"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,31,300,56"/>
-<area shape="poly" title=" " alt="" coords="333,32,301,35,300,30,332,27"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,55,56"/>
-<area shape="poly" title=" " alt="" coords="87,46,55,46,55,41,87,41"/>
-<area shape="poly" title=" " alt="" coords="336,60,300,56,301,51,337,55"/>
+<area shape="rect" title="Gets the clock used to track the world&#39;s time." alt="" coords="673,31,785,56"/>
+<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="451,5,625,31"/>
+<area shape="poly" title=" " alt="" coords="657,37,625,32,626,27,658,31"/>
+<area shape="rect" href="classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="455,55,621,80"/>
+<area shape="poly" title=" " alt="" coords="658,55,622,60,621,54,657,50"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
+<area shape="poly" title=" " alt="" coords="436,32,404,35,403,30,435,27"/>
+<area shape="rect" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
+<area shape="poly" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
+<area shape="poly" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
+<area shape="poly" title=" " alt="" coords="439,60,403,56,404,51,440,55"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aafc6d1055894203b91b6441eee28e9ca" name="aafc6d1055894203b91b6441eee28e9ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc6d1055894203b91b6441eee28e9ca">&#9670;&#160;</a></span>getCurrentLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t World::getCurrentLevel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00435">435</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a09855d85d6afae3af3a8e9c9a697b00e" name="a09855d85d6afae3af3a8e9c9a697b00e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09855d85d6afae3af3a8e9c9a697b00e">&#9670;&#160;</a></span>getHeightWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::size_t World::getHeightWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00409">409</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -949,7 +1003,7 @@ Here is the caller graph for this function:</div>
 <p>Get All <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a>, Type, Rotation and Rect for send to client. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of Tuple containing the type(std::string), the postion in X-axis(float), the position in Y-axis(float), the rectwidth for animation on the spritesheet (float), the rectheight for animation on the spritesheet (float) and rotation of the sprite (float) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00284">284</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00310">310</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -989,7 +1043,7 @@ Here is the call graph for this function:</div>
 <p>Gets the maximum level available in the world. </p>
 <dl class="section return"><dt>Returns</dt><dd>The maximum level number. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00219">219</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00245">245</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1073,7 @@ Here is the call graph for this function:</div>
 <p>Gets the name of the world. </p>
 <dl class="section return"><dt>Returns</dt><dd>The name of the world. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00082">82</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00100">100</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -1041,45 +1095,50 @@ Here is the call graph for this function:</div>
 <p>Gets the world registry containing all game entities. </p>
 <dl class="section return"><dt>Returns</dt><dd>The registry of the world. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00163">163</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00189">189</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_ac30a80a7ae2e882de4b42e1308b01af9_icgraph.png" border="0" usemap="#aclassWorld_ac30a80a7ae2e882de4b42e1308b01af9_icgraph" alt=""/></div>
 <map name="aclassWorld_ac30a80a7ae2e882de4b42e1308b01af9_icgraph" id="aclassWorld_ac30a80a7ae2e882de4b42e1308b01af9_icgraph">
-<area shape="rect" title="Gets the world registry containing all game entities." alt="" coords="590,255,716,281"/>
-<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="351,55,539,81"/>
-<area shape="poly" title=" " alt="" coords="639,242,602,172,574,134,541,102,506,84,509,79,544,98,578,131,606,169,643,240"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,255,300,281"/>
-<area shape="poly" title=" " alt="" coords="635,243,598,190,572,165,541,146,490,127,446,122,402,129,349,146,305,169,267,200,236,231,215,256,210,253,232,227,263,196,302,165,347,141,401,124,446,117,491,122,544,141,575,161,602,187,640,240"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,130,55,155"/>
-<area shape="poly" title=" " alt="" coords="645,240,635,195,616,140,585,86,565,63,541,45,509,28,476,17,441,10,405,8,333,15,262,32,195,57,136,84,53,132,50,127,134,79,193,52,261,27,332,9,405,3,442,5,477,12,511,23,544,40,568,60,589,83,620,138,640,193,650,239"/>
-<area shape="rect" href="classSystems.html#a45d56c8c881d53766e35443cebd0086a" title="A system that handles damage calculations and application to entities." alt="" coords="361,156,529,182"/>
-<area shape="poly" title=" " alt="" coords="623,247,585,220,541,196,512,185,514,180,543,191,588,216,626,243"/>
-<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="358,206,532,231"/>
-<area shape="poly" title=" " alt="" coords="580,253,502,234,503,229,582,248"/>
-<area shape="rect" href="classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82" title="A system that processes the hitbox components for entities." alt="" coords="367,255,523,281"/>
-<area shape="poly" title=" " alt="" coords="575,270,524,270,524,265,575,265"/>
-<area shape="rect" href="classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="368,304,522,330"/>
-<area shape="poly" title=" " alt="" coords="582,287,503,306,502,301,580,282"/>
-<area shape="rect" href="classSystems.html#af70598a4167338db56cbfdacf6d1827d" title="A system that processes a new shooter for tutorial purposes." alt="" coords="348,354,542,379"/>
-<area shape="poly" title=" " alt="" coords="626,293,588,320,543,345,514,356,512,351,541,340,585,315,623,288"/>
-<area shape="rect" href="classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="357,403,533,429"/>
-<area shape="poly" title=" " alt="" coords="638,295,599,346,573,372,544,394,521,405,519,400,541,389,570,368,595,342,634,292"/>
-<area shape="rect" href="classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="362,452,528,478"/>
-<area shape="poly" title=" " alt="" coords="644,296,630,330,608,370,580,410,544,443,525,454,522,449,541,439,576,406,604,367,625,328,640,294"/>
-<area shape="rect" href="classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="366,502,525,527"/>
-<area shape="poly" title=" " alt="" coords="648,297,636,340,616,393,586,447,566,471,544,493,527,503,524,499,541,488,562,468,581,444,611,391,631,338,643,295"/>
-<area shape="poly" title=" " alt="" coords="375,89,349,102,304,140,264,183,213,256,209,253,260,180,300,136,347,98,372,84"/>
-<area shape="poly" title=" " alt="" coords="168,247,48,158,51,154,171,243"/>
-<area shape="poly" title=" " alt="" coords="368,189,349,196,281,226,226,257,223,252,278,222,347,191,366,184"/>
-<area shape="poly" title=" " alt="" coords="364,238,269,257,268,252,363,232"/>
-<area shape="poly" title=" " alt="" coords="352,270,301,270,301,265,352,265"/>
-<area shape="poly" title=" " alt="" coords="363,303,268,284,269,279,364,298"/>
-<area shape="poly" title=" " alt="" coords="366,351,347,345,278,314,223,283,226,279,281,309,349,340,368,346"/>
-<area shape="poly" title=" " alt="" coords="359,400,347,394,305,368,266,337,212,283,216,279,270,333,308,363,349,389,361,395"/>
-<area shape="poly" title=" " alt="" coords="355,448,347,443,298,405,258,359,227,315,208,282,212,280,232,312,262,356,302,401,349,439,358,443"/>
-<area shape="poly" title=" " alt="" coords="353,497,346,493,318,469,292,441,251,380,222,323,205,282,210,280,226,321,255,378,297,438,322,465,350,488,356,492"/>
+<area shape="rect" title="Gets the world registry containing all game entities." alt="" coords="687,287,813,312"/>
+<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,61,639,87"/>
+<area shape="poly" title=" " alt="" coords="738,272,723,235,702,191,674,147,638,108,605,90,608,85,641,104,678,143,707,189,728,233,743,270"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,285,403,311"/>
+<area shape="poly" title=" " alt="" coords="736,273,721,243,700,209,672,177,638,152,589,132,546,126,503,134,452,152,428,165,406,181,366,218,336,256,316,286,311,283,331,253,362,215,402,177,425,160,450,148,502,128,546,121,590,127,641,148,676,173,704,206,726,240,740,271"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,136,106,162"/>
+<area shape="poly" title=" " alt="" coords="743,272,735,221,717,160,703,128,685,99,664,72,638,51,604,32,567,19,530,12,491,9,412,14,334,32,261,58,196,87,105,138,102,133,194,83,259,53,333,27,411,9,491,3,530,6,569,14,606,27,641,47,668,69,690,96,708,126,722,158,740,220,749,271"/>
+<area shape="rect" href="classSystems.html#a45d56c8c881d53766e35443cebd0086a" title="A system that handles damage calculations and application to entities." alt="" coords="461,163,629,188"/>
+<area shape="poly" title=" " alt="" coords="726,277,688,238,638,202,613,191,615,186,641,197,691,234,730,273"/>
+<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="458,212,632,238"/>
+<area shape="poly" title=" " alt="" coords="709,282,638,251,604,241,606,236,640,246,711,277"/>
+<area shape="rect" href="classSystems.html#a0d7e39d7f99c8ffce33a5910807b1c82" title="A system that processes the hitbox components for entities." alt="" coords="467,261,623,287"/>
+<area shape="poly" title=" " alt="" coords="672,292,624,286,624,281,672,287"/>
+<area shape="rect" href="classSystems.html#a98634685da4c37056578788b9741462b" title="A system that processes the linear motion of entities, like movement or shooting." alt="" coords="468,311,622,336"/>
+<area shape="poly" title=" " alt="" coords="672,311,622,317,622,312,671,306"/>
+<area shape="rect" href="classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="462,360,629,386"/>
+<area shape="poly" title=" " alt="" coords="710,322,640,351,606,362,604,357,638,346,708,317"/>
+<area shape="rect" href="classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectile and its collisions." alt="" coords="457,409,633,435"/>
+<area shape="poly" title=" " alt="" coords="730,326,691,364,641,400,615,411,613,406,638,396,687,360,726,322"/>
+<area shape="rect" href="classSystems.html#a95207dde702b5d4fcc790ad8185b7609" title="A system that processes a teleporting shooter." alt="" coords="454,459,636,484"/>
+<area shape="poly" title=" " alt="" coords="738,328,701,390,673,422,641,450,620,460,618,456,638,445,669,418,696,386,734,325"/>
+<area shape="rect" href="classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="462,508,628,534"/>
+<area shape="poly" title=" " alt="" coords="744,328,730,367,709,413,679,459,641,499,622,510,620,505,638,495,675,456,704,410,725,365,738,326"/>
+<area shape="rect" href="classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="466,557,625,583"/>
+<area shape="poly" title=" " alt="" coords="747,328,736,376,716,435,686,496,665,524,641,548,624,559,621,554,638,544,661,520,681,493,711,433,731,374,742,327"/>
+<area shape="poly" title=" " alt="" coords="475,95,453,108,404,152,364,203,334,251,314,286,310,283,329,248,360,200,400,149,449,104,473,91"/>
+<area shape="rect" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,285,158,311"/>
+<area shape="poly" title=" " alt="" coords="190,301,158,301,158,295,190,295"/>
+<area shape="poly" title=" " alt="" coords="269,279,101,164,104,160,272,274"/>
+<area shape="poly" title=" " alt="" coords="467,196,452,202,414,222,378,245,323,287,320,283,375,241,411,217,450,197,465,191"/>
+<area shape="poly" title=" " alt="" coords="476,245,452,251,343,287,342,282,450,246,474,239"/>
+<area shape="poly" title=" " alt="" coords="452,286,404,291,403,286,451,281"/>
+<area shape="poly" title=" " alt="" coords="453,316,403,311,404,306,453,311"/>
+<area shape="poly" title=" " alt="" coords="473,358,450,351,340,314,342,309,452,346,475,353"/>
+<area shape="poly" title=" " alt="" coords="465,406,450,400,411,380,375,356,319,314,323,309,378,352,414,375,452,396,467,402"/>
+<area shape="poly" title=" " alt="" coords="459,454,450,450,404,417,365,378,312,313,317,309,369,375,408,413,452,445,461,450"/>
+<area shape="poly" title=" " alt="" coords="456,503,449,499,423,478,398,453,357,400,327,349,309,312,314,310,332,347,362,397,402,450,426,474,453,495,459,499"/>
+<area shape="poly" title=" " alt="" coords="454,552,449,548,419,521,393,490,351,421,322,357,307,312,312,310,327,356,355,419,397,487,423,517,453,544,457,547"/>
 </map>
 </div>
 
@@ -1109,23 +1168,80 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The seed for the specified level. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00224">224</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00250">250</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aabec2b8f296f40aa91b99eae028e2288" name="aabec2b8f296f40aa91b99eae028e2288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabec2b8f296f40aa91b99eae028e2288">&#9670;&#160;</a></span>getSizeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::pair&lt; std::size_t, std::size_t &gt; World::getSizeWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00414">414</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classWorld_ac561334bf47b82bad5430cbbcc6203ca_icgraph.png" border="0" usemap="#aclassWorld_ac561334bf47b82bad5430cbbcc6203ca_icgraph" alt=""/></div>
-<map name="aclassWorld_ac561334bf47b82bad5430cbbcc6203ca_icgraph" id="aclassWorld_ac561334bf47b82bad5430cbbcc6203ca_icgraph">
-<area shape="rect" title="Gets the seed for a specific level." alt="" coords="256,80,415,106"/>
-<area shape="rect" href="classWorld.html#aedf9044caf224e78a1f26da468ba811a" title="Generates the world for the next level with floating point ranges." alt="" coords="5,5,208,31"/>
-<area shape="poly" title=" " alt="" coords="289,76,207,45,169,34,171,29,208,40,291,71"/>
-<area shape="rect" href="classWorld.html#a8b9c97dadf51c8bf7c5a0c2fa70bfe2a" title="Generates the world for the next level with integer ranges." alt="" coords="5,55,208,80"/>
-<area shape="poly" title=" " alt="" coords="240,85,208,81,208,76,241,80"/>
-<area shape="rect" href="classWorld.html#a6a68f326ceec5aaec3a6b4ec6a62e61e" title="Generates the world for the next level with floating point ranges." alt="" coords="15,104,198,130"/>
-<area shape="poly" title=" " alt="" coords="241,105,198,110,198,105,240,100"/>
-<area shape="rect" href="classWorld.html#a65d3d9553551f3dbf7a19f0a5e2a9262" title="Generates the world for the next level with integer ranges." alt="" coords="15,153,198,179"/>
-<area shape="poly" title=" " alt="" coords="290,115,208,145,170,155,169,150,207,140,288,110"/>
+<div class="center"><img src="classWorld_aabec2b8f296f40aa91b99eae028e2288_icgraph.png" border="0" usemap="#aclassWorld_aabec2b8f296f40aa91b99eae028e2288_icgraph" alt=""/></div>
+<map name="aclassWorld_aabec2b8f296f40aa91b99eae028e2288_icgraph" id="aclassWorld_aabec2b8f296f40aa91b99eae028e2288_icgraph">
+<area shape="rect" title=" " alt="" coords="687,31,837,56"/>
+<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,5,639,31"/>
+<area shape="poly" title=" " alt="" coords="672,36,639,32,640,27,672,30"/>
+<area shape="rect" href="classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="462,55,629,80"/>
+<area shape="poly" title=" " alt="" coords="672,56,629,61,629,56,672,51"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
+<area shape="poly" title=" " alt="" coords="436,32,404,36,403,30,435,27"/>
+<area shape="rect" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
+<area shape="poly" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
+<area shape="poly" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
+<area shape="poly" title=" " alt="" coords="446,60,403,56,404,51,446,55"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9a9527f167bb20046427c7f4dc9a2bbe" name="a9a9527f167bb20046427c7f4dc9a2bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9527f167bb20046427c7f4dc9a2bbe">&#9670;&#160;</a></span>getStateOfTheWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1">World::STATE</a> World::getStateOfTheWorld </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00453">453</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1271,7 @@ Here is the caller graph for this function:</div>
 <p>Gets the map of virtual keyboards for all clients in the world. </p>
 <dl class="section return"><dt>Returns</dt><dd>The map of virtual keyboards keyed by client IDs. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00198">198</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00224">224</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1299,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The virtual keyboard for the client. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00190">190</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00216">216</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1199,18 +1315,47 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_ad3ffb26494ec30127f8278b2c8eca420_icgraph.png" border="0" usemap="#aclassWorld_ad3ffb26494ec30127f8278b2c8eca420_icgraph" alt=""/></div>
 <map name="aclassWorld_ad3ffb26494ec30127f8278b2c8eca420_icgraph" id="aclassWorld_ad3ffb26494ec30127f8278b2c8eca420_icgraph">
-<area shape="rect" title="Gets the virtual keyboard associated with a client ID." alt="" coords="584,23,756,64"/>
-<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,5,536,31"/>
-<area shape="poly" title=" " alt="" coords="569,35,536,31,537,26,569,30"/>
-<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="355,55,529,80"/>
-<area shape="poly" title=" " alt="" coords="569,57,530,61,530,56,569,51"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,31,300,56"/>
-<area shape="poly" title=" " alt="" coords="333,32,301,36,300,30,332,27"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,31,55,56"/>
-<area shape="poly" title=" " alt="" coords="87,46,55,46,55,41,87,41"/>
-<area shape="poly" title=" " alt="" coords="339,60,300,56,301,51,340,55"/>
+<area shape="rect" title="Gets the virtual keyboard associated with a client ID." alt="" coords="687,23,859,64"/>
+<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,5,639,31"/>
+<area shape="poly" title=" " alt="" coords="672,35,639,31,640,26,672,30"/>
+<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="458,55,632,80"/>
+<area shape="poly" title=" " alt="" coords="672,57,633,61,633,56,672,51"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
+<area shape="poly" title=" " alt="" coords="436,32,404,36,403,30,435,27"/>
+<area shape="rect" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
+<area shape="poly" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
+<area shape="poly" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
+<area shape="poly" title=" " alt="" coords="442,60,403,56,404,51,443,55"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ade1c78fa2777558080b12c0200eabd46" name="ade1c78fa2777558080b12c0200eabd46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade1c78fa2777558080b12c0200eabd46">&#9670;&#160;</a></span>getWidthWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::size_t World::getWidthWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00404">404</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -1246,31 +1391,35 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the client is present, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00141">141</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00172">172</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classWorld_aec0abf8973d0f04f7c3c12eccf295a18_icgraph.png" border="0" usemap="#aclassWorld_aec0abf8973d0f04f7c3c12eccf295a18_icgraph" alt=""/></div>
 <map name="aclassWorld_aec0abf8973d0f04f7c3c12eccf295a18_icgraph" id="aclassWorld_aec0abf8973d0f04f7c3c12eccf295a18_icgraph">
-<area shape="rect" title="Checks if a client with the given ID is present in the world." alt="" coords="824,73,985,113"/>
-<area shape="rect" href="classWorld.html#ab614b1aab9b306cfc6f238b2b4dd596c" title="Adds a client to the world." alt="" coords="122,35,280,60"/>
-<area shape="poly" title=" " alt="" coords="859,67,819,46,775,30,706,17,635,10,564,8,495,10,368,21,268,37,267,31,367,16,495,4,564,3,636,5,707,12,776,25,821,41,861,62"/>
-<area shape="rect" href="classWorld.html#a2bd5c155f0b9df4bc03e61aca59d5cfd" title="Changes the value of a key for a specific client." alt="" coords="584,39,776,80"/>
-<area shape="poly" title=" " alt="" coords="808,81,776,76,776,71,809,76"/>
-<area shape="rect" href="classWorld.html#a55006a497af60c5625fcc1daee840232" title="Changes the value of a key for a specific client using a tuple of client ID, key, and key state." alt="" coords="584,105,776,145"/>
-<area shape="poly" title=" " alt="" coords="809,109,776,114,776,109,808,104"/>
-<area shape="rect" href="classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="594,170,766,211"/>
-<area shape="poly" title=" " alt="" coords="852,123,777,159,745,172,743,167,775,154,850,118"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,104,55,130"/>
-<area shape="poly" title=" " alt="" coords="155,69,56,110,54,105,153,64"/>
-<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,128,536,154"/>
-<area shape="poly" title=" " alt="" coords="578,172,507,157,508,152,579,167"/>
-<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="355,177,529,203"/>
-<area shape="poly" title=" " alt="" coords="578,193,530,193,530,188,578,188"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,128,300,154"/>
-<area shape="poly" title=" " alt="" coords="332,144,301,144,301,138,332,138"/>
-<area shape="poly" title=" " alt="" coords="90,128,55,123,56,118,91,123"/>
-<area shape="poly" title=" " alt="" coords="360,176,267,157,268,152,361,171"/>
+<area shape="rect" title="Checks if a client with the given ID is present in the world." alt="" coords="927,117,1088,157"/>
+<area shape="rect" href="classWorld.html#ab614b1aab9b306cfc6f238b2b4dd596c" title="Adds a client to the world." alt="" coords="225,36,384,62"/>
+<area shape="poly" title=" " alt="" coords="975,107,931,71,906,54,878,42,809,24,737,13,665,9,594,9,464,21,364,38,363,33,463,16,593,4,665,3,738,8,810,19,880,37,908,50,935,66,978,103"/>
+<area shape="rect" href="classWorld.html#a2bd5c155f0b9df4bc03e61aca59d5cfd" title="Changes the value of a key for a specific client." alt="" coords="687,51,879,92"/>
+<area shape="poly" title=" " alt="" coords="920,114,855,95,856,90,921,109"/>
+<area shape="rect" href="classWorld.html#a55006a497af60c5625fcc1daee840232" title="Changes the value of a key for a specific client using a tuple of client ID, key, and key state." alt="" coords="687,117,879,157"/>
+<area shape="poly" title=" " alt="" coords="912,140,879,140,879,134,912,134"/>
+<area shape="rect" href="classWorld.html#a5d13ac992f4b223d6aa26c20ad78dd06" title="Removes a client from the world." alt="" coords="697,181,869,207"/>
+<area shape="poly" title=" " alt="" coords="913,164,837,183,836,178,911,159"/>
+<area shape="rect" href="classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="697,231,869,272"/>
+<area shape="poly" title=" " alt="" coords="968,169,926,196,880,222,854,233,852,228,877,217,923,192,965,164"/>
+<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,71,106,96"/>
+<area shape="poly" title=" " alt="" coords="210,66,107,83,106,77,209,61"/>
+<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,189,639,215"/>
+<area shape="poly" title=" " alt="" coords="681,233,610,218,611,213,682,228"/>
+<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="458,239,632,264"/>
+<area shape="poly" title=" " alt="" coords="681,254,633,254,633,249,681,249"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,189,403,215"/>
+<area shape="poly" title=" " alt="" coords="435,205,404,205,404,200,435,200"/>
+<area shape="poly" title=" " alt="" coords="264,184,105,99,108,94,266,179"/>
+<area shape="rect" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,189,158,215"/>
+<area shape="poly" title=" " alt="" coords="190,205,158,205,158,200,190,200"/>
+<area shape="poly" title=" " alt="" coords="463,238,370,218,371,213,464,232"/>
 </map>
 </div>
 
@@ -1302,7 +1451,7 @@ Here is the caller graph for this function:</div>
 <p>Checks if the world is full (has reached the maximum number of players). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the world is full, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00077">77</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00095">95</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1344,7 +1493,7 @@ Here is the caller graph for this function:</div>
 <p>Checks if the world is a client-based world. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the world is client-based, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00062">62</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00080">80</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
 
 </div>
 </div>
@@ -1374,7 +1523,246 @@ Here is the caller graph for this function:</div>
 <p>Checks if the world is public. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the world is public, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00067">67</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00085">85</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af8cabb49a605210f62fa7a059931f941" name="af8cabb49a605210f62fa7a059931f941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8cabb49a605210f62fa7a059931f941">&#9670;&#160;</a></span>resetFinishedLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::resetFinishedLevel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the boolean to indicates if the world if finished or not. </p>
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00369">369</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWorld_af8cabb49a605210f62fa7a059931f941_cgraph.png" border="0" usemap="#aclassWorld_af8cabb49a605210f62fa7a059931f941_cgraph" alt=""/></div>
+<map name="aclassWorld_af8cabb49a605210f62fa7a059931f941_cgraph" id="aclassWorld_af8cabb49a605210f62fa7a059931f941_cgraph">
+<area shape="rect" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="5,13,176,38"/>
+<area shape="rect" href="classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="224,5,410,46"/>
+<area shape="poly" title=" " alt="" coords="176,23,208,23,208,28,176,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWorld_af8cabb49a605210f62fa7a059931f941_icgraph.png" border="0" usemap="#aclassWorld_af8cabb49a605210f62fa7a059931f941_icgraph" alt=""/></div>
+<map name="aclassWorld_af8cabb49a605210f62fa7a059931f941_icgraph" id="aclassWorld_af8cabb49a605210f62fa7a059931f941_icgraph">
+<area shape="rect" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="238,5,408,31"/>
+<area shape="rect" href="classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
+<area shape="poly" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a756e8869003194b9abbc264f77be5260" name="a756e8869003194b9abbc264f77be5260"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756e8869003194b9abbc264f77be5260">&#9670;&#160;</a></span>setCurrentLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::setCurrentLevel </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>newLevel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00440">440</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab93545cfcb7c2317caf1caea3ff060e3" name="ab93545cfcb7c2317caf1caea3ff060e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93545cfcb7c2317caf1caea3ff060e3">&#9670;&#160;</a></span>setHeightWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::setHeightWindow </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>newHeightWindow</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00424">424</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a38ed6f7781d5b95d866a7319b4c4a685" name="a38ed6f7781d5b95d866a7319b4c4a685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ed6f7781d5b95d866a7319b4c4a685">&#9670;&#160;</a></span>setSizeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::setSizeWindow </td>
+          <td>(</td>
+          <td class="paramtype">const std::pair&lt; std::size_t, std::size_t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>newSizeWindow</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00429">429</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d7ee64b9d8109ded4a8507c0f249e70" name="a3d7ee64b9d8109ded4a8507c0f249e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7ee64b9d8109ded4a8507c0f249e70">&#9670;&#160;</a></span>setStateOfTheWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::setStateOfTheWorld </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aa8fbd772bdb7d74f051762fc724085d1">STATE</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newState</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00448">448</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a17f4214e2c37f7ced5560dcb63c9242e" name="a17f4214e2c37f7ced5560dcb63c9242e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f4214e2c37f7ced5560dcb63c9242e">&#9670;&#160;</a></span>setWidthWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void World::setWidthWindow </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>newWidthWindow</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00419">419</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af15aa67c6383710c5ff40439a21253e0" name="af15aa67c6383710c5ff40439a21253e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15aa67c6383710c5ff40439a21253e0">&#9670;&#160;</a></span>spawnEntitiesInWorld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::spawnEntitiesInWorld </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>spawnAfterWindow</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sizeWorld</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spawn entities in world after generated world. </p>
+<p>After each call of the function, the generation is done farther </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The level to generate </td></tr>
+    <tr><td class="paramname">spawnAfterWindow</td><td>The beginning on the left side of the window to spawn entities </td></tr>
+    <tr><td class="paramname">sizeWorld</td><td>The size of the world to spawn entity</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A bool to indicate if the world is finished or not </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="World_8cpp_source.html#l00337">337</a> of file <a class="el" href="World_8cpp_source.html">World.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWorld_af15aa67c6383710c5ff40439a21253e0_cgraph.png" border="0" usemap="#aclassWorld_af15aa67c6383710c5ff40439a21253e0_cgraph" alt=""/></div>
+<map name="aclassWorld_af15aa67c6383710c5ff40439a21253e0_cgraph" id="aclassWorld_af15aa67c6383710c5ff40439a21253e0_cgraph">
+<area shape="rect" title="Spawn entities in world after generated world." alt="" coords="5,78,191,104"/>
+<area shape="rect" href="classSpawnRule_1_1Generator.html#aae8a8c9cfcfa58d744aa0f75a93fe309" title="Get Entity where the id which match whit entity ID." alt="" coords="257,5,407,46"/>
+<area shape="poly" title=" " alt="" coords="146,75,241,48,242,53,147,80"/>
+<area shape="rect" href="classSpawnRule_1_1Generator.html#a1552e1efa10cd6d303b878fea72a1c0b" title="Check if have enought place to spawn an entity depend on its size." alt="" coords="239,71,425,111"/>
+<area shape="poly" title=" " alt="" coords="191,88,223,88,223,94,191,94"/>
+<area shape="rect" href="classAError.html#ab59278ee4a9a03ce50648d1c66473abb" title="Returns the error message." alt="" coords="286,136,378,161"/>
+<area shape="poly" title=" " alt="" coords="154,102,271,131,270,136,153,107"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classWorld_af15aa67c6383710c5ff40439a21253e0_icgraph.png" border="0" usemap="#aclassWorld_af15aa67c6383710c5ff40439a21253e0_icgraph" alt=""/></div>
+<map name="aclassWorld_af15aa67c6383710c5ff40439a21253e0_icgraph" id="aclassWorld_af15aa67c6383710c5ff40439a21253e0_icgraph">
+<area shape="rect" title="Spawn entities in world after generated world." alt="" coords="238,5,423,31"/>
+<area shape="rect" href="classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
+<area shape="poly" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+</map>
+</div>
 
 </div>
 </div>

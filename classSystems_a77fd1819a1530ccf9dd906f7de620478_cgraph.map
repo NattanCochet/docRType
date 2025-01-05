@@ -1,9 +1,13 @@
 <map id="Systems::ProjectileSystem" name="Systems::ProjectileSystem">
-<area shape="rect" id="Node000001" title="A system that processes projectile and its collisions." alt="" coords="5,55,182,80"/>
-<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="230,5,400,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,51,238,32,240,38,155,57"/>
-<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="252,55,378,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,65,237,65,237,70,182,70"/>
-<area shape="rect" id="Node000004" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="242,104,388,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,78,240,97,238,103,154,84"/>
+<area shape="rect" id="Node000001" title="A system that processes projectile and its collisions." alt="" coords="5,120,182,145"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="246,5,384,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,117,166,87,229,55,240,50,243,55,231,60,169,92,118,121"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="230,70,400,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,116,238,97,240,102,155,121"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="252,120,378,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,130,237,130,237,135,182,135"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="251,169,379,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="155,143,240,162,238,167,154,148"/>
+<area shape="rect" id="Node000006" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="242,218,388,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="117,143,168,174,231,205,246,210,244,215,229,209,165,178,114,148"/>
 </map>

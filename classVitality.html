@@ -116,7 +116,7 @@ Collaboration diagram for Vitality:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVitality__coll__graph.png" border="0" usemap="#aVitality_coll__map" alt="Collaboration graph"/></div>
 <map name="aVitality_coll__map" id="aVitality_coll__map">
-<area shape="rect" title="Represents the vitality (health) of an entity in the game." alt="" coords="5,5,118,234"/>
+<area shape="rect" title="Represents the vitality (health) of an entity in the game." alt="" coords="5,5,118,275"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52acdea3630657230a0411dd36e66d25" id="r_a52acdea3630657230a0411dd36e66d25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52acdea3630657230a0411dd36e66d25">Vitality</a> ()</td></tr>
 <tr class="memdesc:a52acdea3630657230a0411dd36e66d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor that initializes the vitality with default values.  <br /></td></tr>
 <tr class="separator:a52acdea3630657230a0411dd36e66d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538f300da064a549de96609c397c184f" id="r_a538f300da064a549de96609c397c184f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a538f300da064a549de96609c397c184f">Vitality</a> (int nbrLife, int nbrLifeMax=-1)</td></tr>
-<tr class="memdesc:a538f300da064a549de96609c397c184f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes the vitality with specified values.  <br /></td></tr>
-<tr class="separator:a538f300da064a549de96609c397c184f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622443eea779e1faa497426815b581aa" id="r_a622443eea779e1faa497426815b581aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a622443eea779e1faa497426815b581aa">Vitality</a> (int nbrLife, std::size_t entityID, int nbrLifeMax=-1)</td></tr>
+<tr class="memdesc:a622443eea779e1faa497426815b581aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes the vitality with specified values.  <br /></td></tr>
+<tr class="separator:a622443eea779e1faa497426815b581aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afafb2f48a5a5e355241f5a94b7e72dfc" id="r_afafb2f48a5a5e355241f5a94b7e72dfc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afafb2f48a5a5e355241f5a94b7e72dfc">~Vitality</a> ()=default</td></tr>
 <tr class="memdesc:afafb2f48a5a5e355241f5a94b7e72dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:afafb2f48a5a5e355241f5a94b7e72dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,9 +137,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe99cf3791a00849938dc333021da0dc" id="r_abe99cf3791a00849938dc333021da0dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe99cf3791a00849938dc333021da0dc">getDefaultLife</a> () const</td></tr>
 <tr class="memdesc:abe99cf3791a00849938dc333021da0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default life of the entity.  <br /></td></tr>
 <tr class="separator:abe99cf3791a00849938dc333021da0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa20c237f0951fc3aa9712de5c59bbf4" id="r_afa20c237f0951fc3aa9712de5c59bbf4"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa20c237f0951fc3aa9712de5c59bbf4">getEntityID</a> ()</td></tr>
+<tr class="memdesc:afa20c237f0951fc3aa9712de5c59bbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ID of the entity.  <br /></td></tr>
+<tr class="separator:afa20c237f0951fc3aa9712de5c59bbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b673e4541beb72318c09f18f223da06" id="r_a4b673e4541beb72318c09f18f223da06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b673e4541beb72318c09f18f223da06">setNewLife</a> (int newLife, int nbrLifeMax=-1)</td></tr>
 <tr class="memdesc:a4b673e4541beb72318c09f18f223da06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entity's current life to a new value.  <br /></td></tr>
 <tr class="separator:a4b673e4541beb72318c09f18f223da06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbeb55afa8ca26d5f9ea110aa6201b0" id="r_a4bbeb55afa8ca26d5f9ea110aa6201b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bbeb55afa8ca26d5f9ea110aa6201b0">setEntityID</a> (std::size_t newEntityID)</td></tr>
+<tr class="memdesc:a4bbeb55afa8ca26d5f9ea110aa6201b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the new ID of the entity.  <br /></td></tr>
+<tr class="separator:a4bbeb55afa8ca26d5f9ea110aa6201b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845675dcec617cf6edc8dcc0e3a734ad" id="r_a845675dcec617cf6edc8dcc0e3a734ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a845675dcec617cf6edc8dcc0e3a734ad">healEntity</a> (int heal)</td></tr>
 <tr class="memdesc:a845675dcec617cf6edc8dcc0e3a734ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heals the entity by a specified amount.  <br /></td></tr>
 <tr class="separator:a845675dcec617cf6edc8dcc0e3a734ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,8 +183,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a538f300da064a549de96609c397c184f" name="a538f300da064a549de96609c397c184f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a538f300da064a549de96609c397c184f">&#9670;&#160;</a></span>Vitality() <span class="overload">[2/2]</span></h2>
+<a id="a622443eea779e1faa497426815b581aa" name="a622443eea779e1faa497426815b581aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a622443eea779e1faa497426815b581aa">&#9670;&#160;</a></span>Vitality() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,6 +193,11 @@ Public Member Functions</h2></td></tr>
           <td class="memname">Vitality::Vitality </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbrLife</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>entityID</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -200,6 +211,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nbrLife</td><td>The current number of life points the entity has. </td></tr>
+    <tr><td class="paramname">entityID</td><td>The ID of the entity to know which one is it (for score) </td></tr>
     <tr><td class="paramname">nbrLifeMax</td><td>The maximum number of life points the entity can have (defaults to -1, meaning no maximum). </td></tr>
   </table>
   </dd>
@@ -261,7 +273,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00043">43</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00053">53</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
 
 </div>
 </div>
@@ -284,6 +296,28 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The default number of life points the entity had when created. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00023">23</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afa20c237f0951fc3aa9712de5c59bbf4" name="afa20c237f0951fc3aa9712de5c59bbf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa20c237f0951fc3aa9712de5c59bbf4">&#9670;&#160;</a></span>getEntityID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Vitality::getEntityID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the ID of the entity. </p>
+<dl class="section return"><dt>Returns</dt><dd>The ID of the entity </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00028">28</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
 
 </div>
 </div>
@@ -332,7 +366,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00035">35</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00045">45</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
 
 </div>
 </div>
@@ -354,7 +388,34 @@ Public Member Functions</h2></td></tr>
 <p>Checks if the entity is dead. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the entity's life is 0 or less, <code>false</code> otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00048">48</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00058">58</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4bbeb55afa8ca26d5f9ea110aa6201b0" name="a4bbeb55afa8ca26d5f9ea110aa6201b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbeb55afa8ca26d5f9ea110aa6201b0">&#9670;&#160;</a></span>setEntityID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Vitality::setEntityID </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>newEntityID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the new ID of the entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newEntityID</td><td>The new ID of the entity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00040">40</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
 
 </div>
 </div>
@@ -386,7 +447,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00028">28</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Vitality_8cpp_source.html#l00033">33</a> of file <a class="el" href="Vitality_8cpp_source.html">Vitality.cpp</a>.</p>
 
 </div>
 </div>

@@ -113,128 +113,125 @@ $(function(){initNavTree('Projectile_8cpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="Projectile_8hpp.html">../../include/Components/Projectile.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classProjectile.html#a6c98b35ce69943809c3c4b2507dda546">   10</a></span><a class="code hl_function" href="classProjectile.html#a6c98b35ce69943809c3c4b2507dda546">Projectile::Projectile</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classProjectile.html#a0668989b4af11105ea235699eff363eb">   10</a></span><a class="code hl_function" href="classProjectile.html#a0668989b4af11105ea235699eff363eb">Projectile::Projectile</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    (</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">float</span> _damage, <span class="keywordtype">float</span> _loadingTime, <span class="keywordtype">bool</span> _isRebound,</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">bool</span> _canHoldCharging, <span class="keywordtype">float</span> _reductionDamage, <span class="keywordtype">float</span> _damageFallOff</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">float</span> damage, <span class="keywordtype">bool</span> isRebound, <span class="keywordtype">bool</span> canHoldCharging, <span class="keywordtype">float</span> damageFallOff,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        std::size_t entityIDBelong</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    )</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    this-&gt;_damage = _damage;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    this-&gt;_loadingTime = _loadingTime;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    this-&gt;_isRebound = _isRebound;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    this-&gt;_canHoldCharging = _canHoldCharging;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;_reductionDamage = _reductionDamage;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    this-&gt;_damageFallOff = _damageFallOff;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    this-&gt;_stack = 1;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    this-&gt;_damage = damage;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    this-&gt;_isRebound = isRebound;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    this-&gt;_canHoldCharging = canHoldCharging;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    this-&gt;_damageFallOff = damageFallOff;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;_entityIDBelong = entityIDBelong;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    this-&gt;_stack = 1;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classProjectile.html#a94903e021fa2edab60ba3836ca0b937d">   25</a></span><a class="code hl_function" href="classProjectile.html#a94903e021fa2edab60ba3836ca0b937d">Projectile::~Projectile</a>()</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classProjectile.html#a94903e021fa2edab60ba3836ca0b937d">   24</a></span><a class="code hl_function" href="classProjectile.html#a94903e021fa2edab60ba3836ca0b937d">Projectile::~Projectile</a>()</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classProjectile.html#a6ecaf16a9dd46fc304b2898cde182004">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a6ecaf16a9dd46fc304b2898cde182004">Projectile::setDamage</a>(<span class="keywordtype">float</span> newDmg) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    _damage = newDmg;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classProjectile.html#a6ecaf16a9dd46fc304b2898cde182004">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a6ecaf16a9dd46fc304b2898cde182004">Projectile::setDamage</a>(<span class="keywordtype">float</span> newDmg)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    this-&gt;_damage = newDmg;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classProjectile.html#ace6f6e9b93c658d8f1c6cde112df1a30">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#ace6f6e9b93c658d8f1c6cde112df1a30">Projectile::setDamageFallOff</a>(<span class="keywordtype">float</span> newDmgFalloff) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    _damageFallOff = newDmgFalloff;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classProjectile.html#ace6f6e9b93c658d8f1c6cde112df1a30">   33</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#ace6f6e9b93c658d8f1c6cde112df1a30">Projectile::setDamageFallOff</a>(<span class="keywordtype">float</span> newDmgFalloff)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    this-&gt;_damageFallOff = newDmgFalloff;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classProjectile.html#a657dbb7ff378ee9f9b91d9934e5a3139">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a657dbb7ff378ee9f9b91d9934e5a3139">Projectile::setHoldCharging</a>(<span class="keywordtype">bool</span> newCharge) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    _canHoldCharging = newCharge;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classProjectile.html#a657dbb7ff378ee9f9b91d9934e5a3139">   38</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a657dbb7ff378ee9f9b91d9934e5a3139">Projectile::setHoldCharging</a>(<span class="keywordtype">bool</span> newCharge)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    this-&gt;_canHoldCharging = newCharge;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classProjectile.html#a5e91be76dcd55143890b3ccc0d0a71d5">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a5e91be76dcd55143890b3ccc0d0a71d5">Projectile::setIsRebound</a>(<span class="keywordtype">bool</span> newRebound) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    _isRebound = newRebound;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classProjectile.html#a5e91be76dcd55143890b3ccc0d0a71d5">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a5e91be76dcd55143890b3ccc0d0a71d5">Projectile::setIsRebound</a>(<span class="keywordtype">bool</span> newRebound)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    this-&gt;_isRebound = newRebound;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classProjectile.html#a83566fc7e250ec3b843b2877499679cc">   45</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a83566fc7e250ec3b843b2877499679cc">Projectile::setLoadingTime</a>(<span class="keywordtype">float</span> newLoadingTime) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    _loadingTime = newLoadingTime;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
-</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classProjectile.html#a8faa1c6c5d84bfab47fb2c6ed92064b5">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#a8faa1c6c5d84bfab47fb2c6ed92064b5">Projectile::setReductionDamage</a>(<span class="keywordtype">float</span> newDmgReduction) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    _reductionDamage = newDmgReduction;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classProjectile.html#af4fcce10bff999b4472d5627f23e53ee">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#af4fcce10bff999b4472d5627f23e53ee">Projectile::setEntityIDBelong</a>(std::size_t newID)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    this-&gt;_entityIDBelong = newID;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classProjectile.html#adbde566219a9233b33d39a59fe21a38c">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#adbde566219a9233b33d39a59fe21a38c">Projectile::setStack</a>(<span class="keywordtype">int</span> newStack) {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    _stack = newStack;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classProjectile.html#adbde566219a9233b33d39a59fe21a38c">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classProjectile.html#adbde566219a9233b33d39a59fe21a38c">Projectile::setStack</a>(<span class="keywordtype">int</span> newStack)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    this-&gt;_stack = newStack;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classProjectile.html#afcb012bf61be056dea63c7c12f4ceb2a">   57</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="classProjectile.html#afcb012bf61be056dea63c7c12f4ceb2a">Projectile::getDamage</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> _damage;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classProjectile.html#afcb012bf61be056dea63c7c12f4ceb2a">   58</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="classProjectile.html#afcb012bf61be056dea63c7c12f4ceb2a">Projectile::getDamage</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> this-&gt;_damage;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classProjectile.html#a532efe9793539babd168c6005d56917d">   61</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="classProjectile.html#a532efe9793539babd168c6005d56917d">Projectile::getLoadingTime</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> _loadingTime;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classProjectile.html#a490e70cdb041db8941ddd51fa42bb760">   63</a></span>std::size_t <a class="code hl_function" href="classProjectile.html#a490e70cdb041db8941ddd51fa42bb760">Projectile::getEntityIDBelong</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> this-&gt;_entityIDBelong;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classProjectile.html#abd6e6fe2e2ac94eeda822133a1bc2639">   65</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="classProjectile.html#abd6e6fe2e2ac94eeda822133a1bc2639">Projectile::getDmgFalloff</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> _damageFallOff;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
-</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classProjectile.html#a5c50b7b1596715a55010aa4a4520eee3">   69</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="classProjectile.html#a5c50b7b1596715a55010aa4a4520eee3">Projectile::getReductionDmg</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> _reductionDamage;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classProjectile.html#abd6e6fe2e2ac94eeda822133a1bc2639">   68</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="classProjectile.html#abd6e6fe2e2ac94eeda822133a1bc2639">Projectile::getDmgFalloff</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> this-&gt;_damageFallOff;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
 </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classProjectile.html#a674bae09f0b0111a7f487881c4882413">   73</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectile.html#a674bae09f0b0111a7f487881c4882413">Projectile::getCanHoldCharge</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> _canHoldCharging;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classProjectile.html#a674bae09f0b0111a7f487881c4882413">   73</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectile.html#a674bae09f0b0111a7f487881c4882413">Projectile::getCanHoldCharge</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> this-&gt;_canHoldCharging;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classProjectile.html#a394cb968d6d844568e5621ef61e52eba">   77</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectile.html#a394cb968d6d844568e5621ef61e52eba">Projectile::getRebound</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> _isRebound;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classProjectile.html#a394cb968d6d844568e5621ef61e52eba">   78</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classProjectile.html#a394cb968d6d844568e5621ef61e52eba">Projectile::getRebound</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">return</span> this-&gt;_isRebound;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classProjectile.html#a44b7355c8d389e5d56c6b158a38e19bf">   81</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classProjectile.html#a44b7355c8d389e5d56c6b158a38e19bf">Projectile::getStack</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> _stack;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classProjectile.html#a44b7355c8d389e5d56c6b158a38e19bf">   83</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classProjectile.html#a44b7355c8d389e5d56c6b158a38e19bf">Projectile::getStack</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> this-&gt;_stack;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
 </div>
 <div class="ttc" id="aProjectile_8hpp_html"><div class="ttname"><a href="Projectile_8hpp.html">Projectile.hpp</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a394cb968d6d844568e5621ef61e52eba"><div class="ttname"><a href="classProjectile.html#a394cb968d6d844568e5621ef61e52eba">Projectile::getRebound</a></div><div class="ttdeci">bool getRebound(void)</div><div class="ttdoc">Gets whether the projectile can rebound.</div><div class="ttdef"><b>Definition</b> <a href="#l00077">Projectile.cpp:77</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a44b7355c8d389e5d56c6b158a38e19bf"><div class="ttname"><a href="classProjectile.html#a44b7355c8d389e5d56c6b158a38e19bf">Projectile::getStack</a></div><div class="ttdeci">int getStack(void)</div><div class="ttdoc">Gets the stack count of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00081">Projectile.cpp:81</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a532efe9793539babd168c6005d56917d"><div class="ttname"><a href="classProjectile.html#a532efe9793539babd168c6005d56917d">Projectile::getLoadingTime</a></div><div class="ttdeci">float getLoadingTime(void)</div><div class="ttdoc">Gets the loading time of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00061">Projectile.cpp:61</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a5c50b7b1596715a55010aa4a4520eee3"><div class="ttname"><a href="classProjectile.html#a5c50b7b1596715a55010aa4a4520eee3">Projectile::getReductionDmg</a></div><div class="ttdeci">float getReductionDmg(void)</div><div class="ttdoc">Gets the damage reduction applied to the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00069">Projectile.cpp:69</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a5e91be76dcd55143890b3ccc0d0a71d5"><div class="ttname"><a href="classProjectile.html#a5e91be76dcd55143890b3ccc0d0a71d5">Projectile::setIsRebound</a></div><div class="ttdeci">void setIsRebound(bool newRebound)</div><div class="ttdoc">Sets whether the projectile can rebound.</div><div class="ttdef"><b>Definition</b> <a href="#l00041">Projectile.cpp:41</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a657dbb7ff378ee9f9b91d9934e5a3139"><div class="ttname"><a href="classProjectile.html#a657dbb7ff378ee9f9b91d9934e5a3139">Projectile::setHoldCharging</a></div><div class="ttdeci">void setHoldCharging(bool newCharge)</div><div class="ttdoc">Sets whether the projectile can hold charging.</div><div class="ttdef"><b>Definition</b> <a href="#l00037">Projectile.cpp:37</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a0668989b4af11105ea235699eff363eb"><div class="ttname"><a href="classProjectile.html#a0668989b4af11105ea235699eff363eb">Projectile::Projectile</a></div><div class="ttdeci">Projectile(float damage, bool isRebound, bool canHoldCharging, float damageFallOff, std::size_t entityIDBelong)</div><div class="ttdoc">Constructs a new Projectile object with specified properties.</div><div class="ttdef"><b>Definition</b> <a href="#l00010">Projectile.cpp:11</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a394cb968d6d844568e5621ef61e52eba"><div class="ttname"><a href="classProjectile.html#a394cb968d6d844568e5621ef61e52eba">Projectile::getRebound</a></div><div class="ttdeci">bool getRebound(void)</div><div class="ttdoc">Gets whether the projectile can rebound.</div><div class="ttdef"><b>Definition</b> <a href="#l00078">Projectile.cpp:78</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a44b7355c8d389e5d56c6b158a38e19bf"><div class="ttname"><a href="classProjectile.html#a44b7355c8d389e5d56c6b158a38e19bf">Projectile::getStack</a></div><div class="ttdeci">int getStack(void)</div><div class="ttdoc">Gets the stack count of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00083">Projectile.cpp:83</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a490e70cdb041db8941ddd51fa42bb760"><div class="ttname"><a href="classProjectile.html#a490e70cdb041db8941ddd51fa42bb760">Projectile::getEntityIDBelong</a></div><div class="ttdeci">std::size_t getEntityIDBelong(void)</div><div class="ttdoc">Gets the entity ID belong of this projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00063">Projectile.cpp:63</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a5e91be76dcd55143890b3ccc0d0a71d5"><div class="ttname"><a href="classProjectile.html#a5e91be76dcd55143890b3ccc0d0a71d5">Projectile::setIsRebound</a></div><div class="ttdeci">void setIsRebound(bool newRebound)</div><div class="ttdoc">Sets whether the projectile can rebound.</div><div class="ttdef"><b>Definition</b> <a href="#l00043">Projectile.cpp:43</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a657dbb7ff378ee9f9b91d9934e5a3139"><div class="ttname"><a href="classProjectile.html#a657dbb7ff378ee9f9b91d9934e5a3139">Projectile::setHoldCharging</a></div><div class="ttdeci">void setHoldCharging(bool newCharge)</div><div class="ttdoc">Sets whether the projectile can hold charging.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">Projectile.cpp:38</a></div></div>
 <div class="ttc" id="aclassProjectile_html_a674bae09f0b0111a7f487881c4882413"><div class="ttname"><a href="classProjectile.html#a674bae09f0b0111a7f487881c4882413">Projectile::getCanHoldCharge</a></div><div class="ttdeci">bool getCanHoldCharge(void)</div><div class="ttdoc">Gets whether the projectile can hold charging.</div><div class="ttdef"><b>Definition</b> <a href="#l00073">Projectile.cpp:73</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a6c98b35ce69943809c3c4b2507dda546"><div class="ttname"><a href="classProjectile.html#a6c98b35ce69943809c3c4b2507dda546">Projectile::Projectile</a></div><div class="ttdeci">Projectile(float _damage, float _loadingTime, bool _isRebound, bool _canHoldCharging, float _reductionDamage, float _damageFallOff)</div><div class="ttdoc">Constructs a new Projectile object with specified properties.</div><div class="ttdef"><b>Definition</b> <a href="#l00010">Projectile.cpp:11</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a6ecaf16a9dd46fc304b2898cde182004"><div class="ttname"><a href="classProjectile.html#a6ecaf16a9dd46fc304b2898cde182004">Projectile::setDamage</a></div><div class="ttdeci">void setDamage(float newDmg)</div><div class="ttdoc">Sets the damage dealt by the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00029">Projectile.cpp:29</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a83566fc7e250ec3b843b2877499679cc"><div class="ttname"><a href="classProjectile.html#a83566fc7e250ec3b843b2877499679cc">Projectile::setLoadingTime</a></div><div class="ttdeci">void setLoadingTime(float newLoadTime)</div><div class="ttdoc">Sets the loading time for the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00045">Projectile.cpp:45</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a8faa1c6c5d84bfab47fb2c6ed92064b5"><div class="ttname"><a href="classProjectile.html#a8faa1c6c5d84bfab47fb2c6ed92064b5">Projectile::setReductionDamage</a></div><div class="ttdeci">void setReductionDamage(float newDmgReduction)</div><div class="ttdoc">Sets the damage reduction applied to the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00049">Projectile.cpp:49</a></div></div>
-<div class="ttc" id="aclassProjectile_html_a94903e021fa2edab60ba3836ca0b937d"><div class="ttname"><a href="classProjectile.html#a94903e021fa2edab60ba3836ca0b937d">Projectile::~Projectile</a></div><div class="ttdeci">~Projectile()</div><div class="ttdoc">Destructor for the Projectile class.</div><div class="ttdef"><b>Definition</b> <a href="#l00025">Projectile.cpp:25</a></div></div>
-<div class="ttc" id="aclassProjectile_html_abd6e6fe2e2ac94eeda822133a1bc2639"><div class="ttname"><a href="classProjectile.html#abd6e6fe2e2ac94eeda822133a1bc2639">Projectile::getDmgFalloff</a></div><div class="ttdeci">float getDmgFalloff(void)</div><div class="ttdoc">Gets the damage fall-off of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00065">Projectile.cpp:65</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a6ecaf16a9dd46fc304b2898cde182004"><div class="ttname"><a href="classProjectile.html#a6ecaf16a9dd46fc304b2898cde182004">Projectile::setDamage</a></div><div class="ttdeci">void setDamage(float newDmg)</div><div class="ttdoc">Sets the damage dealt by the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00028">Projectile.cpp:28</a></div></div>
+<div class="ttc" id="aclassProjectile_html_a94903e021fa2edab60ba3836ca0b937d"><div class="ttname"><a href="classProjectile.html#a94903e021fa2edab60ba3836ca0b937d">Projectile::~Projectile</a></div><div class="ttdeci">~Projectile()</div><div class="ttdoc">Destructor for the Projectile class.</div><div class="ttdef"><b>Definition</b> <a href="#l00024">Projectile.cpp:24</a></div></div>
+<div class="ttc" id="aclassProjectile_html_abd6e6fe2e2ac94eeda822133a1bc2639"><div class="ttname"><a href="classProjectile.html#abd6e6fe2e2ac94eeda822133a1bc2639">Projectile::getDmgFalloff</a></div><div class="ttdeci">float getDmgFalloff(void)</div><div class="ttdoc">Gets the damage fall-off of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00068">Projectile.cpp:68</a></div></div>
 <div class="ttc" id="aclassProjectile_html_ace6f6e9b93c658d8f1c6cde112df1a30"><div class="ttname"><a href="classProjectile.html#ace6f6e9b93c658d8f1c6cde112df1a30">Projectile::setDamageFallOff</a></div><div class="ttdeci">void setDamageFallOff(float newDmgFalloff)</div><div class="ttdoc">Sets the damage fall-off of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Projectile.cpp:33</a></div></div>
 <div class="ttc" id="aclassProjectile_html_adbde566219a9233b33d39a59fe21a38c"><div class="ttname"><a href="classProjectile.html#adbde566219a9233b33d39a59fe21a38c">Projectile::setStack</a></div><div class="ttdeci">void setStack(int newStack)</div><div class="ttdoc">Sets the stack count of the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00053">Projectile.cpp:53</a></div></div>
-<div class="ttc" id="aclassProjectile_html_afcb012bf61be056dea63c7c12f4ceb2a"><div class="ttname"><a href="classProjectile.html#afcb012bf61be056dea63c7c12f4ceb2a">Projectile::getDamage</a></div><div class="ttdeci">float getDamage(void)</div><div class="ttdoc">Gets the damage dealt by the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00057">Projectile.cpp:57</a></div></div>
+<div class="ttc" id="aclassProjectile_html_af4fcce10bff999b4472d5627f23e53ee"><div class="ttname"><a href="classProjectile.html#af4fcce10bff999b4472d5627f23e53ee">Projectile::setEntityIDBelong</a></div><div class="ttdeci">void setEntityIDBelong(std::size_t newID)</div><div class="ttdoc">Sets the entity ID belong to this new ID.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">Projectile.cpp:48</a></div></div>
+<div class="ttc" id="aclassProjectile_html_afcb012bf61be056dea63c7c12f4ceb2a"><div class="ttname"><a href="classProjectile.html#afcb012bf61be056dea63c7c12f4ceb2a">Projectile::getDamage</a></div><div class="ttdeci">float getDamage(void)</div><div class="ttdoc">Gets the damage dealt by the projectile.</div><div class="ttdef"><b>Definition</b> <a href="#l00058">Projectile.cpp:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

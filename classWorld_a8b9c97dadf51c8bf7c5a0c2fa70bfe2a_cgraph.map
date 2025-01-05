@@ -1,9 +1,0 @@
-<map id="World::generateWorldWithEnum" name="World::generateWorldWithEnum">
-<area shape="rect" id="Node000001" title="Generates the world for the next level with integer ranges." alt="" coords="5,70,208,96"/>
-<area shape="rect" id="Node000002" href="$classSpawnRuleGenerator.html#ae0b68cd88f75304818bb53c5f2987b42" title="Creates a spawn rule function based on the ENTITIES enumeration." alt="" coords="256,5,473,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,67,254,47,255,53,168,72"/>
-<area shape="rect" id="Node000003" href="$classGenerateWorld.html#a356f4fe562ea57c25e57e3a4e937d7b9" title="Generates a 2D world using Perlin noise and a user&#45;defined function." alt="" coords="266,70,462,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,80,250,80,250,86,208,86"/>
-<area shape="rect" id="Node000004" href="$classWorld.html#ac561334bf47b82bad5430cbbcc6203ca" title="Gets the seed for a specific level." alt="" coords="285,120,444,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="178,94,279,113,278,119,177,99"/>
-</map>

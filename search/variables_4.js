@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['maxthresholdbonus_0',['maxThresholdBonus',['../structEntityType.html#acda348e0d4d234b822039340f0432540',1,'EntityType']]],
-  ['minlevel_1',['minLevel',['../structEntityType.html#ae112a8f8ed64df8b1f208bbc10abb344',1,'EntityType']]]
+  ['maxthresholdbonus_0',['maxThresholdBonus',['../classSpawnRule_1_1EntityType.html#a74ef573986e6ef481d0a4df345f79980',1,'SpawnRule::EntityType']]],
+  ['minlevel_1',['minLevel',['../classSpawnRule_1_1EntityType.html#affe3d2211292de442010e48a94a2d341',1,'SpawnRule::EntityType']]]
 ];

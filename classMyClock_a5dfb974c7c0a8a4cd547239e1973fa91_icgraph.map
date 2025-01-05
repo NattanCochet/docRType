@@ -1,0 +1,8 @@
+<map id="MyClock::restart" name="MyClock::restart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="460,5,574,31"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="444,21,190,21,190,16,444,16"/>
+<area shape="rect" id="Node000003" href="$classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6" title=" " alt="" coords="238,31,412,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="445,30,413,35,412,29,444,25"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="222,35,190,31,190,26,223,29"/>
+</map>

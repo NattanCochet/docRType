@@ -1,21 +1,25 @@
 <map id="World::isClientIDPresentAsBool" name="World::isClientIDPresentAsBool">
-<area shape="rect" id="Node000001" title="Checks if a client with the given ID is present in the world." alt="" coords="824,73,985,113"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#ab614b1aab9b306cfc6f238b2b4dd596c" title="Adds a client to the world." alt="" coords="122,35,280,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="859,67,819,46,775,30,706,17,635,10,564,8,495,10,368,21,268,37,267,31,367,16,495,4,564,3,636,5,707,12,776,25,821,41,861,62"/>
-<area shape="rect" id="Node000004" href="$classWorld.html#a2bd5c155f0b9df4bc03e61aca59d5cfd" title="Changes the value of a key for a specific client." alt="" coords="584,39,776,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="808,81,776,76,776,71,809,76"/>
-<area shape="rect" id="Node000005" href="$classWorld.html#a55006a497af60c5625fcc1daee840232" title="Changes the value of a key for a specific client using a tuple of client ID, key, and key state." alt="" coords="584,105,776,145"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="809,109,776,114,776,109,808,104"/>
-<area shape="rect" id="Node000006" href="$classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="594,170,766,211"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="852,123,777,159,745,172,743,167,775,154,850,118"/>
-<area shape="rect" id="Node000003" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,104,55,130"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="155,69,56,110,54,105,153,64"/>
-<area shape="rect" id="Node000007" href="$classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,128,536,154"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="578,172,507,157,508,152,579,167"/>
-<area shape="rect" id="Node000009" href="$classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="355,177,529,203"/>
-<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="578,193,530,193,530,188,578,188"/>
-<area shape="rect" id="Node000008" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,128,300,154"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="332,144,301,144,301,138,332,138"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="90,128,55,123,56,118,91,123"/>
-<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="360,176,267,157,268,152,361,171"/>
+<area shape="rect" id="Node000001" title="Checks if a client with the given ID is present in the world." alt="" coords="927,117,1088,157"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#ab614b1aab9b306cfc6f238b2b4dd596c" title="Adds a client to the world." alt="" coords="225,36,384,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="975,107,931,71,906,54,878,42,809,24,737,13,665,9,594,9,464,21,364,38,363,33,463,16,593,4,665,3,738,8,810,19,880,37,908,50,935,66,978,103"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#a2bd5c155f0b9df4bc03e61aca59d5cfd" title="Changes the value of a key for a specific client." alt="" coords="687,51,879,92"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="920,114,855,95,856,90,921,109"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#a55006a497af60c5625fcc1daee840232" title="Changes the value of a key for a specific client using a tuple of client ID, key, and key state." alt="" coords="687,117,879,157"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="912,140,879,140,879,134,912,134"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#a5d13ac992f4b223d6aa26c20ad78dd06" title="Removes a client from the world." alt="" coords="697,181,869,207"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="913,164,837,183,836,178,911,159"/>
+<area shape="rect" id="Node000007" href="$classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="697,231,869,272"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="968,169,926,196,880,222,854,233,852,228,877,217,923,192,965,164"/>
+<area shape="rect" id="Node000003" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,71,106,96"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="210,66,107,83,106,77,209,61"/>
+<area shape="rect" id="Node000008" href="$classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,189,639,215"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="681,233,610,218,611,213,682,228"/>
+<area shape="rect" id="Node000011" href="$classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="458,239,632,264"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="681,254,633,254,633,249,681,249"/>
+<area shape="rect" id="Node000009" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,189,403,215"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="435,205,404,205,404,200,435,200"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="264,184,105,99,108,94,266,179"/>
+<area shape="rect" id="Node000010" href="$classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,189,158,215"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="190,205,158,205,158,200,190,200"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="463,238,370,218,371,213,464,232"/>
 </map>

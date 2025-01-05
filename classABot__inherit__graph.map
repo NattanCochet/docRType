@@ -1,7 +1,7 @@
 <map id="ABot" name="ABot">
-<area shape="rect" id="Node000001" title="Abstract base class for a bot in the game." alt="" coords="88,5,171,133"/>
+<area shape="rect" id="Node000001" title="Abstract base class for a bot in the game." alt="" coords="86,5,169,133"/>
 <area shape="rect" id="Node000002" href="$classLinearShooter.html" title="A class representing a linear shooter bot." alt="" coords="5,181,118,308"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,147,89,182,84,180,97,145"/>
-<area shape="rect" id="Node000003" href="$classNewShooter.html" title=" " alt="" coords="142,201,253,288"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,145,184,200,179,202,157,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,147,88,182,83,180,96,145"/>
+<area shape="rect" id="Node000003" href="$classTpShooter.html" title=" " alt="" coords="143,201,242,288"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,145,179,200,174,202,153,147"/>
 </map>

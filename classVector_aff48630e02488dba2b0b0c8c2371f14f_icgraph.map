@@ -1,5 +1,13 @@
 <map id="Vector::getSize" name="Vector::getSize">
-<area shape="rect" id="Node000001" title="Retrieves the size of the vector." alt="" coords="151,5,259,31"/>
-<area shape="rect" id="Node000002" href="$classVector.html#a33f9d3cf13cd4716dd9e740ac9cdba36" title="Computes the cross product of two 2D vectors." alt="" coords="5,5,103,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,21,103,21,103,16,135,16"/>
+<area shape="rect" id="Node000001" title="Retrieves the size of the vector." alt="" coords="666,31,775,56"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a33f9d3cf13cd4716dd9e740ac9cdba36" title="Computes the cross product of two 2D vectors." alt="" coords="486,5,583,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="650,37,583,27,584,22,651,31"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="451,55,618,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="651,55,619,59,618,54,650,50"/>
+<area shape="rect" id="Node000004" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,55,403,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="435,70,404,70,404,65,435,65"/>
+<area shape="rect" id="Node000005" href="$classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,29,158,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="190,57,158,53,158,48,191,52"/>
+<area shape="rect" id="Node000006" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,79,106,104"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="190,82,107,92,106,86,190,77"/>
 </map>

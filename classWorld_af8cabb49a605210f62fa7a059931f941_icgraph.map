@@ -1,0 +1,5 @@
+<map id="World::resetFinishedLevel" name="World::resetFinishedLevel">
+<area shape="rect" id="Node000001" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="238,5,408,31"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+</map>

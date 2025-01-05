@@ -1,0 +1,17 @@
+<map id="Systems::positionSystem" name="Systems::positionSystem">
+<area shape="rect" id="Node000001" title="A system that destroys entities when too far away from the game screen." alt="" coords="5,169,173,194"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="237,5,375,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,166,148,114,182,83,219,55,227,51,230,56,222,60,185,87,152,118,103,170"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="221,70,391,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,166,158,136,220,105,235,99,237,104,222,109,161,140,112,170"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="243,120,368,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,166,231,147,232,152,149,171"/>
+<area shape="rect" id="Node000005" href="$classVector.html#aff48630e02488dba2b0b0c8c2371f14f" title="Retrieves the size of the vector." alt="" coords="252,169,360,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="173,179,237,179,237,184,173,184"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#aabec2b8f296f40aa91b99eae028e2288" title=" " alt="" coords="231,218,380,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,193,232,212,231,217,148,198"/>
+<area shape="rect" id="Node000007" href="$classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="242,268,370,293"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="112,193,161,223,222,254,237,260,235,265,220,259,158,228,109,197"/>
+<area shape="rect" id="Node000008" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="233,317,379,342"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="103,193,150,247,184,277,222,303,232,308,229,313,219,308,181,281,147,251,99,197"/>
+</map>

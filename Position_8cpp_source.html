@@ -113,13 +113,13 @@ $(function(){initNavTree('Position_8cpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="Position_8hpp.html">../../include/Components/Position.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">   10</a></span><a class="code hl_function" href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">Position::Position</a>() : _pos()</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">   10</a></span><a class="code hl_function" href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">Position::Position</a>() : _pos(), _defaultPos(), _isAppearOnTheWindow(false)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
 </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classPosition.html#a0fcf086215651352e72253fcaccff191">   14</a></span><a class="code hl_function" href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">Position::Position</a>(sf::Vector2f pos) : _pos(pos), _defaultPos(pos)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classPosition.html#a0fcf086215651352e72253fcaccff191">   14</a></span><a class="code hl_function" href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">Position::Position</a>(sf::Vector2f pos) : _pos(pos), _defaultPos(pos), _isAppearOnTheWindow(false)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
@@ -129,63 +129,80 @@ $(function(){initNavTree('Position_8cpp_source.html',''); initResizable(true); }
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    this-&gt;_pos = sf::Vector2f(x, y);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    this-&gt;_defaultPos = _pos;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    this-&gt;_isAppearOnTheWindow = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classPosition.html#abe83df4cab7af756636b4e39e4378f4a">   24</a></span><a class="code hl_function" href="classPosition.html#abe83df4cab7af756636b4e39e4378f4a">Position::~Position</a>()</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classPosition.html#abe83df4cab7af756636b4e39e4378f4a">   25</a></span><a class="code hl_function" href="classPosition.html#abe83df4cab7af756636b4e39e4378f4a">Position::~Position</a>()</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classPosition.html#abeb42e349764f30df958b993d27bd120">   28</a></span>sf::Vector2f &amp;<a class="code hl_function" href="classPosition.html#abeb42e349764f30df958b993d27bd120">Position::getPosition</a>()</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> (this-&gt;_pos);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classPosition.html#abeb42e349764f30df958b993d27bd120">   29</a></span>sf::Vector2f &amp;<a class="code hl_function" href="classPosition.html#abeb42e349764f30df958b993d27bd120">Position::getPosition</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> (this-&gt;_pos);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classPosition.html#a34c2eaa11826adaf4232eecd91e4b41b">   33</a></span>sf::Vector2f &amp;<a class="code hl_function" href="classPosition.html#a34c2eaa11826adaf4232eecd91e4b41b">Position::getDefaultPosition</a>()</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> (this-&gt;_defaultPos);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classPosition.html#a34c2eaa11826adaf4232eecd91e4b41b">   34</a></span>sf::Vector2f &amp;<a class="code hl_function" href="classPosition.html#a34c2eaa11826adaf4232eecd91e4b41b">Position::getDefaultPosition</a>()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> (this-&gt;_defaultPos);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classPosition.html#affd39c338251cba5fd2b24b11a315099">   38</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#affd39c338251cba5fd2b24b11a315099">Position::setPosition</a>(sf::Vector2f newPos)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    this-&gt;_pos = newPos;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classPosition.html#a501e87cf1da5691bfadd4eaee02f3cdc">   39</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classPosition.html#a501e87cf1da5691bfadd4eaee02f3cdc">Position::getIsAppearOnTheWindow</a>()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">return</span> (this-&gt;_isAppearOnTheWindow);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classPosition.html#a016712266c36b13291d4269064f05549">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#affd39c338251cba5fd2b24b11a315099">Position::setPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    this-&gt;_pos = sf::Vector2f(x, y);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classPosition.html#affd39c338251cba5fd2b24b11a315099">   44</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#affd39c338251cba5fd2b24b11a315099">Position::setPosition</a>(sf::Vector2f newPos)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    this-&gt;_pos = newPos;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">Position::setDefaultPosition</a>(sf::Vector2f newPos)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    this-&gt;_defaultPos = newPos;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classPosition.html#a016712266c36b13291d4269064f05549">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#affd39c338251cba5fd2b24b11a315099">Position::setPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    this-&gt;_pos = sf::Vector2f(x, y);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classPosition.html#ab10a30ee53d2fcb5399a330156fbccf3">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">Position::setDefaultPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    this-&gt;_defaultPos = sf::Vector2f(x, y);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">   54</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">Position::setDefaultPosition</a>(sf::Vector2f newPos)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    this-&gt;_defaultPos = newPos;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classPosition.html#ab10a30ee53d2fcb5399a330156fbccf3">   59</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">Position::setDefaultPosition</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    this-&gt;_defaultPos = sf::Vector2f(x, y);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classPosition.html#ad7e875cf9c4d369a06e9040023ee827c">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classPosition.html#ad7e875cf9c4d369a06e9040023ee827c">Position::setIsAppearOnTheWindow</a>(<span class="keywordtype">bool</span> newState)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    this-&gt;_isAppearOnTheWindow = newState;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
 <div class="ttc" id="aPosition_8hpp_html"><div class="ttname"><a href="Position_8hpp.html">Position.hpp</a></div></div>
-<div class="ttc" id="aclassPosition_html_a34c2eaa11826adaf4232eecd91e4b41b"><div class="ttname"><a href="classPosition.html#a34c2eaa11826adaf4232eecd91e4b41b">Position::getDefaultPosition</a></div><div class="ttdeci">sf::Vector2f &amp; getDefaultPosition()</div><div class="ttdoc">Gets the default position of the object.</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Position.cpp:33</a></div></div>
+<div class="ttc" id="aclassPosition_html_a34c2eaa11826adaf4232eecd91e4b41b"><div class="ttname"><a href="classPosition.html#a34c2eaa11826adaf4232eecd91e4b41b">Position::getDefaultPosition</a></div><div class="ttdeci">sf::Vector2f &amp; getDefaultPosition()</div><div class="ttdoc">Gets the default position of the object.</div><div class="ttdef"><b>Definition</b> <a href="#l00034">Position.cpp:34</a></div></div>
 <div class="ttc" id="aclassPosition_html_a369a577425f8ba02e8750d04b6a088db"><div class="ttname"><a href="classPosition.html#a369a577425f8ba02e8750d04b6a088db">Position::Position</a></div><div class="ttdeci">Position()</div><div class="ttdoc">Default constructor for the Position class.</div><div class="ttdef"><b>Definition</b> <a href="#l00010">Position.cpp:10</a></div></div>
-<div class="ttc" id="aclassPosition_html_aa62f2c9039eb41f3794d8639d6691714"><div class="ttname"><a href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">Position::setDefaultPosition</a></div><div class="ttdeci">void setDefaultPosition(sf::Vector2f newPos)</div><div class="ttdoc">Sets the default position to a new value.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">Position.cpp:48</a></div></div>
-<div class="ttc" id="aclassPosition_html_abe83df4cab7af756636b4e39e4378f4a"><div class="ttname"><a href="classPosition.html#abe83df4cab7af756636b4e39e4378f4a">Position::~Position</a></div><div class="ttdeci">~Position()</div><div class="ttdoc">Destructor for the Position class.</div><div class="ttdef"><b>Definition</b> <a href="#l00024">Position.cpp:24</a></div></div>
-<div class="ttc" id="aclassPosition_html_abeb42e349764f30df958b993d27bd120"><div class="ttname"><a href="classPosition.html#abeb42e349764f30df958b993d27bd120">Position::getPosition</a></div><div class="ttdeci">sf::Vector2f &amp; getPosition()</div><div class="ttdoc">Gets the current position of the object.</div><div class="ttdef"><b>Definition</b> <a href="#l00028">Position.cpp:28</a></div></div>
-<div class="ttc" id="aclassPosition_html_affd39c338251cba5fd2b24b11a315099"><div class="ttname"><a href="classPosition.html#affd39c338251cba5fd2b24b11a315099">Position::setPosition</a></div><div class="ttdeci">void setPosition(sf::Vector2f newPos)</div><div class="ttdoc">Sets the current position to a new value.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">Position.cpp:38</a></div></div>
+<div class="ttc" id="aclassPosition_html_a501e87cf1da5691bfadd4eaee02f3cdc"><div class="ttname"><a href="classPosition.html#a501e87cf1da5691bfadd4eaee02f3cdc">Position::getIsAppearOnTheWindow</a></div><div class="ttdeci">bool getIsAppearOnTheWindow()</div><div class="ttdoc">Gets the boolean of the appearing onn the window.</div><div class="ttdef"><b>Definition</b> <a href="#l00039">Position.cpp:39</a></div></div>
+<div class="ttc" id="aclassPosition_html_aa62f2c9039eb41f3794d8639d6691714"><div class="ttname"><a href="classPosition.html#aa62f2c9039eb41f3794d8639d6691714">Position::setDefaultPosition</a></div><div class="ttdeci">void setDefaultPosition(sf::Vector2f newPos)</div><div class="ttdoc">Sets the default position to a new value.</div><div class="ttdef"><b>Definition</b> <a href="#l00054">Position.cpp:54</a></div></div>
+<div class="ttc" id="aclassPosition_html_abe83df4cab7af756636b4e39e4378f4a"><div class="ttname"><a href="classPosition.html#abe83df4cab7af756636b4e39e4378f4a">Position::~Position</a></div><div class="ttdeci">~Position()</div><div class="ttdoc">Destructor for the Position class.</div><div class="ttdef"><b>Definition</b> <a href="#l00025">Position.cpp:25</a></div></div>
+<div class="ttc" id="aclassPosition_html_abeb42e349764f30df958b993d27bd120"><div class="ttname"><a href="classPosition.html#abeb42e349764f30df958b993d27bd120">Position::getPosition</a></div><div class="ttdeci">sf::Vector2f &amp; getPosition()</div><div class="ttdoc">Gets the current position of the object.</div><div class="ttdef"><b>Definition</b> <a href="#l00029">Position.cpp:29</a></div></div>
+<div class="ttc" id="aclassPosition_html_ad7e875cf9c4d369a06e9040023ee827c"><div class="ttname"><a href="classPosition.html#ad7e875cf9c4d369a06e9040023ee827c">Position::setIsAppearOnTheWindow</a></div><div class="ttdeci">void setIsAppearOnTheWindow(bool newState)</div><div class="ttdoc">Sets the state of appearing on the window.</div><div class="ttdef"><b>Definition</b> <a href="#l00064">Position.cpp:64</a></div></div>
+<div class="ttc" id="aclassPosition_html_affd39c338251cba5fd2b24b11a315099"><div class="ttname"><a href="classPosition.html#affd39c338251cba5fd2b24b11a315099">Position::setPosition</a></div><div class="ttdeci">void setPosition(sf::Vector2f newPos)</div><div class="ttdoc">Sets the current position to a new value.</div><div class="ttdef"><b>Definition</b> <a href="#l00044">Position.cpp:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

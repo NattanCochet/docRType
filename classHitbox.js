@@ -18,6 +18,7 @@ var classHitbox =
     [ "Hitbox", "classHitbox.html#a999b0be8486978b3dd7bcd001c7c3c03", null ],
     [ "~Hitbox", "classHitbox.html#aafd01dbe871f6f7f464217345bd4ca01", null ],
     [ "addCollisionWithID", "classHitbox.html#a4788385cc0b7b0fa01ca5b215d82e20c", null ],
+    [ "getAllCollisionIDs", "classHitbox.html#a45a613c360433630de1fbe18cb4387f5", null ],
     [ "getEightAngleCollisionByID", "classHitbox.html#ab2ff708960372dec0bf8ba3a81ac234e", null ],
     [ "getPosition", "classHitbox.html#ab5c6cee73d7a3508052b55b22e5810ee", null ],
     [ "getRotation", "classHitbox.html#ae618dbfb3e39dc68d7155a8a20dcefef", null ],

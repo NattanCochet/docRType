@@ -2,20 +2,22 @@ var hierarchy =
 [
     [ "ABot", "classABot.html", [
       [ "LinearShooter", "classLinearShooter.html", null ],
-      [ "NewShooter", "classNewShooter.html", null ]
+      [ "TpShooter", "classTpShooter.html", null ]
     ] ],
     [ "FastNoiseLite::Arguments_must_be_floating_point_values< double >", "structFastNoiseLite_1_1Arguments__must__be__floating__point__values_3_01double_01_4.html", null ],
     [ "FastNoiseLite::Arguments_must_be_floating_point_values< float >", "structFastNoiseLite_1_1Arguments__must__be__floating__point__values_3_01float_01_4.html", null ],
     [ "FastNoiseLite::Arguments_must_be_floating_point_values< long double >", "structFastNoiseLite_1_1Arguments__must__be__floating__point__values_3_01long_01double_01_4.html", null ],
     [ "Assets", "classAssets.html", null ],
+    [ "ClientInWorld", "classClientInWorld.html", null ],
     [ "Clock", "classClock.html", null ],
     [ "CommandHandler", "classCommandHandler.html", null ],
     [ "ComponentArray< Component >", "classComponentArray.html", null ],
     [ "ComponentArray< Entity >", "classComponentArray.html", null ],
     [ "Controllable", "classControllable.html", null ],
+    [ "CreateEntity", "classCreateEntity.html", null ],
     [ "Drawable", "classDrawable.html", null ],
     [ "Entity", "classEntity.html", null ],
-    [ "EntityType", "structEntityType.html", null ],
+    [ "SpawnRule::EntityType", "classSpawnRule_1_1EntityType.html", null ],
     [ "ErrorManager", "classErrorManager.html", null ],
     [ "std::exception", null, [
       [ "AError", "classAError.html", [
@@ -32,12 +34,13 @@ var hierarchy =
     ] ],
     [ "FastNoiseLite", "classFastNoiseLite.html", null ],
     [ "GenerateWorld", "classGenerateWorld.html", null ],
+    [ "SpawnRule::Generator", "classSpawnRule_1_1Generator.html", null ],
     [ "GJKAlgorithm", "classGJKAlgorithm.html", null ],
     [ "Hitbox", "classHitbox.html", null ],
+    [ "MyClock", "classMyClock.html", null ],
     [ "Position", "classPosition.html", null ],
     [ "Projectile", "classProjectile.html", null ],
     [ "Registry", "classRegistry.html", null ],
-    [ "SpawnRuleGenerator", "classSpawnRuleGenerator.html", null ],
     [ "Systems", "classSystems.html", null ],
     [ "UDPClient", "classUDPClient.html", null ],
     [ "UDPServer", "classUDPServer.html", null ],

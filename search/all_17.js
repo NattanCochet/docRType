@@ -15,7 +15,7 @@ var searchData=
   ['virtualkeyboard_12',['VirtualKeyBoard',['../classVirtualKeyBoard.html',1,'VirtualKeyBoard'],['../classVirtualKeyBoard.html#a7f9269f36bd2e75156fd0ab4358d9a93',1,'VirtualKeyBoard::VirtualKeyBoard()']]],
   ['virtualkeyboard_2ecpp_13',['VirtualKeyBoard.cpp',['../VirtualKeyBoard_8cpp.html',1,'']]],
   ['virtualkeyboard_2ehpp_14',['VirtualKeyBoard.hpp',['../VirtualKeyBoard_8hpp.html',1,'']]],
-  ['vitality_15',['Vitality',['../classVitality.html',1,'Vitality'],['../classVitality.html#a52acdea3630657230a0411dd36e66d25',1,'Vitality::Vitality()'],['../classVitality.html#a538f300da064a549de96609c397c184f',1,'Vitality::Vitality(int nbrLife, int nbrLifeMax=-1)']]],
+  ['vitality_15',['Vitality',['../classVitality.html',1,'Vitality'],['../classVitality.html#a52acdea3630657230a0411dd36e66d25',1,'Vitality::Vitality()'],['../classVitality.html#a622443eea779e1faa497426815b581aa',1,'Vitality::Vitality(int nbrLife, std::size_t entityID, int nbrLifeMax=-1)']]],
   ['vitality_2ecpp_16',['Vitality.cpp',['../Vitality_8cpp.html',1,'']]],
   ['vitality_2ehpp_17',['Vitality.hpp',['../Vitality_8hpp.html',1,'']]],
   ['vitality_5fhpp_5f_18',['VITALITY_HPP_',['../Vitality_8hpp.html#a9fb1a8708490c558cf95c394a0cb1060',1,'Vitality.hpp']]],

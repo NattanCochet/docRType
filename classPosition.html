@@ -116,7 +116,7 @@ Collaboration diagram for Position:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPosition__coll__graph.png" border="0" usemap="#aPosition_coll__map" alt="Collaboration graph"/></div>
 <map name="aPosition_coll__map" id="aPosition_coll__map">
-<area shape="rect" title="A class to represent and manage the position of an object." alt="" coords="5,5,143,255"/>
+<area shape="rect" title="A class to represent and manage the position of an object." alt="" coords="5,5,192,295"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34c2eaa11826adaf4232eecd91e4b41b" id="r_a34c2eaa11826adaf4232eecd91e4b41b"><td class="memItemLeft" align="right" valign="top">sf::Vector2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c2eaa11826adaf4232eecd91e4b41b">getDefaultPosition</a> ()</td></tr>
 <tr class="memdesc:a34c2eaa11826adaf4232eecd91e4b41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default position of the object.  <br /></td></tr>
 <tr class="separator:a34c2eaa11826adaf4232eecd91e4b41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501e87cf1da5691bfadd4eaee02f3cdc" id="r_a501e87cf1da5691bfadd4eaee02f3cdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a501e87cf1da5691bfadd4eaee02f3cdc">getIsAppearOnTheWindow</a> ()</td></tr>
+<tr class="memdesc:a501e87cf1da5691bfadd4eaee02f3cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the boolean of the appearing onn the window.  <br /></td></tr>
+<tr class="separator:a501e87cf1da5691bfadd4eaee02f3cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affd39c338251cba5fd2b24b11a315099" id="r_affd39c338251cba5fd2b24b11a315099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affd39c338251cba5fd2b24b11a315099">setPosition</a> (sf::Vector2f newPos)</td></tr>
 <tr class="memdesc:affd39c338251cba5fd2b24b11a315099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current position to a new value.  <br /></td></tr>
 <tr class="separator:affd39c338251cba5fd2b24b11a315099"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab10a30ee53d2fcb5399a330156fbccf3" id="r_ab10a30ee53d2fcb5399a330156fbccf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab10a30ee53d2fcb5399a330156fbccf3">setDefaultPosition</a> (int x, int y)</td></tr>
 <tr class="memdesc:ab10a30ee53d2fcb5399a330156fbccf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default position using specific x and y coordinates.  <br /></td></tr>
 <tr class="separator:ab10a30ee53d2fcb5399a330156fbccf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e875cf9c4d369a06e9040023ee827c" id="r_ad7e875cf9c4d369a06e9040023ee827c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7e875cf9c4d369a06e9040023ee827c">setIsAppearOnTheWindow</a> (bool newState)</td></tr>
+<tr class="memdesc:ad7e875cf9c4d369a06e9040023ee827c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of appearing on the window.  <br /></td></tr>
+<tr class="separator:ad7e875cf9c4d369a06e9040023ee827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to represent and manage the position of an object. </p>
@@ -257,7 +263,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00024">24</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00025">25</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -280,7 +286,29 @@ Public Member Functions</h2></td></tr>
 <p>Gets the default position of the object. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the <code>sf::Vector2f</code> representing the default position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00033">33</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00034">34</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a501e87cf1da5691bfadd4eaee02f3cdc" name="a501e87cf1da5691bfadd4eaee02f3cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a501e87cf1da5691bfadd4eaee02f3cdc">&#9670;&#160;</a></span>getIsAppearOnTheWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Position::getIsAppearOnTheWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the boolean of the appearing onn the window. </p>
+<dl class="section return"><dt>Returns</dt><dd>A boolean of the state </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00039">39</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +330,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the current position of the object. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the <code>sf::Vector2f</code> representing the current position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00028">28</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00029">29</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -334,7 +362,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00053">53</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00059">59</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -361,7 +389,34 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00048">48</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00054">54</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad7e875cf9c4d369a06e9040023ee827c" name="ad7e875cf9c4d369a06e9040023ee827c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e875cf9c4d369a06e9040023ee827c">&#9670;&#160;</a></span>setIsAppearOnTheWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Position::setIsAppearOnTheWindow </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>newState</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the state of appearing on the window. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newState</td><td>The state of the boolean </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00064">64</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -393,7 +448,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00043">43</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00049">49</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -420,7 +475,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00038">38</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00044">44</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>

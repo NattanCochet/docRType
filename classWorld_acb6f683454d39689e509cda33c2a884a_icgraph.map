@@ -1,5 +1,0 @@
-<map id="World::getClientIDPresenceAsInt" name="World::getClientIDPresenceAsInt">
-<area shape="rect" id="Node000001" title="Gets the presence status of a client by their ID as an integer." alt="" coords="226,5,405,46"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#a3c24fc079abb5b0e9d6c5121a56c6c65" title="Removes a client from the world." alt="" coords="5,13,178,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,28,178,28,178,23,210,23"/>
-</map>

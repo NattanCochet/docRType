@@ -1,0 +1,14 @@
+<map id="MyClock::getElapsedTime" name="MyClock::getElapsedTime">
+<area shape="rect" id="Node000001" title=" " alt="" coords="622,25,793,51"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,38,190,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="633,24,574,15,480,9,406,10,238,29,164,40,163,35,237,23,406,5,480,3,575,10,634,19"/>
+<area shape="rect" id="Node000003" href="$classMyClock.html#a5dfb974c7c0a8a4cd547239e1973fa91" title=" " alt="" coords="460,25,574,51"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="607,41,575,41,575,35,607,35"/>
+<area shape="rect" id="Node000005" href="$classMyClock.html#a2b57d08c560cf7820c1817d0d7f03d90" title=" " alt="" coords="273,113,376,139"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="634,57,378,117,376,112,632,52"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="444,43,190,51,190,46,444,38"/>
+<area shape="rect" id="Node000004" href="$classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6" title=" " alt="" coords="238,64,412,89"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="445,55,393,66,392,60,444,50"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="222,68,190,64,190,59,223,63"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="258,111,237,104,132,67,134,62,239,99,259,106"/>
+</map>

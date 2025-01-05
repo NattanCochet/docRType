@@ -1,0 +1,7 @@
+<map id="SpawnRule::Generator::getEntity" name="SpawnRule::Generator::getEntity">
+<area shape="rect" id="Node000001" title="Get Entity where the id which match whit entity ID." alt="" coords="471,5,621,46"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#af15aa67c6383710c5ff40439a21253e0" title="Spawn entities in world after generated world." alt="" coords="238,13,423,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="456,28,424,28,424,23,456,23"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,13,190,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,28,190,28,190,23,222,23"/>
+</map>

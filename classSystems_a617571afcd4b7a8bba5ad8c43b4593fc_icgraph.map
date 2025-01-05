@@ -1,7 +1,9 @@
 <map id="Systems::controllableSystem" name="Systems::controllableSystem">
-<area shape="rect" id="Node000001" title="A system that processes controllable components for player input." alt="" coords="348,5,536,31"/>
-<area shape="rect" id="Node000002" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,21,301,21,301,16,332,16"/>
-<area shape="rect" id="Node000003" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="A system that processes controllable components for player input." alt="" coords="451,31,639,56"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="435,46,404,46,404,41,435,41"/>
+<area shape="rect" id="Node000003" href="$classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
+<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
 </map>

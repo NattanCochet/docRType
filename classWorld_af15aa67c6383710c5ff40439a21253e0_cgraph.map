@@ -1,0 +1,9 @@
+<map id="World::spawnEntitiesInWorld" name="World::spawnEntitiesInWorld">
+<area shape="rect" id="Node000001" title="Spawn entities in world after generated world." alt="" coords="5,78,191,104"/>
+<area shape="rect" id="Node000002" href="$classSpawnRule_1_1Generator.html#aae8a8c9cfcfa58d744aa0f75a93fe309" title="Get Entity where the id which match whit entity ID." alt="" coords="257,5,407,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,75,241,48,242,53,147,80"/>
+<area shape="rect" id="Node000003" href="$classSpawnRule_1_1Generator.html#a1552e1efa10cd6d303b878fea72a1c0b" title="Check if have enought place to spawn an entity depend on its size." alt="" coords="239,71,425,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,88,223,88,223,94,191,94"/>
+<area shape="rect" id="Node000004" href="$classAError.html#ab59278ee4a9a03ce50648d1c66473abb" title="Returns the error message." alt="" coords="286,136,378,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,102,271,131,270,136,153,107"/>
+</map>

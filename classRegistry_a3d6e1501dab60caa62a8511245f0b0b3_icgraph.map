@@ -1,5 +1,20 @@
 <map id="Registry::spawn_entity" name="Registry::spawn_entity">
-<area shape="rect" id="Node000001" title="Spawns a new entity and returns it." alt="" coords="103,5,253,31"/>
-<area shape="rect" id="Node000002" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="Spawns a new entity and returns it." alt="" coords="526,161,677,187"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#a08219d3302a5fd811c784f63486e633a" title=" " alt="" coords="310,5,477,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="581,150,538,96,509,68,477,44,455,34,457,29,480,40,512,64,542,93,585,147"/>
+<area shape="rect" id="Node000003" href="$classCreateEntity.html#aa15ceb585be911e861161e396e771617" title=" " alt="" coords="310,55,477,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="571,154,528,123,477,94,450,83,452,79,479,89,531,118,574,149"/>
+<area shape="rect" id="Node000004" href="$classCreateEntity.html#a6b81a4b25d86faff210ca07d8ff370b9" title=" " alt="" coords="310,104,477,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="537,159,442,133,444,128,538,154"/>
+<area shape="rect" id="Node000005" href="$classCreateEntity.html#a16af19deb15a03900af02c227481f19c" title=" " alt="" coords="309,154,478,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="511,177,479,177,479,172,511,172"/>
+<area shape="rect" id="Node000006" href="$classCreateEntity.html#a1002c8d9c0bca2e2dc4864f9d5298bdf" title=" " alt="" coords="309,219,478,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="544,195,462,221,460,216,543,190"/>
+<area shape="rect" id="Node000007" href="$classCreateEntity.html#aeb1da25c99068d51fe44b3a751fdc0c6" title=" " alt="" coords="309,284,478,310"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="578,200,534,238,480,274,451,286,449,281,477,269,531,233,575,196"/>
+<area shape="rect" id="Node000009" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,309,55,335"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="590,202,573,233,548,267,517,300,480,325,421,346,360,358,298,362,237,361,129,348,55,332,56,326,130,343,238,356,298,357,359,352,420,341,477,320,514,296,544,264,568,230,585,199"/>
+<area shape="rect" id="Node000008" href="$classWorld.html#ab614b1aab9b306cfc6f238b2b4dd596c" title="Adds a client to the world." alt="" coords="103,284,261,310"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="293,300,262,300,262,294,293,294"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="88,315,56,321,55,315,87,310"/>
 </map>

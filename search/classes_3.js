@@ -1,7 +1,7 @@
 var searchData=
 [
   ['entity_0',['Entity',['../classEntity.html',1,'']]],
-  ['entitytype_1',['EntityType',['../structEntityType.html',1,'']]],
+  ['entitytype_1',['EntityType',['../classSpawnRule_1_1EntityType.html',1,'SpawnRule']]],
   ['error_2',['Error',['../classUDPServer_1_1Error.html',1,'UDPServer']]],
   ['errorclientalreadypresentinworld_3',['ErrorClientAlreadyPresentInWorld',['../classErrorClientAlreadyPresentInWorld.html',1,'']]],
   ['errorgenerationmap_4',['ErrorGenerationMap',['../classErrorGenerationMap.html',1,'']]],
