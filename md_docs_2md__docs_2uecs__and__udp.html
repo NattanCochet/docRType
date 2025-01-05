@@ -103,32 +103,32 @@ $(function(){initNavTree('md_docs_2md__docs_2uecs__and__udp.html',''); initResiz
   <div class="headertitle"><div class="title">Design pattern and network convention</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md10"></a></p>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md12"></a></p>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Entity-Component-System (ECS) Design Pattern</h1>
 <p>The Entity-Component-System (ECS) is a software architecture pattern primarily used in game development but also applicable in other domains. It emphasizes modularity, performance, and scalability by breaking down objects into three core concepts:</p>
-<div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;"></div><div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;"><img src="./docs/assets/ecs.svg" alt="R-Type" style="pointer-events: none;" width="600" class="inline"/></div><div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;"></div><h2><a class="anchor" id="autotoc_md12"></a>
+<div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;"></div><div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;"><img src="./docs/assets/ecs.svg" alt="R-Type" style="pointer-events: none;" width="600" class="inline"/></div><div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;"></div><h2><a class="anchor" id="autotoc_md14"></a>
 1. Entities</h2>
 <ul>
 <li>An entity represents a unique identifier or object in the system.</li>
 <li>Entities are typically lightweight and have no logic or behavior on their own.</li>
 <li>They serve as containers that aggregate components.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md15"></a>
 2. Components</h2>
 <ul>
 <li>Components are data containers. Each component holds specific attributes or properties.</li>
 <li>They are decoupled from the logic, making them reusable and easy to manage.</li>
 <li>Examples of components could include position, velocity, health, or rendering data.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
 3. Systems</h2>
 <ul>
 <li><a class="el" href="classSystems.html" title="A class that contains all the systems for managing game logic related to entities in the ECS architec...">Systems</a> define the logic and behavior of the application.</li>
 <li>They operate on entities that possess specific combinations of components.</li>
 <li>For example, a <code>velocitySystem</code> might update the position of entities based on their velocity and other physics-related components.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Benefits of ECS</h2>
 <ul>
 <li><b>Separation of Concerns:</b> ECS separates data (components) from behavior (systems), making the codebase cleaner and more modular.</li>
@@ -136,11 +136,11 @@ Benefits of ECS</h2>
 <li><b>Flexibility:</b> New behaviors can be added by creating new systems and components without altering existing code.</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 UDP (User Datagram Protocol) Networking Convention</h1>
 <p>UDP is a transport layer protocol used for sending and receiving data across networks. Unlike TCP, UDP focuses on speed and simplicity, often at the expense of reliability.</p>
 <p><img src="./docs/assets/udp.jpg" alt="R-Type" width="600" class="inline"/> </p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Characteristics of UDP</h2>
 <ul>
 <li><b>Connectionless:</b> No persistent connection is established between the sender and receiver.</li>
@@ -148,14 +148,14 @@ Characteristics of UDP</h2>
 <li><b>Lightweight:</b> Minimal protocol overhead compared to TCP.</li>
 <li><b>Fast:</b> Suitable for real-time applications where low latency is critical.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
 Use Cases for UDP</h2>
 <ul>
 <li><b>Real-time Games:</b> UDP is ideal for transmitting real-time data such as player positions, where occasional packet loss is acceptable.</li>
 <li><b>Streaming:</b> Media streaming applications prioritize speed over reliability, making UDP a suitable choice.</li>
 <li><b>IoT and Sensors:</b> Devices with limited resources often use UDP for lightweight communication.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md22"></a>
 Networking Conventions with UDP</h2>
 <ul>
 <li><b>Packet Size:</b> Keep packets small to avoid fragmentation, which can lead to higher packet loss rates.</li>
@@ -164,13 +164,13 @@ Networking Conventions with UDP</h2>
 <li><b>Timeouts and Retries:</b> Define custom timeout and retry logic for critical data transmissions.</li>
 <li><b>Firewalls and NAT Traversal:</b> Ensure that UDP ports are open and properly configured to traverse firewalls and NAT devices.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md21"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 Advantages of UDP</h2>
 <ul>
 <li><b>Low Latency:</b> Ideal for time-sensitive applications.</li>
 <li><b>Scalability:</b> Suitable for high-volume, multicast, or broadcast scenarios.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md22"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Challenges of UDP</h2>
 <ul>
 <li><b>Lack of Reliability:</b> Developers must implement their mechanisms for handling lost or unordered packets.</li>

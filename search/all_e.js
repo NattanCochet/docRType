@@ -12,7 +12,8 @@ var searchData=
   ['linearshooter_5fhpp_5f_9',['LINEARSHOOTER_HPP_',['../LinearShooter_8hpp.html#aa1d921bcac4f32e2cd4c874afa11aaa7',1,'LinearShooter.hpp']]],
   ['linearshootersystem_2ecpp_10',['LinearShooterSystem.cpp',['../LinearShooterSystem_8cpp.html',1,'']]],
   ['linearsystem_11',['linearSystem',['../classSystems.html#a98634685da4c37056578788b9741462b',1,'Systems']]],
-  ['loadsprite_12',['LoadSprite',['../classAssets.html#abfe784b31b6d3e7d52fb481d6aed05b6',1,'Assets']]],
-  ['loadsystems_2ecpp_13',['LoadSystems.cpp',['../LoadSystems_8cpp.html',1,'']]],
-  ['loadsystemsinworld_14',['loadSystemsInWorld',['../classSystems.html#a82478e58000d97f5439663a6fe8c1c43',1,'Systems']]]
+  ['linux_20version_12',['No audio on linux version',['../md_docs_2md__docs_2tf__knwon__issues.html#autotoc_md11',1,'']]],
+  ['loadsprite_13',['LoadSprite',['../classAssets.html#abfe784b31b6d3e7d52fb481d6aed05b6',1,'Assets']]],
+  ['loadsystems_2ecpp_14',['LoadSystems.cpp',['../LoadSystems_8cpp.html',1,'']]],
+  ['loadsystemsinworld_15',['loadSystemsInWorld',['../classSystems.html#a82478e58000d97f5439663a6fe8c1c43',1,'Systems']]]
 ];

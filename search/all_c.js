@@ -13,8 +13,9 @@ var searchData=
   ['ishonrizontal_10',['isHonrizontal',['../classLinearShooter.html#a9415dc4eb3eec7aad971c3b903f69b3f',1,'LinearShooter']]],
   ['iskeyispressed_11',['isKeyIsPressed',['../classVirtualKeyBoard.html#afed46be98962959fa50e40ca144fe6b9',1,'VirtualKeyBoard']]],
   ['isplayer_12',['isPlayer',['../classDrawable.html#a3bcfbe02c7d9c692525189ccb2c5c848',1,'Drawable']]],
-  ['isworldfull_13',['isWorldFull',['../classWorld.html#aff3988b4920975c42b2b518dc96a5dba',1,'World']]],
-  ['isworldisclient_14',['isWorldIsClient',['../classWorld.html#a6a74f2ea7a83c8cf412bbbc172c2fbf7',1,'World']]],
-  ['isworldispublic_15',['isWorldIsPublic',['../classWorld.html#a0f205d303992d3ea9b4b7d91b26b8210',1,'World']]],
-  ['iterator_16',['iterator',['../classComponentArray.html#a031339b33ed89874f6e39d732798d8b4',1,'ComponentArray']]]
+  ['issues_13',['Known issues',['../md_docs_2md__docs_2tf__knwon__issues.html',1,'']]],
+  ['isworldfull_14',['isWorldFull',['../classWorld.html#aff3988b4920975c42b2b518dc96a5dba',1,'World']]],
+  ['isworldisclient_15',['isWorldIsClient',['../classWorld.html#a6a74f2ea7a83c8cf412bbbc172c2fbf7',1,'World']]],
+  ['isworldispublic_16',['isWorldIsPublic',['../classWorld.html#a0f205d303992d3ea9b4b7d91b26b8210',1,'World']]],
+  ['iterator_17',['iterator',['../classComponentArray.html#a031339b33ed89874f6e39d732798d8b4',1,'ComponentArray']]]
 ];

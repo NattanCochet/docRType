@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stack_0',['Our Project Stack',['../md_docs_2md__docs_2technologies.html',1,'']]]
+  ['r_20type_0',['R-Type',['../index.html',1,'']]]
 ];

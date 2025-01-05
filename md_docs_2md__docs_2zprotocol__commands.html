@@ -103,9 +103,9 @@ $(function(){initNavTree('md_docs_2md__docs_2zprotocol__commands.html',''); init
   <div class="headertitle"><div class="title">Communication Protocol</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md24"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md26"></a></p>
 <p>To synchronise our server and client during in-game events we use a command based protocol like shown below</p>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Commands Table</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -147,9 +147,9 @@ Commands Table</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><b>SERVER_UPDATE_STATS</b>   </td><td class="markdownTableBodyNone"><code>Stats (object)</code>   </td><td class="markdownTableBodyNone">Server updates player or game statistics.   </td><td class="markdownTableBodyNone">Server 🗄️   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 Commands Details</h1>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md29"></a>
 CLIENT_JOIN</h2>
 <p><b>Request Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_JOIN&quot;</div>
@@ -161,7 +161,7 @@ CLIENT_JOIN</h2>
 <li>504: Not connected to the internet</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md29"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 CLIENT_LEAVE</h2>
 <p><b>Request Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_LEAVE&quot;</div>
@@ -171,7 +171,7 @@ CLIENT_LEAVE</h2>
 <li>500: Not in a game</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 CLIENT_SHOOT</h2>
 <p><b>Request Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_SHOOT&quot;</div>
@@ -182,7 +182,7 @@ CLIENT_SHOOT</h2>
 <li>503: No Ammo</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md33"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 CLIENT_MOVEMENT</h2>
 <p><b>Request Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_MOVEMENT&quot;,</div>
@@ -196,7 +196,7 @@ CLIENT_MOVEMENT</h2>
 <li>500: Can't move</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 CLIENT_START_GAME</h2>
 <p><b>Request Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_START_GAME&quot;</div>
@@ -206,7 +206,7 @@ CLIENT_START_GAME</h2>
 <li>500: Unable to start game</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md37"></a>
+<h2><a class="anchor" id="autotoc_md39"></a>
 CLIENT_SELECT_SHIP</h2>
 <p><b>Request Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_SELECT_SHIP&quot;,</div>
@@ -217,7 +217,7 @@ CLIENT_SELECT_SHIP</h2>
 <li>500: Invalid ship ID</li>
 </ul>
 <hr  />
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 SERVER_ENTITY_NEW</h2>
 <p><b>Response Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;SERVER_ENTITY_NEW&quot;,</div>
@@ -225,7 +225,7 @@ SERVER_ENTITY_NEW</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Description:</b> Server notifies of a new entity.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md41"></a>
+<h2><a class="anchor" id="autotoc_md43"></a>
 SERVER_ENTITY_DEAD</h2>
 <p><b>Response Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;SERVER_ENTITY_DEAD&quot;,</div>
@@ -233,7 +233,7 @@ SERVER_ENTITY_DEAD</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Description:</b> Server notifies of an entity's destruction.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md43"></a>
+<h2><a class="anchor" id="autotoc_md45"></a>
 SERVER_GAME_END</h2>
 <p><b>Response Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;SERVER_GAME_END&quot;,</div>
@@ -241,7 +241,7 @@ SERVER_GAME_END</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Description:</b> Server notifies the end of the game (e.g., win/lose).</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md45"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 SERVER_MOVEMENT</h2>
 <p><b>Response Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;SERVER_MOVEMENT&quot;,</div>
@@ -252,7 +252,7 @@ SERVER_MOVEMENT</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Description:</b> Server sends movement updates.</p>
 <hr  />
-<h2><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 SERVER_UPDATE_STATS</h2>
 <p><b>Response Example:</b> </p><div class="fragment"><div class="line">{</div>
 <div class="line">  &quot;command&quot;: &quot;SERVER_UPDATE_STATS&quot;,</div>
