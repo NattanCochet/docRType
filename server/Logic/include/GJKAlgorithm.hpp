@@ -10,6 +10,7 @@
 
 #include <vector>
 #include <cmath>
+#include <optional>
 #include "Vector.hpp"
 #include "Components/Hitbox.hpp"
 
@@ -52,7 +53,7 @@ class GJKAlgorithm {
          * @param shapeB The second hitbox for collision detection.
          * @return An array of booleans representing the collision zones.
          */
-        std::array<bool, 8> gjkCollision(const Hitbox& shapeA, const Hitbox& shapeB);
+        const std::optional<std::array<bool, 8>> gjkCollision(const Hitbox& shapeA, const Hitbox& shapeB);
 
     private:
         /**

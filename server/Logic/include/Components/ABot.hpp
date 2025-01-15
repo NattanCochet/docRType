@@ -6,6 +6,11 @@
 */
 
 #include <SFML/System.hpp>
+#include "../ECS/World.hpp"
+#include "Position.hpp"
+#include "Projectile.hpp"
+#include "Hitbox.hpp"
+#include "Velocity.hpp"
 
 #ifndef ABOT_HPP_
 #define ABOT_HPP_
@@ -21,7 +26,7 @@ class ABot {
         /**
          * @brief Destructor for ABot.
          */
-        ~ABot() = default;
+        virtual ~ABot() = default;
 
         /**
          * @brief Gets the delay time for the bot.
@@ -34,6 +39,16 @@ class ABot {
          * @return A reference to the bot's clock.
          */
         sf::Clock &getClock();
+
+        /**
+         * @brief Moves the bot
+         */
+        virtual void moveBot(World &world, std::size_t myIndexEntity) = 0;
+
+        /**
+         * @brief Shoots the bot's projectile
+         */
+        virtual void shootProjectile(World &world, std::size_t myIndexEntity) = 0;
 
     protected:
         /**

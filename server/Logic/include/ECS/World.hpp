@@ -13,6 +13,7 @@
 #include <random>
 #include <limits>
 #include <unordered_map>
+#include <memory>
 #include "Registry.hpp"
 #include <SFML/System/Time.hpp>
 #include <SFML/System/Clock.hpp>
@@ -22,17 +23,30 @@
 #include "../Components/Projectile.hpp"
 #include "../Components/Hitbox.hpp"
 #include "../Components/Drawable.hpp"
-#include "../Components/ABot.hpp"
 #include "../Components/Bots/LinearShooter.hpp"
+#include "../Components/Bots/TpShooter.hpp"
+#include "../Components/Bots/SinusoidalShooter.hpp"
+#include "../Components/Bots/KamikazeShooter.hpp"
+#include "../Components/Bots/AlienEmperor.hpp"
+#include "../Components/Bots/SpatialDustman.hpp"
+#include "../Components/Bots/BigShip.hpp"
 #include "../Components/Controllable.hpp"
 #include "../Components/Clock.hpp"
+#include "../Components/Ennemy.hpp"
+#include "../Components/SpawnAfterDead.hpp"
+#include "../Components/Force.hpp"
+#include "../Components/Area.hpp"
 #include "../Error/ErrorPasswordIncorrect.hpp"
 #include "../Error/ErrorVector.hpp"
 #include "../Error/ErrorWorldFull.hpp"
 #include "../Error/ErrorClientAlreadyPresentInWorld.hpp"
 #include "../VirtualKeyBoard.hpp"
 #include "../GenerateWorld.hpp"
+#include "../ClientInWorld.hpp"
 #include "../SpawnRuleGenerator.hpp"
+#include "../MyClock.hpp"
+
+class CreateEntity;
 
 /**
  * @class World
@@ -43,6 +57,12 @@
  */
 class World {
 public:
+
+    enum STATE {
+        NOTHING = 0,
+        HOLD = 1,
+        PLAY = 2
+    };
     /**
      * @brief Constructs a new World with specific parameters.
      *
@@ -127,9 +147,9 @@ public:
     /**
      * @brief Gets the list of client IDs in the world.
      *
-     * @return A vector containing the client IDs.
+     * @return A unordered_map containing clientID and class ClientInWorld.
      */
-    std::vector<std::size_t> getClientsID() const noexcept;
+    std::unordered_map<std::size_t, ClientInWorld> &getClientsID() noexcept;
 
     /**
      * @brief Adds a client to the world.
@@ -146,9 +166,9 @@ public:
      *
      * @param clientID The client ID to remove.
      *
-     * @return The client ID removed from the world.
+     * @return The class ClientInWorld removed from the world.
      */
-    std::size_t deleteClientInWorld(std::size_t clientID);
+    ClientInWorld deleteClientInWorld(std::size_t clientID);
 
     /**
      * @brief Checks if a client with the given ID is present in the world.
@@ -185,22 +205,6 @@ public:
     void changeValueOfKeyPerClientID(std::tuple<std::size_t, VirtualKeyBoard::CONTROL, bool> action);
 
     /**
-     * @brief Gets the virtual keyboard associated with a client ID.
-     *
-     * @param clientID The client ID.
-     *
-     * @return The virtual keyboard for the client.
-     */
-    VirtualKeyBoard &getVirtualKeyBoardFromClientID(std::size_t clientID);
-
-    /**
-     * @brief Gets the map of virtual keyboards for all clients in the world.
-     *
-     * @return The map of virtual keyboards keyed by client IDs.
-     */
-    std::unordered_map<std::size_t, VirtualKeyBoard> &getVirtualKeyBoard() noexcept;
-
-    /**
      * @brief Generates the next seed for the next level.
      */
     void generateNextSeedForNextLevel();
@@ -222,64 +226,24 @@ public:
     std::size_t getSeedForLevel(const std::size_t &level);
 
     /**
-     * @brief Generates the world for the next level with floating point ranges.
+     * @brief Spawn entities in world after generated world. After each call of the function, the generation
+     *        is done farther
+     * @param level The level to generate
+     * @param spawnAfterWindow The beginning on the left side of the window to spawn entities
+     * @param sizeWorld The size of the world to spawn entity
      *
-     * @param level The level number.
-     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
-     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
-     *
-     * @return A 2D vector representing the world with ID of entities.
+     * @return A bool to indicate if the world is finished or not
      */
-    std::vector<std::vector<int>> generateWorldWithID(
-        std::size_t level,
-        std::pair<float, float> &beginAndEndGenerationInX,
-        std::pair<float, float> &beginAndEndGenerationInY
-    );
+    bool spawnEntitiesInWorld(std::size_t level, std::size_t spawnAfterWindow, int sizeWorld);
+
+    bool spawnEntitiesInWorld();
 
     /**
-     * @brief Generates the world for the next level with integer ranges.
+     * @brief Reset the boolean to indicates if the world if finished or not
      *
-     * @param level The level number.
-     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
-     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
-     *
-     * @return A 2D vector representing the world with ID of entities.
+     * @param isWin To know if the level is ending by winning or not
      */
-    std::vector<std::vector<int>> generateWorldWithID(
-        std::size_t level,
-        std::pair<int, int> &beginAndEndGenerationInX,
-        std::pair<int, int> &beginAndEndGenerationInY
-    );
-
-    /**
-     * @brief Generates the world for the next level with integer ranges.
-     *
-     * @param level The level number.
-     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
-     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
-     *
-     * @return A 2D vector representing the world with ENUM of entities.
-     */
-    std::vector<std::vector<SpawnRuleGenerator::ENTITIES>> generateWorldWithEnum(
-        std::size_t level,
-        std::pair<int, int> &beginAndEndGenerationInX,
-        std::pair<int, int> &beginAndEndGenerationInY
-    );
-
-    /**
-     * @brief Generates the world for the next level with floating point ranges.
-     *
-     * @param level The level number.
-     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
-     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
-     *
-     * @return A 2D vector representing the world with ENUM of entities.
-     */
-    std::vector<std::vector<SpawnRuleGenerator::ENTITIES>> generateWorldWithEnum(
-        std::size_t level,
-        std::pair<float, float> &beginAndEndGenerationInX,
-        std::pair<float, float> &beginAndEndGenerationInY
-    );
+    void resetFinishedLevel(bool isWin);
 
 
     /**
@@ -289,22 +253,87 @@ public:
      *         the position in Y-axis(float), the rectwidth for animation on the spritesheet (float),
      *         the rectheight for animation on the spritesheet (float) and rotation of the sprite (float)
      */
-    std::list<std::tuple<std::string, float, float, float, float, float>> getInformationOfEachEntity();
+    std::list<std::tuple<std::string, float, float, int, int, int, int, float>> getInformationOfEachEntity();
+
+    /**
+     * @brief Get Class to create entity
+     *
+     * @return The class CreateEntity
+     */
+    CreateEntity &getClassCreateEntity() noexcept;
+
+    /**
+     * @brief Spawn entity ID in world in ginven coordinates (origin top-left)
+     * @param id ID of the entity
+     * @param spawnInY Width-axis to spawn entity
+     * @param spawnInX Height-axis to spawn entity
+     * @param idAfterDead ID of the entity to spawn after his dead.
+     *
+     */
+    void spawnEntityFromGeneratedWorld(std::size_t id, int spawnInX, int spawnInY, std::size_t idAfterDead = 0);
+
+    const bool &getIsLevelFinishedToSpawn() const noexcept;
+    void setIsLevelFinishedToSpawn(const bool &newState);
+
+    MyClock &getClockGenerationWorld() noexcept;
+
+    const int getBossIDAtTheEnd() const noexcept;
+
+    const bool isBeginingOfSpwan() const noexcept;
+
+    const float getSpawnTimeThreshold() const noexcept;
+
+    const std::size_t getWidthWindow() const noexcept;
+    const std::size_t getHeightWindow() const noexcept;
+    const std::pair<std::size_t, std::size_t> getSizeWindow() const noexcept;
+
+    void setWidthWindow(const std::size_t &newWidthWindow) noexcept;
+    void setHeightWindow(const std::size_t &newHeightWindow) noexcept;
+    void setSizeWindow(const std::pair<std::size_t, std::size_t> &newSizeWindow) noexcept;
+
+    void applyFonctionInWorld();
+
+    std::size_t getCurrentLevel() const noexcept;
+    void setCurrentLevel(const std::size_t &newLevel) noexcept;
+
+    void setStateOfTheWorld(const STATE &newState) noexcept;
+    const STATE getStateOfTheWorld() const noexcept;
+
+    SpawnRule::Generator &getClassSpawnRuleGenerator() noexcept;
+
+    const bool &getIsForceInWorld() const noexcept;
+
+    void setIsForceInWorld(const bool &newState) noexcept;
+
+    const bool isEntityPresent(const std::size_t &entityIndex) noexcept;
 
 private:
+    STATE _stateWorld;                         ///< The State of the world.
+    std::size_t _widthWindow;                  ///< Width of the window.
+    std::size_t _heightWindow;                 ///< Height of the window.
+    bool _isLevelFinishedToSpawn;              ///< Indicates if the world is finished to spawn.
+    bool _isLevelFinished;                     ///< Indicates if the level is finished.
+    int _spawnAfterWindow;                     ///< The x coordinates to spwan entites on the left side of the window.
+    int _bossIDAtTheEnd;                       ///< The ID of the boss at the end (-1 if has no boss).
     bool _isClient;                            ///< Indicates if the world is client-based.
     bool _isPublic;                            ///< Indicates if the world is public.
     std::string _password;                     ///< The password for the world.
     int _nbrPlayerMax;                         ///< The maximum number of players in the world.
     std::string _nameRoom;                     ///< The name of the room.
-    std::vector<std::size_t> _idClients;       ///< List of client IDs in the world.
+    std::unordered_map<std::size_t, ClientInWorld> _idClients; ///< Map of client IDs in the world.
     Registry _r;                               ///< The registry holding game entities.
     sf::Clock _clock;                          ///< The clock tracking the world's time.
-    std::unordered_map<std::size_t, VirtualKeyBoard> _virtualKeyBoardPerClientID; ///< Virtual keyboards by client ID.
+    MyClock _clockGenerationWorld;             ///< The clock tracking the world's time generation.
+    static constexpr float SPAWN_TIME_THRESHOLD = 19.0f; ///< A Contante expression for the second elapsed to generate world
+    static constexpr std::size_t SPAWN_AFTER_WINDOW = 400; ///< The value to spawn after the window (_widthWindow + SPAWN_AFTER_WINDOW)
+    static constexpr std::size_t SIZE_WORLD = 4000; ///< The size of each world
     std::unordered_map<std::size_t, std::size_t> _seedByLevel; ///< Seeds for each level.
     std::size_t _maxLevel;                     ///< The maximum level.
+    std::size_t _currentLevel;                 ///< The Level played.
     GenerateWorld _gw;                         ///< World generation helper.
-    SpawnRuleGenerator _srg;                   ///< Rule for generate world with perlin noise
+    SpawnRule::Generator _srg;                 ///< Rule for generate world with perlin noise
+    std::shared_ptr<CreateEntity> _ce;         ///< Class who allowed to create entity
+    bool _isForceInWorld;                      ///< To determine if the force is present on the world.
 
 private:
     /**
@@ -320,7 +349,67 @@ private:
      * @brief Add All Entities in class SpawnRuleGenerator, all entities possible to spawn
      *
      */
-    void addEntityInWroldSpawnRuleGenerator();
+    void addEntityInWorldSpawnRuleGenerator();
+
+    /**
+     * @brief Generates the world for the next level with floating point ranges.
+     *
+     * @param level The level number.
+     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
+     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
+     *
+     * @return A 2D vector representing the world with ID of entities.
+     */
+    std::vector<std::vector<int>> generateWorldWithID(
+        std::size_t level,
+        std::pair<float, float> &beginAndEndGenerationInX,
+        std::pair<float, float> &beginAndEndGenerationInY
+    );
+
+    /**
+     * @brief Generates the world for the next level with integer ranges.
+     *
+     * @param level The level number.
+     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
+     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
+     *
+     * @return A 2D vector representing the world with ID of entities.
+     */
+    std::vector<std::vector<int>> generateWorldWithID(
+        std::size_t level,
+        std::pair<int, int> &beginAndEndGenerationInX,
+        std::pair<int, int> &beginAndEndGenerationInY
+    );
+
+    /**
+     * @brief Generates the world for the next level with integer ranges.
+     *
+     * @param level The level number.
+     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
+     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
+     *
+     * @return A 2D vector representing the world with ENUM of entities.
+     */
+    std::vector<std::vector<SpawnRule::Generator::ENTITIES>> generateWorldWithEnum(
+        std::size_t level,
+        std::pair<int, int> &beginAndEndGenerationInX,
+        std::pair<int, int> &beginAndEndGenerationInY
+    );
+
+    /**
+     * @brief Generates the world for the next level with floating point ranges.
+     *
+     * @param level The level number.
+     * @param beginAndEndGenerationInX The range for world generation along the X-axis.
+     * @param beginAndEndGenerationInY The range for world generation along the Y-axis.
+     *
+     * @return A 2D vector representing the world with ENUM of entities.
+     */
+    std::vector<std::vector<SpawnRule::Generator::ENTITIES>> generateWorldWithEnum(
+        std::size_t level,
+        std::pair<float, float> &beginAndEndGenerationInX,
+        std::pair<float, float> &beginAndEndGenerationInY
+    );
 };
 
 #endif /* !WORLD_HPP_ */

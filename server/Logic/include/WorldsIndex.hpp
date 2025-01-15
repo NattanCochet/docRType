@@ -10,6 +10,7 @@
 #include <iostream>
 #include <unordered_map>
 #include "ECS/World.hpp"
+#include "Systems.hpp"
 
 /**
  * @class WorldsIndex
@@ -89,7 +90,13 @@ public:
      */
     std::size_t getNbrWorlds() const noexcept;
 
+    /**
+     * @brief Apply all functions in each world for the Logic part
+     */
+    void applyFunctionsInWorlds();
+
 private:
+    Systems _systems;
     std::unordered_map<std::size_t, World> _wordMap; ///< The map of worlds indexed by their ID.
     std::size_t _nbrWorlds; ///< The current number of worlds in the index.
     std::size_t _nextIDWorld; ///< The ID to assign to the next world added.

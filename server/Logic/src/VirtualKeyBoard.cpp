@@ -18,7 +18,8 @@ VirtualKeyBoard::VirtualKeyBoard()
         {CONTROL::FORCE, false},
         {CONTROL::START, false}
     };
-    _isCharging = false;
+    _isChargingShoot = false;
+    _isChargingForce = false;
 }
 
 VirtualKeyBoard::~VirtualKeyBoard()
@@ -35,17 +36,27 @@ void VirtualKeyBoard::changeValueKeyboard(VirtualKeyBoard::CONTROL key, bool isP
     _virtualKeyboard[key] = isPressed;
 }
 
-bool VirtualKeyBoard::isKeyIsPressed(CONTROL key)
+bool VirtualKeyBoard::isKeyIsPressed(const CONTROL &key)
 {
     return (_virtualKeyboard[key]);
 }
 
-bool VirtualKeyBoard::isCharging()
+bool VirtualKeyBoard::isChargingShoot()
 {
-    return (this->_isCharging);
+    return (this->_isChargingShoot);
 }
 
-void VirtualKeyBoard::setIsCharging(bool isCharging)
+void VirtualKeyBoard::setIsChargingShoot(bool isChargingShoot)
 {
-    this->_isCharging = isCharging;
+    this->_isChargingShoot = isChargingShoot;
+}
+
+bool VirtualKeyBoard::isChargingForce()
+{
+    return (this->_isChargingForce);
+}
+
+void VirtualKeyBoard::setIsChargingForce(bool isChargingForce)
+{
+    this->_isChargingForce = isChargingForce;
 }

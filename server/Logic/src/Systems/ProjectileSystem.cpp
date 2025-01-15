@@ -7,6 +7,9 @@
 
 #include "../../include/Systems.hpp"
 
+#include <boost/random.hpp>
+#include <boost/atomic.hpp>
+
 int Systems::ProjectileSystem(World &world)
 {
     Registry &r = world.getRegistry();
@@ -17,21 +20,54 @@ int Systems::ProjectileSystem(World &world)
 
     std::size_t index = 0;
 
-    std::size_t indexEntityVitality = 0;
+    for (std::optional<Projectile> &projectile : projectiles) {
+        if (!projectile || !projectile.has_value() || index >= hitboxs.size() ||
+            !hitboxs[index].has_value())
+        {
+            index += 1;
+            continue;
+        }
+        std::vector<std::size_t> collisionIDs = hitboxs[index]->getAllCollisionIDs();
+        for (std::size_t collisionID : collisionIDs) {
+            if (!world.isEntityPresent(collisionID)) {
+                continue;
+            }
 
-    for (std::optional<Projectile> projectile : projectiles) {
-        if (hitboxs.size() > 0 && projectile && projectile.has_value() && hitboxs[index] && hitboxs[index].has_value()) {
-            for (std::optional<Vitality> vitality : vitalities) {
-                if (vitality && vitality.has_value()) {
-                    if (hitboxs[index]->isCollisionWithID(indexEntityVitality)) {
-                        vitality->damageEntity(std::round(projectile->getDamage()));
-                    }
-                }
-                indexEntityVitality += 1;
+            if (collisionID >= vitalities.size() || !vitalities[collisionID].has_value()) {
+                r.kill_entity(r.entity_from_index(index));
+                continue;
+            }
+            vitalities[collisionID]->damageEntity(std::round(projectile->getDamage()));
+            attributeScore(world, vitalities[collisionID], projectile);
+
+            if (!projectile->getCanHoldCharge()) {
+                r.kill_entity(r.entity_from_index(index));
             }
         }
         index += 1;
-        indexEntityVitality = 0;
     }
     return (0);
+}
+
+void Systems::attributeScore(World &world, std::optional<Vitality> &vitality, std::optional<Projectile> &projectile)
+{
+    if (!vitality->isDead()) {
+        return;
+    }
+    Registry &r = world.getRegistry();
+
+    ComponentArray<Controllable> controllables = r.get_components<Controllable>();
+    std::size_t shooterID = projectile->getEntityIDBelong();
+
+    if (shooterID >= controllables.size() || !controllables[shooterID].has_value()) {
+        return;
+    }
+
+    Controllable &controlableShooter = controllables[shooterID].value();
+
+    std::size_t entityID = vitality->getEntityID();
+    SpawnRule::Generator &srg = world.getClassSpawnRuleGenerator();
+    SpawnRule::EntityType &entity = srg.getEntity(entityID);
+    world.getClientsID()[controlableShooter.getClientID()].addScore(entity.scoreByDeath);
+    return;
 }

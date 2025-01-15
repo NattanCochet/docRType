@@ -7,7 +7,8 @@
 
 #include "../../include/Components/Controllable.hpp"
 
-Controllable::Controllable(std::size_t clientID) : _clientID(clientID)
+Controllable::Controllable(bool isPlayer, std::size_t clientID)
+    : _isPlayer(isPlayer), _clientID(clientID), _keyBoard()
 {
 }
 
@@ -23,4 +24,19 @@ std::size_t Controllable::getClientID() const noexcept
 void Controllable::setClientID(const std::size_t &clientID) noexcept
 {
     _clientID = clientID;
+}
+
+const bool Controllable::getIsPlayer() const noexcept
+{
+    return (this->_isPlayer);
+}
+
+void Controllable::setIsPlayer(const bool &isPlayer) noexcept
+{
+    this->_isPlayer = isPlayer;
+}
+
+VirtualKeyBoard &Controllable::getVirtualKeyboard() noexcept
+{
+    return (this->_keyBoard);
 }

@@ -62,6 +62,13 @@ class Position {
         sf::Vector2f &getDefaultPosition();
 
         /**
+         * @brief Gets the boolean of the appearing onn the window
+         *
+         * @return A boolean of the state
+         */
+        bool getIsAppearOnTheWindow();
+
+        /**
          * @brief Sets the current position to a new value.
          *
          * @param newPos The new position as an `sf::Vector2f`.
@@ -91,10 +98,17 @@ class Position {
          */
         void setDefaultPosition(int x, int y);
 
-    protected:
+        /**
+         * @brief Sets the state of appearing on the window
+         *
+         * @param newState The state of the boolean
+         */
+        void setIsAppearOnTheWindow(bool newState);
+
     private:
         sf::Vector2f _pos; ///< The current position of the object.
         sf::Vector2f _defaultPos; ///< The default position of the object.
+        bool _isAppearOnTheWindow; ///< Is the object on the window
 };
 
 #endif /* !POSITION_HPP_ */

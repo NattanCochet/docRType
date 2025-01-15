@@ -22,27 +22,25 @@ class Projectile {
 
     private:
         float _damage; ///< The damage dealt by the projectile.
-        float _loadingTime; ///< The time it takes for the projectile to load.
         bool _isRebound; ///< Whether the projectile can rebound.
         bool _canHoldCharging; ///< Whether the projectile can hold charging.
-        float _reductionDamage; ///< The amount of damage reduction applied to the projectile.
         float _damageFallOff; ///< The amount of damage fall-off over distance or time.
+        std::size_t _entityIDBelong; ///< The ID of the shooter
         int _stack; ///< The stack count for the projectile (if applicable).
 
     public:
         /**
          * @brief Constructs a new Projectile object with specified properties.
          *
-         * @param _damage The initial damage of the projectile.
-         * @param _loadingTime The initial loading time for the projectile.
-         * @param _isRebound Whether the projectile can rebound.
-         * @param _canHoldCharging Whether the projectile can hold charging.
-         * @param _reductionDamage The initial damage reduction applied to the projectile.
-         * @param _damageFallOff The initial damage fall-off of the projectile.
+         * @param damage The initial damage of the projectile.
+         * @param isRebound Whether the projectile can rebound.
+         * @param canHoldCharging Whether the projectile can hold charging.
+         * @param damageFallOff The initial damage fall-off of the projectile.
+         * @param entityIDBelong The ID of the shooter
          */
         Projectile(
-            float _damage, float _loadingTime, bool _isRebound,
-            bool _canHoldCharging, float _reductionDamage, float _damageFallOff
+            float damage, bool isRebound, bool canHoldCharging, float damageFallOff,
+            std::size_t entityIDBelong
         );
 
         /**
@@ -56,13 +54,6 @@ class Projectile {
          * @param newDmg The new damage value for the projectile.
          */
         void setDamage(float newDmg);
-
-        /**
-         * @brief Sets the loading time for the projectile.
-         *
-         * @param newLoadTime The new loading time value.
-         */
-        void setLoadingTime(float newLoadTime);
 
         /**
          * @brief Sets whether the projectile can rebound.
@@ -79,13 +70,6 @@ class Projectile {
         void setHoldCharging(bool newCharge);
 
         /**
-         * @brief Sets the damage reduction applied to the projectile.
-         *
-         * @param newDmgReduction The new damage reduction value.
-         */
-        void setReductionDamage(float newDmgReduction);
-
-        /**
          * @brief Sets the damage fall-off of the projectile.
          *
          * @param newDmgFalloff The new damage fall-off value.
@@ -100,25 +84,17 @@ class Projectile {
         void setStack(int newStack);
 
         /**
+         * @brief Sets the entity ID belong to this new ID
+         *
+         * @param newID The new ID to assign
+         */
+        void setEntityIDBelong(std::size_t newID);
+        /**
          * @brief Gets the damage dealt by the projectile.
          *
          * @return The damage value of the projectile.
          */
         float getDamage(void);
-
-        /**
-         * @brief Gets the loading time of the projectile.
-         *
-         * @return The loading time value of the projectile.
-         */
-        float getLoadingTime(void);
-
-        /**
-         * @brief Gets the damage reduction applied to the projectile.
-         *
-         * @return The damage reduction value.
-         */
-        float getReductionDmg(void);
 
         /**
          * @brief Gets the damage fall-off of the projectile.
@@ -140,6 +116,13 @@ class Projectile {
          * @return True if the projectile can hold charging, false otherwise.
          */
         bool getCanHoldCharge(void);
+
+        /**
+         * @brief Gets the entity ID belong of this projectile
+         *
+         * @return The entity ID belong to the projectile
+         */
+        std::size_t getEntityIDBelong(void);
 
         /**
          * @brief Gets the stack count of the projectile.

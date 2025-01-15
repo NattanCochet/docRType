@@ -19,8 +19,10 @@ int Systems::velocitySystem(World &world)
         if (i && i.has_value()) {
             sf::Time elapsedTime = world.getClock().getElapsedTime();
             if (elapsedTime.asSeconds() > i->getSeconds()) {
-                position[index]->getPosition().x += i->getSpeed().x;
-                position[index]->getPosition().y += i->getSpeed().y;
+                sf::Vector2f &pos = position[index]->getPosition();
+                const sf::Vector2i &speed = i->getSpeed();
+                pos.x += speed.x;
+                pos.y += speed.y;
                 i->setSeconds(i->getSeconds() += i->getCoeff());
             }
         }

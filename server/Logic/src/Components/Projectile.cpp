@@ -9,16 +9,15 @@
 
 Projectile::Projectile
     (
-        float _damage, float _loadingTime, bool _isRebound,
-        bool _canHoldCharging, float _reductionDamage, float _damageFallOff
+        float damage, bool isRebound, bool canHoldCharging, float damageFallOff,
+        std::size_t entityIDBelong
     )
 {
-    this->_damage = _damage;
-    this->_loadingTime = _loadingTime;
-    this->_isRebound = _isRebound;
-    this->_canHoldCharging = _canHoldCharging;
-    this->_reductionDamage = _reductionDamage;
-    this->_damageFallOff = _damageFallOff;
+    this->_damage = damage;
+    this->_isRebound = isRebound;
+    this->_canHoldCharging = canHoldCharging;
+    this->_damageFallOff = damageFallOff;
+    this->_entityIDBelong = entityIDBelong;
     this->_stack = 1;
 }
 
@@ -26,58 +25,62 @@ Projectile::~Projectile()
 {
 }
 
-void Projectile::setDamage(float newDmg) {
-    _damage = newDmg;
+void Projectile::setDamage(float newDmg)
+{
+    this->_damage = newDmg;
 }
 
-void Projectile::setDamageFallOff(float newDmgFalloff) {
-    _damageFallOff = newDmgFalloff;
+void Projectile::setDamageFallOff(float newDmgFalloff)
+{
+    this->_damageFallOff = newDmgFalloff;
 }
 
-void Projectile::setHoldCharging(bool newCharge) {
-    _canHoldCharging = newCharge;
+void Projectile::setHoldCharging(bool newCharge)
+{
+    this->_canHoldCharging = newCharge;
 }
 
-void Projectile::setIsRebound(bool newRebound) {
-    _isRebound = newRebound;
+void Projectile::setIsRebound(bool newRebound)
+{
+    this->_isRebound = newRebound;
 }
 
-void Projectile::setLoadingTime(float newLoadingTime) {
-    _loadingTime = newLoadingTime;
+void Projectile::setEntityIDBelong(std::size_t newID)
+{
+    this->_entityIDBelong = newID;
 }
 
-void Projectile::setReductionDamage(float newDmgReduction) {
-    _reductionDamage = newDmgReduction;
+void Projectile::setStack(int newStack)
+{
+    this->_stack = newStack;
 }
 
-void Projectile::setStack(int newStack) {
-    _stack = newStack;
+float Projectile::getDamage(void)
+{
+    return this->_damage;
 }
 
-float Projectile::getDamage(void) {
-    return _damage;
+std::size_t Projectile::getEntityIDBelong(void)
+{
+    return this->_entityIDBelong;
 }
 
-float Projectile::getLoadingTime(void) {
-    return _loadingTime;
+float Projectile::getDmgFalloff(void)
+{
+    return this->_damageFallOff;
 }
 
-float Projectile::getDmgFalloff(void) {
-    return _damageFallOff;
+bool Projectile::getCanHoldCharge(void)
+{
+    return this->_canHoldCharging;
 }
 
-float Projectile::getReductionDmg(void) {
-    return _reductionDamage;
+bool Projectile::getRebound(void)
+{
+    return this->_isRebound;
 }
 
-bool Projectile::getCanHoldCharge(void) {
-    return _canHoldCharging;
-}
-
-bool Projectile::getRebound(void) {
-    return _isRebound;
-}
-
-int Projectile::getStack(void) {
-    return _stack;
+int Projectile::getStack(void)
+{
+    return this->_stack;
 }

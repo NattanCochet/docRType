@@ -7,11 +7,11 @@
 
 #include "../../include/Components/Position.hpp"
 
-Position::Position() : _pos()
+Position::Position() : _pos(), _defaultPos(), _isAppearOnTheWindow(false)
 {
 }
 
-Position::Position(sf::Vector2f pos) : _pos(pos), _defaultPos(pos)
+Position::Position(sf::Vector2f pos) : _pos(pos), _defaultPos(pos), _isAppearOnTheWindow(false)
 {
 }
 
@@ -19,6 +19,7 @@ Position::Position(int x, int y)
 {
     this->_pos = sf::Vector2f(x, y);
     this->_defaultPos = _pos;
+    this->_isAppearOnTheWindow = false;
 }
 
 Position::~Position()
@@ -33,6 +34,11 @@ sf::Vector2f &Position::getPosition()
 sf::Vector2f &Position::getDefaultPosition()
 {
     return (this->_defaultPos);
+}
+
+bool Position::getIsAppearOnTheWindow()
+{
+    return (this->_isAppearOnTheWindow);
 }
 
 void Position::setPosition(sf::Vector2f newPos)
@@ -53,4 +59,9 @@ void Position::setDefaultPosition(sf::Vector2f newPos)
 void Position::setDefaultPosition(int x, int y)
 {
     this->_defaultPos = sf::Vector2f(x, y);
+}
+
+void Position::setIsAppearOnTheWindow(bool newState)
+{
+    this->_isAppearOnTheWindow = newState;
 }

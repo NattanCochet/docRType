@@ -5,10 +5,10 @@
 ** LinearShooter
 */
 
-#include "../ABot.hpp"
-
 #ifndef LINEARSHOOTER_HPP_
 #define LINEARSHOOTER_HPP_
+
+#include "../ABot.hpp"
 
 /**
  * @class LinearShooter
@@ -22,36 +22,31 @@
 class LinearShooter : public ABot {
     public:
         /**
-         * @brief Constructs a LinearShooter with a specified delay.
+         * @brief Constructs a LinearShooter with a specified delay, direction, and vertical speed.
          *
-         * @param delay The delay between shots, in seconds.
+         * @param delay The delay between shots, in seconds (default: 2.0f).
+         * @param horizontal If true, the bot shoots horizontally; otherwise, it shoots vertically (default: false).
+         * @param vSpeed The vertical speed of the bot (default: 0).
          */
-        LinearShooter(float delay);
+        LinearShooter(float delay = 2.0f, bool horizontal = false, int vSpeed = 0);
 
         /**
-         * @brief Constructs a LinearShooter with a specified delay and direction.
-         *
-         * @param delay The delay between shots, in seconds.
-         * @param horizontal If true, the bot shoots horizontally; otherwise, it shoots vertically.
+         * @brief Moves the bot within the game world.
+         * @param world Reference to the game world.
+         * @param myIndexEntity Index of this entity in the world.
          */
-        LinearShooter(float delay, bool horizontal);
+        void moveBot(World &world, std::size_t myIndexEntity) override;
 
         /**
-         * @brief Default constructor for LinearShooter.
-         *
-         * Initializes the bot with default values for delay and direction (horizontal).
+         * @brief Shoots a projectile in the game world.
+         * @param world Reference to the game world.
+         * @param myIndexEntity Index of this entity in the world.
          */
-        LinearShooter();
-
-        /**
-         * @brief Checks if the LinearShooter shoots horizontally.
-         *
-         * @return True if the bot shoots horizontally, false if it shoots vertically.
-         */
-        bool isHonrizontal();
+        void shootProjectile(World &world, std::size_t myIndexEntity) override;
 
     private:
-        bool _honrizontal; ///< Boolean indicating whether the bot shoots horizontally or not.
+        bool _horizontal; /**< Boolean indicating whether the bot shoots horizontally or vertically. */
+        int _vSpeed; /**< Vertical speed of the bot. */
 };
 
 #endif /* !LINEARSHOOTER_HPP_ */

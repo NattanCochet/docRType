@@ -7,18 +7,18 @@
 
 #include "../../include/Components/Hitbox.hpp"
 
-Hitbox::Hitbox(TYPE type, Vector<int, 2> position, Vector<int, 2> size, float rotation)
-    : _type(type), _position(position), _size(size)
+Hitbox::Hitbox(
+    TYPE type, Vector<int, 2> position, Vector<int, 2> size,
+    std::size_t idBelong, bool isInPlayerTeam, float rotation
+)
+    : _type(type), _position(position), _size(size), _entityIDBelong(idBelong), _isInPlayerTeam(isInPlayerTeam),
+      _rotation(rotation)
 {
     if (rotation > 360 || rotation < -360) {
         _rotation = 0.0;
     } else {
         _rotation = rotation;
     }
-}
-
-Hitbox::Hitbox()
-{
 }
 
 Hitbox::~Hitbox()
@@ -53,6 +53,16 @@ float Hitbox::getRotation() const
     return (this->_rotation);
 }
 
+const bool &Hitbox::isInPlayerTeams() const noexcept
+{
+    return (this->_isInPlayerTeam);
+}
+
+const std::size_t &Hitbox::getEntityID() const noexcept
+{
+    return (this->_entityIDBelong);
+}
+
 void Hitbox::setType(TYPE newType)
 {
     this->_type = newType;
@@ -78,6 +88,16 @@ void Hitbox::setSize(int newXSize, int newYSize)
     this->_size = Vector<int, 2>(newXSize, newYSize);
 }
 
+void Hitbox::setIsInPlayerTeams(const bool &isInPlayerTeams) noexcept
+{
+    this->_isInPlayerTeam = isInPlayerTeams;
+}
+
+void Hitbox::setEntityID(const std::size_t &newEntityID) noexcept
+{
+    this->_entityIDBelong = newEntityID;
+}
+
 void Hitbox::setRotation(float newRotation)
 {
     if (newRotation > 360 || newRotation < -360) {
@@ -92,10 +112,23 @@ void Hitbox::addCollisionWithID(std::size_t id, std::array<bool, 8> eightAngleCo
     this->_eightAnglesCollisionByID[id] = eightAngleCollisionByID;
 }
 
+void Hitbox::deleteCollisions(const std::size_t &id)
+{
+    if (!this->_eightAnglesCollisionByID.contains(id)) {
+        throw ErrorKeyNotFound(std::to_string(id), "Hitbox::deleteCollisions");
+    }
+    this->_eightAnglesCollisionByID.erase(id);
+}
+
+void Hitbox::resetCollisions() noexcept
+{
+    this->_eightAnglesCollisionByID.clear();
+}
+
 bool Hitbox::isCollisionWithID(std::size_t id)
 {
     if (!this->_eightAnglesCollisionByID.contains(id)) {
-        throw ErrorKeyNotFound(std::to_string(id), "Hitbox::isCollisionWithID");
+        return (false);
     }
     std::array<bool, 8> eightAnglesCollisionBy = this->_eightAnglesCollisionByID[id];
     for (bool isCollision : eightAnglesCollisionBy) {
@@ -109,7 +142,7 @@ bool Hitbox::isCollisionWithID(std::size_t id)
 bool Hitbox::isCollisionWithIDInDirection(std::size_t id, DIRECTION direction)
 {
     if (!this->_eightAnglesCollisionByID.contains(id)) {
-        throw ErrorKeyNotFound(std::to_string(id), "Hitbox::isCollisionWithID");
+        return (false);
     }
     return (this->_eightAnglesCollisionByID[id][direction]);
 }
@@ -144,4 +177,15 @@ bool Hitbox::isCollisionInDirection(DIRECTION direction) const
         }
     }
     return (false);
+}
+
+std::vector<std::size_t> Hitbox::getAllCollisionIDs() const
+{
+    std::vector<std::size_t> ids;
+    ids.reserve(this->_eightAnglesCollisionByID.size());
+
+    for (const auto& pair : this->_eightAnglesCollisionByID) {
+        ids.push_back(pair.first);
+    }
+    return ids;
 }

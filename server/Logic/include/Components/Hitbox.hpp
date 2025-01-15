@@ -11,6 +11,7 @@
 #include "../Vector.hpp"
 #include "../Error/ErrorKeyNotFound.hpp"
 #include <map>
+#include <vector>
 
 /**
  * @class Hitbox
@@ -54,14 +55,8 @@ class Hitbox {
          * @param size The size (dimensions) of the hitbox.
          * @param rotation The rotation of the hitbox (optional, default is 0.0f).
          */
-        Hitbox(TYPE type, Vector<int, 2> position, Vector<int, 2> size, float rotation = 0.0f);
-
-        /**
-         * @brief Default constructor for a Hitbox.
-         *
-         * Initializes the hitbox with default values.
-         */
-        Hitbox();
+        Hitbox(TYPE type, Vector<int, 2> position, Vector<int, 2> size,
+            std::size_t idBelong, bool isInPlayerTeam, float rotation = 0.0f);
 
         /**
          * @brief Destructor for the Hitbox class.
@@ -110,6 +105,21 @@ class Hitbox {
         float getRotation() const;
 
         /**
+         * @brief Checks if the hitbox is friendly
+         * 
+         * @return If the hitbox is friendly
+         */
+        const bool &isInPlayerTeams() const noexcept;
+
+
+        /**
+         * @brief Gets linked entity ID
+         * 
+         * @return Linked entity ID
+         */
+        const std::size_t &getEntityID() const noexcept;
+
+        /**
          * @brief Sets the type of the hitbox.
          *
          * @param newType The new type to set (RECTANGLE or CIRCULAR).
@@ -154,6 +164,20 @@ class Hitbox {
         void setRotation(float newRotation);
 
         /**
+         * @brief Sets the player collaboration boolean
+         * 
+         * @param isInPlayerTeams The new player collaboration boolean
+         */
+        void setIsInPlayerTeams(const bool &isInPlayerTeams) noexcept;
+
+        /**
+         * @brief Sets the linked entity ID
+         * 
+         * @param newEntityID The new linked entity  ID
+         */
+        void setEntityID(const std::size_t &newEntityID) noexcept;
+
+        /**
          * @brief Adds collision data for a specific ID.
          *
          * This method adds collision information (an array of booleans for each direction)
@@ -163,6 +187,10 @@ class Hitbox {
          * @param collisionData The collision data to store for the specified ID.
          */
         void addCollisionWithID(std::size_t id, std::array<bool, 8> collisionData);
+
+        void resetCollisions() noexcept;
+
+        void deleteCollisions(const std::size_t &id);
 
         /**
          * @brief Checks if there is a collision for a specific ID.
@@ -204,10 +232,19 @@ class Hitbox {
          */
         bool isCollisionWithIDInDirection(std::size_t id, DIRECTION direction);
 
+        /**
+         * This method retun all the entity ID for each collision
+         *
+         * @return List of all ID as vector
+         */
+        std::vector<std::size_t> getAllCollisionIDs() const;
+
     private:
         TYPE _type; ///< The type of the hitbox (RECTANGLE or CIRCULAR).
         Vector<int, 2> _position; ///< The position of the hitbox.
         Vector<int, 2> _size; ///< The size (dimensions) of the hitbox.
+        bool _isInPlayerTeam; ///< Indicate if the hitbox belong to entity in player team.
+        std::size_t _entityIDBelong; ///< The id of the entity.
         std::map<std::size_t, std::array<bool, 8>> _eightAnglesCollisionByID; ///< A map to store collision data by ID.
         float _rotation; ///< The rotation of the hitbox.
 };

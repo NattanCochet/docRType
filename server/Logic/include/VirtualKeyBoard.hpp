@@ -71,25 +71,40 @@ class VirtualKeyBoard
          * @param key The control key to check.
          * @return `true` if the key is pressed, `false` otherwise.
          */
-        bool isKeyIsPressed(CONTROL key);
+        bool isKeyIsPressed(const CONTROL &key);
 
         /**
          * @brief Get if the user is charging a shoot or not
          *
          * @return `true` if the key shoot is pressed, `false` otherwise.
          */
-        bool isCharging();
+        bool isChargingShoot();
 
         /**
          * @brief Set if user is charging a shoot or not
          *
          * @param isCharging Set is charging or not
          */
-        void setIsCharging(bool isCharging);
+        void setIsChargingShoot(bool isChargingShoot);
+
+        /**
+         * @brief Get if the user is charging a shoot or not
+         *
+         * @return `true` if the key shoot is pressed, `false` otherwise.
+         */
+        bool isChargingForce();
+
+        /**
+         * @brief Set if user is charging a shoot or not
+         *
+         * @param isCharging Set is charging or not
+         */
+        void setIsChargingForce(bool isChargingForce);
 
     private:
         std::unordered_map<CONTROL, bool> _virtualKeyboard; ///< Internal state of the virtual keyboard, mapping each control to its pressed state.
-        bool _isCharging; ///< Bool to know if the user is charging his shoot or not.
+        bool _isChargingShoot; ///< Bool to know if the user is charging his shoot or not.
+        bool _isChargingForce; ///< Bool to know if the user is charging his shoot or not.
 };
 
 #endif /* !VIRTUALKEYBOARD_HPP_ */

@@ -7,7 +7,7 @@
 
 #include "../include/WorldsIndex.hpp"
 
-WorldsIndex::WorldsIndex() : _nbrWorlds(0), _wordMap(), _nextIDWorld(0)
+WorldsIndex::WorldsIndex() : _nbrWorlds(0), _wordMap(), _nextIDWorld(0), _systems()
 {
 }
 
@@ -34,6 +34,7 @@ std::size_t WorldsIndex::addWorld(
 )
 {
     _wordMap[_nextIDWorld] = World(isClient, isPublic, nbrPlayerMax, nameRoom, clientID, password);
+    _systems.loadSystemsInWorld(_wordMap[_nextIDWorld]);
     _nbrWorlds += 1;
     _nextIDWorld += 1;
     return (_nbrWorlds);
@@ -58,4 +59,11 @@ World WorldsIndex::deleteWorld(std::unordered_map<std::size_t, World>::iterator 
 std::size_t WorldsIndex::getNbrWorlds() const noexcept
 {
     return (_nbrWorlds);
+}
+
+void WorldsIndex::applyFunctionsInWorlds()
+{
+    for (auto &it : _wordMap) {
+        it.second.applyFonctionInWorld();
+    }
 }

@@ -15,10 +15,10 @@ GJKAlgorithm::~GJKAlgorithm()
 {
 }
 
-std::array<bool, 8> GJKAlgorithm::gjkCollision(const Hitbox& shapeA, const Hitbox& shapeB)
+const std::optional<std::array<bool, 8>> GJKAlgorithm::gjkCollision(const Hitbox& shapeA, const Hitbox& shapeB)
 {
     Vector<float, 2> direction(1.0f, 0.0f);
-    std::array<bool, 8> result;
+    std::array<bool, 8> result = {};
 
     std::vector<Vector<float, 2>> simplex;
     simplex.push_back(this->support(shapeA ,shapeB, direction));
@@ -29,7 +29,7 @@ std::array<bool, 8> GJKAlgorithm::gjkCollision(const Hitbox& shapeA, const Hitbo
         Vector<float, 2> newSupport = this->support(shapeA, shapeB, direction);
 
         if (newSupport.dot(direction) < 0) {
-            return (result);
+            return (std::nullopt);
         }
 
         simplex.push_back(newSupport);
@@ -39,7 +39,7 @@ std::array<bool, 8> GJKAlgorithm::gjkCollision(const Hitbox& shapeA, const Hitbo
             return (result);
         }
     }
-    return (result);
+    return (std::nullopt);
 }
 
 bool GJKAlgorithm::handleSimplex(std::vector<Vector<float, 2>>& simplex, Vector<float, 2>& direction)
