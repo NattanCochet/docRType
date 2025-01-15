@@ -17,6 +17,7 @@ var classComponentArray =
     [ "begin", "classComponentArray.html#a79b6be8ae585738d63fbe62ef7f5109f", null ],
     [ "cbegin", "classComponentArray.html#ac41f4acb026176bd58220930696b7f61", null ],
     [ "cend", "classComponentArray.html#a22cb12fb0c5f853cdfa48d8881e46c47", null ],
+    [ "compaction", "classComponentArray.html#aaf2569a500b296b3ed84b3792c38821f", null ],
     [ "emplace_at", "classComponentArray.html#ae809a6dd1204ef1852fb05794d5a7f80", null ],
     [ "end", "classComponentArray.html#aafbc8c1dea9dce0f2aa82aab6efa1ae0", null ],
     [ "end", "classComponentArray.html#a981e8b9b63f7914332d029ceacb71c32", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registry_0',['Registry',['../classRegistry.html',1,'']]]
+  ['myclock_0',['MyClock',['../classMyClock.html',1,'']]]
 ];

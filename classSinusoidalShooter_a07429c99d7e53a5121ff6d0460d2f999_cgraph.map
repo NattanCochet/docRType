@@ -1,0 +1,9 @@
+<map id="SinusoidalShooter::moveBot" name="SinusoidalShooter::moveBot">
+<area shape="rect" id="Node000001" title="Moves the bot within the game world following a sinusoidal pattern." alt="" coords="5,47,138,88"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="186,5,356,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,48,201,33,202,38,139,54"/>
+<area shape="rect" id="Node000003" href="$classPosition.html#abeb42e349764f30df958b993d27bd120" title="Gets the current position of the object." alt="" coords="201,55,340,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,65,186,65,186,70,138,70"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="208,104,334,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,81,202,97,201,102,138,87"/>
+</map>

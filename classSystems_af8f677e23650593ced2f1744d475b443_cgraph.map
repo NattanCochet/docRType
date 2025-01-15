@@ -1,15 +1,9 @@
 <map id="Systems::drawableSystem" name="Systems::drawableSystem">
-<area shape="rect" id="Node000001" title="A system that processes drawable entities for rendering." alt="" coords="5,104,180,130"/>
-<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="228,5,398,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,101,164,71,227,40,243,34,244,39,229,45,166,76,116,106"/>
-<area shape="rect" id="Node000003" href="$classWorld.html#a26b4683ede7d756b2f783561d13b00bc" title="Gets the clock used to track the world&#39;s time." alt="" coords="258,55,369,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,101,242,81,243,86,154,106"/>
-<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="251,104,376,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,114,235,114,235,120,180,120"/>
-<area shape="rect" id="Node000005" href="$classWorld.html#ad3ffb26494ec30127f8278b2c8eca420" title="Gets the virtual keyboard associated with a client ID." alt="" coords="228,154,399,194"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="146,128,218,147,217,152,144,133"/>
-<area shape="rect" id="Node000007" href="$classVirtualKeyBoard.html#afed46be98962959fa50e40ca144fe6b9" title="Checks if a specific control key is pressed." alt="" coords="232,219,395,260"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="113,128,164,164,229,204,241,210,239,215,226,209,161,169,110,132"/>
-<area shape="rect" id="Node000006" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="447,154,608,194"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="400,172,431,172,431,177,400,177"/>
+<area shape="rect" id="Node000001" title="A system that processes drawable entities for rendering." alt="" coords="5,55,180,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="230,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,51,239,32,240,38,155,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="253,55,378,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,65,237,65,237,70,180,70"/>
+<area shape="rect" id="Node000004" href="$classVirtualKeyBoard.html#a2646b213ad9845f14ceb7ad16bd153c9" title="Retrieves a reference to the internal virtual keyboard state." alt="" coords="228,104,403,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,78,219,97,218,103,145,84"/>
 </map>

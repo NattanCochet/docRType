@@ -1,6 +1,6 @@
 <map id="server/Logic/src/Components/Clock.cpp" name="server/Logic/src/Components/Clock.cpp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="159,5,351,46"/>
-<area shape="rect" id="Node000002" href="$Clock_8hpp.html" title=" " alt="" coords="176,94,335,135"/>
+<area shape="rect" id="Node000002" href="$Clock_8hpp.html" title="Declaration of the Clock class, which manages multiple sf::Clock instances." alt="" coords="176,94,335,135"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,47,258,78,252,78,252,47"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,190,116,216"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,138,103,186,100,181,210,133"/>

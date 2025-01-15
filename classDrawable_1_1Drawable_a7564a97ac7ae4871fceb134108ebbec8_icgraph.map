@@ -1,0 +1,5 @@
+<map id="Drawable::Drawable::setSecondForDefaultFrame" name="Drawable::Drawable::setSecondForDefaultFrame">
+<area shape="rect" id="Node000001" title="Sets the duration for each frame of the default animation." alt="" coords="189,5,375,46"/>
+<area shape="rect" id="Node000002" href="$classDrawable_1_1Drawable.html#a57caeacf984b01bfb260a678e2021ae7" title="Sets the texture rectangle for the sprite." alt="" coords="5,5,141,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,28,141,28,141,23,173,23"/>
+</map>

@@ -1,7 +1,5 @@
 <map id="Vector&lt; T, N &gt;" name="Vector&lt; T, N &gt;">
-<area shape="rect" id="Node000001" title="A templated class representing a vector of arbitrary size and type." alt="" coords="76,5,172,295"/>
-<area shape="rect" id="Node000002" href="$classVector.html" title=" " alt="" coords="5,358,114,648"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,310,88,359,83,358,92,310"/>
-<area shape="rect" id="Node000003" href="$classVector.html" title=" " alt="" coords="138,358,237,648"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,310,161,319,168,358,163,359,156,320,154,310"/>
+<area shape="rect" id="Node000001" title="A templated class representing a vector of arbitrary size and type." alt="" coords="7,5,102,295"/>
+<area shape="rect" id="Node000002" href="$classVector.html" title=" " alt="" coords="5,358,104,648"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,311,57,359,52,359,52,311"/>
 </map>

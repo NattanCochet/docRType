@@ -1,21 +1,7 @@
 <map id="World::addClientInWorld" name="World::addClientInWorld">
-<area shape="rect" id="Node000001" title="Adds a client to the world." alt="" coords="5,115,164,140"/>
-<area shape="rect" id="Node000002" href="$classCreateEntity.html#aeb1da25c99068d51fe44b3a751fdc0c6" title=" " alt="" coords="212,57,381,83"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,111,231,85,232,90,136,117"/>
-<area shape="rect" id="Node000009" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="216,107,377,148"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="164,125,200,125,200,130,164,130"/>
-<area shape="rect" id="Node000010" href="$classWorld.html#aff3988b4920975c42b2b518dc96a5dba" title="Checks if the world is full (has reached the maximum number of players)." alt="" coords="234,172,358,198"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="136,138,232,165,231,170,134,144"/>
-<area shape="rect" id="Node000003" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="429,24,595,50"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,54,413,49,414,55,382,60"/>
-<area shape="rect" id="Node000005" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="437,92,587,118"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="381,81,422,88,421,93,380,86"/>
-<area shape="rect" id="Node000004" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="645,5,815,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="595,27,629,24,629,29,596,32"/>
-<area shape="rect" id="Node000006" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="661,55,799,96"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="587,92,645,84,646,90,588,97"/>
-<area shape="rect" id="Node000007" href="$classComponentArray.html#a48ad724f8d6a9ea7f15ef19dfe28c12b" title="Inserts a value at the specified position." alt="" coords="643,120,817,146"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="588,112,628,117,627,122,587,117"/>
-<area shape="rect" id="Node000008" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="657,169,803,195"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="544,116,644,156,664,162,662,167,642,161,542,121"/>
+<area shape="rect" id="Node000001" title="Adds a client to the world." alt="" coords="5,42,164,68"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="212,5,373,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,41,196,37,196,42,164,46"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#aff3988b4920975c42b2b518dc96a5dba" title="Checks if the world is full (has reached the maximum number of players)." alt="" coords="230,70,354,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,63,215,70,214,75,164,68"/>
 </map>

@@ -1,0 +1,23 @@
+<map id="Drawable::Drawable::setCurrentRect" name="Drawable::Drawable::setCurrentRect">
+<area shape="rect" id="Node000001" title="Sets the texture rectangle for the sprite." alt="" coords="5,300,141,341"/>
+<area shape="rect" id="Node000002" href="$classDrawable_1_1Drawable.html#a83963322e03b12f37ce8afd7124cba36" title="Sets the frame data for the default animation." alt="" coords="214,5,350,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,299,86,250,107,186,139,117,161,85,187,57,199,48,202,52,190,61,165,89,144,120,112,188,91,252,80,300"/>
+<area shape="rect" id="Node000003" href="$classDrawable_1_1Drawable.html#a4c731870ffb00010be8179aa4527005f" title="Sets the frame data for the &quot;down&quot; animation." alt="" coords="214,71,350,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,298,93,261,116,214,147,165,187,122,199,114,202,118,190,126,151,168,121,217,98,263,84,300"/>
+<area shape="rect" id="Node000004" href="$classDrawable_1_1Drawable.html#a31d9e38818316e892858eca201070f56" title="Sets the frame data for the &quot;left&quot; animation." alt="" coords="214,136,350,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="85,298,127,244,155,214,187,187,199,180,201,185,190,192,159,218,131,247,90,301"/>
+<area shape="rect" id="Node000005" href="$classDrawable_1_1Drawable.html#aae8bcace29dbb630b0142dfc9d821613" title="Sets the frame data for the &quot;right&quot; animation." alt="" coords="214,201,350,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="106,297,187,253,203,246,205,251,190,257,109,302"/>
+<area shape="rect" id="Node000006" href="$classDrawable_1_1Drawable.html#a09af9037d53e852742901bd549a97c77" title="Sets the frame data for the &quot;up&quot; animation." alt="" coords="214,267,350,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="141,307,198,298,199,303,142,312"/>
+<area shape="rect" id="Node000007" href="$classDrawable_1_1Drawable.html#a7564a97ac7ae4871fceb134108ebbec8" title="Sets the duration for each frame of the default animation." alt="" coords="189,332,375,373"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="142,328,174,333,173,338,141,333"/>
+<area shape="rect" id="Node000008" href="$classDrawable_1_1Drawable.html#a9977a1dd0596ecaafcce683ad03aac53" title="Sets the duration for each frame of the &quot;down&quot; animation." alt="" coords="193,397,371,438"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="109,339,190,382,206,389,204,394,188,387,107,343"/>
+<area shape="rect" id="Node000009" href="$classDrawable_1_1Drawable.html#a3b63b27533230661df52a022340da16e" title="Sets the duration for each frame of the &quot;left&quot; animation." alt="" coords="198,463,366,503"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="90,340,131,393,159,422,190,447,199,453,196,457,187,452,155,426,127,397,86,343"/>
+<area shape="rect" id="Node000010" href="$classDrawable_1_1Drawable.html#a62107ded5a3e36249c1750d12fbf5a48" title="Sets the duration for each frame of the &quot;right&quot; animation." alt="" coords="194,528,370,569"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="84,340,98,377,121,423,151,471,190,513,196,518,193,522,187,517,147,475,116,426,93,379,79,342"/>
+<area shape="rect" id="Node000011" href="$classDrawable_1_1Drawable.html#aa0269dc0800e45e0d2f21680be63c8c9" title="Sets the duration for each frame of the &quot;up&quot; animation." alt="" coords="201,593,363,634"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="80,340,91,389,112,452,144,520,165,551,191,578,195,582,191,586,187,582,161,554,140,522,107,454,86,390,75,342"/>
+</map>

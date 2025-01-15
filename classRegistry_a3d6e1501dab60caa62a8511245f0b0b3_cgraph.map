@@ -1,9 +1,5 @@
 <map id="Registry::spawn_entity" name="Registry::spawn_entity">
-<area shape="rect" id="Node000001" title="Spawns a new entity and returns it." alt="" coords="5,70,156,96"/>
-<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="221,5,360,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,67,206,46,207,51,131,72"/>
-<area shape="rect" id="Node000003" href="$classComponentArray.html#a48ad724f8d6a9ea7f15ef19dfe28c12b" title="Inserts a value at the specified position." alt="" coords="204,70,377,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,80,188,80,188,86,156,86"/>
-<area shape="rect" id="Node000004" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="217,120,364,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,94,218,113,217,118,138,99"/>
+<area shape="rect" id="Node000001" title="Spawns a new entity and returns it." alt="" coords="5,13,156,38"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="204,5,342,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,23,188,23,188,28,156,28"/>
 </map>

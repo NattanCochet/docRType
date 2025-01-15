@@ -1,7 +1,17 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classABot.html" title="Abstract base class for a bot in the game." alt="" coords="5,31,56,56"/>
-<area shape="rect" id="Node000001" href="$classLinearShooter.html" title="A class representing a linear shooter bot." alt="" coords="104,5,206,31"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="70,33,103,26,104,31,71,38"/>
-<area shape="rect" id="Node000002" href="$classTpShooter.html" title=" " alt="" coords="114,55,196,80"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="71,49,114,57,113,62,70,54"/>
+<area shape="rect" id="Node000000" href="$classABot.html" title="Abstract base class for a bot in the game." alt="" coords="5,153,56,179"/>
+<area shape="rect" id="Node000001" href="$classAlienEmperor.html" title="Represents an advanced bot type in the game, inheriting from ABot." alt="" coords="118,5,216,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="39,138,63,89,80,63,102,40,119,29,122,34,105,44,85,66,67,91,44,140"/>
+<area shape="rect" id="Node000002" href="$classBigShip.html" title="Represents a large ship bot in the game, inheriting from ABot." alt="" coords="134,55,200,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="49,139,73,113,102,89,132,75,135,79,105,94,77,117,53,143"/>
+<area shape="rect" id="Node000003" href="$classKamikazeShooter.html" title="Represents a kamikaze&#45;type bot that can shoot projectiles and deal damage upon collision." alt="" coords="105,104,228,130"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="69,150,128,128,130,133,71,155"/>
+<area shape="rect" id="Node000004" href="$classLinearShooter.html" title="A class representing a linear shooter bot." alt="" coords="116,153,218,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="71,164,115,164,115,169,71,169"/>
+<area shape="rect" id="Node000005" href="$classSinusoidalShooter.html" title="A bot that moves and shoots projectiles in a sinusoidal pattern." alt="" coords="104,203,230,228"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="71,178,130,200,128,205,69,183"/>
+<area shape="rect" id="Node000006" href="$classSpatialDustman.html" title="A bot that manages multiple shooting patterns across different columns." alt="" coords="110,252,224,278"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="53,189,77,215,105,239,125,249,122,254,102,243,73,219,49,193"/>
+<area shape="rect" id="Node000007" href="$classTpShooter.html" title="A teleporting shooter bot with timed projectile shooting." alt="" coords="126,301,208,327"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="44,192,67,241,85,266,105,288,127,301,125,306,102,292,80,270,63,244,39,195"/>
 </map>

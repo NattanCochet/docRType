@@ -1,0 +1,5 @@
+<map id="SinusoidalShooter" name="SinusoidalShooter">
+<area shape="rect" id="Node000001" title="A bot that moves and shoots projectiles in a sinusoidal pattern." alt="" coords="5,221,142,328"/>
+<area shape="rect" id="Node000002" href="$classABot.html" title="Abstract base class for a bot in the game." alt="" coords="15,5,133,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,188,76,221,71,221,71,188"/>
+</map>

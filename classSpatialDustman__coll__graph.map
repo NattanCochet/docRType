@@ -1,0 +1,5 @@
+<map id="SpatialDustman" name="SpatialDustman">
+<area shape="rect" id="Node000001" title="A bot that manages multiple shooting patterns across different columns." alt="" coords="5,221,136,349"/>
+<area shape="rect" id="Node000002" href="$classABot.html" title="Abstract base class for a bot in the game." alt="" coords="12,5,130,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,188,74,221,68,221,68,188"/>
+</map>

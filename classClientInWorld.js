@@ -1,7 +1,7 @@
 var classClientInWorld =
 [
     [ "ClientInWorld", "classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a", null ],
-    [ "ClientInWorld", "classClientInWorld.html#a7fc0da75e7272e5c92220719f43af0bb", null ],
+    [ "ClientInWorld", "classClientInWorld.html#a49b10497ff40fdcb130c9fa0e06e0f58", null ],
     [ "~ClientInWorld", "classClientInWorld.html#a20842370cf861453f498feae0abcab3b", null ],
     [ "addScore", "classClientInWorld.html#a0fae8e3a70f8d6c5a7ae28844480f015", null ],
     [ "getClientID", "classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8", null ],

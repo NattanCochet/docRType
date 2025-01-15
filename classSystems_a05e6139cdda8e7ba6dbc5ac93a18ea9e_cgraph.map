@@ -1,0 +1,11 @@
+<map id="Systems::looseSystem" name="Systems::looseSystem">
+<area shape="rect" id="Node000001" title="A system that checks if the player has lost the game." alt="" coords="5,55,159,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="207,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,51,219,33,220,38,141,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="229,55,354,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,65,214,65,214,70,159,70"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#a96e02765280312fa865c22fded73afea" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="207,104,377,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,78,220,97,219,102,139,84"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="425,96,611,137"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="377,114,409,114,409,120,377,120"/>
+</map>

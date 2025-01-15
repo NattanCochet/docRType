@@ -1,5 +1,7 @@
 <map id="World::addClientInWorld" name="World::addClientInWorld">
-<area shape="rect" id="Node000001" title="Adds a client to the world." alt="" coords="103,5,261,31"/>
-<area shape="rect" id="Node000002" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="Adds a client to the world." alt="" coords="154,31,312,56"/>
+<area shape="rect" id="Node000002" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="31,5,80,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,33,80,24,81,19,139,27"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="5,55,106,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,59,107,63,106,58,138,54"/>
 </map>

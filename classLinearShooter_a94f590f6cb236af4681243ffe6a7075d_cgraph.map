@@ -1,0 +1,9 @@
+<map id="LinearShooter::moveBot" name="LinearShooter::moveBot">
+<area shape="rect" id="Node000001" title="Moves the bot within the game world." alt="" coords="5,55,166,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="214,5,384,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,51,225,32,226,38,145,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a09855d85d6afae3af3a8e9c9a697b00e" title=" " alt="" coords="218,55,380,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,65,202,65,202,70,166,70"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="236,104,362,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,78,226,97,225,103,144,84"/>
+</map>

@@ -1,14 +1,9 @@
 <map id="World::getClock" name="World::getClock">
-<area shape="rect" id="Node000001" title="Gets the clock used to track the world&#39;s time." alt="" coords="673,31,785,56"/>
-<area shape="rect" id="Node000002" href="$classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="451,5,625,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="657,37,625,32,626,27,658,31"/>
-<area shape="rect" id="Node000006" href="$classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="455,55,621,80"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="658,55,622,60,621,54,657,50"/>
-<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,32,404,35,403,30,435,27"/>
-<area shape="rect" id="Node000004" href="$classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
-<area shape="rect" id="Node000005" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="439,60,403,56,404,51,440,55"/>
+<area shape="rect" id="Node000001" title="Gets the clock used to track the world&#39;s time." alt="" coords="562,5,674,31"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#afeed19f1bb857b9e7cd8290a5f39e70d" title="A system that processes the velocity components of entities." alt="" coords="348,5,514,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="547,21,515,21,515,16,547,16"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,21,300,21,300,16,333,16"/>
+<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>

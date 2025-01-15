@@ -1,0 +1,5 @@
+<map id="CreateEntity::createBossBomb" name="CreateEntity::createBossBomb">
+<area shape="rect" id="Node000001" title="Creates a boss bomb entity." alt="" coords="259,5,456,31"/>
+<area shape="rect" id="Node000002" href="$classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af" title="Shoots projectiles in the game world, managing multiple columns." alt="" coords="5,5,211,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,21,211,21,211,16,243,16"/>
+</map>

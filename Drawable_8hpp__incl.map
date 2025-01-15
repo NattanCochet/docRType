@@ -1,18 +1,24 @@
 <map id="server/Logic/include/Components/Drawable.hpp" name="server/Logic/include/Components/Drawable.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="76,5,257,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="69,168,141,193"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,48,41,67,25,80,13,95,9,105,9,113,18,130,37,145,60,158,57,163,34,150,14,133,3,114,3,103,8,93,22,76,38,63,75,44"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="23,94,152,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,48,112,85,109,81,145,45"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="176,94,314,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,45,224,81,221,85,184,48"/>
-<area shape="rect" id="Node000005" href="$Vector_8hpp.html" title=" " alt="" coords="338,94,432,120"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="222,44,338,86,336,91,220,49"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="339,123,157,169,156,164,338,117"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="283,168,332,193"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="374,122,334,159,330,155,370,118"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="356,168,414,193"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="388,120,388,152,382,152,382,120"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="438,168,492,193"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="400,118,442,155,439,159,397,122"/>
+<area shape="rect" id="Node000001" title="Declaration of the Drawable class, which represents an object that can be drawn on the screen." alt="" coords="254,5,435,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="238,241,310,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="342,47,322,120,286,227,281,226,317,119,337,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="383,94,512,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="372,44,421,82,418,86,368,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="536,94,673,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="410,44,551,86,549,92,409,49"/>
+<area shape="rect" id="Node000005" href="$Vector_8hpp.html" title=" " alt="" coords="61,168,154,193"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="255,37,221,45,188,56,156,73,129,96,121,108,115,123,110,153,104,152,110,121,116,106,125,92,153,69,185,52,220,39,254,32"/>
+<area shape="rect" id="Node000009" href="$ErrorNoObject_8hpp.html" title=" " alt="" coords="139,94,308,120"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="316,49,256,88,253,83,313,44"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="137,191,233,232,231,237,135,196"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,241,55,267"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="96,196,56,233,52,229,92,192"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="79,241,136,267"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="110,194,110,226,105,226,105,194"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="161,241,214,267"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="123,192,165,229,161,233,119,196"/>
+<area shape="rect" id="Node000010" href="$AError_8hpp.html" title=" " alt="" coords="183,168,264,193"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="226,120,226,152,221,152,221,120"/>
+<area shape="poly" id="edge11_Node000010_Node000002" title=" " alt="" coords="234,192,259,227,255,230,230,195"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="220,195,203,229,198,226,215,192"/>
 </map>

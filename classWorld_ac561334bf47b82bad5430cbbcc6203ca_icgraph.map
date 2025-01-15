@@ -1,0 +1,10 @@
+<map id="World::getSeedForLevel" name="World::getSeedForLevel">
+<area shape="rect" id="Node000001" title="Gets the seed for a specific level." alt="" coords="447,31,606,56"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#af15aa67c6383710c5ff40439a21253e0" title="Spawn entities in world after generated world." alt="" coords="214,5,399,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="431,35,399,31,400,26,432,30"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="35,55,136,80"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="431,51,136,67,136,62,431,46"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a8bfbaec6ec638fd089dfd86257777eaf" title="A system responsible for spawning entities." alt="" coords="5,5,166,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,21,166,21,166,16,198,16"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="231,38,137,59,135,54,230,32"/>
+</map>

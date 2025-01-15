@@ -1,0 +1,11 @@
+<map id="CreateEntity::createTpShooter" name="CreateEntity::createTpShooter">
+<area shape="rect" id="Node000001" title="Creates a teleporting shooter entity." alt="" coords="5,35,199,60"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="247,8,413,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,34,231,30,231,35,199,39"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="255,59,405,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,55,239,59,239,65,199,60"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="461,5,631,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,17,445,17,445,22,413,22"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="477,55,615,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="405,70,461,71,461,77,405,76"/>
+</map>

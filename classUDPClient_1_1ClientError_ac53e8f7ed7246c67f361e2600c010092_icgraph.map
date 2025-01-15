@@ -1,0 +1,5 @@
+<map id="UDPClient::ClientError::details" name="UDPClient::ClientError::details">
+<area shape="rect" id="Node000001" title="Returns additional details about the error." alt="" coords="202,5,350,46"/>
+<area shape="rect" id="Node000002" href="$classUDPClient_1_1ClientError.html#a934f7aaeffb269eec2b148b9b5683f6a" title="Constructs a ClientError with a specified error type and optional details." alt="" coords="5,5,154,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,28,154,28,154,23,186,23"/>
+</map>

@@ -1,5 +1,7 @@
 <map id="Vector::cross" name="Vector::cross">
-<area shape="rect" id="Node000001" title="Computes the cross product of two 2D vectors." alt="" coords="5,5,103,31"/>
+<area shape="rect" id="Node000001" title="Computes the cross product of two 2D vectors." alt="" coords="5,31,103,56"/>
 <area shape="rect" id="Node000002" href="$classVector.html#aff48630e02488dba2b0b0c8c2371f14f" title="Retrieves the size of the vector." alt="" coords="151,5,259,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,16,135,16,135,21,103,21"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,33,135,27,136,32,103,38"/>
+<area shape="rect" id="Node000003" href="$classVector.html#a918186503832b6e04bcfc6f6baf0b4e9" title="Default constructor that initializes the vector with default values." alt="" coords="153,55,256,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,49,138,54,137,59,103,54"/>
 </map>

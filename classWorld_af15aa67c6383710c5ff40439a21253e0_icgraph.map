@@ -1,5 +1,7 @@
 <map id="World::spawnEntitiesInWorld" name="World::spawnEntitiesInWorld">
-<area shape="rect" id="Node000001" title="Spawn entities in world after generated world." alt="" coords="238,5,423,31"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+<area shape="rect" id="Node000001" title="Spawn entities in world after generated world." alt="" coords="214,31,399,56"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a8bfbaec6ec638fd089dfd86257777eaf" title="A system responsible for spawning entities." alt="" coords="5,5,166,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,34,166,30,166,25,198,28"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="35,55,136,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,58,136,65,135,59,198,53"/>
 </map>

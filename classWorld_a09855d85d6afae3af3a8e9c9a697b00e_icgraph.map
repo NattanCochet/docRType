@@ -1,0 +1,9 @@
+<map id="World::getHeightWindow" name="World::getHeightWindow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,55,397,80"/>
+<area shape="rect" id="Node000002" href="$classKamikazeShooter.html#a9d04b9db76274c91fad1b30bbc1a695d" title="Moves the bot within the game world." alt="" coords="5,5,187,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,53,156,34,157,29,241,48"/>
+<area shape="rect" id="Node000003" href="$classLinearShooter.html#a94f590f6cb236af4681243ffe6a7075d" title="Moves the bot within the game world." alt="" coords="16,55,176,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,70,177,70,177,65,219,65"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="46,104,146,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,87,147,108,146,103,240,82"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="World::getInformationOfEachEntity" name="World::getInformationOfEachEntity">
+<area shape="rect" id="Node000001" title="Get All Position, Type, Rotation and Rect for send to client." alt="" coords="154,5,340,46"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="5,13,106,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,28,106,28,106,23,138,23"/>
+</map>

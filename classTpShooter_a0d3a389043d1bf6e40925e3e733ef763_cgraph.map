@@ -1,0 +1,9 @@
+<map id="TpShooter::moveBot" name="TpShooter::moveBot">
+<area shape="rect" id="Node000001" title="Moves the bot within the game world, implementing teleportation logic." alt="" coords="5,55,145,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="193,5,363,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,51,207,33,208,38,132,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="215,55,340,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,65,200,65,200,70,145,70"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#aabec2b8f296f40aa91b99eae028e2288" title=" " alt="" coords="203,104,352,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="132,78,208,97,207,102,130,84"/>
+</map>

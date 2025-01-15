@@ -1,0 +1,22 @@
+<map id="SpatialDustman::shootProjectile" name="SpatialDustman::shootProjectile">
+<area shape="rect" id="Node000001" title="Shoots projectiles in the game world, managing multiple columns." alt="" coords="5,113,211,138"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#a279cbfa5a6d3c9e125ab5dbefcda910e" title="Creates a boss bomb entity." alt="" coords="259,13,456,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,110,187,79,258,47,277,41,279,46,260,52,189,84,133,115"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="718,92,889,117"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="211,120,703,105,703,110,211,125"/>
+<area shape="rect" id="Node000007" href="$classCreateEntity.html#acc5766a2a1bdbc53e253a4db2d8e635a" title="Creates a laser entity." alt="" coords="274,62,440,88"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="174,110,275,89,277,94,175,115"/>
+<area shape="rect" id="Node000008" href="$classWorld.html#ad285af93f6dccf8d392f259da7cc80d9" title="Get Class to create entity." alt="" coords="267,164,448,189"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="175,136,277,157,275,163,174,142"/>
+<area shape="rect" id="Node000009" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="295,213,420,238"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="133,137,189,168,260,199,280,206,279,211,258,204,187,172,130,141"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="504,62,670,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="421,37,510,56,509,61,420,42"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="512,13,662,38"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="456,23,496,23,496,28,456,28"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="671,84,703,88,702,93,670,89"/>
+<area shape="rect" id="Node000006" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="734,5,873,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="663,23,719,23,719,28,663,28"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="441,72,488,72,488,78,441,78"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="420,59,509,40,510,45,421,64"/>
+</map>

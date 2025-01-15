@@ -1,0 +1,18 @@
+<map id="KamikazeShooter::shootProjectile" name="KamikazeShooter::shootProjectile">
+<area shape="rect" id="Node000001" title="Shoots a projectile in the game world." alt="" coords="5,138,221,164"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#a9b7c2caeb8b418ff1c0cc4fa6dde0fff" title="Creates a kamikaze entity." alt="" coords="269,62,459,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,135,303,90,305,95,159,140"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="721,92,892,117"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="221,141,706,108,706,114,221,146"/>
+<area shape="rect" id="Node000007" href="$classWorld.html#ad285af93f6dccf8d392f259da7cc80d9" title="Get Class to create entity." alt="" coords="273,164,454,189"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="221,159,258,163,257,168,221,165"/>
+<area shape="rect" id="Node000008" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="301,213,426,238"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="154,162,269,199,293,206,292,211,268,204,152,167"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="507,62,673,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="459,72,491,72,491,78,459,78"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="515,13,665,38"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="426,59,512,40,514,45,427,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="674,84,706,88,705,93,673,89"/>
+<area shape="rect" id="Node000006" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="737,5,876,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="666,23,722,23,722,28,666,28"/>
+</map>

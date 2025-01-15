@@ -1,5 +1,0 @@
-<map id="World::getVirtualKeyBoardFromClientID" name="World::getVirtualKeyBoardFromClientID">
-<area shape="rect" id="Node000001" title="Gets the virtual keyboard associated with a client ID." alt="" coords="5,5,177,46"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="225,5,386,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,23,209,23,209,28,177,28"/>
-</map>

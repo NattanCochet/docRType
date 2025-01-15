@@ -1,0 +1,5 @@
+<map id="Area::setRadius" name="Area::setRadius">
+<area shape="rect" id="Node000001" title="Sets the radius of the area." alt="" coords="198,5,310,31"/>
+<area shape="rect" id="Node000002" href="$classArea.html#abeb428487e4f9f5d90463d9bcba1b6bc" title="Retrieves the ID of the entity associated with this area." alt="" coords="5,5,150,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>

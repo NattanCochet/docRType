@@ -1,0 +1,8 @@
+<map id="Area::setEntityIDBelong" name="Area::setEntityIDBelong">
+<area shape="rect" id="Node000001" title="Assigns an entity ID to the area." alt="" coords="5,31,163,56"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="49,32,42,22,46,12,60,6,84,4,110,7,123,14,121,18,108,12,84,9,62,11,50,16,47,21,53,29"/>
+<area shape="rect" id="Node000002" href="$classArea.html#a00d2d8ea6ff720c7c0da80d62f662c47" title="Adds an entity ID to the set of entities within the area." alt="" coords="211,5,379,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,31,195,27,195,33,163,37"/>
+<area shape="rect" id="Node000003" href="$classArea.html#a46e60fc4f63931c85cb3bed355e63596" title="Clears all data associated with the area, including its entity list." alt="" coords="240,55,350,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,50,225,57,225,62,163,55"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Vector::Vector" name="Vector::Vector">
+<area shape="rect" id="Node000001" title="Default constructor that initializes the vector with default values." alt="" coords="404,153,507,179"/>
+<area shape="rect" id="Node000002" href="$classVector.html#a33f9d3cf13cd4716dd9e740ac9cdba36" title="Computes the cross product of two 2D vectors." alt="" coords="243,5,340,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,142,403,92,380,67,354,44,336,34,339,29,358,40,384,63,407,89,442,139"/>
+<area shape="rect" id="Node000003" href="$classVector.html#abc0b06c6068939982cb8386c6065ce79" title="Computes the dot product of two vectors." alt="" coords="250,55,334,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="427,146,394,119,355,94,332,83,334,78,357,89,397,115,430,141"/>
+<area shape="rect" id="Node000005" href="$classVector.html#ac50981f6fd762bfab3860219d4398508" title="Multiplies a vector by a scalar." alt="" coords="233,104,350,130"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="395,151,336,133,338,128,397,146"/>
+<area shape="rect" id="Node000006" href="$classVector.html#a624a21bed59c1e8667cf7d5e72d3029c" title="Multiplies two vectors element&#45;wise." alt="" coords="233,153,350,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="388,169,351,169,351,164,388,164"/>
+<area shape="rect" id="Node000007" href="$classVector.html#a17e45f26c99c85f13cec27f23b390951" title="Adds two vectors element&#45;wise." alt="" coords="232,203,352,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="397,187,338,205,336,199,395,182"/>
+<area shape="rect" id="Node000008" href="$classVector.html#a28dbe731041a9e72f59f8114baa61c33" title="Subtracts one vector from another element&#45;wise." alt="" coords="234,252,350,278"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="430,191,397,218,357,243,334,254,332,249,355,239,394,213,427,187"/>
+<area shape="rect" id="Node000009" href="$classVector.html#af75326d4acf567cdd16150ee1f575804" title="Stream insertion operator to output the vector." alt="" coords="228,301,356,327"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="442,194,407,243,384,269,358,292,339,303,336,298,354,288,380,266,403,240,437,191"/>
+<area shape="rect" id="Node000004" href="$classGJKAlgorithm.html#a9439a86b51524e262827d8757f784223" title="Checks if two hitboxes are colliding using the GJK algorithm." alt="" coords="5,55,180,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,70,180,70,180,65,235,65"/>
+</map>

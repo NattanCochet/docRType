@@ -4,7 +4,8 @@ var classSpawnRule_1_1Generator =
       [ "NOTHING", "classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a47d701b1f6bde71e9bd106e2186311a7", null ],
       [ "DECOR", "classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a1d355e4e36060182d42424f0c64376ce", null ],
       [ "LINEAR_SHOOTER_VERTICAL", "classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a284dc8c63d54fd6df056649134a99f99", null ],
-      [ "LINEAR_SHOOTER_HORIZONTAL", "classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a9ff795fd1c0f4c04498e8be3c3c1beae", null ]
+      [ "LINEAR_SHOOTER_HORIZONTAL", "classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a9ff795fd1c0f4c04498e8be3c3c1beae", null ],
+      [ "TP_SHOOTER", "classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a606949300d8f4cfc114eea39fbe062e4", null ]
     ] ],
     [ "Generator", "classSpawnRule_1_1Generator.html#abc8cbd0b8e402f715c267dff16b58455", null ],
     [ "~Generator", "classSpawnRule_1_1Generator.html#a4dac8412ce00e25b929770d1c0be5e17", null ],

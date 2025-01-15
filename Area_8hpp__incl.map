@@ -1,0 +1,17 @@
+<map id="server/Logic/include/Components/Area.hpp" name="server/Logic/include/Components/Area.hpp">
+<area shape="rect" id="Node000001" title="Declaration of the Area class, which defines a circular area in the game world." alt="" coords="210,5,363,46"/>
+<area shape="rect" id="Node000002" href="$Vector_8hpp.html" title=" " alt="" coords="117,94,210,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,49,197,88,194,83,255,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="235,94,338,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="289,46,289,78,284,78,284,46"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="362,94,437,120"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="316,44,372,83,369,87,313,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,168,77,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="144,123,76,162,73,157,142,118"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="100,168,150,193"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="160,121,141,155,136,153,155,119"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="174,168,231,193"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="172,119,191,153,186,155,168,121"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="256,168,309,193"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="185,118,251,157,248,162,182,122"/>
+</map>

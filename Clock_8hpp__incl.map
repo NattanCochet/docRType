@@ -1,5 +1,5 @@
 <map id="server/Logic/include/Components/Clock.hpp" name="server/Logic/include/Components/Clock.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="176,5,335,46"/>
+<area shape="rect" id="Node000001" title="Declaration of the Clock class, which manages multiple sf::Clock instances." alt="" coords="176,5,335,46"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,102,116,127"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,49,103,97,100,92,210,44"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="227,256,280,282"/>

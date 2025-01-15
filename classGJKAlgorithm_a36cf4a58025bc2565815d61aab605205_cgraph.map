@@ -1,5 +1,0 @@
-<map id="GJKAlgorithm::gjkCollision" name="GJKAlgorithm::gjkCollision">
-<area shape="rect" id="Node000001" title="Checks if two hitboxes are colliding using the GJK algorithm." alt="" coords="5,5,180,31"/>
-<area shape="rect" id="Node000002" href="$classVector.html#abc0b06c6068939982cb8386c6065ce79" title="Computes the dot product of two vectors." alt="" coords="228,5,311,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,16,212,16,212,21,180,21"/>
-</map>

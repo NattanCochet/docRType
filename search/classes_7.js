@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linearshooter_0',['LinearShooter',['../classLinearShooter.html',1,'']]]
+  ['hitbox_0',['Hitbox',['../classHitbox.html',1,'']]]
 ];

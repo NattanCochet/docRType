@@ -1,0 +1,7 @@
+<map id="CreateEntity::createLinearShooterHorizontal" name="CreateEntity::createLinearShooterHorizontal">
+<area shape="rect" id="Node000001" title="Creates a linear shooter entity (horizontal)." alt="" coords="244,35,413,75"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#a63018f4c58bacc0b63ee46ccee3d37a4" title="Creates a shiny linear shooter entity (horizontal)." alt="" coords="16,5,185,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,45,185,39,186,34,228,39"/>
+<area shape="rect" id="Node000003" href="$classAlienEmperor.html#a16548e534555915dfa145720c935b01d" title="Shoots a projectile in the world." alt="" coords="5,70,196,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="229,70,196,74,196,69,228,65"/>
+</map>

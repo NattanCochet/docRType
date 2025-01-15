@@ -1,0 +1,5 @@
+<map id="KamikazeShooter" name="KamikazeShooter">
+<area shape="rect" id="Node000001" title="Represents a kamikaze&#45;type bot that can shoot projectiles and deal damage upon collision." alt="" coords="5,221,146,389"/>
+<area shape="rect" id="Node000002" href="$classABot.html" title="Abstract base class for a bot in the game." alt="" coords="17,5,135,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,188,78,221,73,221,73,188"/>
+</map>

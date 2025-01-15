@@ -1,0 +1,5 @@
+<map id="CreateEntity::createSinusoidaleShooter" name="CreateEntity::createSinusoidaleShooter">
+<area shape="rect" id="Node000001" title="Creates a sinusoidal shooter entity." alt="" coords="254,5,454,46"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#ae14499aad1bb4b126e3b0e783a14479e" title="Creates a shiny sinusoidal shooter entity." alt="" coords="5,5,206,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,28,206,28,206,23,238,23"/>
+</map>

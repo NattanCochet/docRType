@@ -1,14 +1,24 @@
 <map id="MyClock::getElapsedTime" name="MyClock::getElapsedTime">
-<area shape="rect" id="Node000001" title=" " alt="" coords="622,25,793,51"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,38,190,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="633,24,574,15,480,9,406,10,238,29,164,40,163,35,237,23,406,5,480,3,575,10,634,19"/>
-<area shape="rect" id="Node000003" href="$classMyClock.html#a5dfb974c7c0a8a4cd547239e1973fa91" title=" " alt="" coords="460,25,574,51"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="607,41,575,41,575,35,607,35"/>
-<area shape="rect" id="Node000005" href="$classMyClock.html#a2b57d08c560cf7820c1817d0d7f03d90" title=" " alt="" coords="273,113,376,139"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="634,57,378,117,376,112,632,52"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="444,43,190,51,190,46,444,38"/>
-<area shape="rect" id="Node000004" href="$classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6" title=" " alt="" coords="238,64,412,89"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="445,55,393,66,392,60,444,50"/>
-<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="222,68,190,64,190,59,223,63"/>
-<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="258,111,237,104,132,67,134,62,239,99,259,106"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="933,81,1103,107"/>
+<area shape="rect" id="Node000002" href="$classMyClock.html#a5dfb974c7c0a8a4cd547239e1973fa91" title=" " alt="" coords="771,5,885,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="969,78,861,34,863,29,971,73"/>
+<area shape="rect" id="Node000004" href="$classSystems.html#a2a4b4686ff86f021c44931f2e577f84a" title="A system that checks if the player has won the game." alt="" coords="348,81,490,107"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="918,97,491,97,491,92,918,92"/>
+<area shape="rect" id="Node000007" href="$classSystems.html#a8bfbaec6ec638fd089dfd86257777eaf" title="A system responsible for spawning entities." alt="" coords="550,56,711,82"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="917,90,711,77,711,71,917,85"/>
+<area shape="rect" id="Node000008" href="$classMyClock.html#a2b57d08c560cf7820c1817d0d7f03d90" title=" " alt="" coords="776,157,880,183"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="971,116,863,159,861,154,969,111"/>
+<area shape="rect" id="Node000003" href="$classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6" title=" " alt="" coords="543,7,718,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="755,21,718,22,718,16,755,16"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="761,38,684,58,683,53,759,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="560,40,539,46,450,83,448,78,537,41,558,34"/>
+<area shape="rect" id="Node000005" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,81,300,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="332,97,301,97,301,92,332,92"/>
+<area shape="rect" id="Node000006" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,107,55,132"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="96,112,55,119,55,113,95,107"/>
+<area shape="rect" id="Node000009" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="538,157,723,183"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="761,173,723,173,723,168,761,168"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="522,164,55,124,56,119,523,158"/>
+<area shape="rect" id="Node000010" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="369,183,469,208"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="524,186,470,192,470,187,523,180"/>
 </map>

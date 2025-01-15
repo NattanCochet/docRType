@@ -1,0 +1,14 @@
+<map id="CreateEntity::createSinusoidaleShooterShinny" name="CreateEntity::createSinusoidaleShooterShinny">
+<area shape="rect" id="Node000001" title="Creates a shiny sinusoidal shooter entity." alt="" coords="5,27,206,68"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="502,5,668,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,39,487,21,487,27,206,44"/>
+<area shape="rect" id="Node000004" href="$classCreateEntity.html#a7e01d8a59f03c33fb29c6c4d9958531a" title="Creates a sinusoidal shooter entity." alt="" coords="254,55,454,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,56,239,60,238,65,206,61"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="716,5,887,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="668,16,701,16,701,21,668,21"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="438,52,515,33,516,38,439,57"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="510,63,660,88"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="454,73,494,73,494,78,454,78"/>
+<area shape="rect" id="Node000006" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="732,55,871,96"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="661,73,717,73,717,78,661,78"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="VirtualKeyBoard::getVirtualKeyboard" name="VirtualKeyBoard::getVirtualKeyboard">
+<area shape="rect" id="Node000001" title="Retrieves a reference to the internal virtual keyboard state." alt="" coords="584,47,760,88"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,5,536,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,48,505,34,506,29,570,43"/>
+<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,80,55,106"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="569,91,537,95,394,104,254,104,55,97,55,92,254,99,393,98,536,90,569,86"/>
+<area shape="rect" id="Node000005" href="$classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="355,55,529,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="569,70,530,70,530,65,569,65"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,55,300,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,37,268,57,267,51,360,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="96,86,55,92,55,87,95,81"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="339,70,300,70,300,65,339,65"/>
+</map>

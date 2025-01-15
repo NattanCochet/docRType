@@ -1,0 +1,14 @@
+<map id="CreateEntity::createLinearShooterVerticalShinny" name="CreateEntity::createLinearShooterVerticalShinny">
+<area shape="rect" id="Node000001" title="Creates a shiny linear shooter entity (vertical)." alt="" coords="5,27,175,68"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="440,5,606,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,39,424,22,425,27,175,44"/>
+<area shape="rect" id="Node000004" href="$classCreateEntity.html#a1002c8d9c0bca2e2dc4864f9d5298bdf" title="Creates a linear shooter entity (vertical)." alt="" coords="223,55,392,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,56,208,60,207,65,175,61"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="654,5,825,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="606,16,639,16,639,21,606,21"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="386,52,457,33,458,38,387,57"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="448,63,598,88"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="392,73,432,73,432,78,392,78"/>
+<area shape="rect" id="Node000006" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="670,55,809,96"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="599,73,655,73,655,78,599,78"/>
+</map>

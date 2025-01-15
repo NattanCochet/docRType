@@ -1,5 +1,5 @@
 <map id="server/Logic/include/Components/Controllable.hpp" name="server/Logic/include/Components/Controllable.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="49,5,243,46"/>
+<area shape="rect" id="Node000001" title="Declaration of the Controllable class, which represents an entity that can be controlled by a client." alt="" coords="49,5,243,46"/>
 <area shape="rect" id="Node000002" href="$VirtualKeyBoard_8hpp.html" title=" " alt="" coords="5,94,154,120"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,48,102,83,98,80,128,45"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="177,94,248,120"/>

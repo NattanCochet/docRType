@@ -13,7 +13,9 @@ var classVirtualKeyBoard =
     [ "~VirtualKeyBoard", "classVirtualKeyBoard.html#ad84ac5bb5d4caf1329eecaa0c26d43f2", null ],
     [ "changeValueKeyboard", "classVirtualKeyBoard.html#af20d83783c1b08f01d441f413719c603", null ],
     [ "getVirtualKeyboard", "classVirtualKeyBoard.html#a2646b213ad9845f14ceb7ad16bd153c9", null ],
-    [ "isCharging", "classVirtualKeyBoard.html#aaafb933c8c0aaefb9bd5bc3c8b39677a", null ],
-    [ "isKeyIsPressed", "classVirtualKeyBoard.html#afed46be98962959fa50e40ca144fe6b9", null ],
-    [ "setIsCharging", "classVirtualKeyBoard.html#a846be53af6498bd73dcb09ca8289fe05", null ]
+    [ "isChargingForce", "classVirtualKeyBoard.html#af7085fba83046176762e9994bb7d85c4", null ],
+    [ "isChargingShoot", "classVirtualKeyBoard.html#ab2dd6634bfb372e541cc4ade1cfb14b6", null ],
+    [ "isKeyIsPressed", "classVirtualKeyBoard.html#abc55c9b44b209309e2de57390ea34413", null ],
+    [ "setIsChargingForce", "classVirtualKeyBoard.html#a4dc6a649e1265975fad85fe996751ab7", null ],
+    [ "setIsChargingShoot", "classVirtualKeyBoard.html#ada0b8e6c297d366394aca26f44e3ccd1", null ]
 ];

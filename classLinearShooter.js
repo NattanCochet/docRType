@@ -1,7 +1,6 @@
 var classLinearShooter =
 [
-    [ "LinearShooter", "classLinearShooter.html#a57a983823b03f1598dbde909987648ee", null ],
-    [ "LinearShooter", "classLinearShooter.html#aaa335a81a413cc4f4992135894dfadde", null ],
-    [ "LinearShooter", "classLinearShooter.html#a5655a2fb022f64eb69eb237bb423aacb", null ],
-    [ "isHonrizontal", "classLinearShooter.html#a9415dc4eb3eec7aad971c3b903f69b3f", null ]
+    [ "LinearShooter", "classLinearShooter.html#abab0aff26cfe019f9aeb423abaed28fd", null ],
+    [ "moveBot", "classLinearShooter.html#a94f590f6cb236af4681243ffe6a7075d", null ],
+    [ "shootProjectile", "classLinearShooter.html#a9aad4d1dd60c56833b904c53e33e11ea", null ]
 ];

@@ -1,0 +1,5 @@
+<map id="CreateEntity::createKamikaze" name="CreateEntity::createKamikaze">
+<area shape="rect" id="Node000001" title="Creates a kamikaze entity." alt="" coords="269,5,459,31"/>
+<area shape="rect" id="Node000002" href="$classKamikazeShooter.html#a545cf070e6cf0f0d926e1a8de1502448" title="Shoots a projectile in the game world." alt="" coords="5,5,221,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,21,221,21,221,16,253,16"/>
+</map>

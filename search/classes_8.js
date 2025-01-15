@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['myclock_0',['MyClock',['../classMyClock.html',1,'']]]
+  ['kamikazeshooter_0',['KamikazeShooter',['../classKamikazeShooter.html',1,'']]]
 ];

@@ -1,15 +1,11 @@
 <map id="CreateEntity::createPlayer" name="CreateEntity::createPlayer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,68,175,94"/>
-<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="223,24,389,50"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,65,224,51,225,56,157,70"/>
-<area shape="rect" id="Node000004" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="231,92,381,118"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,88,216,92,215,97,175,93"/>
-<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="438,5,609,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,27,423,24,423,29,389,32"/>
-<area shape="rect" id="Node000005" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="454,55,593,96"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="381,92,439,84,439,90,382,97"/>
-<area shape="rect" id="Node000006" href="$classComponentArray.html#a48ad724f8d6a9ea7f15ef19dfe28c12b" title="Inserts a value at the specified position." alt="" coords="437,120,610,146"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="382,112,422,117,421,122,381,117"/>
-<area shape="rect" id="Node000007" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Returns the number of elements in the array." alt="" coords="450,169,597,195"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="338,116,438,156,457,162,456,167,436,161,336,121"/>
+<area shape="rect" id="Node000001" title="Creates a player entity." alt="" coords="5,35,175,60"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="223,8,389,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,34,207,30,207,36,175,40"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="231,59,381,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,54,216,59,215,64,175,60"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="437,5,607,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,17,421,17,421,22,389,22"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="453,55,591,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="381,70,437,71,437,77,381,76"/>
 </map>

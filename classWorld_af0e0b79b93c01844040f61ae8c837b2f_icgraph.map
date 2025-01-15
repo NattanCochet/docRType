@@ -1,11 +1,25 @@
 <map id="World::generateNextSeedForNextLevel" name="World::generateNextSeedForNextLevel">
-<area shape="rect" id="Node000001" title="Generates the next seed for the next level." alt="" coords="456,47,642,88"/>
-<area shape="rect" id="Node000002" href="$classWorld.html#af8cabb49a605210f62fa7a059931f941" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="238,5,408,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="440,47,384,34,386,29,442,41"/>
-<area shape="rect" id="Node000004" href="$classWorld.html#afa39d4e6f714a7a3691ac0c656f5e8a8" title="Default constructor." alt="" coords="276,55,370,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="441,70,370,70,370,65,441,65"/>
-<area shape="rect" id="Node000005" href="$classWorld.html#ab74e693f047056ccffdee70a85936418" title="Constructs a new World with specific parameters." alt="" coords="276,104,370,130"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="441,94,370,109,369,104,440,88"/>
-<area shape="rect" id="Node000003" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="5,5,190,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+<area shape="rect" id="Node000001" title="Generates the next seed for the next level." alt="" coords="799,174,985,214"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#a96e02765280312fa865c22fded73afea" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="580,80,751,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="829,169,695,109,697,104,832,165"/>
+<area shape="rect" id="Node000007" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="151,156,252,182"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="783,193,252,173,252,168,783,188"/>
+<area shape="rect" id="Node000008" href="$classWorld.html#afa39d4e6f714a7a3691ac0c656f5e8a8" title="Default constructor." alt="" coords="619,207,712,232"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="783,209,713,217,712,212,783,204"/>
+<area shape="rect" id="Node000009" href="$classWorld.html#ab74e693f047056ccffdee70a85936418" title="Constructs a new World with specific parameters." alt="" coords="619,256,712,282"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="822,223,751,247,713,259,712,254,750,242,820,218"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a05e6139cdda8e7ba6dbc5ac93a18ea9e" title="A system that checks if the player has lost the game." alt="" coords="364,5,517,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="617,76,531,45,495,34,497,29,533,40,619,71"/>
+<area shape="rect" id="Node000006" href="$classSystems.html#a2a4b4686ff86f021c44931f2e577f84a" title="A system that checks if the player has won the game." alt="" coords="369,55,511,80"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="565,84,512,78,512,73,565,79"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="568,111,252,163,252,158,567,106"/>
+<area shape="rect" id="Node000004" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,55,300,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="360,37,268,57,267,51,359,32"/>
+<area shape="rect" id="Node000005" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,131,55,156"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="158,89,56,135,54,130,156,85"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="354,70,301,70,301,65,354,65"/>
+<area shape="rect" id="Node000010" href="$classWorld.html#a2f1392405d95427aeef10cc63998024b" title=" " alt="" coords="348,207,532,232"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="603,258,502,236,503,230,604,253"/>
+<area shape="poly" id="edge11_Node000010_Node000005" title=" " alt="" coords="333,229,278,228,220,223,160,213,102,197,69,179,44,159,47,155,72,175,104,192,161,208,220,218,279,222,333,223"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="361,205,252,182,253,177,362,200"/>
 </map>

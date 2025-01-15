@@ -26,15 +26,15 @@ var NAVTREE =
 [
   [ "R-Type", "index.html", [
     [ "Installing the project", "md_docs_2md__docs_2how__to__install.html", null ],
-    [ "Our Project Stack", "md_docs_2md__docs_2technologies.html", [
+    [ "Known issues", "md_docs_2md__docs_2td__known__issues.html", [
       [ "About the Game", "index.html#autotoc_md1", null ],
       [ "Key Features", "index.html#autotoc_md2", null ],
       [ "Contributors", "index.html#autotoc_md4", null ],
-      [ "Programming Languages", "md_docs_2md__docs_2technologies.html#autotoc_md7", null ],
-      [ "Graphical libraries", "md_docs_2md__docs_2technologies.html#autotoc_md9", null ]
+      [ "No audio on linux version", "md_docs_2md__docs_2td__known__issues.html#autotoc_md7", null ]
     ] ],
-    [ "Known issues", "md_docs_2md__docs_2tf__knwon__issues.html", [
-      [ "No audio on linux version", "md_docs_2md__docs_2tf__knwon__issues.html#autotoc_md11", null ]
+    [ "Our Project Stack", "md_docs_2md__docs_2technologies.html", [
+      [ "Programming Languages", "md_docs_2md__docs_2technologies.html#autotoc_md9", null ],
+      [ "Graphical libraries", "md_docs_2md__docs_2technologies.html#autotoc_md11", null ]
     ] ],
     [ "Design pattern and network convention", "md_docs_2md__docs_2uecs__and__udp.html", [
       [ "Entity-Component-System (ECS) Design Pattern", "md_docs_2md__docs_2uecs__and__udp.html#autotoc_md13", [
@@ -105,10 +105,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ABot_8cpp.html",
-"classCreateEntity.html#aa15ceb585be911e861161e396e771617",
-"classSpawnRule_1_1Generator.html#aee092e84b299c0c07fd448e502468863",
-"md_docs_2md__docs_2zprotocol__commands.html"
+"classAssets.html",
+"classFastNoiseLite.html#a7e24432919ce9cf6930442f5bdeaeb15",
+"classUDPServer_1_1Error.html#a639dd28533501afca286a3479a8b14a7",
+"pages.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';

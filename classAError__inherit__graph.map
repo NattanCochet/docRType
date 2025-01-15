@@ -1,19 +1,21 @@
 <map id="AError" name="AError">
-<area shape="rect" id="Node000001" title="Custom exception class for handling errors." alt="" coords="641,120,716,227"/>
+<area shape="rect" id="Node000001" title="Custom exception class for handling errors." alt="" coords="720,120,795,227"/>
 <area shape="rect" id="Node000003" href="$classErrorClientAlreadyPresentInWorld.html" title="Exception class for handling the case where a client is already present in the world." alt="" coords="5,275,184,406"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="627,182,543,192,434,210,314,238,197,277,185,283,183,278,195,272,313,233,433,205,542,187,626,176"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="705,180,608,188,480,205,337,234,266,253,197,277,185,282,183,277,195,272,264,248,336,228,479,200,607,183,705,174"/>
 <area shape="rect" id="Node000004" href="$classErrorGenerationMap.html" title="Exception class for handling errors during map generation." alt="" coords="208,297,362,384"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="627,189,510,223,442,248,376,277,339,300,336,295,374,272,440,243,508,218,626,184"/>
-<area shape="rect" id="Node000005" href="$classErrorKeyAlreadyExistInMap.html" title=" " alt="" coords="387,297,582,384"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="632,218,535,299,532,295,628,214"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="705,185,638,197,554,216,464,242,376,277,338,300,336,295,374,272,462,237,553,211,637,192,704,179"/>
+<area shape="rect" id="Node000005" href="$classErrorKeyAlreadyExistInMap.html" title="Represents an error when a key already exists in a map." alt="" coords="387,297,582,384"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="709,207,555,300,552,295,706,202"/>
 <area shape="rect" id="Node000006" href="$classErrorKeyNotFound.html" title="Exception class for handling errors when a key is not found." alt="" coords="606,297,751,384"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="682,241,682,297,676,297,676,241"/>
-<area shape="rect" id="Node000007" href="$classErrorPasswordIncorrect.html" title="Exception class for handling incorrect password errors." alt="" coords="775,297,950,384"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="729,216,818,295,814,299,726,220"/>
-<area shape="rect" id="Node000008" href="$classErrorVector.html" title="Exception class for handling errors related to vectors." alt="" coords="975,297,1079,384"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="731,183,842,215,905,241,964,272,992,295,989,299,961,277,903,245,840,220,730,188"/>
-<area shape="rect" id="Node000009" href="$classErrorWorldFull.html" title="Exception class for handling the &quot;world full&quot; error." alt="" coords="1103,297,1223,384"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="732,176,806,186,898,204,997,232,1046,250,1092,272,1125,295,1122,300,1089,277,1043,255,995,237,896,209,805,191,731,182"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="634,5,724,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="682,87,682,120,676,120,676,87"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="728,241,701,298,696,296,724,239"/>
+<area shape="rect" id="Node000007" href="$classErrorNoObject.html" title="Represents an error when a specific object is not found." alt="" coords="776,297,897,384"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="791,239,819,296,814,298,787,241"/>
+<area shape="rect" id="Node000008" href="$classErrorPasswordIncorrect.html" title="Exception class for handling incorrect password errors." alt="" coords="921,297,1096,384"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="809,205,946,295,943,299,806,209"/>
+<area shape="rect" id="Node000009" href="$classErrorVector.html" title="Exception class for handling errors related to vectors." alt="" coords="1120,297,1224,384"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="810,178,874,190,951,208,1032,235,1110,272,1139,295,1135,299,1107,277,1030,240,949,213,873,195,809,184"/>
+<area shape="rect" id="Node000010" href="$classErrorWorldFull.html" title="Exception class for handling the &quot;world full&quot; error." alt="" coords="1248,297,1368,384"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="810,174,895,181,1004,198,1123,227,1182,247,1237,272,1270,295,1267,299,1235,277,1180,252,1121,232,1003,203,894,187,810,179"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="713,5,802,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="760,87,760,120,755,120,755,87"/>
 </map>

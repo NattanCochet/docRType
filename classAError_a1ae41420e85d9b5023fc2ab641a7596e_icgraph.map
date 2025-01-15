@@ -1,0 +1,19 @@
+<map id="AError::AError" name="AError::AError">
+<area shape="rect" id="Node000001" title="Constructor for AError." alt="" coords="273,252,372,278"/>
+<area shape="rect" id="Node000002" href="$classErrorClientAlreadyPresentInWorld.html#a37b57a57a9db8e2eb6876e6e3f93285f" title="Constructs an ErrorClientAlreadyPresentInWorld exception with a specific client ID." alt="" coords="5,5,225,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,238,300,202,282,158,256,114,223,75,207,64,211,59,226,71,261,111,286,156,305,200,317,237"/>
+<area shape="rect" id="Node000003" href="$classErrorGenerationMap.html#a5079a0b48085d1d815e0c39cba68dc0d" title="Constructs an ErrorGenerationMap exception with a specific error message." alt="" coords="44,85,186,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="305,240,272,189,249,163,223,141,185,122,188,117,226,136,253,159,276,186,310,237"/>
+<area shape="rect" id="Node000004" href="$classErrorKeyAlreadyExistInMap.html#ae73a73554afb07a237062ee7ca17f1cf" title="Constructor for ErrorKeyAlreadyExistInMap." alt="" coords="23,150,207,191"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,245,223,206,193,194,195,189,226,201,292,241"/>
+<area shape="rect" id="Node000005" href="$classErrorKeyNotFound.html#acb5e1c6e72be74158703a59a337eccc4" title="Constructs an ErrorKeyNotFound exception with specific key and location information." alt="" coords="24,216,206,256"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="257,259,206,251,207,246,258,253"/>
+<area shape="rect" id="Node000006" href="$classErrorNoObject.html#af2a5c6b626c4207c3372d65fbce39d1c" title="Constructor for ErrorNoObject." alt="" coords="19,280,211,306"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="258,276,211,283,211,278,257,271"/>
+<area shape="rect" id="Node000007" href="$classErrorPasswordIncorrect.html#ae25d05c6ede00bb545f3076a5172d033" title="Constructs an ErrorPasswordIncorrect exception with optional password information." alt="" coords="33,330,197,371"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="288,289,226,321,195,332,194,327,224,316,286,284"/>
+<area shape="rect" id="Node000008" href="$classErrorVector.html#a216fcb23e48bf5753890afe9b41e54ab" title="Constructs an ErrorVector exception with optional error details." alt="" coords="36,395,194,421"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="309,293,275,340,252,365,226,385,195,399,193,394,223,380,249,361,271,337,304,290"/>
+<area shape="rect" id="Node000009" href="$classErrorWorldFull.html#aaf3ce670833c469643269c96e9884736" title="Constructs an ErrorWorldFull exception with an optional maximum client number." alt="" coords="20,444,210,470"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="315,294,303,327,284,365,259,403,226,435,207,446,205,441,223,431,255,400,280,363,298,325,310,292"/>
+</map>

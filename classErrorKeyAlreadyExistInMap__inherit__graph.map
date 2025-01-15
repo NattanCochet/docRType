@@ -1,5 +1,5 @@
 <map id="ErrorKeyAlreadyExistInMap" name="ErrorKeyAlreadyExistInMap">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,275,200,361"/>
+<area shape="rect" id="Node000001" title="Represents an error when a key already exists in a map." alt="" coords="5,275,200,361"/>
 <area shape="rect" id="Node000002" href="$classAError.html" title="Custom exception class for handling errors." alt="" coords="65,120,140,227"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,242,106,275,100,275,100,242"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="58,5,148,72"/>

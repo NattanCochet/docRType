@@ -1,0 +1,9 @@
+<map id="Registry::remove_component" name="Registry::remove_component">
+<area shape="rect" id="Node000001" title="Removes a component from an entity." alt="" coords="547,5,736,31"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a51a71e856464ec9439405beb21bd8d65" title="A system that processes the force components for entities." alt="" coords="348,5,499,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,21,499,21,499,16,532,16"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,21,301,21,301,16,332,16"/>
+<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

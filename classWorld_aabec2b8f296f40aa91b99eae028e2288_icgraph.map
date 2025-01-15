@@ -1,14 +1,19 @@
 <map id="World::getSizeWindow" name="World::getSizeWindow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="687,31,837,56"/>
-<area shape="rect" id="Node000002" href="$classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="451,5,639,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="672,36,639,32,640,27,672,30"/>
-<area shape="rect" id="Node000006" href="$classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="462,55,629,80"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="672,56,629,61,629,56,672,51"/>
-<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="206,31,403,56"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,32,404,36,403,30,435,27"/>
-<area shape="rect" id="Node000004" href="$classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130" title="Adds a new world to the index." alt="" coords="5,5,158,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="190,33,158,29,158,24,191,28"/>
-<area shape="rect" id="Node000005" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="57,55,106,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="190,58,107,68,106,62,190,53"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="446,60,403,56,404,51,446,55"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="584,104,734,130"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,5,536,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="626,97,584,70,535,45,505,34,507,29,537,40,587,65,629,92"/>
+<area shape="rect" id="Node000005" href="$classSystems.html#a51a71e856464ec9439405beb21bd8d65" title="A system that processes the force components for entities." alt="" coords="366,55,518,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="584,103,501,84,503,78,585,97"/>
+<area shape="rect" id="Node000006" href="$classTpShooter.html#a0d3a389043d1bf6e40925e3e733ef763" title="Moves the bot within the game world, implementing teleportation logic." alt="" coords="372,104,512,130"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="569,120,512,120,512,114,569,114"/>
+<area shape="rect" id="Node000007" href="$classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="358,153,526,179"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="585,136,503,155,501,150,584,131"/>
+<area shape="rect" id="Node000008" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="392,203,492,228"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="629,141,587,169,537,194,493,208,492,203,535,189,584,164,626,137"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,55,300,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,37,268,57,267,51,360,32"/>
+<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,55,55,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,70,55,70,55,65,87,65"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="351,70,300,70,300,65,351,65"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="365,151,347,145,278,113,223,83,226,78,281,109,349,140,367,146"/>
 </map>

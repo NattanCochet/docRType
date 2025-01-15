@@ -1,0 +1,6 @@
+<map id="Area::anEntityIsEnterArea" name="Area::anEntityIsEnterArea">
+<area shape="rect" id="Node000001" title="Adds an entity ID to the set of entities within the area." alt="" coords="211,29,379,55"/>
+<area shape="rect" id="Node000002" href="$classArea.html#ab418023b23e2ffde02e6c04ec13ab964" title="Assigns an entity ID to the area." alt="" coords="5,29,163,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,45,163,45,163,40,195,40"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="121,17,108,10,84,8,62,10,50,15,47,20,53,27,49,31,42,21,46,11,60,5,84,3,110,5,123,12"/>
+</map>
