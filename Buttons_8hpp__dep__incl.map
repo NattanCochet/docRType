@@ -1,0 +1,22 @@
+<map id="client/Buttons/Buttons.hpp" name="client/Buttons/Buttons.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="412,5,586,31"/>
+<area shape="rect" id="Node000002" href="$Buttons_8cpp.html" title=" " alt="" coords="220,79,394,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,39,341,81,339,76,452,34"/>
+<area shape="rect" id="Node000003" href="$client_2ECS_2Systems_8hpp.html" title="Header file for the Systems class, responsible for managing the game systems." alt="" coords="419,79,580,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="502,46,502,79,497,79,497,46"/>
+<area shape="rect" id="Node000008" href="$Game_8hpp.html" title="Header file for the Game class that handles the main game loop, event handling, and entity management..." alt="" coords="717,160,871,186"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="537,36,772,157,769,162,535,41"/>
+<area shape="rect" id="Node000004" href="$Systems_8cpp.html" title=" " alt="" coords="5,160,167,186"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="417,111,179,155,144,162,143,157,177,150,416,105"/>
+<area shape="rect" id="Node000005" href="$ClickableSystem_8cpp.html" title=" " alt="" coords="190,153,336,193"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="449,113,323,155,321,150,448,108"/>
+<area shape="rect" id="Node000006" href="$client_2ECS_2Systems_2ControllableSystem_8cpp.html" title=" " alt="" coords="360,153,521,193"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="484,119,457,154,453,151,479,116"/>
+<area shape="rect" id="Node000007" href="$client_2ECS_2Systems_2DrawableSystem_8cpp.html" title=" " alt="" coords="546,153,693,193"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="531,111,591,150,588,155,528,115"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="560,107,749,157,748,162,559,112"/>
+<area shape="rect" id="Node000009" href="$Game_8cpp.html" title=" " alt="" coords="638,241,792,267"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="773,199,729,243,726,239,770,195"/>
+<area shape="rect" id="Node000010" href="$client_2main_8cpp.html" title=" " alt="" coords="817,241,926,267"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="818,195,861,239,858,243,814,199"/>
+</map>

@@ -1,67 +1,103 @@
 <map id="Registry::add_component" name="Registry::add_component">
-<area shape="rect" id="Node000001" title="Adds a component to an entity." alt="" coords="614,492,781,518"/>
-<area shape="rect" id="Node000002" href="$classCreateEntity.html#aa4d12724c2e757edc1bcece52818aa17" title="Creates a beam entity." alt="" coords="382,5,550,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="689,477,673,379,645,249,628,183,609,124,587,76,564,44,549,33,552,29,568,40,592,74,614,122,633,182,651,248,678,378,695,476"/>
-<area shape="rect" id="Node000003" href="$classCreateEntity.html#a21b6f768a9865e650d33a3e7d432df23" title="Creates a bomb entity." alt="" coords="382,55,550,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="694,477,689,400,671,297,654,241,632,187,602,137,565,93,549,83,552,78,568,90,607,134,637,185,659,240,676,295,694,400,699,477"/>
-<area shape="rect" id="Node000005" href="$classCreateEntity.html#a279cbfa5a6d3c9e125ab5dbefcda910e" title="Creates a boss bomb entity." alt="" coords="368,104,565,130"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="692,477,684,408,664,318,648,270,626,223,599,180,565,143,549,132,552,128,568,139,603,177,631,221,653,268,669,316,690,408,697,476"/>
-<area shape="rect" id="Node000007" href="$classCreateEntity.html#aa15ceb585be911e861161e396e771617" title="Creates a decorative entity." alt="" coords="382,319,550,344"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="679,480,633,418,601,385,565,358,543,347,545,343,568,353,605,381,637,415,683,477"/>
-<area shape="rect" id="Node000008" href="$classCreateEntity.html#a04f2eeffcbcfc7085003626e0d04271f" title="Creates a force entity." alt="" coords="383,368,549,394"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="670,483,624,444,565,407,537,397,539,392,568,402,627,440,674,479"/>
-<area shape="rect" id="Node000009" href="$classCreateEntity.html#a9b7c2caeb8b418ff1c0cc4fa6dde0fff" title="Creates a kamikaze entity." alt="" coords="371,417,561,443"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="650,488,566,457,528,446,529,441,567,452,652,483"/>
-<area shape="rect" id="Node000011" href="$classCreateEntity.html#acc5766a2a1bdbc53e253a4db2d8e635a" title="Creates a laser entity." alt="" coords="383,153,549,179"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="690,477,679,417,657,340,641,300,620,261,595,225,565,194,546,182,549,177,568,189,599,222,624,258,645,298,662,339,684,416,695,476"/>
-<area shape="rect" id="Node000015" href="$classCreateEntity.html#acd6f5b01cfa0a83c33472c7c1c8d88f5" title="Creates a laser boss entity." alt="" coords="368,467,564,492"/>
-<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="599,497,565,493,565,488,599,491"/>
-<area shape="rect" id="Node000017" href="$classCreateEntity.html#a16af19deb15a03900af02c227481f19c" title="Creates a linear shooter entity (horizontal)." alt="" coords="382,203,551,244"/>
-<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="686,478,670,432,645,375,610,316,588,288,565,264,538,247,541,242,568,260,592,285,614,313,649,372,675,430,691,476"/>
-<area shape="rect" id="Node000018" href="$classCreateEntity.html#a63018f4c58bacc0b63ee46ccee3d37a4" title="Creates a shiny linear shooter entity (horizontal)." alt="" coords="126,290,295,330"/>
-<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="685,478,669,438,644,390,610,344,589,324,565,309,532,294,496,284,422,277,351,281,287,292,287,287,350,276,422,271,497,279,533,289,568,304,592,320,614,340,649,387,674,435,690,476"/>
-<area shape="rect" id="Node000019" href="$classCreateEntity.html#a1002c8d9c0bca2e2dc4864f9d5298bdf" title="Creates a linear shooter entity (vertical)." alt="" coords="382,567,551,608"/>
-<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="645,526,526,569,524,564,644,521"/>
-<area shape="rect" id="Node000020" href="$classCreateEntity.html#a28754fd9f8bc5f48c75790b64061d0a5" title="Creates a shiny linear shooter entity (vertical)." alt="" coords="126,542,295,582"/>
-<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="599,519,296,555,295,550,599,514"/>
-<area shape="rect" id="Node000021" href="$classCreateEntity.html#aeb1da25c99068d51fe44b3a751fdc0c6" title="Creates a player entity." alt="" coords="382,632,551,658"/>
-<area shape="poly" id="edge25_Node000001_Node000021" title=" " alt="" coords="677,531,630,577,600,601,568,622,538,634,536,629,565,617,597,597,626,573,673,527"/>
-<area shape="rect" id="Node000022" href="$classCreateEntity.html#a7e01d8a59f03c33fb29c6c4d9958531a" title="Creates a sinusoidal shooter entity." alt="" coords="366,732,566,773"/>
-<area shape="poly" id="edge26_Node000001_Node000022" title=" " alt="" coords="688,533,671,573,644,622,610,672,568,716,539,734,536,730,565,712,606,669,640,619,666,571,683,531"/>
-<area shape="rect" id="Node000023" href="$classCreateEntity.html#ae14499aad1bb4b126e3b0e783a14479e" title="Creates a shiny sinusoidal shooter entity." alt="" coords="110,704,310,745"/>
-<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="686,533,667,566,641,604,608,642,568,673,522,689,457,703,311,720,311,715,456,698,520,684,565,668,604,638,637,601,663,563,681,530"/>
-<area shape="rect" id="Node000024" href="$classCreateEntity.html#a787f474c0534059b4aa23289b89e7f8d" title="Creates a teleporting shooter entity." alt="" coords="370,848,563,874"/>
-<area shape="poly" id="edge29_Node000001_Node000024" title=" " alt="" coords="695,534,684,595,662,675,645,717,624,758,599,797,568,831,538,850,535,845,565,827,595,793,620,755,640,715,657,673,679,594,690,533"/>
-<area shape="rect" id="Node000025" href="$classCreateEntity.html#a030daadf6ea6a893127c74b922afbdef" title="Creates a shiny teleporting shooter entity." alt="" coords="114,819,307,860"/>
-<area shape="poly" id="edge31_Node000001_Node000025" title=" " alt="" coords="695,534,682,589,659,658,643,694,622,728,597,760,568,787,549,798,523,807,457,821,381,831,308,837,307,832,380,826,456,816,521,802,546,793,565,783,593,756,618,725,638,691,654,656,677,587,689,533"/>
-<area shape="rect" id="Node000026" href="$classRegistry.html#a49e7457f210842afa7b10286090aa216" title="Constructs and adds a component to an entity with the specified parameters." alt="" coords="369,897,563,923"/>
-<area shape="poly" id="edge32_Node000001_Node000026" title=" " alt="" coords="698,533,691,605,672,701,655,752,633,801,604,848,568,888,553,899,550,895,565,884,600,845,628,799,650,750,667,699,686,604,693,533"/>
-<area shape="rect" id="Node000027" href="$classSystems.html#a51a71e856464ec9439405beb21bd8d65" title="A system that processes the force components for entities." alt="" coords="390,947,542,972"/>
-<area shape="poly" id="edge33_Node000001_Node000027" title=" " alt="" coords="699,533,695,613,689,665,678,722,662,780,639,838,608,891,568,938,543,953,541,948,565,933,604,888,634,835,657,779,673,721,684,664,690,612,694,533"/>
-<area shape="rect" id="Node000029" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,972,55,998"/>
-<area shape="poly" id="edge36_Node000001_Node000029" title=" " alt="" coords="696,534,681,636,656,774,638,843,618,905,595,955,568,987,537,1008,503,1024,468,1036,431,1044,356,1052,282,1049,210,1039,147,1025,55,997,56,991,148,1019,211,1033,282,1043,356,1046,430,1039,466,1031,501,1019,534,1003,565,983,590,952,613,903,633,841,650,773,676,635,690,533"/>
-<area shape="rect" id="Node000004" href="$classLinearShooter.html#a9aad4d1dd60c56833b904c53e33e11ea" title="Shoots a projectile in the game world." alt="" coords="113,27,308,52"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="366,59,308,53,308,47,367,54"/>
-<area shape="rect" id="Node000006" href="$classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af" title="Shoots projectiles in the game world, managing multiple columns." alt="" coords="108,76,313,102"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="352,107,313,103,314,97,352,102"/>
-<area shape="rect" id="Node000010" href="$classKamikazeShooter.html#a545cf070e6cf0f0d926e1a8de1502448" title="Shoots a projectile in the game world." alt="" coords="103,417,318,443"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="355,433,318,433,318,428,355,428"/>
-<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="370,148,364,144,347,124,340,104,333,84,316,66,298,55,300,51,320,61,337,81,345,102,352,122,368,140,373,144"/>
-<area shape="poly" id="edge14_Node000011_Node000006" title=" " alt="" coords="382,151,365,145,341,130,317,115,285,105,287,100,319,110,343,125,367,140,384,146"/>
-<area shape="rect" id="Node000012" href="$classAlienEmperor.html#a16548e534555915dfa145720c935b01d" title="Shoots a projectile in the world." alt="" coords="115,240,306,266"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="384,187,367,194,344,212,334,221,319,230,287,242,285,237,317,225,331,217,340,208,365,189,382,182"/>
-<area shape="rect" id="Node000013" href="$classSinusoidalShooter.html#acccb0b02ad53476cd3e02e6d16aa079c" title="Shoots a projectile in the game world." alt="" coords="144,175,276,216"/>
-<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="368,180,277,191,277,185,367,175"/>
-<area shape="rect" id="Node000014" href="$classTpShooter.html#ab8f9445be915ea73ee13e5d2b038989d" title="Shoots projectiles from the bot in the game world." alt="" coords="124,125,297,151"/>
-<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="367,158,297,150,298,145,368,153"/>
-<area shape="rect" id="Node000016" href="$classBigShip.html#ac9e5d9add7fb7c41784299bfe1afe836" title="Shoots projectiles in the game world." alt="" coords="131,467,290,492"/>
-<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="352,482,290,482,290,477,352,477"/>
-<area shape="poly" id="edge20_Node000017_Node000012" title=" " alt="" coords="366,238,306,245,306,239,366,232"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="398,252,319,281,284,292,283,287,317,276,396,247"/>
-<area shape="poly" id="edge23_Node000019_Node000020" title=" " alt="" coords="366,580,295,573,296,568,366,575"/>
-<area shape="poly" id="edge27_Node000022_Node000023" title=" " alt="" coords="350,743,311,738,311,733,351,738"/>
-<area shape="poly" id="edge30_Node000024_Node000025" title=" " alt="" coords="354,854,307,850,308,845,354,849"/>
-<area shape="rect" id="Node000028" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="112,947,309,972"/>
-<area shape="poly" id="edge34_Node000027_Node000028" title=" " alt="" coords="375,962,309,962,309,957,375,957"/>
-<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="100,978,56,984,55,979,99,972"/>
+<area shape="rect" id="Node000001" title="Adds a component to an entity." alt="" coords="875,892,1041,917"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#a899cd1b4ebebf813aef6a1a580b6fff7" title="Creates an Alien Emperor boss." alt="" coords="646,5,808,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="954,876,948,709,929,465,912,338,890,221,861,125,844,88,825,59,807,45,810,41,829,56,849,85,866,123,895,220,917,337,934,464,953,709,959,875"/>
+<area shape="rect" id="Node000003" href="$classCreateEntity.html#a099a71f71b8cb840338a103ce9c1abd1" title="Creates a beam entity." alt="" coords="643,70,810,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="954,876,947,718,928,487,911,367,889,258,861,169,844,135,825,109,809,97,812,92,829,105,848,132,866,167,894,257,917,367,933,486,952,717,959,876"/>
+<area shape="rect" id="Node000004" href="$classCreateEntity.html#a662cc6ffddaa8d2991570e3580bf4e3b" title=" " alt="" coords="634,120,820,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="953,876,945,727,925,511,908,399,886,297,859,214,843,182,825,158,812,148,816,144,829,154,847,179,864,212,892,296,913,398,930,510,951,726,959,876"/>
+<area shape="rect" id="Node000006" href="$classCreateEntity.html#a392b80843fe719fcbb3a30252e417e6d" title="Creates an Big Ship boss." alt="" coords="638,449,816,474"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="954,876,950,799,943,748,932,694,916,637,893,583,863,532,825,488,810,477,813,473,829,484,868,529,898,580,921,636,937,692,948,747,955,798,960,876"/>
+<area shape="rect" id="Node000007" href="$classCreateEntity.html#a9266ce941830a25ff5a9524dc2782f6b" title="Creates a bomb entity." alt="" coords="643,169,810,194"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="953,876,943,736,921,535,904,432,883,338,857,261,841,231,825,209,809,197,813,193,829,205,846,228,862,258,888,336,910,431,927,534,949,735,958,876"/>
+<area shape="rect" id="Node000009" href="$classCreateEntity.html#a279cbfa5a6d3c9e125ab5dbefcda910e" title="Creates a boss bomb entity." alt="" coords="628,284,826,309"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="952,876,939,757,914,590,897,506,876,429,852,366,839,342,825,324,809,312,813,308,829,320,844,339,857,363,881,427,902,505,919,590,944,756,957,876"/>
+<area shape="rect" id="Node000011" href="$classCreateEntity.html#aa15ceb585be911e861161e396e771617" title="Creates a decorative entity." alt="" coords="643,498,810,524"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="953,876,945,807,926,715,909,666,887,619,860,575,825,537,809,526,812,522,829,533,864,572,892,616,914,665,931,714,951,806,958,876"/>
+<area shape="rect" id="Node000012" href="$classCreateEntity.html#a04f2eeffcbcfc7085003626e0d04271f" title="Creates a force entity." alt="" coords="644,548,810,573"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="951,877,941,816,919,737,902,696,882,655,856,618,825,586,809,576,812,571,829,582,860,615,886,653,907,693,924,735,946,814,957,876"/>
+<area shape="rect" id="Node000013" href="$classCreateEntity.html#a9b7c2caeb8b418ff1c0cc4fa6dde0fff" title="Creates a kamikaze entity." alt="" coords="632,597,822,622"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="949,877,935,825,912,760,876,694,852,663,825,637,806,625,809,621,829,633,856,660,880,691,917,758,941,824,954,876"/>
+<area shape="rect" id="Node000015" href="$classCreateEntity.html#acdcc4781345149e2c0795e70c5b5d404" title=" " alt="" coords="632,647,822,687"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="944,878,927,839,901,792,867,744,825,702,805,690,808,686,829,698,871,740,905,789,931,837,949,876"/>
+<area shape="rect" id="Node000016" href="$classCreateEntity.html#a16af19deb15a03900af02c227481f19c" title="Creates a linear shooter entity (horizontal)." alt="" coords="642,333,812,374"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="950,877,934,771,907,627,890,553,870,487,848,432,825,394,803,377,806,372,829,391,853,429,875,485,895,552,912,626,940,770,956,876"/>
+<area shape="rect" id="Node000017" href="$classCreateEntity.html#a63018f4c58bacc0b63ee46ccee3d37a4" title="Creates a shiny linear shooter entity (horizontal)." alt="" coords="386,391,556,431"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="951,877,936,777,909,644,892,577,872,517,850,469,825,438,807,428,780,420,711,410,632,408,556,409,556,404,632,402,711,405,781,415,809,423,829,434,854,466,877,515,897,576,914,643,941,776,956,876"/>
+<area shape="rect" id="Node000019" href="$classCreateEntity.html#a1002c8d9c0bca2e2dc4864f9d5298bdf" title="Creates a linear shooter entity (vertical)." alt="" coords="642,712,812,753"/>
+<area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="936,881,889,827,859,799,826,773,792,756,795,751,828,769,862,794,893,823,940,877"/>
+<area shape="rect" id="Node000020" href="$classCreateEntity.html#a28754fd9f8bc5f48c75790b64061d0a5" title="Creates a shiny linear shooter entity (vertical)." alt="" coords="386,741,556,782"/>
+<area shape="poly" id="edge21_Node000001_Node000020" title=" " alt="" coords="929,883,883,848,826,817,757,795,686,780,617,771,556,766,556,761,617,766,686,775,758,790,828,813,886,844,932,879"/>
+<area shape="rect" id="Node000021" href="$classCreateEntity.html#a9c132585abd13bf3df54e528670e8744" title=" " alt="" coords="640,827,814,867"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="888,890,811,871,813,865,889,885"/>
+<area shape="rect" id="Node000022" href="$classCreateEntity.html#a73c9660e2526f9ae841d0e43608de700" title="Creates a player entity." alt="" coords="642,892,812,917"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="860,907,812,907,812,902,860,902"/>
+<area shape="rect" id="Node000023" href="$classCreateEntity.html#a8cf730d9c36c8d2e66c0cc72166f2842" title="Creates a player entity." alt="" coords="636,941,818,966"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="880,924,791,943,790,938,879,918"/>
+<area shape="rect" id="Node000024" href="$classCreateEntity.html#ae7b522329876648f660916cdb7ef2a31" title=" " alt="" coords="643,219,810,259"/>
+<area shape="poly" id="edge25_Node000001_Node000024" title=" " alt="" coords="952,876,940,748,916,567,899,474,878,390,853,320,840,293,825,273,809,260,812,256,829,269,844,290,858,318,883,388,904,473,921,566,945,747,957,876"/>
+<area shape="rect" id="Node000027" href="$classCreateEntity.html#a9e900d76a9559cc5ebb4e2f305d73848" title=" " alt="" coords="643,991,810,1031"/>
+<area shape="poly" id="edge32_Node000001_Node000027" title=" " alt="" coords="926,928,880,955,828,981,800,993,798,988,826,977,878,950,923,923"/>
+<area shape="rect" id="Node000028" href="$classCreateEntity.html#abb738b0d83d30f47d23328c9b36ec4a7" title=" " alt="" coords="643,1056,810,1097"/>
+<area shape="poly" id="edge33_Node000001_Node000028" title=" " alt="" coords="941,931,894,988,863,1019,828,1045,805,1058,802,1053,826,1041,860,1015,891,985,937,928"/>
+<area shape="rect" id="Node000029" href="$classCreateEntity.html#a561b276bdbc99ed150331d39a1e945f9" title=" " alt="" coords="643,1121,810,1162"/>
+<area shape="poly" id="edge34_Node000001_Node000029" title=" " alt="" coords="949,933,931,972,905,1020,871,1068,829,1110,808,1123,805,1119,825,1106,867,1065,901,1017,927,970,944,930"/>
+<area shape="rect" id="Node000030" href="$classCreateEntity.html#a7e01d8a59f03c33fb29c6c4d9958531a" title="Creates a sinusoidal shooter entity." alt="" coords="627,1187,827,1227"/>
+<area shape="poly" id="edge35_Node000001_Node000030" title=" " alt="" coords="954,933,939,984,915,1050,879,1117,855,1148,829,1176,810,1188,807,1184,825,1172,851,1145,874,1114,910,1047,934,983,948,932"/>
+<area shape="rect" id="Node000031" href="$classCreateEntity.html#ae14499aad1bb4b126e3b0e783a14479e" title="Creates a shiny sinusoidal shooter entity." alt="" coords="371,1216,571,1257"/>
+<area shape="poly" id="edge37_Node000001_Node000031" title=" " alt="" coords="958,933,951,999,931,1085,915,1130,893,1172,864,1210,829,1241,794,1260,757,1272,718,1279,678,1281,602,1274,537,1260,538,1255,603,1269,679,1275,717,1273,756,1267,792,1255,825,1237,860,1206,888,1169,910,1127,926,1084,946,999,953,933"/>
+<area shape="rect" id="Node000032" href="$classCreateEntity.html#a2ba861b2a1790a692a79fc2a858d8183" title="Creates an Spatial Dustman boss." alt="" coords="640,1301,814,1342"/>
+<area shape="poly" id="edge38_Node000001_Node000032" title=" " alt="" coords="958,933,949,1003,928,1096,911,1147,890,1196,863,1243,829,1285,804,1303,801,1299,825,1281,858,1240,885,1194,906,1145,923,1095,944,1002,952,933"/>
+<area shape="rect" id="Node000033" href="$classCreateEntity.html#a1cf11fd5d55773b9db4d008d4b7f9fc5" title=" " alt="" coords="642,1367,812,1407"/>
+<area shape="poly" id="edge39_Node000001_Node000033" title=" " alt="" coords="960,933,956,1014,949,1068,938,1127,922,1188,899,1248,868,1305,829,1356,813,1368,810,1364,825,1352,864,1302,894,1246,917,1187,933,1126,944,1068,950,1014,955,933"/>
+<area shape="rect" id="Node000034" href="$classCreateEntity.html#aa2f27a6a8f997e492e7744fdb4de5443" title=" " alt="" coords="648,1432,806,1473"/>
+<area shape="poly" id="edge40_Node000001_Node000034" title=" " alt="" coords="956,933,940,1040,913,1185,896,1259,876,1327,854,1382,829,1421,807,1437,804,1433,825,1417,849,1380,871,1325,891,1258,908,1184,935,1039,951,932"/>
+<area shape="rect" id="Node000035" href="$classCreateEntity.html#a787f474c0534059b4aa23289b89e7f8d" title="Creates a teleporting shooter entity." alt="" coords="630,1497,824,1522"/>
+<area shape="poly" id="edge41_Node000001_Node000035" title=" " alt="" coords="957,933,944,1052,919,1218,902,1302,881,1379,857,1443,844,1467,829,1486,813,1498,809,1494,825,1482,839,1464,852,1441,876,1378,897,1301,914,1217,939,1051,952,932"/>
+<area shape="rect" id="Node000036" href="$classCreateEntity.html#a030daadf6ea6a893127c74b922afbdef" title="Creates a shiny teleporting shooter entity." alt="" coords="374,1515,568,1555"/>
+<area shape="poly" id="edge43_Node000001_Node000036" title=" " alt="" coords="958,933,949,1064,928,1247,911,1341,889,1425,862,1493,846,1518,829,1537,795,1559,758,1573,718,1580,678,1582,599,1574,532,1559,534,1553,600,1569,678,1577,718,1575,756,1567,793,1554,825,1533,842,1515,857,1490,884,1423,906,1339,922,1247,944,1063,953,933"/>
+<area shape="rect" id="Node000037" href="$classCreateEntity.html#a10c2acf399f8ab7a80fd02b101d4685f" title=" " alt="" coords="636,1597,818,1638"/>
+<area shape="poly" id="edge44_Node000001_Node000037" title=" " alt="" coords="958,933,946,1068,922,1261,905,1361,884,1452,859,1528,845,1558,829,1581,807,1599,804,1595,825,1577,840,1555,854,1526,879,1451,900,1360,917,1261,941,1068,952,933"/>
+<area shape="rect" id="Node000038" href="$classRegistry.html#a49e7457f210842afa7b10286090aa216" title="Constructs and adds a component to an entity with the specified parameters." alt="" coords="630,1662,824,1688"/>
+<area shape="poly" id="edge45_Node000001_Node000038" title=" " alt="" coords="959,933,950,1081,930,1297,913,1408,891,1510,863,1594,847,1627,829,1652,813,1664,810,1660,825,1648,843,1624,858,1592,886,1509,908,1407,924,1296,945,1081,953,932"/>
+<area shape="rect" id="Node000039" href="$classRegistry.html#a932bce78f646415cca744b54f43ed3cb" title="Construct and add a component to an entity." alt="" coords="630,1712,824,1737"/>
+<area shape="poly" id="edge46_Node000001_Node000039" title=" " alt="" coords="959,933,952,1091,933,1322,917,1441,894,1551,866,1641,848,1676,829,1702,816,1713,812,1709,825,1698,844,1673,861,1639,889,1549,911,1440,928,1321,947,1091,954,933"/>
+<area shape="rect" id="Node000040" href="$classSystems.html#aa27d61d48efb9b8cc05e90d793cbab0b" title="A system that processes the force components for entities." alt="" coords="651,1761,802,1786"/>
+<area shape="poly" id="edge47_Node000001_Node000040" title=" " alt="" coords="959,933,954,1099,947,1217,936,1345,920,1472,897,1589,867,1686,849,1723,829,1752,805,1768,802,1764,825,1748,845,1720,862,1684,892,1588,915,1471,931,1344,942,1217,949,1099,954,932"/>
+<area shape="rect" id="Node000047" href="$Client_8cpp.html#a274908e0f80248d89b449380d0438dff" title=" " alt="" coords="684,1810,770,1836"/>
+<area shape="poly" id="edge54_Node000001_Node000047" title=" " alt="" coords="959,932,956,1107,950,1232,939,1368,923,1504,900,1628,886,1683,869,1731,850,1770,829,1801,802,1818,771,1826,770,1820,800,1814,825,1797,846,1768,864,1729,881,1681,895,1627,918,1503,934,1368,944,1232,950,1107,954,932"/>
+<area shape="rect" id="Node000005" href="$classBigShip.html#ac9e5d9add7fb7c41784299bfe1afe836" title="Shoots projectiles in the game world." alt="" coords="392,78,550,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="628,119,550,106,551,101,628,114"/>
+<area shape="rect" id="Node000008" href="$classLinearShooter.html#a9aad4d1dd60c56833b904c53e33e11ea" title="Shoots a projectile in the game world." alt="" coords="374,128,568,153"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="628,168,554,156,555,151,629,163"/>
+<area shape="rect" id="Node000010" href="$classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af" title="Shoots projectiles in the game world, managing multiple columns." alt="" coords="368,292,574,317"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="613,303,574,304,574,298,613,297"/>
+<area shape="rect" id="Node000014" href="$classKamikazeShooter.html#a545cf070e6cf0f0d926e1a8de1502448" title="Shoots a projectile in the game world." alt="" coords="363,597,579,622"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="616,612,579,612,579,607,616,607"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="628,379,557,395,555,389,627,373"/>
+<area shape="rect" id="Node000018" href="$classAlienEmperor.html#a16548e534555915dfa145720c935b01d" title="Shoots a projectile in the world." alt="" coords="376,341,566,366"/>
+<area shape="poly" id="edge17_Node000016_Node000018" title=" " alt="" coords="627,356,567,356,567,351,627,351"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="627,746,556,755,556,749,626,741"/>
+<area shape="poly" id="edge27_Node000024_Node000005" title=" " alt="" coords="629,212,625,209,607,185,601,161,594,138,577,117,550,103,552,98,580,113,599,136,606,160,612,183,629,205,632,208"/>
+<area shape="poly" id="edge28_Node000024_Node000008" title=" " alt="" coords="635,214,625,209,611,199,601,188,592,178,577,168,547,156,549,151,580,163,595,174,605,184,614,195,628,205,638,210"/>
+<area shape="poly" id="edge30_Node000024_Node000010" title=" " alt="" coords="640,267,579,283,535,294,534,288,578,278,639,261"/>
+<area shape="poly" id="edge26_Node000024_Node000018" title=" " alt="" coords="635,269,628,273,614,287,605,302,596,317,580,332,557,343,555,338,577,327,592,314,601,299,609,284,625,269,632,265"/>
+<area shape="rect" id="Node000025" href="$classSinusoidalShooter.html#acccb0b02ad53476cd3e02e6d16aa079c" title="Shoots a projectile in the game world." alt="" coords="405,177,537,218"/>
+<area shape="poly" id="edge29_Node000024_Node000025" title=" " alt="" coords="627,226,537,211,538,206,628,220"/>
+<area shape="rect" id="Node000026" href="$classTpShooter.html#ab8f9445be915ea73ee13e5d2b038989d" title="Shoots projectiles from the bot in the game world." alt="" coords="384,242,558,268"/>
+<area shape="poly" id="edge31_Node000024_Node000026" title=" " alt="" coords="628,248,558,252,558,247,628,243"/>
+<area shape="poly" id="edge36_Node000030_Node000031" title=" " alt="" coords="611,1223,572,1227,571,1222,611,1218"/>
+<area shape="poly" id="edge42_Node000035_Node000036" title=" " alt="" coords="615,1523,568,1528,568,1523,615,1518"/>
+<area shape="rect" id="Node000041" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="372,1761,570,1786"/>
+<area shape="poly" id="edge48_Node000040_Node000041" title=" " alt="" coords="635,1776,570,1776,570,1771,635,1771"/>
+<area shape="rect" id="Node000042" href="$Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,1736,306,1761"/>
+<area shape="poly" id="edge49_Node000041_Node000042" title=" " alt="" coords="357,1762,306,1755,307,1750,357,1756"/>
+<area shape="rect" id="Node000044" href="$classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,1785,315,1810"/>
+<area shape="poly" id="edge51_Node000041_Node000044" title=" " alt="" coords="357,1790,316,1795,316,1790,356,1785"/>
+<area shape="rect" id="Node000043" href="$server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,1736,167,1761"/>
+<area shape="poly" id="edge50_Node000042_Node000043" title=" " alt="" coords="223,1751,168,1751,168,1746,223,1746"/>
+<area shape="rect" id="Node000045" href="$classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,1785,182,1810"/>
+<area shape="poly" id="edge52_Node000044_Node000045" title=" " alt="" coords="215,1800,183,1800,183,1795,215,1795"/>
+<area shape="rect" id="Node000046" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,1785,55,1810"/>
+<area shape="poly" id="edge53_Node000045_Node000046" title=" " alt="" coords="87,1800,55,1800,55,1795,87,1795"/>
 </map>

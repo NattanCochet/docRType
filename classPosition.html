@@ -110,13 +110,13 @@ $(function(){initNavTree('classPosition.html',''); initResizable(true); });
 <p>A class to represent and manage the position of an object.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Position_8hpp_source.html">Position.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="server_2Logic_2include_2Components_2Position_8hpp_source.html">Position.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Position:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPosition__coll__graph.png" border="0" usemap="#aPosition_coll__map" alt="Collaboration graph"/></div>
 <map name="aPosition_coll__map" id="aPosition_coll__map">
-<area shape="rect" title="A class to represent and manage the position of an object." alt="" coords="5,5,192,295"/>
+<area shape="rect" title="A class to represent and manage the position of an object." alt="" coords="5,5,192,275"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -158,15 +158,47 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7e875cf9c4d369a06e9040023ee827c" id="r_ad7e875cf9c4d369a06e9040023ee827c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7e875cf9c4d369a06e9040023ee827c">setIsAppearOnTheWindow</a> (bool newState)</td></tr>
 <tr class="memdesc:ad7e875cf9c4d369a06e9040023ee827c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of appearing on the window.  <br /></td></tr>
 <tr class="separator:ad7e875cf9c4d369a06e9040023ee827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369a577425f8ba02e8750d04b6a088db" id="r_a369a577425f8ba02e8750d04b6a088db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a369a577425f8ba02e8750d04b6a088db">Position</a> ()</td></tr>
+<tr class="memdesc:a369a577425f8ba02e8750d04b6a088db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class.  <br /></td></tr>
+<tr class="separator:a369a577425f8ba02e8750d04b6a088db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcf086215651352e72253fcaccff191" id="r_a0fcf086215651352e72253fcaccff191"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fcf086215651352e72253fcaccff191">Position</a> (sf::Vector2f pos)</td></tr>
+<tr class="memdesc:a0fcf086215651352e72253fcaccff191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class with an initial position.  <br /></td></tr>
+<tr class="separator:a0fcf086215651352e72253fcaccff191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cea37259e0b6735633fb3305146374" id="r_ab8cea37259e0b6735633fb3305146374"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8cea37259e0b6735633fb3305146374">Position</a> (float x, float y)</td></tr>
+<tr class="memdesc:ab8cea37259e0b6735633fb3305146374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class with an initial position as integer values.  <br /></td></tr>
+<tr class="separator:ab8cea37259e0b6735633fb3305146374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe83df4cab7af756636b4e39e4378f4a" id="r_abe83df4cab7af756636b4e39e4378f4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe83df4cab7af756636b4e39e4378f4a">~Position</a> ()</td></tr>
+<tr class="memdesc:abe83df4cab7af756636b4e39e4378f4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class.  <br /></td></tr>
+<tr class="separator:abe83df4cab7af756636b4e39e4378f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb42e349764f30df958b993d27bd120" id="r_abeb42e349764f30df958b993d27bd120"><td class="memItemLeft" align="right" valign="top">sf::Vector2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeb42e349764f30df958b993d27bd120">getPosition</a> ()</td></tr>
+<tr class="memdesc:abeb42e349764f30df958b993d27bd120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current position.  <br /></td></tr>
+<tr class="separator:abeb42e349764f30df958b993d27bd120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c2eaa11826adaf4232eecd91e4b41b" id="r_a34c2eaa11826adaf4232eecd91e4b41b"><td class="memItemLeft" align="right" valign="top">sf::Vector2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34c2eaa11826adaf4232eecd91e4b41b">getDefaultPosition</a> ()</td></tr>
+<tr class="memdesc:a34c2eaa11826adaf4232eecd91e4b41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default position.  <br /></td></tr>
+<tr class="separator:a34c2eaa11826adaf4232eecd91e4b41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd39c338251cba5fd2b24b11a315099" id="r_affd39c338251cba5fd2b24b11a315099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affd39c338251cba5fd2b24b11a315099">setPosition</a> (sf::Vector2f newPos)</td></tr>
+<tr class="memdesc:affd39c338251cba5fd2b24b11a315099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current position.  <br /></td></tr>
+<tr class="separator:affd39c338251cba5fd2b24b11a315099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016712266c36b13291d4269064f05549" id="r_a016712266c36b13291d4269064f05549"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016712266c36b13291d4269064f05549">setPosition</a> (int x, int y)</td></tr>
+<tr class="memdesc:a016712266c36b13291d4269064f05549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current position using integer coordinates.  <br /></td></tr>
+<tr class="separator:a016712266c36b13291d4269064f05549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62f2c9039eb41f3794d8639d6691714" id="r_aa62f2c9039eb41f3794d8639d6691714"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa62f2c9039eb41f3794d8639d6691714">setDefaultPosition</a> (sf::Vector2f newPos)</td></tr>
+<tr class="memdesc:aa62f2c9039eb41f3794d8639d6691714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default position.  <br /></td></tr>
+<tr class="separator:aa62f2c9039eb41f3794d8639d6691714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10a30ee53d2fcb5399a330156fbccf3" id="r_ab10a30ee53d2fcb5399a330156fbccf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab10a30ee53d2fcb5399a330156fbccf3">setDefaultPosition</a> (int x, int y)</td></tr>
+<tr class="memdesc:ab10a30ee53d2fcb5399a330156fbccf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default position using integer coordinates.  <br /></td></tr>
+<tr class="separator:ab10a30ee53d2fcb5399a330156fbccf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to represent and manage the position of an object. </p>
-<p>This class manages the position of an object using two <code>sf::Vector2f</code> objects: one for the current position and one for the default position. It provides methods to get and set the position values. </p>
+<p>Class to manage 2D positions in the game.</p>
+<p>This class manages the position of an object using two <code>sf::Vector2f</code> objects: one for the current position and one for the default position. It provides methods to get and set the position values.</p>
+<p>This class represents a 2D position using <code>sf::Vector2f</code>. It allows storing the current position and a default position, as well as modifying them. </p>
 
-<p class="definition">Definition at line <a class="el" href="Position_8hpp_source.html#l00022">22</a> of file <a class="el" href="Position_8hpp_source.html">Position.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2Components_2Position_8hpp_source.html#l00022">22</a> of file <a class="el" href="server_2Logic_2include_2Components_2Position_8hpp_source.html">Position.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a369a577425f8ba02e8750d04b6a088db" name="a369a577425f8ba02e8750d04b6a088db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a369a577425f8ba02e8750d04b6a088db">&#9670;&#160;</a></span>Position() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a369a577425f8ba02e8750d04b6a088db">&#9670;&#160;</a></span>Position() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,12 +215,12 @@ Public Member Functions</h2></td></tr>
 <p>Default constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class. </p>
 <p>Initializes the position to (0, 0) and the default position to (0, 0). </p>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00010">10</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00010">10</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a0fcf086215651352e72253fcaccff191" name="a0fcf086215651352e72253fcaccff191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fcf086215651352e72253fcaccff191">&#9670;&#160;</a></span>Position() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcf086215651352e72253fcaccff191">&#9670;&#160;</a></span>Position() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,12 +242,12 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00014">14</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00014">14</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a6e36cf0fee251e74cfedb86f4e99558d" name="a6e36cf0fee251e74cfedb86f4e99558d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e36cf0fee251e74cfedb86f4e99558d">&#9670;&#160;</a></span>Position() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e36cf0fee251e74cfedb86f4e99558d">&#9670;&#160;</a></span>Position() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,12 +274,12 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00018">18</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00018">18</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
 <a id="abe83df4cab7af756636b4e39e4378f4a" name="abe83df4cab7af756636b4e39e4378f4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe83df4cab7af756636b4e39e4378f4a">&#9670;&#160;</a></span>~Position()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abe83df4cab7af756636b4e39e4378f4a">&#9670;&#160;</a></span>~Position() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,13 +295,128 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00025">25</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00025">25</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a369a577425f8ba02e8750d04b6a088db" name="a369a577425f8ba02e8750d04b6a088db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369a577425f8ba02e8750d04b6a088db">&#9670;&#160;</a></span>Position() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position::Position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class. </p>
+
+</div>
+</div>
+<a id="a0fcf086215651352e72253fcaccff191" name="a0fcf086215651352e72253fcaccff191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcf086215651352e72253fcaccff191">&#9670;&#160;</a></span>Position() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position::Position </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class with an initial position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>The initial position as an <code>sf::Vector2f</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8cea37259e0b6735633fb3305146374" name="ab8cea37259e0b6735633fb3305146374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cea37259e0b6735633fb3305146374">&#9670;&#160;</a></span>Position() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position::Position </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class with an initial position as integer values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-coordinate of the initial position. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-coordinate of the initial position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Position_8cpp_source.html#l00018">18</a> of file <a class="el" href="client_2ECS_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abe83df4cab7af756636b4e39e4378f4a" name="abe83df4cab7af756636b4e39e4378f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe83df4cab7af756636b4e39e4378f4a">&#9670;&#160;</a></span>~Position() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position::~Position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor for the <a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> class. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a34c2eaa11826adaf4232eecd91e4b41b" name="a34c2eaa11826adaf4232eecd91e4b41b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34c2eaa11826adaf4232eecd91e4b41b">&#9670;&#160;</a></span>getDefaultPosition()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c2eaa11826adaf4232eecd91e4b41b">&#9670;&#160;</a></span>getDefaultPosition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f &amp; Position::getDefaultPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the default position. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the default position as an <code>sf::Vector2f</code>. </dd></dl>
+
+</div>
+</div>
+<a id="a34c2eaa11826adaf4232eecd91e4b41b" name="a34c2eaa11826adaf4232eecd91e4b41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c2eaa11826adaf4232eecd91e4b41b">&#9670;&#160;</a></span>getDefaultPosition() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +433,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the default position of the object. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the <code>sf::Vector2f</code> representing the default position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00034">34</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00034">34</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -308,26 +455,54 @@ Public Member Functions</h2></td></tr>
 <p>Gets the boolean of the appearing onn the window. </p>
 <dl class="section return"><dt>Returns</dt><dd>A boolean of the state </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00039">39</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00039">39</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPosition_a501e87cf1da5691bfadd4eaee02f3cdc_icgraph.png" border="0" usemap="#aclassPosition_a501e87cf1da5691bfadd4eaee02f3cdc_icgraph" alt=""/></div>
 <map name="aclassPosition_a501e87cf1da5691bfadd4eaee02f3cdc_icgraph" id="aclassPosition_a501e87cf1da5691bfadd4eaee02f3cdc_icgraph">
-<area shape="rect" title="Gets the boolean of the appearing onn the window." alt="" coords="563,5,747,46"/>
-<area shape="rect" href="classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="348,13,515,38"/>
-<area shape="poly" title=" " alt="" coords="548,28,516,28,516,23,548,23"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,13,300,38"/>
-<area shape="poly" title=" " alt="" coords="332,28,301,28,301,23,332,23"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,13,55,38"/>
-<area shape="poly" title=" " alt="" coords="87,28,55,28,55,23,87,23"/>
+<area shape="rect" title="Gets the boolean of the appearing onn the window." alt="" coords="824,23,1007,64"/>
+<area shape="rect" href="classSystems.html#aca2f5681d9b94dd3536cfe43abd641a4" title="A system that destroys entities when too far away from the game screen." alt="" coords="609,31,776,56"/>
+<area shape="poly" title=" " alt="" coords="809,46,776,46,776,41,809,41"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,31,561,56"/>
+<area shape="poly" title=" " alt="" coords="593,46,561,46,561,41,593,41"/>
+<area shape="rect" href="Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,5,306,31"/>
+<area shape="poly" title=" " alt="" coords="347,31,306,25,307,20,348,26"/>
+<area shape="rect" href="classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,55,315,80"/>
+<area shape="poly" title=" " alt="" coords="348,61,316,65,316,59,348,55"/>
+<area shape="rect" href="server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,5,167,31"/>
+<area shape="poly" title=" " alt="" coords="223,21,168,21,168,16,223,16"/>
+<area shape="rect" href="classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,55,182,80"/>
+<area shape="poly" title=" " alt="" coords="215,70,183,70,183,65,215,65"/>
+<area shape="rect" href="client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,55,55,80"/>
+<area shape="poly" title=" " alt="" coords="87,70,55,70,55,65,87,65"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="abeb42e349764f30df958b993d27bd120" name="abeb42e349764f30df958b993d27bd120"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeb42e349764f30df958b993d27bd120">&#9670;&#160;</a></span>getPosition()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb42e349764f30df958b993d27bd120">&#9670;&#160;</a></span>getPosition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f &amp; Position::getPosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the current position. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the current position as an <code>sf::Vector2f</code>. </dd></dl>
+
+</div>
+</div>
+<a id="abeb42e349764f30df958b993d27bd120" name="abeb42e349764f30df958b993d27bd120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb42e349764f30df958b993d27bd120">&#9670;&#160;</a></span>getPosition() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,28 +519,68 @@ Here is the caller graph for this function:</div>
 <p>Gets the current position of the object. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the <code>sf::Vector2f</code> representing the current position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00029">29</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00029">29</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPosition_abeb42e349764f30df958b993d27bd120_icgraph.png" border="0" usemap="#aclassPosition_abeb42e349764f30df958b993d27bd120_icgraph" alt=""/></div>
 <map name="aclassPosition_abeb42e349764f30df958b993d27bd120_icgraph" id="aclassPosition_abeb42e349764f30df958b993d27bd120_icgraph">
-<area shape="rect" title="Gets the current position of the object." alt="" coords="563,42,703,68"/>
-<area shape="rect" href="classSinusoidalShooter.html#a07429c99d7e53a5121ff6d0460d2f999" title="Moves the bot within the game world following a sinusoidal pattern." alt="" coords="366,5,498,46"/>
-<area shape="poly" title=" " alt="" coords="547,45,498,38,499,33,548,40"/>
-<area shape="rect" href="classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="348,70,515,96"/>
-<area shape="poly" title=" " alt="" coords="548,69,516,74,515,69,547,64"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,70,300,96"/>
-<area shape="poly" title=" " alt="" coords="332,86,301,86,301,80,332,80"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,70,55,96"/>
-<area shape="poly" title=" " alt="" coords="87,86,55,86,55,80,87,80"/>
+<area shape="rect" title="Gets the current position of the object." alt="" coords="841,63,980,88"/>
+<area shape="rect" href="classControllable.html#a573cebafa78df19dca7831f6bc4144d8" title=" " alt="" coords="609,5,793,31"/>
+<area shape="poly" title=" " alt="" coords="846,61,750,34,752,29,847,55"/>
+<area shape="rect" href="classSinusoidalShooter.html#a07429c99d7e53a5121ff6d0460d2f999" title="Moves the bot within the game world following a sinusoidal pattern." alt="" coords="635,55,767,96"/>
+<area shape="poly" title=" " alt="" coords="825,78,767,78,767,73,825,73"/>
+<area shape="rect" href="classSystems.html#aca2f5681d9b94dd3536cfe43abd641a4" title="A system that destroys entities when too far away from the game screen." alt="" coords="617,120,784,146"/>
+<area shape="poly" title=" " alt="" coords="847,96,752,122,750,117,846,90"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,120,561,146"/>
+<area shape="poly" title=" " alt="" coords="602,136,561,136,561,130,602,130"/>
+<area shape="rect" href="Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,95,306,120"/>
+<area shape="poly" title=" " alt="" coords="347,120,306,115,307,109,348,115"/>
+<area shape="rect" href="classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,144,315,170"/>
+<area shape="poly" title=" " alt="" coords="348,150,316,154,316,149,348,145"/>
+<area shape="rect" href="server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,95,167,120"/>
+<area shape="poly" title=" " alt="" coords="223,110,168,110,168,105,223,105"/>
+<area shape="rect" href="classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,144,182,170"/>
+<area shape="poly" title=" " alt="" coords="215,160,183,160,183,154,215,154"/>
+<area shape="rect" href="client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,144,55,170"/>
+<area shape="poly" title=" " alt="" coords="87,160,55,160,55,154,87,154"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="ab10a30ee53d2fcb5399a330156fbccf3" name="ab10a30ee53d2fcb5399a330156fbccf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab10a30ee53d2fcb5399a330156fbccf3">&#9670;&#160;</a></span>setDefaultPosition() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10a30ee53d2fcb5399a330156fbccf3">&#9670;&#160;</a></span>setDefaultPosition() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Position::setDefaultPosition </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the default position using integer coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The new x-coordinate for the default position. </td></tr>
+    <tr><td class="paramname">y</td><td>The new y-coordinate for the default position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab10a30ee53d2fcb5399a330156fbccf3" name="ab10a30ee53d2fcb5399a330156fbccf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab10a30ee53d2fcb5399a330156fbccf3">&#9670;&#160;</a></span>setDefaultPosition() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,12 +607,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00059">59</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00059">59</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
 <a id="aa62f2c9039eb41f3794d8639d6691714" name="aa62f2c9039eb41f3794d8639d6691714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa62f2c9039eb41f3794d8639d6691714">&#9670;&#160;</a></span>setDefaultPosition() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62f2c9039eb41f3794d8639d6691714">&#9670;&#160;</a></span>setDefaultPosition() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Position::setDefaultPosition </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>newPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the default position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newPos</td><td>The new default position as an <code>sf::Vector2f</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa62f2c9039eb41f3794d8639d6691714" name="aa62f2c9039eb41f3794d8639d6691714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62f2c9039eb41f3794d8639d6691714">&#9670;&#160;</a></span>setDefaultPosition() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,7 +659,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00054">54</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00054">54</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
@@ -446,26 +686,64 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00064">64</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00064">64</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classPosition_ad7e875cf9c4d369a06e9040023ee827c_icgraph.png" border="0" usemap="#aclassPosition_ad7e875cf9c4d369a06e9040023ee827c_icgraph" alt=""/></div>
 <map name="aclassPosition_ad7e875cf9c4d369a06e9040023ee827c_icgraph" id="aclassPosition_ad7e875cf9c4d369a06e9040023ee827c_icgraph">
-<area shape="rect" title="Sets the state of appearing on the window." alt="" coords="563,5,747,46"/>
-<area shape="rect" href="classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="348,13,515,38"/>
-<area shape="poly" title=" " alt="" coords="548,28,516,28,516,23,548,23"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,13,300,38"/>
-<area shape="poly" title=" " alt="" coords="332,28,301,28,301,23,332,23"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,13,55,38"/>
-<area shape="poly" title=" " alt="" coords="87,28,55,28,55,23,87,23"/>
+<area shape="rect" title="Sets the state of appearing on the window." alt="" coords="824,23,1007,64"/>
+<area shape="rect" href="classSystems.html#aca2f5681d9b94dd3536cfe43abd641a4" title="A system that destroys entities when too far away from the game screen." alt="" coords="609,31,776,56"/>
+<area shape="poly" title=" " alt="" coords="809,46,776,46,776,41,809,41"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,31,561,56"/>
+<area shape="poly" title=" " alt="" coords="593,46,561,46,561,41,593,41"/>
+<area shape="rect" href="Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,5,306,31"/>
+<area shape="poly" title=" " alt="" coords="347,31,306,25,307,20,348,26"/>
+<area shape="rect" href="classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,55,315,80"/>
+<area shape="poly" title=" " alt="" coords="348,61,316,65,316,59,348,55"/>
+<area shape="rect" href="server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,5,167,31"/>
+<area shape="poly" title=" " alt="" coords="223,21,168,21,168,16,223,16"/>
+<area shape="rect" href="classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,55,182,80"/>
+<area shape="poly" title=" " alt="" coords="215,70,183,70,183,65,215,65"/>
+<area shape="rect" href="client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,55,55,80"/>
+<area shape="poly" title=" " alt="" coords="87,70,55,70,55,65,87,65"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="a016712266c36b13291d4269064f05549" name="a016712266c36b13291d4269064f05549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a016712266c36b13291d4269064f05549">&#9670;&#160;</a></span>setPosition() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a016712266c36b13291d4269064f05549">&#9670;&#160;</a></span>setPosition() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Position::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the current position using integer coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The new x-coordinate for the current position. </td></tr>
+    <tr><td class="paramname">y</td><td>The new y-coordinate for the current position. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a016712266c36b13291d4269064f05549" name="a016712266c36b13291d4269064f05549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016712266c36b13291d4269064f05549">&#9670;&#160;</a></span>setPosition() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -492,12 +770,37 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00049">49</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00049">49</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
 
 </div>
 </div>
 <a id="affd39c338251cba5fd2b24b11a315099" name="affd39c338251cba5fd2b24b11a315099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affd39c338251cba5fd2b24b11a315099">&#9670;&#160;</a></span>setPosition() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affd39c338251cba5fd2b24b11a315099">&#9670;&#160;</a></span>setPosition() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Position::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>newPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newPos</td><td>The new position as an <code>sf::Vector2f</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="affd39c338251cba5fd2b24b11a315099" name="affd39c338251cba5fd2b24b11a315099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd39c338251cba5fd2b24b11a315099">&#9670;&#160;</a></span>setPosition() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,13 +822,25 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Position_8cpp_source.html#l00044">44</a> of file <a class="el" href="Position_8cpp_source.html">Position.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html#l00044">44</a> of file <a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPosition_affd39c338251cba5fd2b24b11a315099_icgraph.png" border="0" usemap="#aclassPosition_affd39c338251cba5fd2b24b11a315099_icgraph" alt=""/></div>
+<map name="aclassPosition_affd39c338251cba5fd2b24b11a315099_icgraph" id="aclassPosition_affd39c338251cba5fd2b24b11a315099_icgraph">
+<area shape="rect" title="Sets the current position to a new value." alt="" coords="238,5,377,31"/>
+<area shape="rect" href="classControllable.html#a573cebafa78df19dca7831f6bc4144d8" title=" " alt="" coords="5,5,190,31"/>
+<area shape="poly" title=" " alt="" coords="222,21,190,21,190,16,222,16"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>server/Logic/include/Components/<a class="el" href="Position_8hpp_source.html">Position.hpp</a></li>
-<li>server/Logic/src/Components/<a class="el" href="Position_8cpp_source.html">Position.cpp</a></li>
+<li>server/Logic/include/Components/<a class="el" href="server_2Logic_2include_2Components_2Position_8hpp_source.html">Position.hpp</a></li>
+<li>client/ECS/Components/<a class="el" href="client_2ECS_2Components_2Position_8hpp_source.html">Position.hpp</a></li>
+<li>server/Logic/src/Components/<a class="el" href="server_2Logic_2src_2Components_2Position_8cpp_source.html">Position.cpp</a></li>
+<li>client/ECS/Components/<a class="el" href="client_2ECS_2Components_2Position_8cpp_source.html">Position.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

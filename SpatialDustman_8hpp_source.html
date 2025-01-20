@@ -117,40 +117,37 @@ $(function(){initNavTree('SpatialDustman_8hpp_source.html',''); initResizable(tr
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="ABot_8hpp.html">../ABot.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classSpatialDustman.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="classSpatialDustman.html#a1bec86f006fb5b5c1c64e6192e8cb05e">SpatialDustman</a> : <span class="keyword">public</span> <a class="code hl_class" href="classABot.html">ABot</a> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_function" href="classSpatialDustman.html#a1bec86f006fb5b5c1c64e6192e8cb05e">SpatialDustman</a>(<span class="keywordtype">float</span> delay, <span class="keywordtype">float</span> column1 = 1.5f, <span class="keywordtype">float</span> column2 = 2.0f, <span class="keywordtype">float</span> column3 = 1.3f, <span class="keywordtype">float</span> column4 = 0.9f);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="classSpatialDustman.html#ab4a6256292b73588e05544f4bc342f44">~SpatialDustman</a>();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af">shootProjectile</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classSpatialDustman.html#a568e0d05e284991b7cf9befc91e2e295">   55</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classSpatialDustman.html#a568e0d05e284991b7cf9befc91e2e295">moveBot</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity)<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classSpatialDustman.html">   25</a></span><span class="keyword">class </span><a class="code hl_function" href="classSpatialDustman.html#a1bec86f006fb5b5c1c64e6192e8cb05e">SpatialDustman</a> : <span class="keyword">public</span> <a class="code hl_class" href="classABot.html">ABot</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="classSpatialDustman.html#a1bec86f006fb5b5c1c64e6192e8cb05e">SpatialDustman</a>(<span class="keywordtype">float</span> delay, <span class="keywordtype">float</span> column1 = 1.5f, <span class="keywordtype">float</span> column2 = 2.0f, <span class="keywordtype">float</span> column3 = 1.3f, <span class="keywordtype">float</span> column4 = 0.9f);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_function" href="classSpatialDustman.html#ab4a6256292b73588e05544f4bc342f44">~SpatialDustman</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af">shootProjectile</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classSpatialDustman.html#a568e0d05e284991b7cf9befc91e2e295">moveBot</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">float</span> _column1;    </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">float</span> _column2;    </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">float</span> _column3;    </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">float</span> _column4;    </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    sf::Clock _clock1; </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    sf::Clock _clock2; </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    sf::Clock _clock3; </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    sf::Clock _clock4; </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordtype">float</span> _column1; </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">float</span> _column2; </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">float</span> _column3; </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">float</span> _column4; </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        sf::Clock _clock1; </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        sf::Clock _clock2; </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        sf::Clock _clock3; </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        sf::Clock _clock4; </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
-</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif </span><span class="comment">/* !SPATIALDUSTMAN_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif </span><span class="comment">/* !SPATIALDUSTMAN_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aABot_8hpp_html"><div class="ttname"><a href="ABot_8hpp.html">ABot.hpp</a></div></div>
 <div class="ttc" id="aclassABot_html"><div class="ttname"><a href="classABot.html">ABot</a></div><div class="ttdoc">Abstract base class for a bot in the game.</div><div class="ttdef"><b>Definition</b> <a href="ABot_8hpp_source.html#l00024">ABot.hpp:24</a></div></div>
 <div class="ttc" id="aclassSpatialDustman_html_a1bec86f006fb5b5c1c64e6192e8cb05e"><div class="ttname"><a href="classSpatialDustman.html#a1bec86f006fb5b5c1c64e6192e8cb05e">SpatialDustman::SpatialDustman</a></div><div class="ttdeci">SpatialDustman(float delay, float column1=1.5f, float column2=2.0f, float column3=1.3f, float column4=0.9f)</div><div class="ttdoc">Constructs a SpatialDustman with specified delays for each column.</div><div class="ttdef"><b>Definition</b> <a href="SpatialDustman_8cpp_source.html#l00010">SpatialDustman.cpp:10</a></div></div>
-<div class="ttc" id="aclassSpatialDustman_html_a568e0d05e284991b7cf9befc91e2e295"><div class="ttname"><a href="classSpatialDustman.html#a568e0d05e284991b7cf9befc91e2e295">SpatialDustman::moveBot</a></div><div class="ttdeci">void moveBot(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Handles movement of the bot in the game world.</div><div class="ttdef"><b>Definition</b> <a href="#l00055">SpatialDustman.hpp:55</a></div></div>
-<div class="ttc" id="aclassSpatialDustman_html_a7dd98e8c3805cc9dd9be0d50c7ead0af"><div class="ttname"><a href="classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af">SpatialDustman::shootProjectile</a></div><div class="ttdeci">void shootProjectile(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Shoots projectiles in the game world, managing multiple columns.</div><div class="ttdef"><b>Definition</b> <a href="SpatialDustman_8cpp_source.html#l00023">SpatialDustman.cpp:23</a></div></div>
+<div class="ttc" id="aclassSpatialDustman_html_a568e0d05e284991b7cf9befc91e2e295"><div class="ttname"><a href="classSpatialDustman.html#a568e0d05e284991b7cf9befc91e2e295">SpatialDustman::moveBot</a></div><div class="ttdeci">void moveBot(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Handles movement of the bot in the game world.</div><div class="ttdef"><b>Definition</b> <a href="SpatialDustman_8cpp_source.html#l00023">SpatialDustman.cpp:23</a></div></div>
+<div class="ttc" id="aclassSpatialDustman_html_a7dd98e8c3805cc9dd9be0d50c7ead0af"><div class="ttname"><a href="classSpatialDustman.html#a7dd98e8c3805cc9dd9be0d50c7ead0af">SpatialDustman::shootProjectile</a></div><div class="ttdeci">void shootProjectile(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Shoots projectiles in the game world, managing multiple columns.</div><div class="ttdef"><b>Definition</b> <a href="SpatialDustman_8cpp_source.html#l00037">SpatialDustman.cpp:37</a></div></div>
 <div class="ttc" id="aclassSpatialDustman_html_ab4a6256292b73588e05544f4bc342f44"><div class="ttname"><a href="classSpatialDustman.html#ab4a6256292b73588e05544f4bc342f44">SpatialDustman::~SpatialDustman</a></div><div class="ttdeci">~SpatialDustman()</div><div class="ttdoc">Destructor for SpatialDustman.</div><div class="ttdef"><b>Definition</b> <a href="SpatialDustman_8cpp_source.html#l00019">SpatialDustman.cpp:19</a></div></div>
-<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="World_8hpp_source.html#l00058">World.hpp:58</a></div></div>
+<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="server_2Logic_2include_2ECS_2World_8hpp_source.html#l00060">World.hpp:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

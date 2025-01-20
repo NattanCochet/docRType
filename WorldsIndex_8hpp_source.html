@@ -114,54 +114,57 @@ $(function(){initNavTree('WorldsIndex_8hpp_source.html',''); initResizable(true)
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define WORLDSINDEX_HPP_</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="World_8hpp.html">ECS/World.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Systems_8hpp.html">Systems.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classWorldsIndex.html">   23</a></span><span class="keyword">class </span><a class="code hl_function" href="classWorldsIndex.html#adc580002a5fd6555aab0134f1be41efc">WorldsIndex</a> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="classWorldsIndex.html#adc580002a5fd6555aab0134f1be41efc">WorldsIndex</a>();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="classWorldsIndex.html#a6bb7b78f11243f42c51c0a8ab687e091">~WorldsIndex</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="classWorld.html">World</a> &amp;<a class="code hl_function" href="classWorldsIndex.html#ad13fdfec879fd4e6265233830c75e2e4">getWorldByID</a>(std::size_t worldID);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::unordered_map&lt;std::size_t, World&gt; &amp;<a class="code hl_function" href="classWorldsIndex.html#a9738e14c0025e6bd40d25e94abbaffb6">getWorld</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    std::size_t <a class="code hl_function" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130">addWorld</a>(</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">bool</span> isClient, <span class="keywordtype">bool</span> isPublic, <span class="keywordtype">int</span> nbrPlayerMax, std::string nameRoom,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::size_t clientID, std::string password = <span class="stringliteral">&quot;&quot;</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    );</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_class" href="classWorld.html">World</a> <a class="code hl_function" href="classWorldsIndex.html#a6a4cc5dfc5b327f230d439dced4fc738">deleteWorld</a>(std::size_t index);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_class" href="classWorld.html">World</a> <a class="code hl_function" href="classWorldsIndex.html#a6a4cc5dfc5b327f230d439dced4fc738">deleteWorld</a>(std::unordered_map&lt;std::size_t, World&gt;::iterator it);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    std::size_t <a class="code hl_function" href="classWorldsIndex.html#ab280ec27e34f5592754ff36c95d35510">getNbrWorlds</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWorldsIndex.html#a9a135cc984865bea089f058d112545f9">applyFunctionsInWorlds</a>();</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_class" href="classSystems.html">Systems</a> _systems;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    std::unordered_map&lt;std::size_t, World&gt; _wordMap; </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::size_t _nbrWorlds; </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::size_t _nextIDWorld; </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="server_2Logic_2include_2ECS_2World_8hpp.html">ECS/World.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="server_2Logic_2include_2Systems_8hpp.html">Systems.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="NetworkServer_8hpp.html">../../Network/NetworkServer.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classWorldsIndex.html">   24</a></span><span class="keyword">class </span><a class="code hl_function" href="classWorldsIndex.html#adc580002a5fd6555aab0134f1be41efc">WorldsIndex</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="classWorldsIndex.html#adc580002a5fd6555aab0134f1be41efc">WorldsIndex</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="classWorldsIndex.html#a6bb7b78f11243f42c51c0a8ab687e091">~WorldsIndex</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="classWorld.html">World</a> &amp;<a class="code hl_function" href="classWorldsIndex.html#ad13fdfec879fd4e6265233830c75e2e4">getWorldByID</a>(std::size_t worldID);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::unordered_map&lt;std::size_t, World&gt; &amp;<a class="code hl_function" href="classWorldsIndex.html#a9738e14c0025e6bd40d25e94abbaffb6">getWorld</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::size_t <a class="code hl_function" href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130">addWorld</a>(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">bool</span> isClient, <span class="keywordtype">bool</span> isPublic, <span class="keywordtype">int</span> nbrPlayerMax, std::string nameRoom,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::size_t clientID, std::string password = <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    );</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_class" href="classWorld.html">World</a> <a class="code hl_function" href="classWorldsIndex.html#a6a4cc5dfc5b327f230d439dced4fc738">deleteWorld</a>(std::size_t index);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_class" href="classWorld.html">World</a> <a class="code hl_function" href="classWorldsIndex.html#a6a4cc5dfc5b327f230d439dced4fc738">deleteWorld</a>(std::unordered_map&lt;std::size_t, World&gt;::iterator it);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    std::size_t <a class="code hl_function" href="classWorldsIndex.html#ab280ec27e34f5592754ff36c95d35510">getNbrWorlds</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classWorldsIndex.html#a71c6a33b3c7bbec0b0ec21fdd94adfef">applyFunctionsInWorlds</a>(<a class="code hl_class" href="classNetworkServer.html">NetworkServer</a> &amp;server);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_class" href="classSystems.html">Systems</a> _systems;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    std::unordered_map&lt;std::size_t, World&gt; _wordMap; </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    std::size_t _nbrWorlds; </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    std::size_t _nextIDWorld; </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
 </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif </span><span class="comment">/* !WORLDSINDEX_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aSystems_8hpp_html"><div class="ttname"><a href="Systems_8hpp.html">Systems.hpp</a></div></div>
-<div class="ttc" id="aWorld_8hpp_html"><div class="ttname"><a href="World_8hpp.html">World.hpp</a></div></div>
-<div class="ttc" id="aclassSystems_html"><div class="ttname"><a href="classSystems.html">Systems</a></div><div class="ttdoc">A class that contains all the systems for managing game logic related to entities in the ECS architec...</div><div class="ttdef"><b>Definition</b> <a href="Systems_8hpp_source.html#l00031">Systems.hpp:31</a></div></div>
-<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="World_8hpp_source.html#l00058">World.hpp:58</a></div></div>
-<div class="ttc" id="aclassWorldsIndex_html_a6a4cc5dfc5b327f230d439dced4fc738"><div class="ttname"><a href="classWorldsIndex.html#a6a4cc5dfc5b327f230d439dced4fc738">WorldsIndex::deleteWorld</a></div><div class="ttdeci">World deleteWorld(std::size_t index)</div><div class="ttdoc">Deletes a world from the index using its index.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00043">WorldsIndex.cpp:43</a></div></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#endif </span><span class="comment">/* !WORLDSINDEX_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aNetworkServer_8hpp_html"><div class="ttname"><a href="NetworkServer_8hpp.html">NetworkServer.hpp</a></div></div>
+<div class="ttc" id="aclassNetworkServer_html"><div class="ttname"><a href="classNetworkServer.html">NetworkServer</a></div><div class="ttdef"><b>Definition</b> <a href="NetworkServer_8hpp_source.html#l00022">NetworkServer.hpp:22</a></div></div>
+<div class="ttc" id="aclassSystems_html"><div class="ttname"><a href="classSystems.html">Systems</a></div><div class="ttdoc">A class that contains all the systems for managing game logic related to entities in the ECS architec...</div><div class="ttdef"><b>Definition</b> <a href="server_2Logic_2include_2Systems_8hpp_source.html#l00033">Systems.hpp:34</a></div></div>
+<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="server_2Logic_2include_2ECS_2World_8hpp_source.html#l00060">World.hpp:61</a></div></div>
+<div class="ttc" id="aclassWorldsIndex_html_a6a4cc5dfc5b327f230d439dced4fc738"><div class="ttname"><a href="classWorldsIndex.html#a6a4cc5dfc5b327f230d439dced4fc738">WorldsIndex::deleteWorld</a></div><div class="ttdeci">World deleteWorld(std::size_t index)</div><div class="ttdoc">Deletes a world from the index using its index.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00041">WorldsIndex.cpp:41</a></div></div>
 <div class="ttc" id="aclassWorldsIndex_html_a6bb7b78f11243f42c51c0a8ab687e091"><div class="ttname"><a href="classWorldsIndex.html#a6bb7b78f11243f42c51c0a8ab687e091">WorldsIndex::~WorldsIndex</a></div><div class="ttdeci">~WorldsIndex()</div><div class="ttdoc">Destroys the WorldsIndex object and its contained worlds.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00014">WorldsIndex.cpp:14</a></div></div>
+<div class="ttc" id="aclassWorldsIndex_html_a71c6a33b3c7bbec0b0ec21fdd94adfef"><div class="ttname"><a href="classWorldsIndex.html#a71c6a33b3c7bbec0b0ec21fdd94adfef">WorldsIndex::applyFunctionsInWorlds</a></div><div class="ttdeci">void applyFunctionsInWorlds(NetworkServer &amp;server)</div><div class="ttdoc">Apply all functions in each world for the Logic part.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00065">WorldsIndex.cpp:65</a></div></div>
 <div class="ttc" id="aclassWorldsIndex_html_a9738e14c0025e6bd40d25e94abbaffb6"><div class="ttname"><a href="classWorldsIndex.html#a9738e14c0025e6bd40d25e94abbaffb6">WorldsIndex::getWorld</a></div><div class="ttdeci">std::unordered_map&lt; std::size_t, World &gt; &amp; getWorld()</div><div class="ttdoc">Retrieves all worlds in the index.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00026">WorldsIndex.cpp:26</a></div></div>
-<div class="ttc" id="aclassWorldsIndex_html_a9a135cc984865bea089f058d112545f9"><div class="ttname"><a href="classWorldsIndex.html#a9a135cc984865bea089f058d112545f9">WorldsIndex::applyFunctionsInWorlds</a></div><div class="ttdeci">void applyFunctionsInWorlds()</div><div class="ttdoc">Apply all functions in each world for the Logic part.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00064">WorldsIndex.cpp:64</a></div></div>
 <div class="ttc" id="aclassWorldsIndex_html_aa1db57cd17f2a40cbf8575a1e9ce5130"><div class="ttname"><a href="classWorldsIndex.html#aa1db57cd17f2a40cbf8575a1e9ce5130">WorldsIndex::addWorld</a></div><div class="ttdeci">std::size_t addWorld(bool isClient, bool isPublic, int nbrPlayerMax, std::string nameRoom, std::size_t clientID, std::string password=&quot;&quot;)</div><div class="ttdoc">Adds a new world to the index.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00031">WorldsIndex.cpp:31</a></div></div>
-<div class="ttc" id="aclassWorldsIndex_html_ab280ec27e34f5592754ff36c95d35510"><div class="ttname"><a href="classWorldsIndex.html#ab280ec27e34f5592754ff36c95d35510">WorldsIndex::getNbrWorlds</a></div><div class="ttdeci">std::size_t getNbrWorlds() const noexcept</div><div class="ttdoc">Gets the number of worlds currently in the index.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00059">WorldsIndex.cpp:59</a></div></div>
+<div class="ttc" id="aclassWorldsIndex_html_ab280ec27e34f5592754ff36c95d35510"><div class="ttname"><a href="classWorldsIndex.html#ab280ec27e34f5592754ff36c95d35510">WorldsIndex::getNbrWorlds</a></div><div class="ttdeci">std::size_t getNbrWorlds() const noexcept</div><div class="ttdoc">Gets the number of worlds currently in the index.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00060">WorldsIndex.cpp:60</a></div></div>
 <div class="ttc" id="aclassWorldsIndex_html_ad13fdfec879fd4e6265233830c75e2e4"><div class="ttname"><a href="classWorldsIndex.html#ad13fdfec879fd4e6265233830c75e2e4">WorldsIndex::getWorldByID</a></div><div class="ttdeci">World &amp; getWorldByID(std::size_t worldID)</div><div class="ttdoc">Retrieves a world by its unique ID.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00018">WorldsIndex.cpp:18</a></div></div>
 <div class="ttc" id="aclassWorldsIndex_html_adc580002a5fd6555aab0134f1be41efc"><div class="ttname"><a href="classWorldsIndex.html#adc580002a5fd6555aab0134f1be41efc">WorldsIndex::WorldsIndex</a></div><div class="ttdeci">WorldsIndex()</div><div class="ttdoc">Constructs a new WorldsIndex object.</div><div class="ttdef"><b>Definition</b> <a href="WorldsIndex_8cpp_source.html#l00010">WorldsIndex.cpp:10</a></div></div>
+<div class="ttc" id="aserver_2Logic_2include_2ECS_2World_8hpp_html"><div class="ttname"><a href="server_2Logic_2include_2ECS_2World_8hpp.html">World.hpp</a></div></div>
+<div class="ttc" id="aserver_2Logic_2include_2Systems_8hpp_html"><div class="ttname"><a href="server_2Logic_2include_2Systems_8hpp.html">Systems.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

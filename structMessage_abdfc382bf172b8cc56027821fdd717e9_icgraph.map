@@ -1,0 +1,13 @@
+<map id="Message::size" name="Message::size">
+<area shape="rect" id="Node000001" title=" " alt="" coords="536,55,640,80"/>
+<area shape="rect" id="Node000002" href="$structMessage.html#a99a938c7a0aa09a238e8fe71e7072307" title=" " alt="" coords="309,5,452,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="520,53,488,45,442,34,443,29,489,40,522,48"/>
+<area shape="rect" id="Node000003" href="$structMessage.html#ab6ea5f8bb9508959699cded893e36885" title=" " alt="" coords="309,55,452,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="521,70,453,70,453,65,521,65"/>
+<area shape="rect" id="Node000004" href="$classNetworkFunctions.html#a6fb89ab81bc5e12134492973b0b85df6" title=" " alt="" coords="273,104,488,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="522,87,489,95,443,106,442,101,488,90,520,82"/>
+<area shape="rect" id="Node000005" href="$classMainNetwork.html#aeaf7491438faad849e54ed6664a66450" title=" " alt="" coords="103,104,225,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="258,120,225,120,225,114,258,114"/>
+<area shape="rect" id="Node000006" href="$server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,104,55,130"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,120,55,120,55,114,87,114"/>
+</map>

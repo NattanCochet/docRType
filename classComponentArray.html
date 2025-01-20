@@ -111,7 +111,7 @@ $(function(){initNavTree('classComponentArray.html',''); initResizable(true); })
 <p>A dynamic array that manages components, with optional values for each slot.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ComponentArray&lt; Component &gt;:</div>
 <div class="dyncontent">
@@ -159,6 +159,33 @@ Public Types</h2></td></tr>
 <tr class="separator:af339661ade4b7c463e76b0601294f6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f4908947fb9fbf301d0c0036b59eef" id="r_a34f4908947fb9fbf301d0c0036b59eef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34f4908947fb9fbf301d0c0036b59eef">allocator_traits</a> = std::allocator_traits&lt;<a class="el" href="#af339661ade4b7c463e76b0601294f6ea">allocator_type</a>&gt;</td></tr>
 <tr class="memdesc:a34f4908947fb9fbf301d0c0036b59eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traits for the allocator type.  <br /></td></tr>
+<tr class="separator:a34f4908947fb9fbf301d0c0036b59eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54e58d8826e32323c9d7e7e39538586" id="r_ab54e58d8826e32323c9d7e7e39538586"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> = std::optional&lt;Component&gt;</td></tr>
+<tr class="memdesc:ab54e58d8826e32323c9d7e7e39538586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for optional component values.  <br /></td></tr>
+<tr class="separator:ab54e58d8826e32323c9d7e7e39538586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b2b9e0fa4da8002c57cc561881775f" id="r_ac5b2b9e0fa4da8002c57cc561881775f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a> = <a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> &amp;</td></tr>
+<tr class="memdesc:ac5b2b9e0fa4da8002c57cc561881775f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for references to optional component values.  <br /></td></tr>
+<tr class="separator:ac5b2b9e0fa4da8002c57cc561881775f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1030fb15097db51b025c6d76aaec5025" id="r_a1030fb15097db51b025c6d76aaec5025"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1030fb15097db51b025c6d76aaec5025">const_reference_type</a> = const <a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> &amp;</td></tr>
+<tr class="memdesc:a1030fb15097db51b025c6d76aaec5025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for const references to optional component values.  <br /></td></tr>
+<tr class="separator:a1030fb15097db51b025c6d76aaec5025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97141fb6d1566b12b7503ea820ad402c" id="r_a97141fb6d1566b12b7503ea820ad402c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97141fb6d1566b12b7503ea820ad402c">container_t</a> = std::vector&lt;<a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a>&gt;</td></tr>
+<tr class="memdesc:a97141fb6d1566b12b7503ea820ad402c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for the underlying container type.  <br /></td></tr>
+<tr class="separator:a97141fb6d1566b12b7503ea820ad402c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6d48d08e299074c225b7fbde7bd80c" id="r_aef6d48d08e299074c225b7fbde7bd80c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> = typename container_t::size_type</td></tr>
+<tr class="memdesc:aef6d48d08e299074c225b7fbde7bd80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for size operations.  <br /></td></tr>
+<tr class="separator:aef6d48d08e299074c225b7fbde7bd80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031339b33ed89874f6e39d732798d8b4" id="r_a031339b33ed89874f6e39d732798d8b4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a031339b33ed89874f6e39d732798d8b4">iterator</a> = typename container_t::iterator</td></tr>
+<tr class="memdesc:a031339b33ed89874f6e39d732798d8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for iterators.  <br /></td></tr>
+<tr class="separator:a031339b33ed89874f6e39d732798d8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a818eaf4e7161f7e0a1162b49c1b0e570" id="r_a818eaf4e7161f7e0a1162b49c1b0e570"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a> = typename container_t::const_iterator</td></tr>
+<tr class="memdesc:a818eaf4e7161f7e0a1162b49c1b0e570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for const iterators.  <br /></td></tr>
+<tr class="separator:a818eaf4e7161f7e0a1162b49c1b0e570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af339661ade4b7c463e76b0601294f6ea" id="r_af339661ade4b7c463e76b0601294f6ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af339661ade4b7c463e76b0601294f6ea">allocator_type</a> = typename container_t::allocator_type</td></tr>
+<tr class="memdesc:af339661ade4b7c463e76b0601294f6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for allocator.  <br /></td></tr>
+<tr class="separator:af339661ade4b7c463e76b0601294f6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f4908947fb9fbf301d0c0036b59eef" id="r_a34f4908947fb9fbf301d0c0036b59eef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34f4908947fb9fbf301d0c0036b59eef">allocator_traits</a> = std::allocator_traits&lt;<a class="el" href="#af339661ade4b7c463e76b0601294f6ea">allocator_type</a>&gt;</td></tr>
+<tr class="memdesc:a34f4908947fb9fbf301d0c0036b59eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for allocator traits.  <br /></td></tr>
 <tr class="separator:a34f4908947fb9fbf301d0c0036b59eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -230,22 +257,111 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf2569a500b296b3ed84b3792c38821f" id="r_aaf2569a500b296b3ed84b3792c38821f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf2569a500b296b3ed84b3792c38821f">compaction</a> ()</td></tr>
 <tr class="memdesc:aaf2569a500b296b3ed84b3792c38821f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove empty slots from the array.  <br /></td></tr>
 <tr class="separator:aaf2569a500b296b3ed84b3792c38821f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc4f4b14a534f5de8c8b097bf060a60" id="r_afdc4f4b14a534f5de8c8b097bf060a60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdc4f4b14a534f5de8c8b097bf060a60">ComponentArray</a> ()=default</td></tr>
+<tr class="memdesc:afdc4f4b14a534f5de8c8b097bf060a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <br /></td></tr>
+<tr class="separator:afdc4f4b14a534f5de8c8b097bf060a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fd70166e2df37d35d9db61afb926208" id="r_a5fd70166e2df37d35d9db61afb926208"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fd70166e2df37d35d9db61afb926208">ComponentArray</a> (<a class="el" href="classComponentArray.html">ComponentArray</a> const &amp;other)</td></tr>
+<tr class="memdesc:a5fd70166e2df37d35d9db61afb926208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <br /></td></tr>
+<tr class="separator:a5fd70166e2df37d35d9db61afb926208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ffb1342517044d08b2e831e4112e0f" id="r_af2ffb1342517044d08b2e831e4112e0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2ffb1342517044d08b2e831e4112e0f">ComponentArray</a> (<a class="el" href="classComponentArray.html">ComponentArray</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:af2ffb1342517044d08b2e831e4112e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <br /></td></tr>
+<tr class="separator:af2ffb1342517044d08b2e831e4112e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d85a52e605c0f469b6c95967743ac60" id="r_a6d85a52e605c0f469b6c95967743ac60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d85a52e605c0f469b6c95967743ac60">~ComponentArray</a> ()=default</td></tr>
+<tr class="memdesc:a6d85a52e605c0f469b6c95967743ac60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <br /></td></tr>
+<tr class="separator:a6d85a52e605c0f469b6c95967743ac60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e2ec8d0ffe17a351f875fdb9594fbc" id="r_a29e2ec8d0ffe17a351f875fdb9594fbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponentArray.html">ComponentArray</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29e2ec8d0ffe17a351f875fdb9594fbc">operator=</a> (<a class="el" href="classComponentArray.html">ComponentArray</a> const &amp;other)</td></tr>
+<tr class="memdesc:a29e2ec8d0ffe17a351f875fdb9594fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator.  <br /></td></tr>
+<tr class="separator:a29e2ec8d0ffe17a351f875fdb9594fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072202f097367dc297b1d10851f86c54" id="r_a072202f097367dc297b1d10851f86c54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComponentArray.html">ComponentArray</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a072202f097367dc297b1d10851f86c54">operator=</a> (<a class="el" href="classComponentArray.html">ComponentArray</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a072202f097367dc297b1d10851f86c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment operator.  <br /></td></tr>
+<tr class="separator:a072202f097367dc297b1d10851f86c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf72995413cfda4677663d8cf13b321" id="r_aedf72995413cfda4677663d8cf13b321"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedf72995413cfda4677663d8cf13b321">operator[]</a> (size_t idx)</td></tr>
+<tr class="memdesc:aedf72995413cfda4677663d8cf13b321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array subscript operator.  <br /></td></tr>
+<tr class="separator:aedf72995413cfda4677663d8cf13b321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6b40eb28857dd29880eb3f0a59a8f51" id="r_af6b40eb28857dd29880eb3f0a59a8f51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a1030fb15097db51b025c6d76aaec5025">const_reference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6b40eb28857dd29880eb3f0a59a8f51">operator[]</a> (size_t idx) const</td></tr>
+<tr class="memdesc:af6b40eb28857dd29880eb3f0a59a8f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Const array subscript operator.  <br /></td></tr>
+<tr class="separator:af6b40eb28857dd29880eb3f0a59a8f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e5a3462d724ff435cfa5514f28522b" id="r_ae0e5a3462d724ff435cfa5514f28522b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a031339b33ed89874f6e39d732798d8b4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e5a3462d724ff435cfa5514f28522b">begin</a> ()</td></tr>
+<tr class="memdesc:ae0e5a3462d724ff435cfa5514f28522b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iterator to beginning.  <br /></td></tr>
+<tr class="separator:ae0e5a3462d724ff435cfa5514f28522b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b6be8ae585738d63fbe62ef7f5109f" id="r_a79b6be8ae585738d63fbe62ef7f5109f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79b6be8ae585738d63fbe62ef7f5109f">begin</a> () const</td></tr>
+<tr class="memdesc:a79b6be8ae585738d63fbe62ef7f5109f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get const iterator to beginning.  <br /></td></tr>
+<tr class="separator:a79b6be8ae585738d63fbe62ef7f5109f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41f4acb026176bd58220930696b7f61" id="r_ac41f4acb026176bd58220930696b7f61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac41f4acb026176bd58220930696b7f61">cbegin</a> () const</td></tr>
+<tr class="memdesc:ac41f4acb026176bd58220930696b7f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get const iterator to beginning.  <br /></td></tr>
+<tr class="separator:ac41f4acb026176bd58220930696b7f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbc8c1dea9dce0f2aa82aab6efa1ae0" id="r_aafbc8c1dea9dce0f2aa82aab6efa1ae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a031339b33ed89874f6e39d732798d8b4">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafbc8c1dea9dce0f2aa82aab6efa1ae0">end</a> ()</td></tr>
+<tr class="memdesc:aafbc8c1dea9dce0f2aa82aab6efa1ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iterator to end.  <br /></td></tr>
+<tr class="separator:aafbc8c1dea9dce0f2aa82aab6efa1ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981e8b9b63f7914332d029ceacb71c32" id="r_a981e8b9b63f7914332d029ceacb71c32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a981e8b9b63f7914332d029ceacb71c32">end</a> () const</td></tr>
+<tr class="memdesc:a981e8b9b63f7914332d029ceacb71c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get const iterator to end.  <br /></td></tr>
+<tr class="separator:a981e8b9b63f7914332d029ceacb71c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22cb12fb0c5f853cdfa48d8881e46c47" id="r_a22cb12fb0c5f853cdfa48d8881e46c47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22cb12fb0c5f853cdfa48d8881e46c47">cend</a> () const</td></tr>
+<tr class="memdesc:a22cb12fb0c5f853cdfa48d8881e46c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get const iterator to end.  <br /></td></tr>
+<tr class="separator:a22cb12fb0c5f853cdfa48d8881e46c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94967730379ca431f1ec900185c8b874" id="r_a94967730379ca431f1ec900185c8b874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94967730379ca431f1ec900185c8b874">size</a> () const</td></tr>
+<tr class="memdesc:a94967730379ca431f1ec900185c8b874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of array.  <br /></td></tr>
+<tr class="separator:a94967730379ca431f1ec900185c8b874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ad724f8d6a9ea7f15ef19dfe28c12b" id="r_a48ad724f8d6a9ea7f15ef19dfe28c12b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48ad724f8d6a9ea7f15ef19dfe28c12b">insert_at</a> (<a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> pos, const Component &amp;value)</td></tr>
+<tr class="memdesc:a48ad724f8d6a9ea7f15ef19dfe28c12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert component at specified position.  <br /></td></tr>
+<tr class="separator:a48ad724f8d6a9ea7f15ef19dfe28c12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58344ae1d7ff29c84d8c38ea3f05d7d" id="r_ab58344ae1d7ff29c84d8c38ea3f05d7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab58344ae1d7ff29c84d8c38ea3f05d7d">insert_at</a> (<a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> pos, Component &amp;&amp;value)</td></tr>
+<tr class="memdesc:ab58344ae1d7ff29c84d8c38ea3f05d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert component at specified position using move semantics.  <br /></td></tr>
+<tr class="separator:ab58344ae1d7ff29c84d8c38ea3f05d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ef98c31d981ccaa4849a24c825221c" id="r_a43ef98c31d981ccaa4849a24c825221c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43ef98c31d981ccaa4849a24c825221c">grow_to</a> (<a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> pos)</td></tr>
+<tr class="memdesc:a43ef98c31d981ccaa4849a24c825221c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grow container to accommodate specified position.  <br /></td></tr>
+<tr class="separator:a43ef98c31d981ccaa4849a24c825221c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2569a500b296b3ed84b3792c38821f" id="r_aaf2569a500b296b3ed84b3792c38821f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf2569a500b296b3ed84b3792c38821f">compaction</a> ()</td></tr>
+<tr class="memdesc:aaf2569a500b296b3ed84b3792c38821f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compact array by removing null elements.  <br /></td></tr>
+<tr class="separator:aaf2569a500b296b3ed84b3792c38821f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae809a6dd1204ef1852fb05794d5a7f80" id="r_ae809a6dd1204ef1852fb05794d5a7f80"><td class="memTemplParams" colspan="2">template&lt;class... Params&gt; </td></tr>
+<tr class="memitem:ae809a6dd1204ef1852fb05794d5a7f80"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae809a6dd1204ef1852fb05794d5a7f80">emplace_at</a> (<a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> pos, Params &amp;&amp;...params)</td></tr>
+<tr class="memdesc:ae809a6dd1204ef1852fb05794d5a7f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct component in-place at specified position.  <br /></td></tr>
+<tr class="separator:ae809a6dd1204ef1852fb05794d5a7f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591ad12a7c35743e8eb4493859ed7f99" id="r_a591ad12a7c35743e8eb4493859ed7f99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a591ad12a7c35743e8eb4493859ed7f99">erase</a> (<a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> pos)</td></tr>
+<tr class="memdesc:a591ad12a7c35743e8eb4493859ed7f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase component at specified position.  <br /></td></tr>
+<tr class="separator:a591ad12a7c35743e8eb4493859ed7f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29724cb08ee71b97a525ccd4a6664faf" id="r_a29724cb08ee71b97a525ccd4a6664faf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29724cb08ee71b97a525ccd4a6664faf">get_index</a> (const <a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> &amp;value) const</td></tr>
+<tr class="memdesc:a29724cb08ee71b97a525ccd4a6664faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get index of specified component.  <br /></td></tr>
+<tr class="separator:a29724cb08ee71b97a525ccd4a6664faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Component&gt;<br />
 class ComponentArray&lt; Component &gt;</div><p>A dynamic array that manages components, with optional values for each slot. </p>
+<p>Template class for managing an array of optional components.</p>
 <p>This template class is designed to manage an array of components, supporting dynamic resizing, insertion, and erasure while utilizing <code>std::optional</code> to handle empty slots.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Component</td><td>The type of components managed by the array. </td></tr>
+    <tr><td class="paramname">Component</td><td>The type of components managed by the array.</td></tr>
+    <tr><td class="paramname">Component</td><td>The type of component to store in the array </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00025">25</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00025">25</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a34f4908947fb9fbf301d0c0036b59eef" name="a34f4908947fb9fbf301d0c0036b59eef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f4908947fb9fbf301d0c0036b59eef">&#9670;&#160;</a></span>allocator_traits</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f4908947fb9fbf301d0c0036b59eef">&#9670;&#160;</a></span>allocator_traits <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::allocator_traits = std::allocator_traits&lt;<a class="el" href="#af339661ade4b7c463e76b0601294f6ea">allocator_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for allocator traits. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00041">41</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a34f4908947fb9fbf301d0c0036b59eef" name="a34f4908947fb9fbf301d0c0036b59eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f4908947fb9fbf301d0c0036b59eef">&#9670;&#160;</a></span>allocator_traits <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,12 +376,32 @@ template&lt;typename Component&gt; </div>
 
 <p>Traits for the allocator type. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00037">37</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00037">37</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="af339661ade4b7c463e76b0601294f6ea" name="af339661ade4b7c463e76b0601294f6ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af339661ade4b7c463e76b0601294f6ea">&#9670;&#160;</a></span>allocator_type</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af339661ade4b7c463e76b0601294f6ea">&#9670;&#160;</a></span>allocator_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::allocator_type = typename container_t::allocator_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for allocator. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00039">39</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af339661ade4b7c463e76b0601294f6ea" name="af339661ade4b7c463e76b0601294f6ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af339661ade4b7c463e76b0601294f6ea">&#9670;&#160;</a></span>allocator_type <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,12 +416,32 @@ template&lt;typename Component&gt; </div>
 
 <p>Allocator type used by the container. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00036">36</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00036">36</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a818eaf4e7161f7e0a1162b49c1b0e570" name="a818eaf4e7161f7e0a1162b49c1b0e570"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a818eaf4e7161f7e0a1162b49c1b0e570">&#9670;&#160;</a></span>const_iterator</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a818eaf4e7161f7e0a1162b49c1b0e570">&#9670;&#160;</a></span>const_iterator <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::const_iterator = typename container_t::const_iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for const iterators. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00036">36</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a818eaf4e7161f7e0a1162b49c1b0e570" name="a818eaf4e7161f7e0a1162b49c1b0e570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a818eaf4e7161f7e0a1162b49c1b0e570">&#9670;&#160;</a></span>const_iterator <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,12 +456,32 @@ template&lt;typename Component&gt; </div>
 
 <p>Constant iterator type for the container. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00033">33</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00033">33</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a1030fb15097db51b025c6d76aaec5025" name="a1030fb15097db51b025c6d76aaec5025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1030fb15097db51b025c6d76aaec5025">&#9670;&#160;</a></span>const_reference_type</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1030fb15097db51b025c6d76aaec5025">&#9670;&#160;</a></span>const_reference_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::const_reference_type = const <a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> &amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for const references to optional component values. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00028">28</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1030fb15097db51b025c6d76aaec5025" name="a1030fb15097db51b025c6d76aaec5025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1030fb15097db51b025c6d76aaec5025">&#9670;&#160;</a></span>const_reference_type <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,12 +496,32 @@ template&lt;typename Component&gt; </div>
 
 <p>The type of constant reference to a slot. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00029">29</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00029">29</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a97141fb6d1566b12b7503ea820ad402c" name="a97141fb6d1566b12b7503ea820ad402c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97141fb6d1566b12b7503ea820ad402c">&#9670;&#160;</a></span>container_t</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97141fb6d1566b12b7503ea820ad402c">&#9670;&#160;</a></span>container_t <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::container_t = std::vector&lt;<a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for the underlying container type. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00030">30</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a97141fb6d1566b12b7503ea820ad402c" name="a97141fb6d1566b12b7503ea820ad402c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97141fb6d1566b12b7503ea820ad402c">&#9670;&#160;</a></span>container_t <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,12 +536,32 @@ template&lt;typename Component&gt; </div>
 
 <p>The underlying container type. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00030">30</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00030">30</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a031339b33ed89874f6e39d732798d8b4" name="a031339b33ed89874f6e39d732798d8b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a031339b33ed89874f6e39d732798d8b4">&#9670;&#160;</a></span>iterator</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a031339b33ed89874f6e39d732798d8b4">&#9670;&#160;</a></span>iterator <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::iterator = typename container_t::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for iterators. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00034">34</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a031339b33ed89874f6e39d732798d8b4" name="a031339b33ed89874f6e39d732798d8b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031339b33ed89874f6e39d732798d8b4">&#9670;&#160;</a></span>iterator <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,12 +576,32 @@ template&lt;typename Component&gt; </div>
 
 <p>Iterator type for the container. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00032">32</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00032">32</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ac5b2b9e0fa4da8002c57cc561881775f" name="ac5b2b9e0fa4da8002c57cc561881775f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5b2b9e0fa4da8002c57cc561881775f">&#9670;&#160;</a></span>reference_type</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b2b9e0fa4da8002c57cc561881775f">&#9670;&#160;</a></span>reference_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::reference_type = <a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> &amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for references to optional component values. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00026">26</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac5b2b9e0fa4da8002c57cc561881775f" name="ac5b2b9e0fa4da8002c57cc561881775f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b2b9e0fa4da8002c57cc561881775f">&#9670;&#160;</a></span>reference_type <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,12 +616,32 @@ template&lt;typename Component&gt; </div>
 
 <p>The type of reference to a slot. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00028">28</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00028">28</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="aef6d48d08e299074c225b7fbde7bd80c" name="aef6d48d08e299074c225b7fbde7bd80c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6d48d08e299074c225b7fbde7bd80c">&#9670;&#160;</a></span>size_type</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6d48d08e299074c225b7fbde7bd80c">&#9670;&#160;</a></span>size_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::size_type = typename container_t::size_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for size operations. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00032">32</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aef6d48d08e299074c225b7fbde7bd80c" name="aef6d48d08e299074c225b7fbde7bd80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6d48d08e299074c225b7fbde7bd80c">&#9670;&#160;</a></span>size_type <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,12 +656,32 @@ template&lt;typename Component&gt; </div>
 
 <p>The type used for size and indexing. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00031">31</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00031">31</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ab54e58d8826e32323c9d7e7e39538586" name="ab54e58d8826e32323c9d7e7e39538586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab54e58d8826e32323c9d7e7e39538586">&#9670;&#160;</a></span>value_type</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54e58d8826e32323c9d7e7e39538586">&#9670;&#160;</a></span>value_type <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::value_type = std::optional&lt;Component&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for optional component values. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00024">24</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab54e58d8826e32323c9d7e7e39538586" name="ab54e58d8826e32323c9d7e7e39538586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54e58d8826e32323c9d7e7e39538586">&#9670;&#160;</a></span>value_type <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,13 +696,13 @@ template&lt;typename Component&gt; </div>
 
 <p>The type of each slot, wrapped in std::optional. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00027">27</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00027">27</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afdc4f4b14a534f5de8c8b097bf060a60" name="afdc4f4b14a534f5de8c8b097bf060a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc4f4b14a534f5de8c8b097bf060a60">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc4f4b14a534f5de8c8b097bf060a60">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +747,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a5fd70166e2df37d35d9db61afb926208" name="a5fd70166e2df37d35d9db61afb926208"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fd70166e2df37d35d9db61afb926208">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd70166e2df37d35d9db61afb926208">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +779,7 @@ template&lt;typename Component&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00050">50</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00050">50</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -518,7 +794,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="af2ffb1342517044d08b2e831e4112e0f" name="af2ffb1342517044d08b2e831e4112e0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2ffb1342517044d08b2e831e4112e0f">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ffb1342517044d08b2e831e4112e0f">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +826,7 @@ template&lt;typename Component&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00057">57</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00057">57</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -565,7 +841,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6d85a52e605c0f469b6c95967743ac60" name="a6d85a52e605c0f469b6c95967743ac60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d85a52e605c0f469b6c95967743ac60">&#9670;&#160;</a></span>~ComponentArray()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d85a52e605c0f469b6c95967743ac60">&#9670;&#160;</a></span>~ComponentArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,9 +869,193 @@ template&lt;typename Component&gt; </div>
 
 </div>
 </div>
+<a id="afdc4f4b14a534f5de8c8b097bf060a60" name="afdc4f4b14a534f5de8c8b097bf060a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc4f4b14a534f5de8c8b097bf060a60">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;<a class="el" href="classComponentArray.html">::ComponentArray</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor. </p>
+
+</div>
+</div>
+<a id="a5fd70166e2df37d35d9db61afb926208" name="a5fd70166e2df37d35d9db61afb926208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd70166e2df37d35d9db61afb926208">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;<a class="el" href="classComponentArray.html">::ComponentArray</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="classComponentArray.html" title="A dynamic array that manages components, with optional values for each slot.">ComponentArray</a> to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00054">54</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_a5fd70166e2df37d35d9db61afb926208_cgraph.png" border="0" usemap="#aclassComponentArray_a5fd70166e2df37d35d9db61afb926208_cgraph" alt=""/></div>
+<map name="aclassComponentArray_a5fd70166e2df37d35d9db61afb926208_cgraph" id="aclassComponentArray_a5fd70166e2df37d35d9db61afb926208_cgraph">
+<area shape="rect" title="Copy constructor." alt="" coords="5,5,195,46"/>
+<area shape="rect" href="classComponentArray.html#afdc4f4b14a534f5de8c8b097bf060a60" title="Default constructor." alt="" coords="243,5,432,46"/>
+<area shape="poly" title=" " alt="" coords="195,23,227,23,227,28,195,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2ffb1342517044d08b2e831e4112e0f" name="af2ffb1342517044d08b2e831e4112e0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ffb1342517044d08b2e831e4112e0f">&#9670;&#160;</a></span>ComponentArray() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;<a class="el" href="classComponentArray.html">::ComponentArray</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="classComponentArray.html" title="A dynamic array that manages components, with optional values for each slot.">ComponentArray</a> to move from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00062">62</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_af2ffb1342517044d08b2e831e4112e0f_cgraph.png" border="0" usemap="#aclassComponentArray_af2ffb1342517044d08b2e831e4112e0f_cgraph" alt=""/></div>
+<map name="aclassComponentArray_af2ffb1342517044d08b2e831e4112e0f_cgraph" id="aclassComponentArray_af2ffb1342517044d08b2e831e4112e0f_cgraph">
+<area shape="rect" title="Move constructor." alt="" coords="5,5,195,46"/>
+<area shape="rect" href="classComponentArray.html#afdc4f4b14a534f5de8c8b097bf060a60" title="Default constructor." alt="" coords="243,5,432,46"/>
+<area shape="poly" title=" " alt="" coords="195,23,227,23,227,28,195,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6d85a52e605c0f469b6c95967743ac60" name="a6d85a52e605c0f469b6c95967743ac60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d85a52e605c0f469b6c95967743ac60">&#9670;&#160;</a></span>~ComponentArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::~<a class="el" href="classComponentArray.html">ComponentArray</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae0e5a3462d724ff435cfa5514f28522b" name="ae0e5a3462d724ff435cfa5514f28522b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0e5a3462d724ff435cfa5514f28522b">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e5a3462d724ff435cfa5514f28522b">&#9670;&#160;</a></span>begin() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a031339b33ed89874f6e39d732798d8b4">iterator</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get iterator to beginning. </p>
+<dl class="section return"><dt>Returns</dt><dd>Iterator to the beginning </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00119">119</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae0e5a3462d724ff435cfa5514f28522b" name="ae0e5a3462d724ff435cfa5514f28522b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e5a3462d724ff435cfa5514f28522b">&#9670;&#160;</a></span>begin() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,12 +1082,54 @@ template&lt;typename Component&gt; </div>
 <p>Get an iterator to the beginning of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterator to the beginning of the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00115">115</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00115">115</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_ae0e5a3462d724ff435cfa5514f28522b_icgraph.png" border="0" usemap="#aclassComponentArray_ae0e5a3462d724ff435cfa5514f28522b_icgraph" alt=""/></div>
+<map name="aclassComponentArray_ae0e5a3462d724ff435cfa5514f28522b_icgraph" id="aclassComponentArray_ae0e5a3462d724ff435cfa5514f28522b_icgraph">
+<area shape="rect" title="Get an iterator to the beginning of the array." alt="" coords="138,5,292,31"/>
+<area shape="rect" href="client_2ECS_2ComponentArray_8hpp.html#ac661ced941a6aece957429e8c26f497f" title="Stream insertion operator for ComponentArray." alt="" coords="5,5,90,31"/>
+<area shape="poly" title=" " alt="" coords="122,21,90,21,90,16,122,16"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="a79b6be8ae585738d63fbe62ef7f5109f" name="a79b6be8ae585738d63fbe62ef7f5109f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b6be8ae585738d63fbe62ef7f5109f">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b6be8ae585738d63fbe62ef7f5109f">&#9670;&#160;</a></span>begin() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get const iterator to beginning. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const iterator to the beginning </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00128">128</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a79b6be8ae585738d63fbe62ef7f5109f" name="a79b6be8ae585738d63fbe62ef7f5109f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b6be8ae585738d63fbe62ef7f5109f">&#9670;&#160;</a></span>begin() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -654,12 +1156,44 @@ template&lt;typename Component&gt; </div>
 <p>Get a constant iterator to the beginning of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Constant iterator to the beginning of the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00124">124</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00124">124</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ac41f4acb026176bd58220930696b7f61" name="ac41f4acb026176bd58220930696b7f61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac41f4acb026176bd58220930696b7f61">&#9670;&#160;</a></span>cbegin()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41f4acb026176bd58220930696b7f61">&#9670;&#160;</a></span>cbegin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::cbegin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get const iterator to beginning. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const iterator to the beginning </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00137">137</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac41f4acb026176bd58220930696b7f61" name="ac41f4acb026176bd58220930696b7f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41f4acb026176bd58220930696b7f61">&#9670;&#160;</a></span>cbegin() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -686,12 +1220,44 @@ template&lt;typename Component&gt; </div>
 <p>Get a constant iterator to the beginning of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Constant iterator to the beginning of the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00133">133</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00133">133</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a22cb12fb0c5f853cdfa48d8881e46c47" name="a22cb12fb0c5f853cdfa48d8881e46c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22cb12fb0c5f853cdfa48d8881e46c47">&#9670;&#160;</a></span>cend()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cb12fb0c5f853cdfa48d8881e46c47">&#9670;&#160;</a></span>cend() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::cend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get const iterator to end. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const iterator to the end </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00164">164</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a22cb12fb0c5f853cdfa48d8881e46c47" name="a22cb12fb0c5f853cdfa48d8881e46c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22cb12fb0c5f853cdfa48d8881e46c47">&#9670;&#160;</a></span>cend() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -718,12 +1284,43 @@ template&lt;typename Component&gt; </div>
 <p>Get a constant iterator to the end of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Constant iterator to the end of the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00160">160</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00160">160</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="aaf2569a500b296b3ed84b3792c38821f" name="aaf2569a500b296b3ed84b3792c38821f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf2569a500b296b3ed84b3792c38821f">&#9670;&#160;</a></span>compaction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2569a500b296b3ed84b3792c38821f">&#9670;&#160;</a></span>compaction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::compaction </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compact array by removing null elements. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00222">222</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aaf2569a500b296b3ed84b3792c38821f" name="aaf2569a500b296b3ed84b3792c38821f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2569a500b296b3ed84b3792c38821f">&#9670;&#160;</a></span>compaction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,12 +1346,63 @@ template&lt;typename Component&gt; </div>
 
 <p>Remove empty slots from the array. </p>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00274">274</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00274">274</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="ae809a6dd1204ef1852fb05794d5a7f80" name="ae809a6dd1204ef1852fb05794d5a7f80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae809a6dd1204ef1852fb05794d5a7f80">&#9670;&#160;</a></span>emplace_at()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae809a6dd1204ef1852fb05794d5a7f80">&#9670;&#160;</a></span>emplace_at() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<div class="memtemplate">
+template&lt;class... Params&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::emplace_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Params &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>params</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct component in-place at specified position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> to construct at </td></tr>
+    <tr><td class="paramname">params</td><td>Constructor parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to constructed component </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>if position is out of range </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00243">243</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae809a6dd1204ef1852fb05794d5a7f80" name="ae809a6dd1204ef1852fb05794d5a7f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae809a6dd1204ef1852fb05794d5a7f80">&#9670;&#160;</a></span>emplace_at() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -794,12 +1442,44 @@ template&lt;class... Params&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the emplaced component. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00211">211</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00211">211</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="aafbc8c1dea9dce0f2aa82aab6efa1ae0" name="aafbc8c1dea9dce0f2aa82aab6efa1ae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafbc8c1dea9dce0f2aa82aab6efa1ae0">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbc8c1dea9dce0f2aa82aab6efa1ae0">&#9670;&#160;</a></span>end() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a031339b33ed89874f6e39d732798d8b4">iterator</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get iterator to end. </p>
+<dl class="section return"><dt>Returns</dt><dd>Iterator to the end </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00146">146</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aafbc8c1dea9dce0f2aa82aab6efa1ae0" name="aafbc8c1dea9dce0f2aa82aab6efa1ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbc8c1dea9dce0f2aa82aab6efa1ae0">&#9670;&#160;</a></span>end() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -826,12 +1506,54 @@ template&lt;typename Component&gt; </div>
 <p>Get an iterator to the end of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Iterator to the end of the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00142">142</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00142">142</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_aafbc8c1dea9dce0f2aa82aab6efa1ae0_icgraph.png" border="0" usemap="#aclassComponentArray_aafbc8c1dea9dce0f2aa82aab6efa1ae0_icgraph" alt=""/></div>
+<map name="aclassComponentArray_aafbc8c1dea9dce0f2aa82aab6efa1ae0_icgraph" id="aclassComponentArray_aafbc8c1dea9dce0f2aa82aab6efa1ae0_icgraph">
+<area shape="rect" title="Get an iterator to the end of the array." alt="" coords="138,5,282,31"/>
+<area shape="rect" href="client_2ECS_2ComponentArray_8hpp.html#ac661ced941a6aece957429e8c26f497f" title="Stream insertion operator for ComponentArray." alt="" coords="5,5,90,31"/>
+<area shape="poly" title=" " alt="" coords="122,21,90,21,90,16,122,16"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="a981e8b9b63f7914332d029ceacb71c32" name="a981e8b9b63f7914332d029ceacb71c32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a981e8b9b63f7914332d029ceacb71c32">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a981e8b9b63f7914332d029ceacb71c32">&#9670;&#160;</a></span>end() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a818eaf4e7161f7e0a1162b49c1b0e570">const_iterator</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get const iterator to end. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const iterator to the end </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00155">155</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a981e8b9b63f7914332d029ceacb71c32" name="a981e8b9b63f7914332d029ceacb71c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a981e8b9b63f7914332d029ceacb71c32">&#9670;&#160;</a></span>end() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -858,12 +1580,59 @@ template&lt;typename Component&gt; </div>
 <p>Get a constant iterator to the end of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Constant iterator to the end of the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00151">151</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00151">151</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a591ad12a7c35743e8eb4493859ed7f99" name="a591ad12a7c35743e8eb4493859ed7f99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591ad12a7c35743e8eb4493859ed7f99">&#9670;&#160;</a></span>erase()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a591ad12a7c35743e8eb4493859ed7f99">&#9670;&#160;</a></span>erase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Erase component at specified position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> to erase </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00265">265</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_a591ad12a7c35743e8eb4493859ed7f99_cgraph.png" border="0" usemap="#aclassComponentArray_a591ad12a7c35743e8eb4493859ed7f99_cgraph" alt=""/></div>
+<map name="aclassComponentArray_a591ad12a7c35743e8eb4493859ed7f99_cgraph" id="aclassComponentArray_a591ad12a7c35743e8eb4493859ed7f99_cgraph">
+<area shape="rect" title="Erase a component at a specific index." alt="" coords="5,5,161,31"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Get the size of the array." alt="" coords="209,5,355,31"/>
+<area shape="poly" title=" " alt="" coords="161,16,193,16,193,21,161,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a591ad12a7c35743e8eb4493859ed7f99" name="a591ad12a7c35743e8eb4493859ed7f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591ad12a7c35743e8eb4493859ed7f99">&#9670;&#160;</a></span>erase() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -895,7 +1664,7 @@ template&lt;typename Component&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00233">233</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00233">233</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -912,7 +1681,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classComponentArray_a591ad12a7c35743e8eb4493859ed7f99_icgraph.png" border="0" usemap="#aclassComponentArray_a591ad12a7c35743e8eb4493859ed7f99_icgraph" alt=""/></div>
 <map name="aclassComponentArray_a591ad12a7c35743e8eb4493859ed7f99_icgraph" id="aclassComponentArray_a591ad12a7c35743e8eb4493859ed7f99_icgraph">
 <area shape="rect" title="Erase a component at a specific index." alt="" coords="171,13,326,38"/>
-<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="5,5,123,46"/>
+<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Register a new component type and its associated array." alt="" coords="5,5,123,46"/>
 <area shape="poly" title=" " alt="" coords="155,28,123,28,123,23,155,23"/>
 </map>
 </div>
@@ -920,7 +1689,51 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <a id="a29724cb08ee71b97a525ccd4a6664faf" name="a29724cb08ee71b97a525ccd4a6664faf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29724cb08ee71b97a525ccd4a6664faf">&#9670;&#160;</a></span>get_index()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a29724cb08ee71b97a525ccd4a6664faf">&#9670;&#160;</a></span>get_index() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::get_index </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ab54e58d8826e32323c9d7e7e39538586">value_type</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get index of specified component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Component to find </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Index of component </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>if component not found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00281">281</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a29724cb08ee71b97a525ccd4a6664faf" name="a29724cb08ee71b97a525ccd4a6664faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29724cb08ee71b97a525ccd4a6664faf">&#9670;&#160;</a></span>get_index() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -959,12 +1772,59 @@ template&lt;typename Component&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00249">249</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00249">249</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a43ef98c31d981ccaa4849a24c825221c" name="a43ef98c31d981ccaa4849a24c825221c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43ef98c31d981ccaa4849a24c825221c">&#9670;&#160;</a></span>grow_to()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ef98c31d981ccaa4849a24c825221c">&#9670;&#160;</a></span>grow_to() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::grow_to </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Grow container to accommodate specified position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> to grow to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00212">212</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_a43ef98c31d981ccaa4849a24c825221c_cgraph.png" border="0" usemap="#aclassComponentArray_a43ef98c31d981ccaa4849a24c825221c_cgraph" alt=""/></div>
+<map name="aclassComponentArray_a43ef98c31d981ccaa4849a24c825221c_cgraph" id="aclassComponentArray_a43ef98c31d981ccaa4849a24c825221c_cgraph">
+<area shape="rect" title="Grow the array to ensure it can contain the specified index." alt="" coords="5,5,175,31"/>
+<area shape="rect" href="classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Get the size of the array." alt="" coords="223,5,369,31"/>
+<area shape="poly" title=" " alt="" coords="175,16,208,16,208,21,175,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a43ef98c31d981ccaa4849a24c825221c" name="a43ef98c31d981ccaa4849a24c825221c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ef98c31d981ccaa4849a24c825221c">&#9670;&#160;</a></span>grow_to() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -996,7 +1856,7 @@ template&lt;typename Component&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00265">265</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00265">265</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1011,7 +1871,50 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ab58344ae1d7ff29c84d8c38ea3f05d7d" name="ab58344ae1d7ff29c84d8c38ea3f05d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab58344ae1d7ff29c84d8c38ea3f05d7d">&#9670;&#160;</a></span>insert_at() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58344ae1d7ff29c84d8c38ea3f05d7d">&#9670;&#160;</a></span>insert_at() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::insert_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Component &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Insert component at specified position using move semantics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> to insert at </td></tr>
+    <tr><td class="paramname">value</td><td>Component to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to inserted component </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00199">199</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab58344ae1d7ff29c84d8c38ea3f05d7d" name="ab58344ae1d7ff29c84d8c38ea3f05d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58344ae1d7ff29c84d8c38ea3f05d7d">&#9670;&#160;</a></span>insert_at() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1049,12 +1952,55 @@ template&lt;typename Component&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the inserted component. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00195">195</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00195">195</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a48ad724f8d6a9ea7f15ef19dfe28c12b" name="a48ad724f8d6a9ea7f15ef19dfe28c12b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48ad724f8d6a9ea7f15ef19dfe28c12b">&#9670;&#160;</a></span>insert_at() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ad724f8d6a9ea7f15ef19dfe28c12b">&#9670;&#160;</a></span>insert_at() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::insert_at </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a></td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Component &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Insert component at specified position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> to insert at </td></tr>
+    <tr><td class="paramname">value</td><td>Component to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to inserted component </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00184">184</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a48ad724f8d6a9ea7f15ef19dfe28c12b" name="a48ad724f8d6a9ea7f15ef19dfe28c12b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ad724f8d6a9ea7f15ef19dfe28c12b">&#9670;&#160;</a></span>insert_at() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1092,12 +2038,70 @@ template&lt;typename Component&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the inserted component. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00180">180</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00180">180</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_a48ad724f8d6a9ea7f15ef19dfe28c12b_icgraph.png" border="0" usemap="#aclassComponentArray_a48ad724f8d6a9ea7f15ef19dfe28c12b_icgraph" alt=""/></div>
+<map name="aclassComponentArray_a48ad724f8d6a9ea7f15ef19dfe28c12b_icgraph" id="aclassComponentArray_a48ad724f8d6a9ea7f15ef19dfe28c12b_icgraph">
+<area shape="rect" title="Insert a component at a specific index." alt="" coords="198,5,371,31"/>
+<area shape="rect" href="classNetwork.html#a5b5d88b4b51f19a03fa09462431e7d3b" title=" " alt="" coords="5,5,150,31"/>
+<area shape="poly" title=" " alt="" coords="182,21,150,21,150,16,182,16"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="a072202f097367dc297b1d10851f86c54" name="a072202f097367dc297b1d10851f86c54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a072202f097367dc297b1d10851f86c54">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a072202f097367dc297b1d10851f86c54">&#9670;&#160;</a></span>operator=() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponentArray.html">ComponentArray</a> &amp; <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="classComponentArray.html" title="A dynamic array that manages components, with optional values for each slot.">ComponentArray</a> to move from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to this <a class="el" href="classComponentArray.html" title="A dynamic array that manages components, with optional values for each slot.">ComponentArray</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00087">87</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_a072202f097367dc297b1d10851f86c54_cgraph.png" border="0" usemap="#aclassComponentArray_a072202f097367dc297b1d10851f86c54_cgraph" alt=""/></div>
+<map name="aclassComponentArray_a072202f097367dc297b1d10851f86c54_cgraph" id="aclassComponentArray_a072202f097367dc297b1d10851f86c54_cgraph">
+<area shape="rect" title="Move assignment operator." alt="" coords="5,13,184,38"/>
+<area shape="rect" href="classComponentArray.html#afdc4f4b14a534f5de8c8b097bf060a60" title="Default constructor." alt="" coords="232,5,421,46"/>
+<area shape="poly" title=" " alt="" coords="184,23,216,23,216,28,184,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a072202f097367dc297b1d10851f86c54" name="a072202f097367dc297b1d10851f86c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072202f097367dc297b1d10851f86c54">&#9670;&#160;</a></span>operator=() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1130,7 +2134,7 @@ template&lt;typename Component&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to this object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00083">83</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00083">83</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1145,7 +2149,55 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a29e2ec8d0ffe17a351f875fdb9594fbc" name="a29e2ec8d0ffe17a351f875fdb9594fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29e2ec8d0ffe17a351f875fdb9594fbc">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e2ec8d0ffe17a351f875fdb9594fbc">&#9670;&#160;</a></span>operator=() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComponentArray.html">ComponentArray</a> &amp; <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The <a class="el" href="classComponentArray.html" title="A dynamic array that manages components, with optional values for each slot.">ComponentArray</a> to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to this <a class="el" href="classComponentArray.html" title="A dynamic array that manages components, with optional values for each slot.">ComponentArray</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00074">74</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classComponentArray_a29e2ec8d0ffe17a351f875fdb9594fbc_cgraph.png" border="0" usemap="#aclassComponentArray_a29e2ec8d0ffe17a351f875fdb9594fbc_cgraph" alt=""/></div>
+<map name="aclassComponentArray_a29e2ec8d0ffe17a351f875fdb9594fbc_cgraph" id="aclassComponentArray_a29e2ec8d0ffe17a351f875fdb9594fbc_cgraph">
+<area shape="rect" title="Copy assignment operator." alt="" coords="5,13,184,38"/>
+<area shape="rect" href="classComponentArray.html#afdc4f4b14a534f5de8c8b097bf060a60" title="Default constructor." alt="" coords="232,5,421,46"/>
+<area shape="poly" title=" " alt="" coords="184,23,216,23,216,28,184,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29e2ec8d0ffe17a351f875fdb9594fbc" name="a29e2ec8d0ffe17a351f875fdb9594fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e2ec8d0ffe17a351f875fdb9594fbc">&#9670;&#160;</a></span>operator=() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1178,7 +2230,7 @@ template&lt;typename Component&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to this object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00070">70</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00070">70</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1193,7 +2245,45 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aedf72995413cfda4677663d8cf13b321" name="aedf72995413cfda4677663d8cf13b321"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedf72995413cfda4677663d8cf13b321">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf72995413cfda4677663d8cf13b321">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac5b2b9e0fa4da8002c57cc561881775f">reference_type</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Array subscript operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>Index to access </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the component at the specified index </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00100">100</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aedf72995413cfda4677663d8cf13b321" name="aedf72995413cfda4677663d8cf13b321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf72995413cfda4677663d8cf13b321">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1226,12 +2316,50 @@ template&lt;typename Component&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the optional component at the given index. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00096">96</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00096">96</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="af6b40eb28857dd29880eb3f0a59a8f51" name="af6b40eb28857dd29880eb3f0a59a8f51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6b40eb28857dd29880eb3f0a59a8f51">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b40eb28857dd29880eb3f0a59a8f51">&#9670;&#160;</a></span>operator[]() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a1030fb15097db51b025c6d76aaec5025">const_reference_type</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Const array subscript operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>Index to access </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Const reference to the component at the specified index </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00110">110</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af6b40eb28857dd29880eb3f0a59a8f51" name="af6b40eb28857dd29880eb3f0a59a8f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6b40eb28857dd29880eb3f0a59a8f51">&#9670;&#160;</a></span>operator[]() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1264,12 +2392,44 @@ template&lt;typename Component&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Constant reference to the optional component at the given index. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00106">106</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00106">106</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a94967730379ca431f1ec900185c8b874" name="a94967730379ca431f1ec900185c8b874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94967730379ca431f1ec900185c8b874">&#9670;&#160;</a></span>size()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a94967730379ca431f1ec900185c8b874">&#9670;&#160;</a></span>size() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Component&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aef6d48d08e299074c225b7fbde7bd80c">size_type</a> <a class="el" href="classComponentArray.html">ComponentArray</a>&lt; Component &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get size of array. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of elements in array </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html#l00173">173</a> of file <a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a94967730379ca431f1ec900185c8b874" name="a94967730379ca431f1ec900185c8b874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94967730379ca431f1ec900185c8b874">&#9670;&#160;</a></span>size() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1296,46 +2456,56 @@ template&lt;typename Component&gt; </div>
 <p>Get the size of the array. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of elements in the array. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ComponentArray_8hpp_source.html#l00169">169</a> of file <a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html#l00169">169</a> of file <a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classComponentArray_a94967730379ca431f1ec900185c8b874_icgraph.png" border="0" usemap="#aclassComponentArray_a94967730379ca431f1ec900185c8b874_icgraph" alt=""/></div>
 <map name="aclassComponentArray_a94967730379ca431f1ec900185c8b874_icgraph" id="aclassComponentArray_a94967730379ca431f1ec900185c8b874_icgraph">
-<area shape="rect" title="Get the size of the array." alt="" coords="802,155,948,180"/>
-<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,5,536,31"/>
-<area shape="poly" title=" " alt="" coords="855,144,813,92,785,66,753,46,700,27,644,16,588,12,537,12,537,6,588,6,644,11,701,22,755,41,788,62,817,88,859,140"/>
-<area shape="rect" href="classSystems.html#a22062794fa69509a0b6992c47c7b322b" title="A system that processes enemy behaviors and actions." alt="" coords="585,56,753,82"/>
-<area shape="poly" title=" " alt="" coords="842,148,801,121,753,95,724,85,726,80,755,90,803,116,845,144"/>
-<area shape="rect" href="classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erase a component at a specific index." alt="" coords="591,105,747,131"/>
-<area shape="poly" title=" " alt="" coords="802,153,725,134,726,129,804,148"/>
-<area shape="rect" href="classComponentArray.html#a43ef98c31d981ccaa4849a24c825221c" title="Grow the array to ensure it can contain the specified index." alt="" coords="584,155,754,180"/>
-<area shape="poly" title=" " alt="" coords="786,170,754,170,754,165,786,165"/>
-<area shape="rect" href="classWorld.html#a773f9f5417e600c3f36928124249513b" title=" " alt="" coords="595,256,743,282"/>
-<area shape="poly" title=" " alt="" coords="841,191,755,239,710,258,708,253,753,234,839,186"/>
-<area shape="rect" href="classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectiles and their collisions." alt="" coords="354,205,530,231"/>
-<area shape="poly" title=" " alt="" coords="803,187,754,195,638,209,531,217,531,211,637,203,753,190,802,182"/>
-<area shape="rect" href="classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="358,305,526,331"/>
-<area shape="poly" title=" " alt="" coords="860,195,817,249,788,276,755,297,698,317,638,328,579,331,526,330,526,325,579,326,637,322,696,312,753,292,785,271,813,245,855,192"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,131,300,156"/>
-<area shape="poly" title=" " alt="" coords="382,39,349,53,277,94,222,132,219,128,274,90,347,48,380,34"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,131,55,156"/>
-<area shape="poly" title=" " alt="" coords="87,146,55,146,55,141,87,141"/>
-<area shape="poly" title=" " alt="" coords="570,73,463,80,349,97,288,113,235,133,233,128,286,108,347,92,462,75,569,68"/>
-<area shape="rect" href="classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="384,106,501,146"/>
-<area shape="poly" title=" " alt="" coords="576,124,501,127,501,121,576,119"/>
-<area shape="poly" title=" " alt="" coords="593,255,502,234,503,229,594,249"/>
-<area shape="rect" href="classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="392,256,492,282"/>
-<area shape="poly" title=" " alt="" coords="580,272,493,272,493,266,580,266"/>
-<area shape="poly" title=" " alt="" coords="383,203,245,160,246,154,385,198"/>
-<area shape="poly" title=" " alt="" coords="356,301,347,296,301,263,262,225,209,158,214,155,266,221,305,259,349,292,358,297"/>
+<area shape="rect" title="Get the size of the array." alt="" coords="1062,155,1209,180"/>
+<area shape="rect" href="classSystems.html#a653daa9a48c6df3f7e6264336dcc91ea" title="A system that processes controllable components for player input." alt="" coords="609,5,797,31"/>
+<area shape="poly" title=" " alt="" coords="1116,143,1074,90,1046,64,1013,43,960,24,904,14,849,10,798,11,797,5,849,5,905,9,962,19,1015,38,1049,59,1078,86,1120,140"/>
+<area shape="rect" href="classSystems.html#ab9047b7f6444d84a40725fa5aa91a232" title="A system that processes enemy behaviors and actions." alt="" coords="619,80,786,106"/>
+<area shape="poly" title=" " alt="" coords="1112,144,1070,103,1043,84,1013,70,978,60,941,55,867,57,799,68,744,82,743,77,797,63,866,51,941,50,979,55,1015,65,1045,80,1073,99,1116,141"/>
+<area shape="rect" href="classComponentArray.html#a591ad12a7c35743e8eb4493859ed7f99" title="Erase component at specified position." alt="" coords="852,80,1007,106"/>
+<area shape="poly" title=" " alt="" coords="1090,150,1013,119,980,109,982,104,1015,114,1092,145"/>
+<area shape="rect" href="classComponentArray.html#a43ef98c31d981ccaa4849a24c825221c" title="Grow container to accommodate specified position." alt="" coords="845,129,1014,155"/>
+<area shape="poly" title=" " alt="" coords="1047,159,1014,155,1015,150,1047,154"/>
+<area shape="rect" href="classSystems.html#a366ec594f688d6c3a7aca9f09934a416" title="A system that processes the hitbox components for entities." alt="" coords="625,180,781,206"/>
+<area shape="poly" title=" " alt="" coords="1047,175,782,191,781,186,1046,170"/>
+<area shape="rect" href="classWorld.html#a773f9f5417e600c3f36928124249513b" title=" " alt="" coords="856,281,1003,307"/>
+<area shape="poly" title=" " alt="" coords="1111,193,1068,229,1016,264,974,283,972,278,1013,260,1065,224,1108,189"/>
+<area shape="rect" href="classSystems.html#a3f4356fa7253fde8e8d8a7b12bed7702" title="A system that processes projectiles and their collisions." alt="" coords="615,231,791,256"/>
+<area shape="poly" title=" " alt="" coords="1048,186,1015,191,781,233,780,227,1014,186,1047,180"/>
+<area shape="rect" href="classSystems.html#aca2f5681d9b94dd3536cfe43abd641a4" title="A system that destroys entities when too far away from the game screen." alt="" coords="846,331,1013,356"/>
+<area shape="poly" title=" " alt="" coords="1122,196,1080,259,1051,293,1016,322,995,332,993,328,1013,317,1047,289,1076,256,1118,193"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,180,561,206"/>
+<area shape="poly" title=" " alt="" coords="660,41,610,70,534,130,478,182,475,178,530,126,607,65,658,36"/>
+<area shape="rect" href="Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,155,306,180"/>
+<area shape="poly" title=" " alt="" coords="347,180,306,175,307,169,348,175"/>
+<area shape="rect" href="classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,204,315,230"/>
+<area shape="poly" title=" " alt="" coords="348,210,316,214,316,209,348,205"/>
+<area shape="rect" href="server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,155,167,180"/>
+<area shape="poly" title=" " alt="" coords="223,170,168,170,168,165,223,165"/>
+<area shape="rect" href="classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,204,182,230"/>
+<area shape="poly" title=" " alt="" coords="215,220,183,220,183,214,215,214"/>
+<area shape="rect" href="client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,204,55,230"/>
+<area shape="poly" title=" " alt="" coords="87,220,55,220,55,214,87,214"/>
+<area shape="poly" title=" " alt="" coords="657,115,496,182,494,177,655,110"/>
+<area shape="poly" title=" " alt="" coords="609,196,561,196,561,190,609,190"/>
+<area shape="poly" title=" " alt="" coords="853,280,763,260,764,254,854,275"/>
+<area shape="rect" href="classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="653,280,753,306"/>
+<area shape="poly" title=" " alt="" coords="840,296,754,296,754,290,840,291"/>
+<area shape="poly" title=" " alt="" coords="623,230,526,209,527,204,624,224"/>
+<area shape="poly" title=" " alt="" coords="830,354,778,353,721,349,663,338,608,321,564,296,525,265,472,208,476,204,528,261,567,292,610,316,664,333,722,344,778,348,830,349"/>
 </map>
 </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>server/Logic/include/ECS/<a class="el" href="ComponentArray_8hpp_source.html">ComponentArray.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>server/Logic/include/ECS/<a class="el" href="server_2Logic_2include_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a></li>
+<li>client/ECS/<a class="el" href="client_2ECS_2ComponentArray_8hpp_source.html">ComponentArray.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

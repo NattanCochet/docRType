@@ -1,0 +1,7 @@
+<map id="World::getWindow" name="World::getWindow">
+<area shape="rect" id="Node000001" title="Gets the window used for rendering the world." alt="" coords="228,31,352,56"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#ac7d957f4e5e174a1f3e2884549429031" title="The clickable system that handles interaction with clickable components." alt="" coords="6,5,179,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,36,179,32,180,27,213,31"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#add744a11eebec239976335667eabaa3c" title="The drawable system that handles rendering drawable components." alt="" coords="5,55,180,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,56,180,60,180,54,212,50"/>
+</map>

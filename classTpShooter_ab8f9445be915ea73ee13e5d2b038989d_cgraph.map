@@ -1,7 +1,7 @@
 <map id="TpShooter::shootProjectile" name="TpShooter::shootProjectile">
 <area shape="rect" id="Node000001" title="Shoots projectiles from the bot in the game world." alt="" coords="5,138,179,164"/>
-<area shape="rect" id="Node000002" href="$classCreateEntity.html#acc5766a2a1bdbc53e253a4db2d8e635a" title="Creates a laser entity." alt="" coords="234,62,400,88"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,135,262,91,264,96,133,140"/>
+<area shape="rect" id="Node000002" href="$classCreateEntity.html#ae7b522329876648f660916cdb7ef2a31" title=" " alt="" coords="234,48,401,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,135,244,92,246,97,131,140"/>
 <area shape="rect" id="Node000004" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="670,92,841,117"/>
 <area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="179,142,655,109,655,114,179,148"/>
 <area shape="rect" id="Node000007" href="$classWorld.html#ad285af93f6dccf8d392f259da7cc80d9" title="Get Class to create entity." alt="" coords="227,164,408,189"/>
@@ -9,9 +9,9 @@
 <area shape="rect" id="Node000008" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="255,213,380,238"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="127,162,228,199,249,206,247,211,226,204,125,167"/>
 <area shape="rect" id="Node000003" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="456,62,622,88"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,72,440,72,440,78,401,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,68,441,69,440,75,401,74"/>
 <area shape="rect" id="Node000005" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="464,13,614,38"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="378,59,463,40,464,45,379,64"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="401,50,453,39,454,45,402,55"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="623,84,655,88,654,93,622,89"/>
 <area shape="rect" id="Node000006" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="686,5,825,46"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="615,23,671,23,671,28,615,28"/>

@@ -1,0 +1,15 @@
+<map id="client/ECS/Assets.cpp" name="client/ECS/Assets.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,5,351,31"/>
+<area shape="rect" id="Node000002" href="$client_2ECS_2Assets_8hpp.html" title="Header file for the Assets class, responsible for loading and managing graphical assets." alt="" coords="232,79,318,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,31,278,63,273,63,273,31"/>
+<area shape="rect" id="Node000003" href="$Error_8hpp.html" title="Header file for the Error class, which defines custom error types for the application." alt="" coords="5,153,119,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,108,113,150,112,145,238,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="143,153,280,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="267,107,234,143,230,139,263,103"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="304,153,375,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="288,103,321,139,317,143,284,107"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="399,153,445,178"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="301,103,386,144,384,149,299,108"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="24,226,100,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="65,179,65,211,59,211,59,179"/>
+</map>

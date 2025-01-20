@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['direction_0',['DIRECTION',['../classHitbox.html#a0a84c2a7660f7ee53c1075dfd1d7cce2',1,'Hitbox']]],
-  ['domainwarptype_1',['DomainWarpType',['../classFastNoiseLite.html#a6e3acdac4a6f273e70240731c9a4a913',1,'FastNoiseLite']]]
+  ['cellulardistancefunction_0',['CellularDistanceFunction',['../classFastNoiseLite.html#a398050da8e86742d6f0e8fb4cdf9851c',1,'FastNoiseLite']]],
+  ['cellularreturntype_1',['CellularReturnType',['../classFastNoiseLite.html#a5b30b7fbc75d02e033e9776dbea52e82',1,'FastNoiseLite']]],
+  ['control_2',['CONTROL',['../classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04',1,'VirtualKeyBoard::CONTROL'],['../ControlsEnum_8hpp.html#a077745aacfb8431d6529e20ad67d1674',1,'CONTROL:&#160;ControlsEnum.hpp']]]
 ];

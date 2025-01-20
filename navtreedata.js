@@ -96,6 +96,10 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -104,11 +108,14 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ABot_8cpp.html",
-"classAssets.html",
-"classFastNoiseLite.html#a7e24432919ce9cf6930442f5bdeaeb15",
-"classUDPServer_1_1Error.html#a639dd28533501afca286a3479a8b14a7",
-"pages.html"
+"ABonus_8hpp.html",
+"Test_8hpp_source.html",
+"classControllable.html#a573cebafa78df19dca7831f6bc4144d8",
+"classFastNoiseLite.html#a6e3acdac4a6f273e70240731c9a4a913a887121d445b27c5b5b5acb240eb480d1",
+"classNetwork.html#a7b9a239cedc9ff4834138d958994e4b1",
+"classSystems.html#adf42298863fcfe27407edf6a29c3dea5",
+"client_2ECS_2Message_8hpp.html#a278fa4ed07a92a8874fd355479d9df93ab078ffd28db767c502ac367053f6e0ac",
+"server_2Logic_2include_2ECS_2Registry_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

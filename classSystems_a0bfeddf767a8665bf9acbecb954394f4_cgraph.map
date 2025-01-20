@@ -1,0 +1,15 @@
+<map id="Systems::spawnAfterDeadSystem" name="Systems::spawnAfterDeadSystem">
+<area shape="rect" id="Node000001" title="A system that handles spawning of entities after their death." alt="" coords="5,145,224,170"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="313,5,451,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,142,191,100,271,55,297,45,299,50,273,60,194,105,135,146"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="297,70,467,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,142,271,104,299,97,300,102,272,110,154,147"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="319,120,444,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="224,145,303,137,304,142,225,150"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="318,169,446,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="224,165,302,172,302,177,224,170"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#a1a676acd43047c63de405572319cb388" title=" " alt="" coords="275,218,488,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="155,168,272,204,301,212,300,217,271,210,154,174"/>
+<area shape="rect" id="Node000007" href="$classWorld.html#a0b0578d493f8fc5d1dc277421a5ed40c" title="Spawn entity ID in world in ginven coordinates (origin top&#45;left)" alt="" coords="272,268,492,309"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="135,169,194,210,273,254,287,260,285,265,270,259,191,215,132,173"/>
+</map>

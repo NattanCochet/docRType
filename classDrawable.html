@@ -100,6 +100,10 @@ $(function(){initNavTree('classDrawable.html',''); initResizable(true); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="classDrawable-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Drawable Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -107,20 +111,1350 @@ $(function(){initNavTree('classDrawable.html',''); initResizable(true); });
 <p>A class representing an object that can be drawn on the screen.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Drawable_8hpp_source.html">Drawable.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="client_2ECS_2Components_2Drawable_8hpp_source.html">Drawable.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Drawable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDrawable__coll__graph.png" border="0" usemap="#aDrawable_coll__map" alt="Collaboration graph"/></div>
 <map name="aDrawable_coll__map" id="aDrawable_coll__map">
-<area shape="rect" title="A class representing an object that can be drawn on the screen." alt="" coords="5,5,70,72"/>
+<area shape="rect" title="A class representing an object that can be drawn on the screen." alt="" coords="5,5,110,275"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a95ac5c4be52f115fc4b3299c9a977205" id="r_a95ac5c4be52f115fc4b3299c9a977205"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a> { <a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205ae2fa2c835123003638f4a766ad97c4d8">SPRITE</a>
+, <a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205a66a7e9710129e434a743e6f607df6de7">TEXT</a>
+, <a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205a39517908fc6034f368aaa2adf1c70bf0">BUTTON</a>
+ }</td></tr>
+<tr class="memdesc:a95ac5c4be52f115fc4b3299c9a977205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of the types of drawable objects.  <a href="#a95ac5c4be52f115fc4b3299c9a977205">More...</a><br /></td></tr>
+<tr class="separator:a95ac5c4be52f115fc4b3299c9a977205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aac88608db6081da479c772c96636acb1" id="r_aac88608db6081da479c772c96636acb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac88608db6081da479c772c96636acb1">Drawable</a> ()</td></tr>
+<tr class="memdesc:aac88608db6081da479c772c96636acb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classDrawable_1_1Drawable.html">Drawable</a> class.  <br /></td></tr>
+<tr class="separator:aac88608db6081da479c772c96636acb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c12354b08e416b0a094abf1a5415f92" id="r_a2c12354b08e416b0a094abf1a5415f92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c12354b08e416b0a094abf1a5415f92">Drawable</a> (std::string path, <a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a> kind, sf::Vector2f scale, sf::IntRect rect, float angle)</td></tr>
+<tr class="memdesc:a2c12354b08e416b0a094abf1a5415f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a sprite object.  <br /></td></tr>
+<tr class="separator:a2c12354b08e416b0a094abf1a5415f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dd16637f6e3a7620689426048ca977" id="r_a12dd16637f6e3a7620689426048ca977"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12dd16637f6e3a7620689426048ca977">Drawable</a> (std::string fontPath, <a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a> kind, sf::Vector2f scale, std::string message, std::size_t sizeChar, sf::Color color, float angle)</td></tr>
+<tr class="memdesc:a12dd16637f6e3a7620689426048ca977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a text object.  <br /></td></tr>
+<tr class="separator:a12dd16637f6e3a7620689426048ca977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070b18cb36dc5964ef56f3463c05bb7b" id="r_a070b18cb36dc5964ef56f3463c05bb7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a070b18cb36dc5964ef56f3463c05bb7b">Drawable</a> (std::string fontPath, <a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a> kind, sf::Vector2f scale, std::string message, std::size_t sizeChar, sf::Color colorText, sf::Color colorBack, sf::Vector2f size, float angle)</td></tr>
+<tr class="memdesc:a070b18cb36dc5964ef56f3463c05bb7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a button object.  <br /></td></tr>
+<tr class="separator:a070b18cb36dc5964ef56f3463c05bb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db44942658aab760a7418e338582e0a" id="r_a5db44942658aab760a7418e338582e0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5db44942658aab760a7418e338582e0a">~Drawable</a> ()</td></tr>
+<tr class="memdesc:a5db44942658aab760a7418e338582e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classDrawable_1_1Drawable.html">Drawable</a> class.  <br /></td></tr>
+<tr class="separator:a5db44942658aab760a7418e338582e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e0c6921031e1fcd17afdeefc452814" id="r_a85e0c6921031e1fcd17afdeefc452814"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85e0c6921031e1fcd17afdeefc452814">getPath</a> ()</td></tr>
+<tr class="memdesc:a85e0c6921031e1fcd17afdeefc452814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path to the image or font file.  <br /></td></tr>
+<tr class="separator:a85e0c6921031e1fcd17afdeefc452814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8135e6010c751c9a8683e1b33fafdd57" id="r_a8135e6010c751c9a8683e1b33fafdd57"><td class="memItemLeft" align="right" valign="top">sf::IntRect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8135e6010c751c9a8683e1b33fafdd57">getRect</a> ()</td></tr>
+<tr class="memdesc:a8135e6010c751c9a8683e1b33fafdd57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rectangle that defines the sprite's frame.  <br /></td></tr>
+<tr class="separator:a8135e6010c751c9a8683e1b33fafdd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca0c6e0660dba9a81f33e7a48663d9b0" id="r_aca0c6e0660dba9a81f33e7a48663d9b0"><td class="memItemLeft" align="right" valign="top">sf::Color &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca0c6e0660dba9a81f33e7a48663d9b0">getColorText</a> ()</td></tr>
+<tr class="memdesc:aca0c6e0660dba9a81f33e7a48663d9b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the text color.  <br /></td></tr>
+<tr class="separator:aca0c6e0660dba9a81f33e7a48663d9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d98e0552912c9e701f4c0e9ab0f8c1" id="r_a62d98e0552912c9e701f4c0e9ab0f8c1"><td class="memItemLeft" align="right" valign="top">sf::Color &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62d98e0552912c9e701f4c0e9ab0f8c1">getColor</a> ()</td></tr>
+<tr class="memdesc:a62d98e0552912c9e701f4c0e9ab0f8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the background color.  <br /></td></tr>
+<tr class="separator:a62d98e0552912c9e701f4c0e9ab0f8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13eb9fc19d27ffaff840def69a098a81" id="r_a13eb9fc19d27ffaff840def69a098a81"><td class="memItemLeft" align="right" valign="top">sf::Vector2f &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13eb9fc19d27ffaff840def69a098a81">getScale</a> ()</td></tr>
+<tr class="memdesc:a13eb9fc19d27ffaff840def69a098a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the scale factor for the drawable object.  <br /></td></tr>
+<tr class="separator:a13eb9fc19d27ffaff840def69a098a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97ff41758ece413cad4b28cdd128d59" id="r_ae97ff41758ece413cad4b28cdd128d59"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae97ff41758ece413cad4b28cdd128d59">getMessage</a> ()</td></tr>
+<tr class="memdesc:ae97ff41758ece413cad4b28cdd128d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the message associated with the drawable object (for text or button).  <br /></td></tr>
+<tr class="separator:ae97ff41758ece413cad4b28cdd128d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46305a4c9cdbc8c4160bd0c86be7684a" id="r_a46305a4c9cdbc8c4160bd0c86be7684a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46305a4c9cdbc8c4160bd0c86be7684a">getSizeChar</a> ()</td></tr>
+<tr class="memdesc:a46305a4c9cdbc8c4160bd0c86be7684a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the text characters.  <br /></td></tr>
+<tr class="separator:a46305a4c9cdbc8c4160bd0c86be7684a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1fe9462f3730cc2e6e1279c1bdbe49" id="r_aef1fe9462f3730cc2e6e1279c1bdbe49"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef1fe9462f3730cc2e6e1279c1bdbe49">getSizeRectangle</a> ()</td></tr>
+<tr class="memdesc:aef1fe9462f3730cc2e6e1279c1bdbe49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the rectangle (for buttons).  <br /></td></tr>
+<tr class="separator:aef1fe9462f3730cc2e6e1279c1bdbe49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859f6f6ef467b34c77e6bef3412c5d36" id="r_a859f6f6ef467b34c77e6bef3412c5d36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a859f6f6ef467b34c77e6bef3412c5d36">getIsAnimate</a> () const</td></tr>
+<tr class="memdesc:a859f6f6ef467b34c77e6bef3412c5d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the drawable object is animated.  <br /></td></tr>
+<tr class="separator:a859f6f6ef467b34c77e6bef3412c5d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce536a2be1f3cdaa8e6c8ce86922e7e" id="r_a0ce536a2be1f3cdaa8e6c8ce86922e7e"><td class="memItemLeft" align="right" valign="top">sf::Clock *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce536a2be1f3cdaa8e6c8ce86922e7e">getClock</a> ()</td></tr>
+<tr class="memdesc:a0ce536a2be1f3cdaa8e6c8ce86922e7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the clock used for animation timing.  <br /></td></tr>
+<tr class="separator:a0ce536a2be1f3cdaa8e6c8ce86922e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215dd87d21a0b02787f8d4dc9534e7dc" id="r_a215dd87d21a0b02787f8d4dc9534e7dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a215dd87d21a0b02787f8d4dc9534e7dc">restartClock</a> ()</td></tr>
+<tr class="memdesc:a215dd87d21a0b02787f8d4dc9534e7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restarts the animation clock.  <br /></td></tr>
+<tr class="separator:a215dd87d21a0b02787f8d4dc9534e7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca287153be6a397473ba711db50948db" id="r_aca287153be6a397473ba711db50948db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca287153be6a397473ba711db50948db">setPath</a> (std::string newPath)</td></tr>
+<tr class="memdesc:aca287153be6a397473ba711db50948db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the path to the image or font file.  <br /></td></tr>
+<tr class="separator:aca287153be6a397473ba711db50948db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ffb8fa571fbf4a51aed53dba95dab5" id="r_ab5ffb8fa571fbf4a51aed53dba95dab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5ffb8fa571fbf4a51aed53dba95dab5">setRect</a> (sf::IntRect newRect)</td></tr>
+<tr class="memdesc:ab5ffb8fa571fbf4a51aed53dba95dab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rectangle that defines the sprite's frame.  <br /></td></tr>
+<tr class="separator:ab5ffb8fa571fbf4a51aed53dba95dab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39987b0e9ad8afcf97479639c360ee27" id="r_a39987b0e9ad8afcf97479639c360ee27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39987b0e9ad8afcf97479639c360ee27">setColorText</a> (sf::Color newtColor)</td></tr>
+<tr class="memdesc:a39987b0e9ad8afcf97479639c360ee27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text color.  <br /></td></tr>
+<tr class="separator:a39987b0e9ad8afcf97479639c360ee27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47046da54d1e59da43c78842eb4d6ade" id="r_a47046da54d1e59da43c78842eb4d6ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47046da54d1e59da43c78842eb4d6ade">setColor</a> (sf::Color newtColor)</td></tr>
+<tr class="memdesc:a47046da54d1e59da43c78842eb4d6ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the background color.  <br /></td></tr>
+<tr class="separator:a47046da54d1e59da43c78842eb4d6ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472411486696b33d5ff607cfe4a05d6b" id="r_a472411486696b33d5ff607cfe4a05d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a472411486696b33d5ff607cfe4a05d6b">setScale</a> (sf::Vector2f newScale)</td></tr>
+<tr class="memdesc:a472411486696b33d5ff607cfe4a05d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scale factor for the drawable object.  <br /></td></tr>
+<tr class="separator:a472411486696b33d5ff607cfe4a05d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cdfdde77d7b9671081ed391edb6eae9" id="r_a1cdfdde77d7b9671081ed391edb6eae9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cdfdde77d7b9671081ed391edb6eae9">setIsAnimate</a> (bool newIsAnimate)</td></tr>
+<tr class="memdesc:a1cdfdde77d7b9671081ed391edb6eae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the object is animated.  <br /></td></tr>
+<tr class="separator:a1cdfdde77d7b9671081ed391edb6eae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfa4dc7318b128b3b04b5e67c4664ac" id="r_addfa4dc7318b128b3b04b5e67c4664ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addfa4dc7318b128b3b04b5e67c4664ac">setMessage</a> (std::string message)</td></tr>
+<tr class="memdesc:addfa4dc7318b128b3b04b5e67c4664ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the message associated with the drawable object (for text or button).  <br /></td></tr>
+<tr class="separator:addfa4dc7318b128b3b04b5e67c4664ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22da4cf8f00cd4cfddf4a116a7d852ef" id="r_a22da4cf8f00cd4cfddf4a116a7d852ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22da4cf8f00cd4cfddf4a116a7d852ef">setSizeChar</a> (size_t sizeChar)</td></tr>
+<tr class="memdesc:a22da4cf8f00cd4cfddf4a116a7d852ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the text characters.  <br /></td></tr>
+<tr class="separator:a22da4cf8f00cd4cfddf4a116a7d852ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037237ce8a90c4a5d1095578b3b6905f" id="r_a037237ce8a90c4a5d1095578b3b6905f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a037237ce8a90c4a5d1095578b3b6905f">setSizeRectangle</a> (sf::Vector2f sizeRectangle)</td></tr>
+<tr class="memdesc:a037237ce8a90c4a5d1095578b3b6905f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the rectangle (for buttons).  <br /></td></tr>
+<tr class="separator:a037237ce8a90c4a5d1095578b3b6905f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada04b95bc84124bcca2fc4689c1f96f9" id="r_ada04b95bc84124bcca2fc4689c1f96f9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada04b95bc84124bcca2fc4689c1f96f9">getAngle</a> ()</td></tr>
+<tr class="separator:ada04b95bc84124bcca2fc4689c1f96f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b92fb4e91e6b981c3f41a9a7a0374d5" id="r_a2b92fb4e91e6b981c3f41a9a7a0374d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b92fb4e91e6b981c3f41a9a7a0374d5">setAngle</a> (float newAngle)</td></tr>
+<tr class="separator:a2b92fb4e91e6b981c3f41a9a7a0374d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b272c57f51065b1db2ba09083e64c7" id="r_aa1b272c57f51065b1db2ba09083e64c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1b272c57f51065b1db2ba09083e64c7">getKind</a> () const</td></tr>
+<tr class="memdesc:aa1b272c57f51065b1db2ba09083e64c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the drawable object.  <br /></td></tr>
+<tr class="separator:aa1b272c57f51065b1db2ba09083e64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing an object that can be drawn on the screen. </p>
-<p>The <a class="el" href="classDrawable_1_1Drawable.html">Drawable</a> class holds information about an image's path, sprite properties (such as animation, scale, and frame data), and provides methods to access and modify these properties. It supports animated sprites with different frames for various directions (up, down, left, right). </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>server/Logic/include/Components/<a class="el" href="Drawable_8hpp_source.html">Drawable.hpp</a></li>
+<p>Class for objects that can be drawn on the screen, such as sprites, text, and buttons.</p>
+<p>The <a class="el" href="classDrawable_1_1Drawable.html">Drawable</a> class holds information about an image's path, sprite properties (such as animation, scale, and frame data), and provides methods to access and modify these properties. It supports animated sprites with different frames for various directions (up, down, left, right).</p>
+<p>This class represents graphical objects that can be rendered to the screen. It supports sprites, text, and buttons with properties like scaling, color, animation, and more. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8hpp_source.html#l00031">31</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8hpp_source.html">Drawable.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a95ac5c4be52f115fc4b3299c9a977205" name="a95ac5c4be52f115fc4b3299c9a977205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ac5c4be52f115fc4b3299c9a977205">&#9670;&#160;</a></span>typeSFML</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum Drawable::typeSFML</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration of the types of drawable objects. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a95ac5c4be52f115fc4b3299c9a977205ae2fa2c835123003638f4a766ad97c4d8" name="a95ac5c4be52f115fc4b3299c9a977205ae2fa2c835123003638f4a766ad97c4d8"></a>SPRITE&#160;</td><td class="fielddoc"><p>A sprite object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95ac5c4be52f115fc4b3299c9a977205a66a7e9710129e434a743e6f607df6de7" name="a95ac5c4be52f115fc4b3299c9a977205a66a7e9710129e434a743e6f607df6de7"></a>TEXT&#160;</td><td class="fielddoc"><p>A text object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95ac5c4be52f115fc4b3299c9a977205a39517908fc6034f368aaa2adf1c70bf0" name="a95ac5c4be52f115fc4b3299c9a977205a39517908fc6034f368aaa2adf1c70bf0"></a>BUTTON&#160;</td><td class="fielddoc"><p>A button object. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8hpp_source.html#l00037">37</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8hpp_source.html">Drawable.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aac88608db6081da479c772c96636acb1" name="aac88608db6081da479c772c96636acb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac88608db6081da479c772c96636acb1">&#9670;&#160;</a></span>Drawable() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::Drawable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor for the <a class="el" href="classDrawable_1_1Drawable.html">Drawable</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00010">10</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c12354b08e416b0a094abf1a5415f92" name="a2c12354b08e416b0a094abf1a5415f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c12354b08e416b0a094abf1a5415f92">&#9670;&#160;</a></span>Drawable() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::Drawable </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::IntRect</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a sprite object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to the image file. </td></tr>
+    <tr><td class="paramname">kind</td><td>Type of the drawable object (SPRITE). </td></tr>
+    <tr><td class="paramname">scale</td><td>Scale factor for the sprite. </td></tr>
+    <tr><td class="paramname">rect</td><td>Rectangle defining the sprite frame (position, size). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00014">14</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a12dd16637f6e3a7620689426048ca977" name="a12dd16637f6e3a7620689426048ca977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12dd16637f6e3a7620689426048ca977">&#9670;&#160;</a></span>Drawable() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::Drawable </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>fontPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>sizeChar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a text object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontPath</td><td>Path to the font file. </td></tr>
+    <tr><td class="paramname">kind</td><td>Type of the drawable object (TEXT). </td></tr>
+    <tr><td class="paramname">scale</td><td>Scale factor for the text. </td></tr>
+    <tr><td class="paramname">message</td><td>The message to be displayed. </td></tr>
+    <tr><td class="paramname">sizeChar</td><td>Size of the text characters. </td></tr>
+    <tr><td class="paramname">color</td><td>Text color. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00025">25</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a070b18cb36dc5964ef56f3463c05bb7b" name="a070b18cb36dc5964ef56f3463c05bb7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a070b18cb36dc5964ef56f3463c05bb7b">&#9670;&#160;</a></span>Drawable() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::Drawable </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>fontPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a95ac5c4be52f115fc4b3299c9a977205">typeSFML</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>sizeChar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>colorText</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>colorBack</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for a button object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontPath</td><td>Path to the font file. </td></tr>
+    <tr><td class="paramname">kind</td><td>Type of the drawable object (BUTTON). </td></tr>
+    <tr><td class="paramname">scale</td><td>Scale factor for the button. </td></tr>
+    <tr><td class="paramname">message</td><td>The message displayed on the button. </td></tr>
+    <tr><td class="paramname">sizeChar</td><td>Size of the text characters. </td></tr>
+    <tr><td class="paramname">colorText</td><td>Color of the button text. </td></tr>
+    <tr><td class="paramname">colorBack</td><td>Background color of the button. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the button (width, height). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00040">40</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5db44942658aab760a7418e338582e0a" name="a5db44942658aab760a7418e338582e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db44942658aab760a7418e338582e0a">&#9670;&#160;</a></span>~Drawable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::~Drawable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor for the <a class="el" href="classDrawable_1_1Drawable.html">Drawable</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00056">56</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a5db44942658aab760a7418e338582e0a_cgraph.png" border="0" usemap="#aclassDrawable_a5db44942658aab760a7418e338582e0a_cgraph" alt=""/></div>
+<map name="aclassDrawable_a5db44942658aab760a7418e338582e0a_cgraph" id="aclassDrawable_a5db44942658aab760a7418e338582e0a_cgraph">
+<area shape="rect" title="Destructor for the Drawable class." alt="" coords="5,29,148,55"/>
+<area shape="poly" title=" " alt="" coords="52,30,47,21,50,11,60,5,77,3,94,5,103,12,100,16,92,10,76,8,62,10,54,14,53,20,57,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a5db44942658aab760a7418e338582e0a_icgraph.png" border="0" usemap="#aclassDrawable_a5db44942658aab760a7418e338582e0a_icgraph" alt=""/></div>
+<map name="aclassDrawable_a5db44942658aab760a7418e338582e0a_icgraph" id="aclassDrawable_a5db44942658aab760a7418e338582e0a_icgraph">
+<area shape="rect" title="Destructor for the Drawable class." alt="" coords="5,29,148,55"/>
+<area shape="poly" title=" " alt="" coords="100,16,92,10,76,8,62,10,54,14,53,20,57,28,52,30,47,21,50,11,60,5,77,3,94,5,103,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ada04b95bc84124bcca2fc4689c1f96f9" name="ada04b95bc84124bcca2fc4689c1f96f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada04b95bc84124bcca2fc4689c1f96f9">&#9670;&#160;</a></span>getAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Drawable::getAngle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00165">165</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_ada04b95bc84124bcca2fc4689c1f96f9_cgraph.png" border="0" usemap="#aclassDrawable_ada04b95bc84124bcca2fc4689c1f96f9_cgraph" alt=""/></div>
+<map name="aclassDrawable_ada04b95bc84124bcca2fc4689c1f96f9_cgraph" id="aclassDrawable_ada04b95bc84124bcca2fc4689c1f96f9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="48,30,44,21,47,11,56,5,72,3,88,5,97,12,93,16,86,10,71,8,58,10,51,14,49,20,53,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_ada04b95bc84124bcca2fc4689c1f96f9_icgraph.png" border="0" usemap="#aclassDrawable_ada04b95bc84124bcca2fc4689c1f96f9_icgraph" alt=""/></div>
+<map name="aclassDrawable_ada04b95bc84124bcca2fc4689c1f96f9_icgraph" id="aclassDrawable_ada04b95bc84124bcca2fc4689c1f96f9_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="93,16,86,10,71,8,58,10,51,14,49,20,53,28,48,30,44,21,47,11,56,5,72,3,88,5,97,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ce536a2be1f3cdaa8e6c8ce86922e7e" name="a0ce536a2be1f3cdaa8e6c8ce86922e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce536a2be1f3cdaa8e6c8ce86922e7e">&#9670;&#160;</a></span>getClock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Clock * Drawable::getClock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the clock used for animation timing. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the sf::Clock used for animation. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00110">110</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_cgraph.png" border="0" usemap="#aclassDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_cgraph" alt=""/></div>
+<map name="aclassDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_cgraph" id="aclassDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_cgraph">
+<area shape="rect" title="Gets the clock used for animation timing." alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="48,30,44,21,47,11,56,5,72,3,88,5,97,12,93,16,86,10,71,8,58,10,51,14,49,20,53,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_icgraph.png" border="0" usemap="#aclassDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_icgraph" alt=""/></div>
+<map name="aclassDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_icgraph" id="aclassDrawable_a0ce536a2be1f3cdaa8e6c8ce86922e7e_icgraph">
+<area shape="rect" title="Gets the clock used for animation timing." alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="93,16,86,10,71,8,58,10,51,14,49,20,53,28,48,30,44,21,47,11,56,5,72,3,88,5,97,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a62d98e0552912c9e701f4c0e9ab0f8c1" name="a62d98e0552912c9e701f4c0e9ab0f8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d98e0552912c9e701f4c0e9ab0f8c1">&#9670;&#160;</a></span>getColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Color &amp; Drawable::getColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the background color. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the background color. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00075">75</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_cgraph.png" border="0" usemap="#aclassDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_cgraph" alt=""/></div>
+<map name="aclassDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_cgraph" id="aclassDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_cgraph">
+<area shape="rect" title="Gets the background color." alt="" coords="5,29,135,55"/>
+<area shape="poly" title=" " alt="" coords="47,30,43,21,46,11,55,5,70,3,86,5,95,12,91,16,84,10,70,8,57,10,50,14,48,20,52,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_icgraph.png" border="0" usemap="#aclassDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_icgraph" alt=""/></div>
+<map name="aclassDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_icgraph" id="aclassDrawable_a62d98e0552912c9e701f4c0e9ab0f8c1_icgraph">
+<area shape="rect" title="Gets the background color." alt="" coords="5,29,135,55"/>
+<area shape="poly" title=" " alt="" coords="91,16,84,10,70,8,57,10,50,14,48,20,52,28,47,30,43,21,46,11,55,5,70,3,86,5,95,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca0c6e0660dba9a81f33e7a48663d9b0" name="aca0c6e0660dba9a81f33e7a48663d9b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca0c6e0660dba9a81f33e7a48663d9b0">&#9670;&#160;</a></span>getColorText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Color &amp; Drawable::getColorText </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the text color. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the color of the text. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00070">70</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_cgraph.png" border="0" usemap="#aclassDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_cgraph" alt=""/></div>
+<map name="aclassDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_cgraph" id="aclassDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_cgraph">
+<area shape="rect" title="Gets the text color." alt="" coords="5,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="56,30,51,21,54,11,65,5,83,3,101,5,111,12,108,16,100,10,82,8,67,10,58,15,56,20,61,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_icgraph.png" border="0" usemap="#aclassDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_icgraph" alt=""/></div>
+<map name="aclassDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_icgraph" id="aclassDrawable_aca0c6e0660dba9a81f33e7a48663d9b0_icgraph">
+<area shape="rect" title="Gets the text color." alt="" coords="5,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="108,16,100,10,82,8,67,10,58,15,56,20,61,28,56,30,51,21,54,11,65,5,83,3,101,5,111,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a859f6f6ef467b34c77e6bef3412c5d36" name="a859f6f6ef467b34c77e6bef3412c5d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a859f6f6ef467b34c77e6bef3412c5d36">&#9670;&#160;</a></span>getIsAnimate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Drawable::getIsAnimate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the drawable object is animated. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the object is animated, false otherwise. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00085">85</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a859f6f6ef467b34c77e6bef3412c5d36_cgraph.png" border="0" usemap="#aclassDrawable_a859f6f6ef467b34c77e6bef3412c5d36_cgraph" alt=""/></div>
+<map name="aclassDrawable_a859f6f6ef467b34c77e6bef3412c5d36_cgraph" id="aclassDrawable_a859f6f6ef467b34c77e6bef3412c5d36_cgraph">
+<area shape="rect" title="Checks if the drawable object is animated." alt="" coords="5,29,164,55"/>
+<area shape="poly" title=" " alt="" coords="57,30,52,21,55,11,66,5,85,3,104,5,114,12,111,16,102,10,84,8,68,10,59,15,58,20,62,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a859f6f6ef467b34c77e6bef3412c5d36_icgraph.png" border="0" usemap="#aclassDrawable_a859f6f6ef467b34c77e6bef3412c5d36_icgraph" alt=""/></div>
+<map name="aclassDrawable_a859f6f6ef467b34c77e6bef3412c5d36_icgraph" id="aclassDrawable_a859f6f6ef467b34c77e6bef3412c5d36_icgraph">
+<area shape="rect" title="Checks if the drawable object is animated." alt="" coords="5,29,164,55"/>
+<area shape="poly" title=" " alt="" coords="111,16,102,10,84,8,68,10,59,15,58,20,62,28,57,30,52,21,55,11,66,5,85,3,104,5,114,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa1b272c57f51065b1db2ba09083e64c7" name="aa1b272c57f51065b1db2ba09083e64c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b272c57f51065b1db2ba09083e64c7">&#9670;&#160;</a></span>getKind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Drawable::typeSFML Drawable::getKind </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the type of the drawable object. </p>
+<dl class="section return"><dt>Returns</dt><dd>The type of the object (SPRITE, TEXT, BUTTON). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00090">90</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aa1b272c57f51065b1db2ba09083e64c7_cgraph.png" border="0" usemap="#aclassDrawable_aa1b272c57f51065b1db2ba09083e64c7_cgraph" alt=""/></div>
+<map name="aclassDrawable_aa1b272c57f51065b1db2ba09083e64c7_cgraph" id="aclassDrawable_aa1b272c57f51065b1db2ba09083e64c7_cgraph">
+<area shape="rect" title="Gets the type of the drawable object." alt="" coords="5,29,131,55"/>
+<area shape="poly" title=" " alt="" coords="46,30,42,21,44,11,53,5,68,3,84,5,92,12,89,16,81,10,68,8,55,10,49,14,47,20,51,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aa1b272c57f51065b1db2ba09083e64c7_icgraph.png" border="0" usemap="#aclassDrawable_aa1b272c57f51065b1db2ba09083e64c7_icgraph" alt=""/></div>
+<map name="aclassDrawable_aa1b272c57f51065b1db2ba09083e64c7_icgraph" id="aclassDrawable_aa1b272c57f51065b1db2ba09083e64c7_icgraph">
+<area shape="rect" title="Gets the type of the drawable object." alt="" coords="5,29,131,55"/>
+<area shape="poly" title=" " alt="" coords="89,16,81,10,68,8,55,10,49,14,47,20,51,28,46,30,42,21,44,11,53,5,68,3,84,5,92,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae97ff41758ece413cad4b28cdd128d59" name="ae97ff41758ece413cad4b28cdd128d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97ff41758ece413cad4b28cdd128d59">&#9670;&#160;</a></span>getMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Drawable::getMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the message associated with the drawable object (for text or button). </p>
+<dl class="section return"><dt>Returns</dt><dd>The message string. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00095">95</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_ae97ff41758ece413cad4b28cdd128d59_cgraph.png" border="0" usemap="#aclassDrawable_ae97ff41758ece413cad4b28cdd128d59_cgraph" alt=""/></div>
+<map name="aclassDrawable_ae97ff41758ece413cad4b28cdd128d59_cgraph" id="aclassDrawable_ae97ff41758ece413cad4b28cdd128d59_cgraph">
+<area shape="rect" title="Gets the message associated with the drawable object (for text or button)." alt="" coords="5,29,158,55"/>
+<area shape="poly" title=" " alt="" coords="55,30,50,21,53,11,64,5,82,3,100,5,110,12,107,16,98,10,81,8,66,10,58,15,56,20,60,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_ae97ff41758ece413cad4b28cdd128d59_icgraph.png" border="0" usemap="#aclassDrawable_ae97ff41758ece413cad4b28cdd128d59_icgraph" alt=""/></div>
+<map name="aclassDrawable_ae97ff41758ece413cad4b28cdd128d59_icgraph" id="aclassDrawable_ae97ff41758ece413cad4b28cdd128d59_icgraph">
+<area shape="rect" title="Gets the message associated with the drawable object (for text or button)." alt="" coords="5,29,158,55"/>
+<area shape="poly" title=" " alt="" coords="107,16,98,10,81,8,66,10,58,15,56,20,60,28,55,30,50,21,53,11,64,5,82,3,100,5,110,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a85e0c6921031e1fcd17afdeefc452814" name="a85e0c6921031e1fcd17afdeefc452814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e0c6921031e1fcd17afdeefc452814">&#9670;&#160;</a></span>getPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string &amp; Drawable::getPath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the path to the image or font file. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the file path string. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00060">60</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a85e0c6921031e1fcd17afdeefc452814_cgraph.png" border="0" usemap="#aclassDrawable_a85e0c6921031e1fcd17afdeefc452814_cgraph" alt=""/></div>
+<map name="aclassDrawable_a85e0c6921031e1fcd17afdeefc452814_cgraph" id="aclassDrawable_a85e0c6921031e1fcd17afdeefc452814_cgraph">
+<area shape="rect" title="Gets the path to the image or font file." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="46,30,42,21,45,11,54,5,69,3,84,5,93,12,89,16,82,10,68,8,56,10,49,14,48,20,51,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a85e0c6921031e1fcd17afdeefc452814_icgraph.png" border="0" usemap="#aclassDrawable_a85e0c6921031e1fcd17afdeefc452814_icgraph" alt=""/></div>
+<map name="aclassDrawable_a85e0c6921031e1fcd17afdeefc452814_icgraph" id="aclassDrawable_a85e0c6921031e1fcd17afdeefc452814_icgraph">
+<area shape="rect" title="Gets the path to the image or font file." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="89,16,82,10,68,8,56,10,49,14,48,20,51,28,46,30,42,21,45,11,54,5,69,3,84,5,93,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8135e6010c751c9a8683e1b33fafdd57" name="a8135e6010c751c9a8683e1b33fafdd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8135e6010c751c9a8683e1b33fafdd57">&#9670;&#160;</a></span>getRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::IntRect * Drawable::getRect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the rectangle that defines the sprite's frame. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the sf::IntRect representing the sprite's frame. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00065">65</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a8135e6010c751c9a8683e1b33fafdd57_cgraph.png" border="0" usemap="#aclassDrawable_a8135e6010c751c9a8683e1b33fafdd57_cgraph" alt=""/></div>
+<map name="aclassDrawable_a8135e6010c751c9a8683e1b33fafdd57_cgraph" id="aclassDrawable_a8135e6010c751c9a8683e1b33fafdd57_cgraph">
+<area shape="rect" title="Gets the rectangle that defines the sprite&#39;s frame." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="46,30,42,21,45,11,54,5,69,3,84,5,93,12,89,16,82,10,68,8,56,10,49,14,48,20,51,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a8135e6010c751c9a8683e1b33fafdd57_icgraph.png" border="0" usemap="#aclassDrawable_a8135e6010c751c9a8683e1b33fafdd57_icgraph" alt=""/></div>
+<map name="aclassDrawable_a8135e6010c751c9a8683e1b33fafdd57_icgraph" id="aclassDrawable_a8135e6010c751c9a8683e1b33fafdd57_icgraph">
+<area shape="rect" title="Gets the rectangle that defines the sprite&#39;s frame." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="89,16,82,10,68,8,56,10,49,14,48,20,51,28,46,30,42,21,45,11,54,5,69,3,84,5,93,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13eb9fc19d27ffaff840def69a098a81" name="a13eb9fc19d27ffaff840def69a098a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13eb9fc19d27ffaff840def69a098a81">&#9670;&#160;</a></span>getScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f &amp; Drawable::getScale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the scale factor for the drawable object. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the scale vector. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00080">80</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a13eb9fc19d27ffaff840def69a098a81_cgraph.png" border="0" usemap="#aclassDrawable_a13eb9fc19d27ffaff840def69a098a81_cgraph" alt=""/></div>
+<map name="aclassDrawable_a13eb9fc19d27ffaff840def69a098a81_cgraph" id="aclassDrawable_a13eb9fc19d27ffaff840def69a098a81_cgraph">
+<area shape="rect" title="Gets the scale factor for the drawable object." alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="48,30,44,21,47,11,56,5,72,3,88,5,97,12,93,16,86,10,71,8,58,10,51,14,49,20,53,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a13eb9fc19d27ffaff840def69a098a81_icgraph.png" border="0" usemap="#aclassDrawable_a13eb9fc19d27ffaff840def69a098a81_icgraph" alt=""/></div>
+<map name="aclassDrawable_a13eb9fc19d27ffaff840def69a098a81_icgraph" id="aclassDrawable_a13eb9fc19d27ffaff840def69a098a81_icgraph">
+<area shape="rect" title="Gets the scale factor for the drawable object." alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="93,16,86,10,71,8,58,10,51,14,49,20,53,28,48,30,44,21,47,11,56,5,72,3,88,5,97,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a46305a4c9cdbc8c4160bd0c86be7684a" name="a46305a4c9cdbc8c4160bd0c86be7684a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46305a4c9cdbc8c4160bd0c86be7684a">&#9670;&#160;</a></span>getSizeChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t Drawable::getSizeChar </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the size of the text characters. </p>
+<dl class="section return"><dt>Returns</dt><dd>The character size. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00100">100</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_cgraph.png" border="0" usemap="#aclassDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_cgraph" alt=""/></div>
+<map name="aclassDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_cgraph" id="aclassDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_cgraph">
+<area shape="rect" title="Gets the size of the text characters." alt="" coords="5,29,157,55"/>
+<area shape="poly" title=" " alt="" coords="55,30,50,21,53,11,64,5,81,3,100,5,109,12,106,16,98,10,81,8,65,10,57,15,55,20,60,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_icgraph.png" border="0" usemap="#aclassDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_icgraph" alt=""/></div>
+<map name="aclassDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_icgraph" id="aclassDrawable_a46305a4c9cdbc8c4160bd0c86be7684a_icgraph">
+<area shape="rect" title="Gets the size of the text characters." alt="" coords="5,29,157,55"/>
+<area shape="poly" title=" " alt="" coords="106,16,98,10,81,8,65,10,57,15,55,20,60,28,55,30,50,21,53,11,64,5,81,3,100,5,109,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef1fe9462f3730cc2e6e1279c1bdbe49" name="aef1fe9462f3730cc2e6e1279c1bdbe49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1fe9462f3730cc2e6e1279c1bdbe49">&#9670;&#160;</a></span>getSizeRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f Drawable::getSizeRectangle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the size of the rectangle (for buttons). </p>
+<dl class="section return"><dt>Returns</dt><dd>The size vector (width, height). </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00105">105</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_cgraph.png" border="0" usemap="#aclassDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_cgraph" alt=""/></div>
+<map name="aclassDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_cgraph" id="aclassDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_cgraph">
+<area shape="rect" title="Gets the size of the rectangle (for buttons)." alt="" coords="5,29,188,55"/>
+<area shape="poly" title=" " alt="" coords="66,30,60,21,63,11,76,5,97,3,119,5,130,12,128,16,117,10,96,8,77,10,67,15,65,20,70,27"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_icgraph.png" border="0" usemap="#aclassDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_icgraph" alt=""/></div>
+<map name="aclassDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_icgraph" id="aclassDrawable_aef1fe9462f3730cc2e6e1279c1bdbe49_icgraph">
+<area shape="rect" title="Gets the size of the rectangle (for buttons)." alt="" coords="5,29,188,55"/>
+<area shape="poly" title=" " alt="" coords="128,16,117,10,96,8,77,10,67,15,65,20,70,27,66,30,60,21,63,11,76,5,97,3,119,5,130,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a215dd87d21a0b02787f8d4dc9534e7dc" name="a215dd87d21a0b02787f8d4dc9534e7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a215dd87d21a0b02787f8d4dc9534e7dc">&#9670;&#160;</a></span>restartClock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::restartClock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restarts the animation clock. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00115">115</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_cgraph.png" border="0" usemap="#aclassDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_cgraph" alt=""/></div>
+<map name="aclassDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_cgraph" id="aclassDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_cgraph">
+<area shape="rect" title="Restarts the animation clock." alt="" coords="5,29,157,55"/>
+<area shape="poly" title=" " alt="" coords="55,30,50,21,53,11,64,5,81,3,100,5,109,12,106,16,98,10,81,8,65,10,57,15,55,20,60,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_icgraph.png" border="0" usemap="#aclassDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_icgraph" alt=""/></div>
+<map name="aclassDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_icgraph" id="aclassDrawable_a215dd87d21a0b02787f8d4dc9534e7dc_icgraph">
+<area shape="rect" title="Restarts the animation clock." alt="" coords="5,29,157,55"/>
+<area shape="poly" title=" " alt="" coords="106,16,98,10,81,8,65,10,57,15,55,20,60,28,55,30,50,21,53,11,64,5,81,3,100,5,109,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2b92fb4e91e6b981c3f41a9a7a0374d5" name="a2b92fb4e91e6b981c3f41a9a7a0374d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b92fb4e91e6b981c3f41a9a7a0374d5">&#9670;&#160;</a></span>setAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setAngle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>newAngle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00170">170</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_cgraph.png" border="0" usemap="#aclassDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_cgraph" alt=""/></div>
+<map name="aclassDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_cgraph" id="aclassDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="48,30,44,21,47,11,56,5,72,3,88,5,97,12,93,16,86,10,71,8,58,10,51,14,49,20,53,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_icgraph.png" border="0" usemap="#aclassDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_icgraph" alt=""/></div>
+<map name="aclassDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_icgraph" id="aclassDrawable_a2b92fb4e91e6b981c3f41a9a7a0374d5_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="93,16,86,10,71,8,58,10,51,14,49,20,53,28,48,30,44,21,47,11,56,5,72,3,88,5,97,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a47046da54d1e59da43c78842eb4d6ade" name="a47046da54d1e59da43c78842eb4d6ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47046da54d1e59da43c78842eb4d6ade">&#9670;&#160;</a></span>setColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setColor </td>
+          <td>(</td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>newtColor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the background color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newtColor</td><td>New background color. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00135">135</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a47046da54d1e59da43c78842eb4d6ade_cgraph.png" border="0" usemap="#aclassDrawable_a47046da54d1e59da43c78842eb4d6ade_cgraph" alt=""/></div>
+<map name="aclassDrawable_a47046da54d1e59da43c78842eb4d6ade_cgraph" id="aclassDrawable_a47046da54d1e59da43c78842eb4d6ade_cgraph">
+<area shape="rect" title="Sets the background color." alt="" coords="5,29,135,55"/>
+<area shape="poly" title=" " alt="" coords="47,30,43,21,46,11,55,5,70,3,86,5,95,12,91,16,84,10,70,8,57,10,50,14,48,20,52,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a47046da54d1e59da43c78842eb4d6ade_icgraph.png" border="0" usemap="#aclassDrawable_a47046da54d1e59da43c78842eb4d6ade_icgraph" alt=""/></div>
+<map name="aclassDrawable_a47046da54d1e59da43c78842eb4d6ade_icgraph" id="aclassDrawable_a47046da54d1e59da43c78842eb4d6ade_icgraph">
+<area shape="rect" title="Sets the background color." alt="" coords="5,29,135,55"/>
+<area shape="poly" title=" " alt="" coords="91,16,84,10,70,8,57,10,50,14,48,20,52,28,47,30,43,21,46,11,55,5,70,3,86,5,95,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39987b0e9ad8afcf97479639c360ee27" name="a39987b0e9ad8afcf97479639c360ee27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39987b0e9ad8afcf97479639c360ee27">&#9670;&#160;</a></span>setColorText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setColorText </td>
+          <td>(</td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>newtColor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the text color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newtColor</td><td>New color for the text. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00130">130</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a39987b0e9ad8afcf97479639c360ee27_cgraph.png" border="0" usemap="#aclassDrawable_a39987b0e9ad8afcf97479639c360ee27_cgraph" alt=""/></div>
+<map name="aclassDrawable_a39987b0e9ad8afcf97479639c360ee27_cgraph" id="aclassDrawable_a39987b0e9ad8afcf97479639c360ee27_cgraph">
+<area shape="rect" title="Sets the text color." alt="" coords="5,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="56,30,51,21,54,11,65,5,83,3,101,5,111,12,108,16,100,10,82,8,67,10,58,15,56,20,61,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a39987b0e9ad8afcf97479639c360ee27_icgraph.png" border="0" usemap="#aclassDrawable_a39987b0e9ad8afcf97479639c360ee27_icgraph" alt=""/></div>
+<map name="aclassDrawable_a39987b0e9ad8afcf97479639c360ee27_icgraph" id="aclassDrawable_a39987b0e9ad8afcf97479639c360ee27_icgraph">
+<area shape="rect" title="Sets the text color." alt="" coords="5,29,160,55"/>
+<area shape="poly" title=" " alt="" coords="108,16,100,10,82,8,67,10,58,15,56,20,61,28,56,30,51,21,54,11,65,5,83,3,101,5,111,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1cdfdde77d7b9671081ed391edb6eae9" name="a1cdfdde77d7b9671081ed391edb6eae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cdfdde77d7b9671081ed391edb6eae9">&#9670;&#160;</a></span>setIsAnimate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setIsAnimate </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>newIsAnimate</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the object is animated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newIsAnimate</td><td>True for animated, false for static. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00145">145</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a1cdfdde77d7b9671081ed391edb6eae9_cgraph.png" border="0" usemap="#aclassDrawable_a1cdfdde77d7b9671081ed391edb6eae9_cgraph" alt=""/></div>
+<map name="aclassDrawable_a1cdfdde77d7b9671081ed391edb6eae9_cgraph" id="aclassDrawable_a1cdfdde77d7b9671081ed391edb6eae9_cgraph">
+<area shape="rect" title="Sets whether the object is animated." alt="" coords="5,29,164,55"/>
+<area shape="poly" title=" " alt="" coords="57,30,52,21,55,11,66,5,85,3,104,5,114,12,111,16,102,10,84,8,68,10,59,15,58,20,62,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a1cdfdde77d7b9671081ed391edb6eae9_icgraph.png" border="0" usemap="#aclassDrawable_a1cdfdde77d7b9671081ed391edb6eae9_icgraph" alt=""/></div>
+<map name="aclassDrawable_a1cdfdde77d7b9671081ed391edb6eae9_icgraph" id="aclassDrawable_a1cdfdde77d7b9671081ed391edb6eae9_icgraph">
+<area shape="rect" title="Sets whether the object is animated." alt="" coords="5,29,164,55"/>
+<area shape="poly" title=" " alt="" coords="111,16,102,10,84,8,68,10,59,15,58,20,62,28,57,30,52,21,55,11,66,5,85,3,104,5,114,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addfa4dc7318b128b3b04b5e67c4664ac" name="addfa4dc7318b128b3b04b5e67c4664ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addfa4dc7318b128b3b04b5e67c4664ac">&#9670;&#160;</a></span>setMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setMessage </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the message associated with the drawable object (for text or button). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>New message to display. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00150">150</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_addfa4dc7318b128b3b04b5e67c4664ac_cgraph.png" border="0" usemap="#aclassDrawable_addfa4dc7318b128b3b04b5e67c4664ac_cgraph" alt=""/></div>
+<map name="aclassDrawable_addfa4dc7318b128b3b04b5e67c4664ac_cgraph" id="aclassDrawable_addfa4dc7318b128b3b04b5e67c4664ac_cgraph">
+<area shape="rect" title="Sets the message associated with the drawable object (for text or button)." alt="" coords="5,29,158,55"/>
+<area shape="poly" title=" " alt="" coords="55,30,50,21,53,11,64,5,82,3,100,5,110,12,107,16,98,10,81,8,66,10,58,15,56,20,60,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_addfa4dc7318b128b3b04b5e67c4664ac_icgraph.png" border="0" usemap="#aclassDrawable_addfa4dc7318b128b3b04b5e67c4664ac_icgraph" alt=""/></div>
+<map name="aclassDrawable_addfa4dc7318b128b3b04b5e67c4664ac_icgraph" id="aclassDrawable_addfa4dc7318b128b3b04b5e67c4664ac_icgraph">
+<area shape="rect" title="Sets the message associated with the drawable object (for text or button)." alt="" coords="5,29,158,55"/>
+<area shape="poly" title=" " alt="" coords="107,16,98,10,81,8,66,10,58,15,56,20,60,28,55,30,50,21,53,11,64,5,82,3,100,5,110,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca287153be6a397473ba711db50948db" name="aca287153be6a397473ba711db50948db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca287153be6a397473ba711db50948db">&#9670;&#160;</a></span>setPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setPath </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>newPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the path to the image or font file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newPath</td><td>New file path. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00120">120</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aca287153be6a397473ba711db50948db_cgraph.png" border="0" usemap="#aclassDrawable_aca287153be6a397473ba711db50948db_cgraph" alt=""/></div>
+<map name="aclassDrawable_aca287153be6a397473ba711db50948db_cgraph" id="aclassDrawable_aca287153be6a397473ba711db50948db_cgraph">
+<area shape="rect" title="Sets the path to the image or font file." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="46,30,42,21,45,11,54,5,69,3,84,5,93,12,89,16,82,10,68,8,56,10,49,14,48,20,51,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_aca287153be6a397473ba711db50948db_icgraph.png" border="0" usemap="#aclassDrawable_aca287153be6a397473ba711db50948db_icgraph" alt=""/></div>
+<map name="aclassDrawable_aca287153be6a397473ba711db50948db_icgraph" id="aclassDrawable_aca287153be6a397473ba711db50948db_icgraph">
+<area shape="rect" title="Sets the path to the image or font file." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="89,16,82,10,68,8,56,10,49,14,48,20,51,28,46,30,42,21,45,11,54,5,69,3,84,5,93,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5ffb8fa571fbf4a51aed53dba95dab5" name="ab5ffb8fa571fbf4a51aed53dba95dab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ffb8fa571fbf4a51aed53dba95dab5">&#9670;&#160;</a></span>setRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setRect </td>
+          <td>(</td>
+          <td class="paramtype">sf::IntRect</td>          <td class="paramname"><span class="paramname"><em>newRect</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the rectangle that defines the sprite's frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newRect</td><td>New sf::IntRect for the sprite's frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00125">125</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_cgraph.png" border="0" usemap="#aclassDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_cgraph" alt=""/></div>
+<map name="aclassDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_cgraph" id="aclassDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_cgraph">
+<area shape="rect" title="Sets the rectangle that defines the sprite&#39;s frame." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="46,30,42,21,45,11,54,5,69,3,84,5,93,12,89,16,82,10,68,8,56,10,49,14,48,20,51,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_icgraph.png" border="0" usemap="#aclassDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_icgraph" alt=""/></div>
+<map name="aclassDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_icgraph" id="aclassDrawable_ab5ffb8fa571fbf4a51aed53dba95dab5_icgraph">
+<area shape="rect" title="Sets the rectangle that defines the sprite&#39;s frame." alt="" coords="5,29,132,55"/>
+<area shape="poly" title=" " alt="" coords="89,16,82,10,68,8,56,10,49,14,48,20,51,28,46,30,42,21,45,11,54,5,69,3,84,5,93,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a472411486696b33d5ff607cfe4a05d6b" name="a472411486696b33d5ff607cfe4a05d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472411486696b33d5ff607cfe4a05d6b">&#9670;&#160;</a></span>setScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setScale </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>newScale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the scale factor for the drawable object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newScale</td><td>New scale vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00140">140</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a472411486696b33d5ff607cfe4a05d6b_cgraph.png" border="0" usemap="#aclassDrawable_a472411486696b33d5ff607cfe4a05d6b_cgraph" alt=""/></div>
+<map name="aclassDrawable_a472411486696b33d5ff607cfe4a05d6b_cgraph" id="aclassDrawable_a472411486696b33d5ff607cfe4a05d6b_cgraph">
+<area shape="rect" title="Sets the scale factor for the drawable object." alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="48,30,44,21,47,11,56,5,72,3,88,5,97,12,93,16,86,10,71,8,58,10,51,14,49,20,53,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a472411486696b33d5ff607cfe4a05d6b_icgraph.png" border="0" usemap="#aclassDrawable_a472411486696b33d5ff607cfe4a05d6b_icgraph" alt=""/></div>
+<map name="aclassDrawable_a472411486696b33d5ff607cfe4a05d6b_icgraph" id="aclassDrawable_a472411486696b33d5ff607cfe4a05d6b_icgraph">
+<area shape="rect" title="Sets the scale factor for the drawable object." alt="" coords="5,29,138,55"/>
+<area shape="poly" title=" " alt="" coords="93,16,86,10,71,8,58,10,51,14,49,20,53,28,48,30,44,21,47,11,56,5,72,3,88,5,97,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a22da4cf8f00cd4cfddf4a116a7d852ef" name="a22da4cf8f00cd4cfddf4a116a7d852ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22da4cf8f00cd4cfddf4a116a7d852ef">&#9670;&#160;</a></span>setSizeChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setSizeChar </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>sizeChar</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the size of the text characters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeChar</td><td>New size for text characters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00155">155</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_cgraph.png" border="0" usemap="#aclassDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_cgraph" alt=""/></div>
+<map name="aclassDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_cgraph" id="aclassDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_cgraph">
+<area shape="rect" title="Sets the size of the text characters." alt="" coords="5,29,157,55"/>
+<area shape="poly" title=" " alt="" coords="55,30,50,21,53,11,64,5,81,3,100,5,109,12,106,16,98,10,81,8,65,10,57,15,55,20,60,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_icgraph.png" border="0" usemap="#aclassDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_icgraph" alt=""/></div>
+<map name="aclassDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_icgraph" id="aclassDrawable_a22da4cf8f00cd4cfddf4a116a7d852ef_icgraph">
+<area shape="rect" title="Sets the size of the text characters." alt="" coords="5,29,157,55"/>
+<area shape="poly" title=" " alt="" coords="106,16,98,10,81,8,65,10,57,15,55,20,60,28,55,30,50,21,53,11,64,5,81,3,100,5,109,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a037237ce8a90c4a5d1095578b3b6905f" name="a037237ce8a90c4a5d1095578b3b6905f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a037237ce8a90c4a5d1095578b3b6905f">&#9670;&#160;</a></span>setSizeRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Drawable::setSizeRectangle </td>
+          <td>(</td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>sizeRectangle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the size of the rectangle (for buttons). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeRectangle</td><td>New size for the button rectangle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html#l00160">160</a> of file <a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a037237ce8a90c4a5d1095578b3b6905f_cgraph.png" border="0" usemap="#aclassDrawable_a037237ce8a90c4a5d1095578b3b6905f_cgraph" alt=""/></div>
+<map name="aclassDrawable_a037237ce8a90c4a5d1095578b3b6905f_cgraph" id="aclassDrawable_a037237ce8a90c4a5d1095578b3b6905f_cgraph">
+<area shape="rect" title="Sets the size of the rectangle (for buttons)." alt="" coords="5,29,188,55"/>
+<area shape="poly" title=" " alt="" coords="66,30,60,21,63,11,76,5,97,3,119,5,130,12,128,16,117,10,96,8,77,10,67,15,65,20,70,27"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDrawable_a037237ce8a90c4a5d1095578b3b6905f_icgraph.png" border="0" usemap="#aclassDrawable_a037237ce8a90c4a5d1095578b3b6905f_icgraph" alt=""/></div>
+<map name="aclassDrawable_a037237ce8a90c4a5d1095578b3b6905f_icgraph" id="aclassDrawable_a037237ce8a90c4a5d1095578b3b6905f_icgraph">
+<area shape="rect" title="Sets the size of the rectangle (for buttons)." alt="" coords="5,29,188,55"/>
+<area shape="poly" title=" " alt="" coords="128,16,117,10,96,8,77,10,67,15,65,20,70,27,66,30,60,21,63,11,76,5,97,3,119,5,130,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>client/ECS/Components/<a class="el" href="client_2ECS_2Components_2Drawable_8hpp_source.html">Drawable.hpp</a></li>
+<li>client/ECS/Components/<a class="el" href="client_2ECS_2Components_2Drawable_8cpp_source.html">Drawable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

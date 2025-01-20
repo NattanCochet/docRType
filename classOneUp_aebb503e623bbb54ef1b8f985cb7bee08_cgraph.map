@@ -1,0 +1,9 @@
+<map id="OneUp::activate" name="OneUp::activate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,120,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="168,5,338,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,51,185,33,186,38,116,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="190,55,316,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,65,175,65,175,70,120,70"/>
+<area shape="rect" id="Node000004" href="$classVitality.html#a845675dcec617cf6edc8dcc0e3a734ad" title="Heals the entity by a specified amount." alt="" coords="192,104,314,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,78,186,97,185,102,114,84"/>
+</map>

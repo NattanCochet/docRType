@@ -179,6 +179,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4340c8e2c3782de37f8666badc21e96" id="r_ae4340c8e2c3782de37f8666badc21e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4340c8e2c3782de37f8666badc21e96">reattachedForce</a> () noexcept</td></tr>
 <tr class="memdesc:ae4340c8e2c3782de37f8666badc21e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reattaches the force, making it ready for use again.  <br /></td></tr>
 <tr class="separator:ae4340c8e2c3782de37f8666badc21e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59efa01698107a4e8cfd6258a89aad0" id="r_aa59efa01698107a4e8cfd6258a89aad0"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa59efa01698107a4e8cfd6258a89aad0">HaveIToCheckSkin</a> () const noexcept</td></tr>
+<tr class="separator:aa59efa01698107a4e8cfd6258a89aad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92c0b6bf72cc6a13ba73183f007a051" id="r_af92c0b6bf72cc6a13ba73183f007a051"><td class="memItemLeft" align="right" valign="top">const void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af92c0b6bf72cc6a13ba73183f007a051">checkSkinDone</a> () noexcept</td></tr>
+<tr class="separator:af92c0b6bf72cc6a13ba73183f007a051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a force that can be equipped, upgraded, and used in the game. </p>
@@ -237,6 +241,33 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af92c0b6bf72cc6a13ba73183f007a051" name="af92c0b6bf72cc6a13ba73183f007a051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92c0b6bf72cc6a13ba73183f007a051">&#9670;&#160;</a></span>checkSkinDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void Force::checkSkinDone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00128">128</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a4d45b111fbd35c97911b63e6893d01fc" name="a4d45b111fbd35c97911b63e6893d01fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d45b111fbd35c97911b63e6893d01fc">&#9670;&#160;</a></span>equipped()</h2>
 
@@ -295,7 +326,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the clock used for managing shooting intervals. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the SFML clock that tracks shooting time. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00086">86</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00088">88</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -355,7 +386,7 @@ Public Member Functions</h2></td></tr>
 <p>Checks if the force is currently set to shoot. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the force is set to shoot, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00081">81</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00083">83</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -415,7 +446,7 @@ Public Member Functions</h2></td></tr>
 <p>Gets the initial damage value applied when shooting the force. </p>
 <dl class="section return"><dt>Returns</dt><dd>The initial damage value. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00108">108</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00110">110</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -479,6 +510,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa59efa01698107a4e8cfd6258a89aad0" name="aa59efa01698107a4e8cfd6258a89aad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa59efa01698107a4e8cfd6258a89aad0">&#9670;&#160;</a></span>HaveIToCheckSkin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool Force::HaveIToCheckSkin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00123">123</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aab232fa963fbcc1b71a73ae78d9b549c" name="aab232fa963fbcc1b71a73ae78d9b549c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab232fa963fbcc1b71a73ae78d9b549c">&#9670;&#160;</a></span>haveToShoot()</h2>
 
@@ -505,7 +563,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the force to shoot. </p>
 <p>Activates the shooting behavior for the force. </p>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00069">69</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00071">71</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -585,7 +643,7 @@ Here is the caller graph for this function:</div>
 <p>Checks if the force is currently shooting forward. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the force is shooting forward, false otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00103">103</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00105">105</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -614,7 +672,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reattaches the force, making it ready for use again. </p>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00113">113</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00115">115</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -649,7 +707,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00091">91</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00093">93</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -679,7 +737,7 @@ Here is the caller graph for this function:</div>
 <p>Stops the force from shooting. </p>
 <p>Deactivates the shooting behavior for the force. </p>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00076">76</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00078">78</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -709,7 +767,7 @@ Here is the caller graph for this function:</div>
 <p>Stops the force from shooting forward. </p>
 <p>Deactivates the forward shooting behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00098">98</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00100">100</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -738,7 +796,7 @@ Here is the caller graph for this function:</div>
 
 <p>Un-equips the force, making it no longer active. </p>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00055">55</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00056">56</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>
@@ -768,7 +826,7 @@ Here is the caller graph for this function:</div>
 <p>Upgrades the force's level. </p>
 <p>Increases the force's level to improve its capabilities. </p>
 
-<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00061">61</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Force_8cpp_source.html#l00062">62</a> of file <a class="el" href="Force_8cpp_source.html">Force.cpp</a>.</p>
 
 </div>
 </div>

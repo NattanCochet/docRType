@@ -131,7 +131,6 @@ Public Types</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a787843931c9b1b020eb8d06e65de5d04a207dbe967e4438c9dcf19ac20a868c38">SHOOT</a> = 4
 , <a class="el" href="#a787843931c9b1b020eb8d06e65de5d04aab4e4d6349f771f41ed9c63b8809312f">FORCE</a> = 5
-, <a class="el" href="#a787843931c9b1b020eb8d06e65de5d04aedc63bb348f9f085a430c6a3a29a2583">START</a> = 6
 <br />
  }</td></tr>
 <tr class="memdesc:a787843931c9b1b020eb8d06e65de5d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum for defining the control keys available on the virtual keyboard.  <a href="#a787843931c9b1b020eb8d06e65de5d04">More...</a><br /></td></tr>
@@ -200,8 +199,6 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a787843931c9b1b020eb8d06e65de5d04aab4e4d6349f771f41ed9c63b8809312f" name="a787843931c9b1b020eb8d06e65de5d04aab4e4d6349f771f41ed9c63b8809312f"></a>FORCE&#160;</td><td class="fielddoc"><p>Control for activating a force action. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a787843931c9b1b020eb8d06e65de5d04aedc63bb348f9f085a430c6a3a29a2583" name="a787843931c9b1b020eb8d06e65de5d04aedc63bb348f9f085a430c6a3a29a2583"></a>START&#160;</td><td class="fielddoc"><p>Control for starting the game. </p>
-</td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8hpp_source.html#l00029">29</a> of file <a class="el" href="VirtualKeyBoard_8hpp_source.html">VirtualKeyBoard.hpp</a>.</p>
@@ -249,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <p>Destructor. </p>
 <p>The destructor does not need to perform any special cleanup. </p>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00025">25</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00024">24</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +287,29 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00034">34</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00033">33</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classVirtualKeyBoard_af20d83783c1b08f01d441f413719c603_icgraph.png" border="0" usemap="#aclassVirtualKeyBoard_af20d83783c1b08f01d441f413719c603_icgraph" alt=""/></div>
+<map name="aclassVirtualKeyBoard_af20d83783c1b08f01d441f413719c603_icgraph" id="aclassVirtualKeyBoard_af20d83783c1b08f01d441f413719c603_icgraph">
+<area shape="rect" title="Changes the state of a specific control key." alt="" coords="828,23,1023,64"/>
+<area shape="rect" href="classSystems.html#a7e56bf32ab90bc2dea0b63d893a93e71" title=" " alt="" coords="609,31,780,56"/>
+<area shape="poly" title=" " alt="" coords="812,46,780,46,780,41,812,41"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,31,561,56"/>
+<area shape="poly" title=" " alt="" coords="593,46,561,46,561,41,593,41"/>
+<area shape="rect" href="Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,5,306,31"/>
+<area shape="poly" title=" " alt="" coords="347,31,306,25,307,20,348,26"/>
+<area shape="rect" href="classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,55,315,80"/>
+<area shape="poly" title=" " alt="" coords="348,61,316,65,316,59,348,55"/>
+<area shape="rect" href="server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,5,167,31"/>
+<area shape="poly" title=" " alt="" coords="223,21,168,21,168,16,223,16"/>
+<area shape="rect" href="classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,55,182,80"/>
+<area shape="poly" title=" " alt="" coords="215,70,183,70,183,65,215,65"/>
+<area shape="rect" href="client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,55,55,80"/>
+<area shape="poly" title=" " alt="" coords="87,70,55,70,55,65,87,65"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -320,23 +339,34 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a reference to the internal virtual keyboard state. </p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the <code>unordered_map</code> that holds the state of the controls. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00029">29</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00028">28</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVirtualKeyBoard_a2646b213ad9845f14ceb7ad16bd153c9_icgraph.png" border="0" usemap="#aclassVirtualKeyBoard_a2646b213ad9845f14ceb7ad16bd153c9_icgraph" alt=""/></div>
 <map name="aclassVirtualKeyBoard_a2646b213ad9845f14ceb7ad16bd153c9_icgraph" id="aclassVirtualKeyBoard_a2646b213ad9845f14ceb7ad16bd153c9_icgraph">
-<area shape="rect" title="Retrieves a reference to the internal virtual keyboard state." alt="" coords="584,47,760,88"/>
-<area shape="rect" href="classSystems.html#a617571afcd4b7a8bba5ad8c43b4593fc" title="A system that processes controllable components for player input." alt="" coords="348,5,536,31"/>
-<area shape="poly" title=" " alt="" coords="569,48,505,34,506,29,570,43"/>
-<area shape="rect" href="server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,80,55,106"/>
-<area shape="poly" title=" " alt="" coords="569,91,537,95,394,104,254,104,55,97,55,92,254,99,393,98,536,90,569,86"/>
-<area shape="rect" href="classSystems.html#af8f677e23650593ced2f1744d475b443" title="A system that processes drawable entities for rendering." alt="" coords="355,55,529,80"/>
-<area shape="poly" title=" " alt="" coords="569,70,530,70,530,65,569,65"/>
-<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,55,300,80"/>
-<area shape="poly" title=" " alt="" coords="361,37,268,57,267,51,360,32"/>
-<area shape="poly" title=" " alt="" coords="96,86,55,92,55,87,95,81"/>
-<area shape="poly" title=" " alt="" coords="339,70,300,70,300,65,339,65"/>
+<area shape="rect" title="Retrieves a reference to the internal virtual keyboard state." alt="" coords="845,72,1020,113"/>
+<area shape="rect" href="classSystems.html#a653daa9a48c6df3f7e6264336dcc91ea" title="A system that processes controllable components for player input." alt="" coords="609,5,797,31"/>
+<area shape="poly" title=" " alt="" coords="865,69,796,45,759,34,761,29,798,40,867,64"/>
+<area shape="rect" href="Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,129,306,155"/>
+<area shape="poly" title=" " alt="" coords="874,122,837,135,798,145,727,155,655,160,514,162,392,157,307,149,307,143,393,151,514,157,655,155,727,149,796,140,835,130,872,117"/>
+<area shape="rect" href="classSystems.html#a0dee03c388ca68e8f9cb9ed27809d2f5" title="A system that processes drawable entities for rendering." alt="" coords="616,55,790,80"/>
+<area shape="poly" title=" " alt="" coords="829,84,790,80,791,74,830,79"/>
+<area shape="rect" href="classSystems.html#a7e56bf32ab90bc2dea0b63d893a93e71" title=" " alt="" coords="617,104,788,130"/>
+<area shape="poly" title=" " alt="" coords="830,106,789,111,789,105,829,101"/>
+<area shape="rect" href="classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,80,561,106"/>
+<area shape="poly" title=" " alt="" coords="632,38,609,45,500,82,498,77,608,40,631,33"/>
+<area shape="poly" title=" " alt="" coords="396,113,307,136,306,131,394,108"/>
+<area shape="rect" href="classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,80,315,106"/>
+<area shape="poly" title=" " alt="" coords="348,96,316,96,316,90,348,90"/>
+<area shape="rect" href="server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,129,167,155"/>
+<area shape="poly" title=" " alt="" coords="223,145,168,145,168,140,223,140"/>
+<area shape="rect" href="classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,80,182,106"/>
+<area shape="poly" title=" " alt="" coords="215,96,183,96,183,90,215,90"/>
+<area shape="rect" href="client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,80,55,106"/>
+<area shape="poly" title=" " alt="" coords="87,96,55,96,55,90,87,90"/>
+<area shape="poly" title=" " alt="" coords="600,81,561,85,561,80,600,76"/>
+<area shape="poly" title=" " alt="" coords="601,109,561,105,562,100,602,104"/>
 </map>
 </div>
 
@@ -360,7 +390,7 @@ Here is the caller graph for this function:</div>
 <p>Get if the user is charging a shoot or not. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key shoot is pressed, <code>false</code> otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00054">54</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00053">53</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -392,7 +422,7 @@ Here is the caller graph for this function:</div>
 <p>Get if the user is charging a shoot or not. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key shoot is pressed, <code>false</code> otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00044">44</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00043">43</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -430,7 +460,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the key is pressed, <code>false</code> otherwise. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00039">39</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00038">38</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 
 </div>
 </div>
@@ -457,7 +487,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00059">59</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00058">58</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -494,7 +524,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00049">49</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VirtualKeyBoard_8cpp_source.html#l00048">48</a> of file <a class="el" href="VirtualKeyBoard_8cpp_source.html">VirtualKeyBoard.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

@@ -1,9 +1,0 @@
-<map id="Hitbox::getRotation" name="Hitbox::getRotation">
-<area shape="rect" id="Node000001" title="Gets the rotation of the hitbox." alt="" coords="563,5,694,31"/>
-<area shape="rect" id="Node000002" href="$classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="348,5,515,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="548,21,516,21,516,16,548,16"/>
-<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,21,301,21,301,16,332,16"/>
-<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
-</map>

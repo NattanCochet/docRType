@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>R-Type: client/client.hpp File Reference</title>
+<title>R-Type: server/Network/client.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -101,46 +101,83 @@ $(function(){initNavTree('client_8hpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">client.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;asio.hpp&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;exception&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;iomanip&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;boost/array.hpp&gt;</code><br />
+<code>#include &lt;asio.hpp&gt;</code><br />
+<code>#include &lt;boost/thread.hpp&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="server_2Network_2Message_8hpp_source.html">Message.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="server_2Network_2Locked__queue_8hpp_source.html">Locked_queue.hpp</a>&quot;</code><br />
+<code>#include &lt;SFML/Graphics.hpp&gt;</code><br />
+<code>#include &lt;SFML/System.hpp&gt;</code><br />
+<code>#include &lt;SFML/Window.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for client.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="client_8hpp__incl.png" border="0" usemap="#aclient_2client_8hpp" alt=""/></div>
-<map name="aclient_2client_8hpp" id="aclient_2client_8hpp">
-<area shape="rect" title=" " alt="" coords="163,5,274,31"/>
-<area shape="rect" title=" " alt="" coords="5,79,75,105"/>
-<area shape="poly" title=" " alt="" coords="189,34,85,75,84,70,187,29"/>
-<area shape="rect" title=" " alt="" coords="99,79,157,105"/>
-<area shape="poly" title=" " alt="" coords="205,34,157,72,153,67,202,29"/>
-<area shape="rect" title=" " alt="" coords="180,79,257,105"/>
-<area shape="poly" title=" " alt="" coords="221,31,221,63,216,63,216,31"/>
-<area shape="rect" title=" " alt="" coords="280,79,352,105"/>
-<area shape="poly" title=" " alt="" coords="237,29,289,68,286,72,234,34"/>
-<area shape="rect" title=" " alt="" coords="376,79,442,105"/>
-<area shape="poly" title=" " alt="" coords="252,29,364,71,362,76,250,34"/>
+<div class="center"><img src="client_8hpp__incl.png" border="0" usemap="#aserver_2Network_2client_8hpp" alt=""/></div>
+<map name="aserver_2Network_2client_8hpp" id="aserver_2Network_2client_8hpp">
+<area shape="rect" title=" " alt="" coords="458,5,627,31"/>
+<area shape="rect" title=" " alt="" coords="14,79,63,105"/>
+<area shape="poly" title=" " alt="" coords="458,29,287,47,184,62,79,82,78,76,184,57,286,42,457,23"/>
+<area shape="rect" title=" " alt="" coords="88,79,197,105"/>
+<area shape="poly" title=" " alt="" coords="475,34,213,81,212,75,474,29"/>
+<area shape="rect" title=" " alt="" coords="221,79,291,105"/>
+<area shape="poly" title=" " alt="" coords="495,34,307,81,305,76,493,29"/>
+<area shape="rect" title=" " alt="" coords="315,79,432,105"/>
+<area shape="poly" title=" " alt="" coords="515,34,417,75,415,70,513,29"/>
+<area shape="rect" title=" " alt="" coords="456,79,523,105"/>
+<area shape="poly" title=" " alt="" coords="536,33,510,68,505,65,532,30"/>
+<area shape="rect" href="server_2Network_2Message_8hpp.html" title=" " alt="" coords="547,79,645,105"/>
+<area shape="poly" title=" " alt="" coords="554,30,580,65,576,68,549,33"/>
+<area shape="rect" href="server_2Network_2Locked__queue_8hpp.html" title=" " alt="" coords="670,79,800,105"/>
+<area shape="poly" title=" " alt="" coords="576,29,689,71,687,76,574,34"/>
+<area shape="rect" title=" " alt="" coords="823,79,961,105"/>
+<area shape="poly" title=" " alt="" coords="603,29,818,73,817,78,602,34"/>
+<area shape="rect" title=" " alt="" coords="985,79,1114,105"/>
+<area shape="poly" title=" " alt="" coords="628,28,970,76,969,81,627,34"/>
+<area shape="rect" title=" " alt="" coords="1138,79,1270,105"/>
+<area shape="poly" title=" " alt="" coords="628,24,848,45,1123,76,1123,81,848,51,628,30"/>
+<area shape="rect" title=" " alt="" coords="5,153,131,193"/>
+<area shape="poly" title=" " alt="" coords="547,105,535,107,427,121,342,129,256,138,146,155,145,150,255,133,341,124,427,116,534,102,546,100"/>
+<area shape="rect" title=" " alt="" coords="155,153,280,193"/>
+<area shape="poly" title=" " alt="" coords="547,105,296,155,295,149,546,100"/>
+<area shape="rect" title=" " alt="" coords="304,160,368,186"/>
+<area shape="poly" title=" " alt="" coords="547,107,468,128,381,155,377,157,375,152,379,150,467,123,546,102"/>
+<area shape="rect" title=" " alt="" coords="392,160,453,186"/>
+<area shape="poly" title=" " alt="" coords="570,108,465,155,464,156,462,151,463,150,568,103"/>
+<area shape="rect" title=" " alt="" coords="476,160,537,186"/>
+<area shape="poly" title=" " alt="" coords="584,107,534,152,530,148,581,103"/>
+<area shape="rect" title=" " alt="" coords="560,160,632,186"/>
+<area shape="poly" title=" " alt="" coords="599,105,599,144,593,144,593,105"/>
+<area shape="rect" title=" " alt="" coords="656,160,709,186"/>
+<area shape="poly" title=" " alt="" coords="611,103,660,148,656,151,607,107"/>
+<area shape="rect" title=" " alt="" coords="734,160,791,186"/>
+<area shape="poly" title=" " alt="" coords="623,103,725,151,723,156,621,108"/>
+<area shape="rect" title=" " alt="" coords="815,160,972,186"/>
+<area shape="poly" title=" " alt="" coords="760,103,857,151,854,155,758,108"/>
+<area shape="rect" title=" " alt="" coords="995,160,1034,186"/>
+<area shape="poly" title=" " alt="" coords="801,100,889,119,985,150,985,150,983,155,983,155,888,124,799,105"/>
+<area shape="rect" title=" " alt="" coords="1058,160,1115,186"/>
+<area shape="poly" title=" " alt="" coords="801,101,935,125,1046,150,1050,151,1048,157,1045,155,934,130,800,106"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="client_8hpp__dep__incl.png" border="0" usemap="#aclient_2client_8hppdep" alt=""/></div>
-<map name="aclient_2client_8hppdep" id="aclient_2client_8hppdep">
-<area shape="rect" title=" " alt="" coords="171,5,282,31"/>
-<area shape="rect" href="CommandHandler_8hpp.html" title=" " alt="" coords="5,79,190,105"/>
-<area shape="poly" title=" " alt="" coords="193,41,121,81,118,76,190,37"/>
-<area shape="rect" href="client_8cpp.html" title=" " alt="" coords="106,153,217,178"/>
-<area shape="poly" title=" " alt="" coords="224,47,204,106,174,153,169,151,199,104,219,45"/>
-<area shape="rect" href="server_8cpp.html" title=" " alt="" coords="265,79,386,105"/>
-<area shape="poly" title=" " alt="" coords="257,38,311,76,307,81,254,43"/>
-<area shape="poly" title=" " alt="" coords="120,114,153,150,149,154,116,118"/>
+<div class="center"><img src="client_8hpp__dep__incl.png" border="0" usemap="#aserver_2Network_2client_8hppdep" alt=""/></div>
+<map name="aserver_2Network_2client_8hppdep" id="aserver_2Network_2client_8hppdep">
+<area shape="rect" title=" " alt="" coords="116,5,285,31"/>
+<area shape="rect" href="server_2Network_2Network_8hpp.html" title=" " alt="" coords="5,79,193,105"/>
+<area shape="poly" title=" " alt="" coords="172,43,118,81,115,76,169,38"/>
+<area shape="rect" href="client_8cpp.html" title=" " alt="" coords="217,79,386,105"/>
+<area shape="poly" title=" " alt="" coords="232,38,286,76,283,81,229,43"/>
+<area shape="rect" href="server_2Network_2Network_8cpp.html" title=" " alt="" coords="5,153,193,178"/>
+<area shape="poly" title=" " alt="" coords="102,120,102,152,96,152,96,120"/>
 </map>
 </div>
 </div>
@@ -148,19 +185,54 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUDPClient.html">UDPClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client for sending UDP messages to a server.  <a href="classUDPClient.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNetworkClient.html">NetworkClient</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUDPClient_1_1ClientError.html">UDPClient::ClientError</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception class used for error handling in the UDP client.  <a href="classUDPClient_1_1ClientError.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a67a39e906f9aedc73445394ce9b938f7" id="r_a67a39e906f9aedc73445394ce9b938f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67a39e906f9aedc73445394ce9b938f7">new_entity</a> (<a class="el" href="classWorld.html">World</a> &amp;world, <a class="el" href="classNetworkClient.html">NetworkClient</a> &amp;client, <a class="el" href="structMessage.html">Message</a>&lt; <a class="el" href="server_2Network_2Message_8hpp.html#a48de8d5d355ce728b034636acaf9710f">Protocol</a> &gt; msg, SceneScreen &amp;current_screen)</td></tr>
+<tr class="separator:a67a39e906f9aedc73445394ce9b938f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a67a39e906f9aedc73445394ce9b938f7" name="a67a39e906f9aedc73445394ce9b938f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a39e906f9aedc73445394ce9b938f7">&#9670;&#160;</a></span>new_entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void new_entity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classWorld.html">World</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNetworkClient.html">NetworkClient</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>client</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structMessage.html">Message</a>&lt; <a class="el" href="server_2Network_2Message_8hpp.html#a48de8d5d355ce728b034636acaf9710f">Protocol</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SceneScreen &amp;</td>          <td class="paramname"><span class="paramname"><em>current_screen</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="client_8cpp_source.html#l00152">152</a> of file <a class="el" href="client_8cpp_source.html">client.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="client_8hpp.html">client.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_41e1742e44e2de38b3bc91f993fed282.html">server</a></li><li class="navelem"><a class="el" href="dir_0105a0e57ea99fc7ac9fe67d69343c0a.html">Network</a></li><li class="navelem"><a class="el" href="client_8hpp.html">client.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>

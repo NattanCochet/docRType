@@ -1,5 +1,14 @@
 <map id="server/Logic/include/ClientInWorld.hpp" name="server/Logic/include/ClientInWorld.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,144,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="39,94,110,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,46,77,78,72,78,72,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="155,5,294,46"/>
+<area shape="rect" id="Node000002" href="$ErrorKeyNotFound_8hpp.html" title=" " alt="" coords="5,94,188,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,49,130,88,127,83,191,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="178,241,250,267"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="226,47,218,226,212,225,221,47"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="262,94,320,120"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="243,45,273,80,269,83,239,48"/>
+<area shape="rect" id="Node000003" href="$AError_8hpp.html" title=" " alt="" coords="66,168,148,193"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,119,106,152,100,153,96,120"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="127,192,184,230,182,235,124,196"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="80,241,134,267"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="110,194,110,226,104,226,104,194"/>
 </map>

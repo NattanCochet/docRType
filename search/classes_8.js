@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kamikazeshooter_0',['KamikazeShooter',['../classKamikazeShooter.html',1,'']]]
+  ['iclickable_0',['IClickable',['../classIClickable.html',1,'']]]
 ];

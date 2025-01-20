@@ -1,0 +1,9 @@
+<map id="Controllable::updateControl" name="Controllable::updateControl">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,181,56"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#aed8ec031c5b8cdd7ff7e2010f7a3337c" title=" " alt="" coords="252,5,364,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,30,236,24,237,29,182,36"/>
+<area shape="rect" id="Node000003" href="$classNetwork.html#a6321ce09b62dbaf960529a62e6d9c9cf" title=" " alt="" coords="229,55,387,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,51,214,54,213,60,181,56"/>
+<area shape="rect" id="Node000004" href="$classNetworkClient.html#a58aa98babae92ed89f439fd1e09511ec" title=" " alt="" coords="435,55,572,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,65,420,65,420,70,387,70"/>
+</map>

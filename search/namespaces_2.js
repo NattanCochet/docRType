@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spawnrule_0',['SpawnRule',['../namespaceSpawnRule.html',1,'']]]
+  ['rulegenerator_0',['RuleGenerator',['../namespaceRuleGenerator.html',1,'']]]
 ];

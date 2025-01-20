@@ -1,0 +1,12 @@
+<map id="AlienEmperor::moveBot" name="AlienEmperor::moveBot">
+<area shape="rect" id="Node000001" title="Moves the bot within the world." alt="" coords="5,96,162,121"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="235,5,373,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,92,233,49,234,54,121,97"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="446,121,616,146"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,102,274,100,398,106,458,115,457,120,398,111,274,105,162,107"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="241,121,366,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,115,226,122,226,127,162,120"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#ae83c694e0e30125b850edcc343406b76" title="Removes a component from an entity." alt="" coords="210,170,398,196"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="116,119,211,156,232,163,230,168,209,162,114,124"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="366,167,453,148,454,153,367,172"/>
+</map>

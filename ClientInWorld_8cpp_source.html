@@ -113,104 +113,153 @@ $(function(){initNavTree('ClientInWorld_8cpp_source.html',''); initResizable(tru
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="ClientInWorld_8hpp.html">../include/ClientInWorld.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">   10</a></span><a class="code hl_function" href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">ClientInWorld::ClientInWorld</a>() : _clientID(0), _score(0), _maxScore(-1), _name(<span class="stringliteral">&quot;Unkwown&quot;</span>)</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">   10</a></span><a class="code hl_function" href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">ClientInWorld::ClientInWorld</a>() :</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    _clientID(0), _currentLevel(0), _score(0), _maxScorePerLevel(), _name(<span class="stringliteral">&quot;Unkwown&quot;</span>), _isReady(false), _rowSkin(0)</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a49b10497ff40fdcb130c9fa0e06e0f58">   14</a></span><a class="code hl_function" href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">ClientInWorld::ClientInWorld</a>(std::size_t clientID, std::string name, <span class="keywordtype">int</span> maxScore)</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    : _clientID(clientID), _score(0), _name(name), _maxScore(maxScore)</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classClientInWorld.html#aa91f92c334215c37cd8f82466d3a0433">   15</a></span><a class="code hl_function" href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">ClientInWorld::ClientInWorld</a>(std::size_t clientID, std::string name) :</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    _clientID(clientID), _currentLevel(0), _score(0), _maxScorePerLevel(), _name(name), _isReady(false), _rowSkin(0)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a20842370cf861453f498feae0abcab3b">   19</a></span><a class="code hl_function" href="classClientInWorld.html#a20842370cf861453f498feae0abcab3b">ClientInWorld::~ClientInWorld</a>()</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a20842370cf861453f498feae0abcab3b">   20</a></span><a class="code hl_function" href="classClientInWorld.html#a20842370cf861453f498feae0abcab3b">ClientInWorld::~ClientInWorld</a>()</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8">   23</a></span>std::size_t <a class="code hl_function" href="classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8">ClientInWorld::getClientID</a>()</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">return</span> (this-&gt;_clientID);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8">   24</a></span>std::size_t <a class="code hl_function" href="classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8">ClientInWorld::getClientID</a>()</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> (this-&gt;_clientID);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classClientInWorld.html#aa200f3e93f87e36bf3b1d6d1232a02b1">   28</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classClientInWorld.html#aa200f3e93f87e36bf3b1d6d1232a02b1">ClientInWorld::getScore</a>()</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">return</span> (this-&gt;_score);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classClientInWorld.html#aa200f3e93f87e36bf3b1d6d1232a02b1">   29</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classClientInWorld.html#aa200f3e93f87e36bf3b1d6d1232a02b1">ClientInWorld::getScore</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">return</span> (this-&gt;_score);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a93a5c8b4fe6b53b9fe129f496e32a892">   33</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="classClientInWorld.html#a93a5c8b4fe6b53b9fe129f496e32a892">ClientInWorld::getMaxScore</a>()</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> (this-&gt;_maxScore);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classClientInWorld.html#ae12cf5edba4bd230a4b251ab219ace48">   34</a></span><span class="keyword">const</span> std::size_t &amp;<a class="code hl_function" href="classClientInWorld.html#ae12cf5edba4bd230a4b251ab219ace48">ClientInWorld::getMaxScorePerLevel</a>(<span class="keyword">const</span> std::size_t &amp;level)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (level &gt;= this-&gt;_maxScorePerLevel.size()) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classErrorKeyNotFound.html">ErrorKeyNotFound</a>(std::to_string(level), <span class="stringliteral">&quot;ClientInWorld::getMaxScorePerLevel&quot;</span>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> (this-&gt;_maxScorePerLevel[level]);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a758b4464779a68f8e0b6010819d7e953">   38</a></span>std::string <a class="code hl_function" href="classClientInWorld.html#a758b4464779a68f8e0b6010819d7e953">ClientInWorld::getName</a>()</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> (this-&gt;_name);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a4a382db2a0d0f8cca887ff19fac632f7">   42</a></span><span class="keyword">const</span> std::string &amp;<a class="code hl_function" href="classClientInWorld.html#a4a382db2a0d0f8cca887ff19fac632f7">ClientInWorld::getName</a>() const noexcept</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> (this-&gt;_name);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classClientInWorld.html#aa60acc189a7f0683f38a67f189218554">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#aa60acc189a7f0683f38a67f189218554">ClientInWorld::setClientID</a>(std::size_t newClientID)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    this-&gt;_clientID = newClientID;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classClientInWorld.html#ace5cd0a3a793512e10a8f2f042795953">   47</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#ace5cd0a3a793512e10a8f2f042795953">ClientInWorld::setClientID</a>(<span class="keyword">const</span> std::size_t &amp;newClientID) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    this-&gt;_clientID = newClientID;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classClientInWorld.html#afd1d7b65369f5292143bf061092fa605">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#afd1d7b65369f5292143bf061092fa605">ClientInWorld::setScore</a>(<span class="keywordtype">int</span> newScore)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    this-&gt;_score = newScore;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (this-&gt;_maxScore &gt; 0 &amp;&amp; this-&gt;_score &gt; this-&gt;_maxScore) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        this-&gt;_score = this-&gt;_maxScore;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a6999c81c47bf0d6907f2a33905338630">   52</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#a6999c81c47bf0d6907f2a33905338630">ClientInWorld::addScore</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> scoreToAdd, <span class="keyword">const</span> std::size_t scoringInLevel) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (this-&gt;_currentLevel != scoringInLevel) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        this-&gt;<a class="code hl_function" href="classClientInWorld.html#a35dee5675f429230720d682569088b0b">saveScore</a>();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        this-&gt;_score = 0;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        this-&gt;_currentLevel = scoringInLevel;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    this-&gt;_score += scoreToAdd;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a0fae8e3a70f8d6c5a7ae28844480f015">   56</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#a0fae8e3a70f8d6c5a7ae28844480f015">ClientInWorld::addScore</a>(<span class="keywordtype">int</span> scoreToAdd)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    this-&gt;_score += scoreToAdd;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (this-&gt;_maxScore &gt; 0 &amp;&amp; this-&gt;_score &gt; this-&gt;_maxScore) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        this-&gt;_score = this-&gt;_maxScore;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a35dee5675f429230720d682569088b0b">   62</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#a35dee5675f429230720d682569088b0b">ClientInWorld::saveScore</a>() noexcept</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (this-&gt;_currentLevel &gt;= this-&gt;_maxScorePerLevel.size()) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        this-&gt;_maxScorePerLevel.resize(this-&gt;_currentLevel + 1, 0);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (this-&gt;_score &gt; this-&gt;_maxScorePerLevel.at(this-&gt;_currentLevel)) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        this-&gt;_maxScorePerLevel[this-&gt;_currentLevel] = this-&gt;_score;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classClientInWorld.html#af61ff7381add8eab13688c2dfa5e13b8">   64</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#af61ff7381add8eab13688c2dfa5e13b8">ClientInWorld::setMaxScore</a>(<span class="keywordtype">int</span> newMaxScore)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    this-&gt;_maxScore = newMaxScore;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classClientInWorld.html#ab747e428c462266e7571c05c76377a90">   72</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#ab747e428c462266e7571c05c76377a90">ClientInWorld::setName</a>(<span class="keyword">const</span> std::string &amp;newName) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    this-&gt;_name = newName;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
 </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classClientInWorld.html#af74ed66834883506fe454bdb15ae77d8">   69</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#af74ed66834883506fe454bdb15ae77d8">ClientInWorld::setName</a>(std::string newName)</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    this-&gt;_name = newName;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a729a4b97daa0f46bb086ac00d6b28e38">   77</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#a729a4b97daa0f46bb086ac00d6b28e38">ClientInWorld::clientIsReady</a>() noexcept</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    this-&gt;_isReady = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a048bf2546a94b2fcf53baaa7a0092584">   82</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#a048bf2546a94b2fcf53baaa7a0092584">ClientInWorld::clientIsntReady</a>() noexcept</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    this-&gt;_isReady = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a7aa6e2302a72ca22a805accf6dfaf2eb">   87</a></span><span class="keyword">const</span> <span class="keywordtype">bool</span> &amp;<a class="code hl_function" href="classClientInWorld.html#a7aa6e2302a72ca22a805accf6dfaf2eb">ClientInWorld::isReady</a>() const noexcept</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> (this-&gt;_isReady);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classClientInWorld.html#ab6e82fac5af71dd8624ec5dba5cfb2f4">   92</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#ab6e82fac5af71dd8624ec5dba5cfb2f4">ClientInWorld::resetScore</a>() noexcept</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    this-&gt;_score = 0;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a2c8f9177a387530f0ccd17698fd83784">   97</a></span>std::size_t &amp;<a class="code hl_function" href="classClientInWorld.html#a2c8f9177a387530f0ccd17698fd83784">ClientInWorld::getRowSkin</a>() noexcept</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> (this-&gt;_rowSkin);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classClientInWorld.html#a49ac671a1fd07e431fb6f92ac89fd9ba">  102</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classClientInWorld.html#a49ac671a1fd07e431fb6f92ac89fd9ba">ClientInWorld::setRowSkin</a>(<span class="keyword">const</span> std::size_t rowSkin) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    this-&gt;_rowSkin = rowSkin % 5;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 </div>
 <div class="ttc" id="aClientInWorld_8hpp_html"><div class="ttname"><a href="ClientInWorld_8hpp.html">ClientInWorld.hpp</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_a0fae8e3a70f8d6c5a7ae28844480f015"><div class="ttname"><a href="classClientInWorld.html#a0fae8e3a70f8d6c5a7ae28844480f015">ClientInWorld::addScore</a></div><div class="ttdeci">void addScore(int scoreToAdd)</div><div class="ttdoc">Adds a specified score to the client&#39;s current score.</div><div class="ttdef"><b>Definition</b> <a href="#l00056">ClientInWorld.cpp:56</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_a20842370cf861453f498feae0abcab3b"><div class="ttname"><a href="classClientInWorld.html#a20842370cf861453f498feae0abcab3b">ClientInWorld::~ClientInWorld</a></div><div class="ttdeci">~ClientInWorld()</div><div class="ttdoc">Destructor for ClientInWorld.</div><div class="ttdef"><b>Definition</b> <a href="#l00019">ClientInWorld.cpp:19</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_a724e01150a421daa960e246a5cd3f2c8"><div class="ttname"><a href="classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8">ClientInWorld::getClientID</a></div><div class="ttdeci">std::size_t getClientID()</div><div class="ttdoc">Getter for the client ID.</div><div class="ttdef"><b>Definition</b> <a href="#l00023">ClientInWorld.cpp:23</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_a758b4464779a68f8e0b6010819d7e953"><div class="ttname"><a href="classClientInWorld.html#a758b4464779a68f8e0b6010819d7e953">ClientInWorld::getName</a></div><div class="ttdeci">std::string getName()</div><div class="ttdoc">Getter for the client&#39;s name.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">ClientInWorld.cpp:38</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a048bf2546a94b2fcf53baaa7a0092584"><div class="ttname"><a href="classClientInWorld.html#a048bf2546a94b2fcf53baaa7a0092584">ClientInWorld::clientIsntReady</a></div><div class="ttdeci">void clientIsntReady() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00082">ClientInWorld.cpp:82</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a20842370cf861453f498feae0abcab3b"><div class="ttname"><a href="classClientInWorld.html#a20842370cf861453f498feae0abcab3b">ClientInWorld::~ClientInWorld</a></div><div class="ttdeci">~ClientInWorld()</div><div class="ttdoc">Destructor for ClientInWorld.</div><div class="ttdef"><b>Definition</b> <a href="#l00020">ClientInWorld.cpp:20</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a2c8f9177a387530f0ccd17698fd83784"><div class="ttname"><a href="classClientInWorld.html#a2c8f9177a387530f0ccd17698fd83784">ClientInWorld::getRowSkin</a></div><div class="ttdeci">std::size_t &amp; getRowSkin() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00097">ClientInWorld.cpp:97</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a35dee5675f429230720d682569088b0b"><div class="ttname"><a href="classClientInWorld.html#a35dee5675f429230720d682569088b0b">ClientInWorld::saveScore</a></div><div class="ttdeci">void saveScore() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00062">ClientInWorld.cpp:62</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a49ac671a1fd07e431fb6f92ac89fd9ba"><div class="ttname"><a href="classClientInWorld.html#a49ac671a1fd07e431fb6f92ac89fd9ba">ClientInWorld::setRowSkin</a></div><div class="ttdeci">void setRowSkin(const std::size_t rowSkin) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00102">ClientInWorld.cpp:102</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a4a382db2a0d0f8cca887ff19fac632f7"><div class="ttname"><a href="classClientInWorld.html#a4a382db2a0d0f8cca887ff19fac632f7">ClientInWorld::getName</a></div><div class="ttdeci">const std::string &amp; getName() const noexcept</div><div class="ttdoc">Getter for the client&#39;s name.</div><div class="ttdef"><b>Definition</b> <a href="#l00042">ClientInWorld.cpp:42</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a6999c81c47bf0d6907f2a33905338630"><div class="ttname"><a href="classClientInWorld.html#a6999c81c47bf0d6907f2a33905338630">ClientInWorld::addScore</a></div><div class="ttdeci">void addScore(const int scoreToAdd, const std::size_t scoringInLevel) noexcept</div><div class="ttdoc">Adds a specified score to the client&#39;s current score.</div><div class="ttdef"><b>Definition</b> <a href="#l00052">ClientInWorld.cpp:52</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a724e01150a421daa960e246a5cd3f2c8"><div class="ttname"><a href="classClientInWorld.html#a724e01150a421daa960e246a5cd3f2c8">ClientInWorld::getClientID</a></div><div class="ttdeci">std::size_t getClientID()</div><div class="ttdoc">Getter for the client ID.</div><div class="ttdef"><b>Definition</b> <a href="#l00024">ClientInWorld.cpp:24</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a729a4b97daa0f46bb086ac00d6b28e38"><div class="ttname"><a href="classClientInWorld.html#a729a4b97daa0f46bb086ac00d6b28e38">ClientInWorld::clientIsReady</a></div><div class="ttdeci">void clientIsReady() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00077">ClientInWorld.cpp:77</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_a7aa6e2302a72ca22a805accf6dfaf2eb"><div class="ttname"><a href="classClientInWorld.html#a7aa6e2302a72ca22a805accf6dfaf2eb">ClientInWorld::isReady</a></div><div class="ttdeci">const bool &amp; isReady() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00087">ClientInWorld.cpp:87</a></div></div>
 <div class="ttc" id="aclassClientInWorld_html_a80b7106e20bfaeb5b15bab615af3c43a"><div class="ttname"><a href="classClientInWorld.html#a80b7106e20bfaeb5b15bab615af3c43a">ClientInWorld::ClientInWorld</a></div><div class="ttdeci">ClientInWorld()</div><div class="ttdoc">Default constructor for ClientInWorld.</div><div class="ttdef"><b>Definition</b> <a href="#l00010">ClientInWorld.cpp:10</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_a93a5c8b4fe6b53b9fe129f496e32a892"><div class="ttname"><a href="classClientInWorld.html#a93a5c8b4fe6b53b9fe129f496e32a892">ClientInWorld::getMaxScore</a></div><div class="ttdeci">int getMaxScore()</div><div class="ttdoc">Getter for the client&#39;s maximum score.</div><div class="ttdef"><b>Definition</b> <a href="#l00033">ClientInWorld.cpp:33</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_aa200f3e93f87e36bf3b1d6d1232a02b1"><div class="ttname"><a href="classClientInWorld.html#aa200f3e93f87e36bf3b1d6d1232a02b1">ClientInWorld::getScore</a></div><div class="ttdeci">int getScore()</div><div class="ttdoc">Getter for the current score of the client.</div><div class="ttdef"><b>Definition</b> <a href="#l00028">ClientInWorld.cpp:28</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_aa60acc189a7f0683f38a67f189218554"><div class="ttname"><a href="classClientInWorld.html#aa60acc189a7f0683f38a67f189218554">ClientInWorld::setClientID</a></div><div class="ttdeci">void setClientID(std::size_t newClientID)</div><div class="ttdoc">Setter for the client ID.</div><div class="ttdef"><b>Definition</b> <a href="#l00043">ClientInWorld.cpp:43</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_af61ff7381add8eab13688c2dfa5e13b8"><div class="ttname"><a href="classClientInWorld.html#af61ff7381add8eab13688c2dfa5e13b8">ClientInWorld::setMaxScore</a></div><div class="ttdeci">void setMaxScore(int newMaxScore)</div><div class="ttdoc">Setter for the maximum score of the client.</div><div class="ttdef"><b>Definition</b> <a href="#l00064">ClientInWorld.cpp:64</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_af74ed66834883506fe454bdb15ae77d8"><div class="ttname"><a href="classClientInWorld.html#af74ed66834883506fe454bdb15ae77d8">ClientInWorld::setName</a></div><div class="ttdeci">void setName(std::string newName)</div><div class="ttdoc">Setter for the client&#39;s name.</div><div class="ttdef"><b>Definition</b> <a href="#l00069">ClientInWorld.cpp:69</a></div></div>
-<div class="ttc" id="aclassClientInWorld_html_afd1d7b65369f5292143bf061092fa605"><div class="ttname"><a href="classClientInWorld.html#afd1d7b65369f5292143bf061092fa605">ClientInWorld::setScore</a></div><div class="ttdeci">void setScore(int newScore)</div><div class="ttdoc">Setter for the current score of the client.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">ClientInWorld.cpp:48</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_aa200f3e93f87e36bf3b1d6d1232a02b1"><div class="ttname"><a href="classClientInWorld.html#aa200f3e93f87e36bf3b1d6d1232a02b1">ClientInWorld::getScore</a></div><div class="ttdeci">int getScore()</div><div class="ttdoc">Getter for the current score of the client.</div><div class="ttdef"><b>Definition</b> <a href="#l00029">ClientInWorld.cpp:29</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_ab6e82fac5af71dd8624ec5dba5cfb2f4"><div class="ttname"><a href="classClientInWorld.html#ab6e82fac5af71dd8624ec5dba5cfb2f4">ClientInWorld::resetScore</a></div><div class="ttdeci">void resetScore() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00092">ClientInWorld.cpp:92</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_ab747e428c462266e7571c05c76377a90"><div class="ttname"><a href="classClientInWorld.html#ab747e428c462266e7571c05c76377a90">ClientInWorld::setName</a></div><div class="ttdeci">void setName(const std::string &amp;newName) noexcept</div><div class="ttdoc">Setter for the client&#39;s name.</div><div class="ttdef"><b>Definition</b> <a href="#l00072">ClientInWorld.cpp:72</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_ace5cd0a3a793512e10a8f2f042795953"><div class="ttname"><a href="classClientInWorld.html#ace5cd0a3a793512e10a8f2f042795953">ClientInWorld::setClientID</a></div><div class="ttdeci">void setClientID(const std::size_t &amp;newClientID) noexcept</div><div class="ttdoc">Setter for the client ID.</div><div class="ttdef"><b>Definition</b> <a href="#l00047">ClientInWorld.cpp:47</a></div></div>
+<div class="ttc" id="aclassClientInWorld_html_ae12cf5edba4bd230a4b251ab219ace48"><div class="ttname"><a href="classClientInWorld.html#ae12cf5edba4bd230a4b251ab219ace48">ClientInWorld::getMaxScorePerLevel</a></div><div class="ttdeci">const std::size_t &amp; getMaxScorePerLevel(const std::size_t &amp;level) const</div><div class="ttdoc">Getter for the client&#39;s maximum score.</div><div class="ttdef"><b>Definition</b> <a href="#l00034">ClientInWorld.cpp:34</a></div></div>
+<div class="ttc" id="aclassErrorKeyNotFound_html"><div class="ttname"><a href="classErrorKeyNotFound.html">ErrorKeyNotFound</a></div><div class="ttdoc">Exception class for handling errors when a key is not found.</div><div class="ttdef"><b>Definition</b> <a href="ErrorKeyNotFound_8hpp_source.html#l00020">ErrorKeyNotFound.hpp:21</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,0 +1,5 @@
+<map id="ClientInWorld::addScore" name="ClientInWorld::addScore">
+<area shape="rect" id="Node000001" title="Adds a specified score to the client&#39;s current score." alt="" coords="5,5,165,31"/>
+<area shape="rect" id="Node000002" href="$classClientInWorld.html#a35dee5675f429230720d682569088b0b" title=" " alt="" coords="213,5,379,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+</map>

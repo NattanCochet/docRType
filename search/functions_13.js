@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['what_0',['what',['../classAError.html#ab59278ee4a9a03ce50648d1c66473abb',1,'AError::what()'],['../classUDPServer_1_1Error.html#ac3e298e62ef0dfd9a195ebf81c4a9831',1,'UDPServer::Error::what()'],['../classUDPClient_1_1ClientError.html#a924da7a2534f804a0f8b682196f50095',1,'UDPClient::ClientError::what()']]],
-  ['winsystem_1',['winSystem',['../classSystems.html#a2a4b4686ff86f021c44931f2e577f84a',1,'Systems']]],
-  ['world_2',['World',['../classWorld.html#ab74e693f047056ccffdee70a85936418',1,'World::World(bool client, bool isPublic, int nbrPlayerMax, std::string nameRoom, std::size_t clientID, std::string password=&quot;&quot;)'],['../classWorld.html#afa39d4e6f714a7a3691ac0c656f5e8a8',1,'World::World()']]],
-  ['worldsindex_3',['WorldsIndex',['../classWorldsIndex.html#adc580002a5fd6555aab0134f1be41efc',1,'WorldsIndex']]]
+  ['textbutton_0',['textButton',['../classButtons.html#a7d05f3f58e7a7d2800ccd209926baf95',1,'Buttons']]],
+  ['togglebutton_1',['toggleButton',['../classButtons.html#a542f4f2bbc7c9558de4e52224fab5a4e',1,'Buttons']]],
+  ['tpshooter_2',['TpShooter',['../classTpShooter.html#a99da5e7190cfba089655077918d79364',1,'TpShooter']]]
 ];

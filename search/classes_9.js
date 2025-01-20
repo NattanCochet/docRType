@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['linearshooter_0',['LinearShooter',['../classLinearShooter.html',1,'']]]
+  ['kamikazeshooter_0',['KamikazeShooter',['../classKamikazeShooter.html',1,'']]],
+  ['keybutton_5fs_1',['KeyButton_s',['../structButtons_1_1KeyButton__s.html',1,'Buttons']]]
 ];

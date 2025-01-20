@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['id_0',['id',['../classSpawnRule_1_1EntityType.html#a806f195e7107a0ff3fe1fce2c4531e31',1,'SpawnRule::EntityType']]]
+  ['clientdisconnectedhandlers_0',['clientDisconnectedHandlers',['../classNetworkServer.html#a5c7704aa5c7b54a3ed201124da9d702d',1,'NetworkServer']]],
+  ['clients_1',['clients',['../classNetworkServer.html#ad4d3c8f21d70b2f63b979a9a539f3861',1,'NetworkServer']]]
 ];

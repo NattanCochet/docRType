@@ -110,13 +110,13 @@ $(function(){initNavTree('classControllable.html',''); initResizable(true); });
 <p>A class representing an entity that can be controlled in the system.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Controllable_8hpp_source.html">Controllable.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="server_2Logic_2include_2Components_2Controllable_8hpp_source.html">Controllable.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Controllable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classControllable__coll__graph.png" border="0" usemap="#aControllable_coll__map" alt="Collaboration graph"/></div>
 <map name="aControllable_coll__map" id="aControllable_coll__map">
-<area shape="rect" title="A class representing an entity that can be controlled in the system." alt="" coords="5,5,146,194"/>
+<area shape="rect" title="A class representing an entity that can be controlled in the system." alt="" coords="5,5,146,316"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -143,15 +143,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ec12138c9dfa295ac218657c557687d" id="r_a5ec12138c9dfa295ac218657c557687d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVirtualKeyBoard.html">VirtualKeyBoard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ec12138c9dfa295ac218657c557687d">getVirtualKeyboard</a> () noexcept</td></tr>
 <tr class="memdesc:a5ec12138c9dfa295ac218657c557687d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the virtual keyboard associated with the controllable entity.  <br /></td></tr>
 <tr class="separator:a5ec12138c9dfa295ac218657c557687d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8291f154f1879ceeb9644a7cb8cc575" id="r_ae8291f154f1879ceeb9644a7cb8cc575"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8291f154f1879ceeb9644a7cb8cc575">getSpeed</a> () const noexcept</td></tr>
+<tr class="separator:ae8291f154f1879ceeb9644a7cb8cc575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f14cac3e8b877c65d8aae0fb85ac32" id="r_a71f14cac3e8b877c65d8aae0fb85ac32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f14cac3e8b877c65d8aae0fb85ac32">setSpeed</a> (int newSpeed) noexcept</td></tr>
+<tr class="separator:a71f14cac3e8b877c65d8aae0fb85ac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e40ed73bab4bfe92a2cd14cf55142e3" id="r_a8e40ed73bab4bfe92a2cd14cf55142e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e40ed73bab4bfe92a2cd14cf55142e3">Controllable</a> ()</td></tr>
+<tr class="memdesc:a8e40ed73bab4bfe92a2cd14cf55142e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class.  <br /></td></tr>
+<tr class="separator:a8e40ed73bab4bfe92a2cd14cf55142e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d14f63552c57bea7cba7e26c744bd40" id="r_a1d14f63552c57bea7cba7e26c744bd40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d14f63552c57bea7cba7e26c744bd40">~Controllable</a> ()</td></tr>
+<tr class="memdesc:a1d14f63552c57bea7cba7e26c744bd40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class.  <br /></td></tr>
+<tr class="separator:a1d14f63552c57bea7cba7e26c744bd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3816894f69343d8dc8ee5cf556609c8d" id="r_a3816894f69343d8dc8ee5cf556609c8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3816894f69343d8dc8ee5cf556609c8d">updateControl</a> (<a class="el" href="classWorld.html">World</a> &amp;world, sf::Keyboard::Key key, bool pressed, std::size_t index, <a class="el" href="classNetwork.html">Network</a> *network)</td></tr>
+<tr class="separator:a3816894f69343d8dc8ee5cf556609c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573cebafa78df19dca7831f6bc4144d8" id="r_a573cebafa78df19dca7831f6bc4144d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a573cebafa78df19dca7831f6bc4144d8">changePosition</a> (<a class="el" href="classPosition.html">Position</a> &amp;pos)</td></tr>
+<tr class="separator:a573cebafa78df19dca7831f6bc4144d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing an entity that can be controlled in the system. </p>
-<p>The <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class holds the client ID and provides methods to get and set it. This class can be used for controlling entities like players or other interactive objects. </p>
+<p>Base class representing objects that can be controlled.</p>
+<p>The <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class holds the client ID and provides methods to get and set it. This class can be used for controlling entities like players or other interactive objects.</p>
+<p>This class serves as a base class for objects that can be controlled within the game, though it does not define specific control mechanisms. It can be extended by other classes that define more concrete control behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8hpp_source.html#l00027">27</a> of file <a class="el" href="Controllable_8hpp_source.html">Controllable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2Components_2Controllable_8hpp_source.html#l00027">27</a> of file <a class="el" href="server_2Logic_2include_2Components_2Controllable_8hpp_source.html">Controllable.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0df18d4543cb98fdec19e4c9ff3985ff" name="a0df18d4543cb98fdec19e4c9ff3985ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0df18d4543cb98fdec19e4c9ff3985ff">&#9670;&#160;</a></span>Controllable()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df18d4543cb98fdec19e4c9ff3985ff">&#9670;&#160;</a></span>Controllable() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,12 +195,12 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00010">10</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00010">10</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a1d14f63552c57bea7cba7e26c744bd40" name="a1d14f63552c57bea7cba7e26c744bd40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d14f63552c57bea7cba7e26c744bd40">&#9670;&#160;</a></span>~Controllable()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d14f63552c57bea7cba7e26c744bd40">&#9670;&#160;</a></span>~Controllable() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,11 +217,82 @@ Public Member Functions</h2></td></tr>
 <p>Destructor for the <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class. </p>
 <p>Cleans up the resources used by the <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00015">15</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00015">15</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8e40ed73bab4bfe92a2cd14cf55142e3" name="a8e40ed73bab4bfe92a2cd14cf55142e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e40ed73bab4bfe92a2cd14cf55142e3">&#9670;&#160;</a></span>Controllable() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Controllable::Controllable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor for the <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html#l00010">10</a> of file <a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1d14f63552c57bea7cba7e26c744bd40" name="a1d14f63552c57bea7cba7e26c744bd40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d14f63552c57bea7cba7e26c744bd40">&#9670;&#160;</a></span>~Controllable() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Controllable::~Controllable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor for the <a class="el" href="classControllable.html" title="A class representing an entity that can be controlled in the system.">Controllable</a> class. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a573cebafa78df19dca7831f6bc4144d8" name="a573cebafa78df19dca7831f6bc4144d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573cebafa78df19dca7831f6bc4144d8">&#9670;&#160;</a></span>changePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controllable::changePosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPosition.html">Position</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html#l00036">36</a> of file <a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classControllable_a573cebafa78df19dca7831f6bc4144d8_cgraph.png" border="0" usemap="#aclassControllable_a573cebafa78df19dca7831f6bc4144d8_cgraph" alt=""/></div>
+<map name="aclassControllable_a573cebafa78df19dca7831f6bc4144d8_cgraph" id="aclassControllable_a573cebafa78df19dca7831f6bc4144d8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,190,56"/>
+<area shape="rect" href="classPosition.html#abeb42e349764f30df958b993d27bd120" title="Gets the current position of the object." alt="" coords="238,5,377,31"/>
+<area shape="poly" title=" " alt="" coords="190,30,222,26,223,31,191,35"/>
+<area shape="rect" href="classPosition.html#affd39c338251cba5fd2b24b11a315099" title="Sets the current position to a new value." alt="" coords="238,55,377,80"/>
+<area shape="poly" title=" " alt="" coords="191,51,223,55,222,60,190,57"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="abf397cb849a614c659bee0fdb8357ddf" name="abf397cb849a614c659bee0fdb8357ddf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf397cb849a614c659bee0fdb8357ddf">&#9670;&#160;</a></span>getClientID()</h2>
 
@@ -233,7 +320,7 @@ Public Member Functions</h2></td></tr>
 <p>This method returns the client ID associated with the controllable entity.</p>
 <dl class="section return"><dt>Returns</dt><dd>The client ID. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00019">19</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00019">19</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
 
 </div>
 </div>
@@ -264,7 +351,34 @@ Public Member Functions</h2></td></tr>
 <p>This method returns whether the entity is a player or not.</p>
 <dl class="section return"><dt>Returns</dt><dd>A boolean indicating whether the entity is a player. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00029">29</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00029">29</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae8291f154f1879ceeb9644a7cb8cc575" name="ae8291f154f1879ceeb9644a7cb8cc575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8291f154f1879ceeb9644a7cb8cc575">&#9670;&#160;</a></span>getSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Controllable::getSpeed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00044">44</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
 
 </div>
 </div>
@@ -295,7 +409,7 @@ Public Member Functions</h2></td></tr>
 <p>This method returns a reference to the virtual keyboard of the entity.</p>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the <a class="el" href="classVirtualKeyBoard.html" title="Represents a virtual keyboard for controlling game actions.">VirtualKeyBoard</a> object. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00039">39</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00039">39</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
 
 </div>
 </div>
@@ -331,7 +445,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00024">24</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00024">24</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
 
 </div>
 </div>
@@ -367,13 +481,104 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Controllable_8cpp_source.html#l00034">34</a> of file <a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00034">34</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a71f14cac3e8b877c65d8aae0fb85ac32" name="a71f14cac3e8b877c65d8aae0fb85ac32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f14cac3e8b877c65d8aae0fb85ac32">&#9670;&#160;</a></span>setSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controllable::setSpeed </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newSpeed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html#l00049">49</a> of file <a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classControllable_a71f14cac3e8b877c65d8aae0fb85ac32_icgraph.png" border="0" usemap="#aclassControllable_a71f14cac3e8b877c65d8aae0fb85ac32_icgraph" alt=""/></div>
+<map name="aclassControllable_a71f14cac3e8b877c65d8aae0fb85ac32_icgraph" id="aclassControllable_a71f14cac3e8b877c65d8aae0fb85ac32_icgraph">
+<area shape="rect" title=" " alt="" coords="164,5,314,31"/>
+<area shape="rect" href="classSpeed.html#a27a1edbcf7a52539cf82354bb6c26488" title=" " alt="" coords="5,5,116,31"/>
+<area shape="poly" title=" " alt="" coords="148,21,116,21,116,16,148,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3816894f69343d8dc8ee5cf556609c8d" name="a3816894f69343d8dc8ee5cf556609c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3816894f69343d8dc8ee5cf556609c8d">&#9670;&#160;</a></span>updateControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controllable::updateControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classWorld.html">World</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>world</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Keyboard::Key</td>          <td class="paramname"><span class="paramname"><em>key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>pressed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNetwork.html">Network</a> *</td>          <td class="paramname"><span class="paramname"><em>network</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html#l00024">24</a> of file <a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classControllable_a3816894f69343d8dc8ee5cf556609c8d_cgraph.png" border="0" usemap="#aclassControllable_a3816894f69343d8dc8ee5cf556609c8d_cgraph" alt=""/></div>
+<map name="aclassControllable_a3816894f69343d8dc8ee5cf556609c8d_cgraph" id="aclassControllable_a3816894f69343d8dc8ee5cf556609c8d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,181,56"/>
+<area shape="rect" href="classWorld.html#aed8ec031c5b8cdd7ff7e2010f7a3337c" title=" " alt="" coords="252,5,364,31"/>
+<area shape="poly" title=" " alt="" coords="181,30,236,24,237,29,182,36"/>
+<area shape="rect" href="classNetwork.html#a6321ce09b62dbaf960529a62e6d9c9cf" title=" " alt="" coords="229,55,387,80"/>
+<area shape="poly" title=" " alt="" coords="182,51,214,54,213,60,181,56"/>
+<area shape="rect" href="classNetworkClient.html#a58aa98babae92ed89f439fd1e09511ec" title=" " alt="" coords="435,55,572,80"/>
+<area shape="poly" title=" " alt="" coords="387,65,420,65,420,70,387,70"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>server/Logic/include/Components/<a class="el" href="Controllable_8hpp_source.html">Controllable.hpp</a></li>
-<li>server/Logic/src/Components/<a class="el" href="Controllable_8cpp_source.html">Controllable.cpp</a></li>
+<li>server/Logic/include/Components/<a class="el" href="server_2Logic_2include_2Components_2Controllable_8hpp_source.html">Controllable.hpp</a></li>
+<li>client/ECS/Components/<a class="el" href="client_2ECS_2Components_2Controllable_8hpp_source.html">Controllable.hpp</a></li>
+<li>server/Logic/src/Components/<a class="el" href="server_2Logic_2src_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a></li>
+<li>client/ECS/Components/<a class="el" href="client_2ECS_2Components_2Controllable_8cpp_source.html">Controllable.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,7 @@
+<map id="World::setRoomIndex" name="World::setRoomIndex">
+<area shape="rect" id="Node000001" title=" " alt="" coords="204,31,347,56"/>
+<area shape="rect" id="Node000002" href="$classNetwork.html#acafeede4dc2aaccfb682e9205e749316" title=" " alt="" coords="13,5,148,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,35,147,30,148,24,189,30"/>
+<area shape="rect" id="Node000003" href="$classNetwork.html#ac73e26b6db568c9016e5e7ff23e484c5" title=" " alt="" coords="5,55,156,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,57,156,61,156,56,188,52"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="Systems::winSystem" name="Systems::winSystem">
+<area shape="rect" id="Node000001" title="A system that checks if the player has won the game." alt="" coords="5,207,148,232"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="213,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,205,95,172,119,127,152,81,194,41,203,36,206,40,197,46,156,84,123,130,100,174,85,207"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a5b6ce9e7efb461aea8c14ad15b65b324" title=" " alt="" coords="211,55,385,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,204,132,160,162,135,194,112,216,100,219,105,197,116,165,139,136,164,92,208"/>
+<area shape="rect" id="Node000004" href="$classMyClock.html#a3fef18ee0e8fca49bfa18fb7e1edafe5" title=" " alt="" coords="688,276,859,302"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="95,204,139,177,195,156,252,144,297,142,343,146,401,156,496,178,588,208,669,239,732,267,730,272,667,244,586,213,494,183,399,161,342,151,297,147,253,150,196,161,142,182,98,208"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#add9421c81021d7482cc5024581f17d99" title=" " alt="" coords="213,170,383,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="148,207,197,201,197,206,149,213"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="235,235,360,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="149,226,220,235,219,240,148,231"/>
+<area shape="rect" id="Node000007" href="$classWorld.html#a044dc68d239226dc2c82e538f3128c37" title=" " alt="" coords="196,284,400,310"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="105,230,147,251,197,270,218,277,217,282,195,275,145,256,102,235"/>
+<area shape="rect" id="Node000008" href="$classWorld.html#ac4e51ed963c5be5e2aa2b0613a02a580" title="Reset the boolean to indicates if the world if finished or not." alt="" coords="213,333,383,359"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="91,231,135,275,164,299,197,320,209,325,206,330,194,325,161,304,131,279,87,235"/>
+<area shape="rect" id="Node000011" href="$classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6" title=" " alt="" coords="211,383,385,408"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="87,232,127,298,159,337,197,369,205,374,202,378,194,374,155,341,122,301,82,234"/>
+<area shape="rect" id="Node000009" href="$classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="451,268,637,309"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="356,330,438,311,440,316,357,335"/>
+<area shape="rect" id="Node000010" href="$classNetworkServer.html#a8856d4faf603687663d39bdcfc656f85" title=" " alt="" coords="448,333,640,359"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="383,344,432,344,432,349,383,349"/>
+<area shape="rect" id="Node000012" href="$classMyClock.html#a1c5df76e56c7ca9796b49eb6f1fef5e9" title=" " alt="" coords="488,383,600,408"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="385,393,472,393,472,398,385,398"/>
+<area shape="rect" id="Node000013" href="$classMyClock.html#a5dfb974c7c0a8a4cd547239e1973fa91" title=" " alt="" coords="487,432,601,458"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="366,406,472,428,471,433,365,412"/>
+<area shape="poly" id="edge13_Node000013_Node000004" title=" " alt="" coords="601,433,639,418,673,395,705,367,752,312,756,316,708,370,677,399,642,423,603,438"/>
+</map>

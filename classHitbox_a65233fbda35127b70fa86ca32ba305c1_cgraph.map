@@ -1,5 +1,0 @@
-<map id="Hitbox::setIsInPlayerTeams" name="Hitbox::setIsInPlayerTeams">
-<area shape="rect" id="Node000001" title="Sets the player collaboration boolean." alt="" coords="5,5,186,31"/>
-<area shape="rect" id="Node000002" href="$classHitbox.html#a4e8d1c4fb0941975ea6c480341846e3d" title="Checks if the hitbox is friendly." alt="" coords="234,5,395,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,16,218,16,218,21,186,21"/>
-</map>

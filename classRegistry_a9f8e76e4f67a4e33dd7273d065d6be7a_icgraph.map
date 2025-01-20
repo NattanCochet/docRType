@@ -1,18 +1,31 @@
 <map id="Registry::kill_entity" name="Registry::kill_entity">
-<area shape="rect" id="Node000001" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="614,80,743,106"/>
-<area shape="rect" id="Node000002" href="$classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="374,5,541,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="637,75,565,45,528,34,529,29,567,40,639,70"/>
-<area shape="rect" id="Node000005" href="$classSystems.html#a77fd1819a1530ccf9dd906f7de620478" title="A system that processes projectiles and their collisions." alt="" coords="369,55,545,80"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="599,86,545,80,546,75,599,81"/>
-<area shape="rect" id="Node000006" href="$classSystems.html#a80182fa6962b0cd501c677beea7d87bc" title="A system that handles spawning of entities after their death." alt="" coords="348,104,566,130"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="599,104,567,108,567,102,599,99"/>
-<area shape="rect" id="Node000007" href="$classSystems.html#a61384d19199030b0a1384d646db68c3b" title="A system that processes the vitality components of entities." alt="" coords="378,153,537,179"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="638,115,567,145,529,155,528,150,565,140,636,110"/>
-<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,80,300,106"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,38,349,45,238,82,237,77,347,40,375,32"/>
-<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,80,55,106"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,96,55,96,55,90,87,90"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="354,80,301,86,300,80,353,75"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="332,108,300,105,301,99,333,102"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="375,152,347,145,238,109,240,104,349,140,376,147"/>
+<area shape="rect" id="Node000001" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="875,129,1003,155"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a8659c1c35bf608a979e99e6c0aee30b2" title=" " alt="" coords="639,5,796,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="915,119,876,80,852,61,826,45,796,33,798,28,828,40,855,56,880,76,919,115"/>
+<area shape="rect" id="Node000009" href="$classNetwork.html#aa384d6fa693197ecb9b31b60c10e028f" title=" " alt="" coords="656,55,780,80"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="898,124,826,94,780,81,781,76,828,89,900,120"/>
+<area shape="rect" id="Node000010" href="$classSystems.html#aca2f5681d9b94dd3536cfe43abd641a4" title="A system that destroys entities when too far away from the game screen." alt="" coords="634,104,802,130"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="860,136,802,129,802,124,860,130"/>
+<area shape="rect" id="Node000011" href="$classSystems.html#a3f4356fa7253fde8e8d8a7b12bed7702" title="A system that processes projectiles and their collisions." alt="" coords="630,153,806,179"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="860,153,807,159,806,154,859,148"/>
+<area shape="rect" id="Node000012" href="$classSystems.html#a0bfeddf767a8665bf9acbecb954394f4" title="A system that handles spawning of entities after their death." alt="" coords="609,203,827,228"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="899,165,828,194,790,205,789,199,826,189,897,160"/>
+<area shape="rect" id="Node000013" href="$classSystems.html#a54dd858667e804b138cb4d1dd976d87f" title="A system that processes the vitality components of entities." alt="" coords="638,252,798,278"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="919,169,880,207,855,227,828,243,799,255,797,250,826,238,852,222,876,203,915,165"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,153,561,179"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="625,38,610,45,568,70,530,101,477,155,473,151,527,97,565,66,607,40,623,33"/>
+<area shape="rect" id="Node000004" href="$Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,128,306,154"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="347,153,306,148,307,143,348,148"/>
+<area shape="rect" id="Node000006" href="$classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,177,315,203"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="348,183,316,187,316,182,348,178"/>
+<area shape="rect" id="Node000005" href="$server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,128,167,154"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,144,168,144,168,138,223,138"/>
+<area shape="rect" id="Node000007" href="$classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,177,182,203"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="215,193,183,193,183,188,215,188"/>
+<area shape="rect" id="Node000008" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,177,55,203"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="87,193,55,193,55,188,87,188"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="633,136,533,155,532,150,632,131"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="614,169,561,169,561,164,614,164"/>
+<area shape="poly" id="edge14_Node000012_Node000003" title=" " alt="" coords="632,202,532,182,533,177,633,196"/>
+<area shape="poly" id="edge16_Node000013_Node000003" title=" " alt="" coords="629,250,608,243,539,213,484,182,486,177,541,208,610,238,630,245"/>
 </map>

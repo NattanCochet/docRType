@@ -1,9 +1,24 @@
 <map id="Registry::remove_component" name="Registry::remove_component">
-<area shape="rect" id="Node000001" title="Removes a component from an entity." alt="" coords="547,5,736,31"/>
-<area shape="rect" id="Node000002" href="$classSystems.html#a51a71e856464ec9439405beb21bd8d65" title="A system that processes the force components for entities." alt="" coords="348,5,499,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,21,499,21,499,16,532,16"/>
-<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,5,300,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="332,21,301,21,301,16,332,16"/>
-<area shape="rect" id="Node000004" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,55,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+<area shape="rect" id="Node000001" title="Removes a component from an entity." alt="" coords="828,80,1016,106"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#a8659c1c35bf608a979e99e6c0aee30b2" title=" " alt="" coords="616,5,773,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="871,77,779,45,744,34,746,29,781,40,872,72"/>
+<area shape="rect" id="Node000009" href="$classSystems.html#aa27d61d48efb9b8cc05e90d793cbab0b" title="A system that processes the force components for entities." alt="" coords="619,55,770,80"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="813,83,770,79,771,73,813,78"/>
+<area shape="rect" id="Node000010" href="$classAlienEmperor.html#af18dd53dfdfe82d6319d1c139572983e" title="Moves the bot within the world." alt="" coords="616,104,772,130"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="813,107,773,111,773,106,813,102"/>
+<area shape="rect" id="Node000011" href="$classSpatialDustman.html#a568e0d05e284991b7cf9befc91e2e295" title="Handles movement of the bot in the game world." alt="" coords="609,153,780,179"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="871,114,781,145,746,155,744,150,779,140,870,109"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,31,561,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="601,31,561,35,561,30,600,26"/>
+<area shape="rect" id="Node000004" href="$Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,5,306,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="347,31,306,25,307,20,348,26"/>
+<area shape="rect" id="Node000006" href="$classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,55,315,80"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="348,61,316,65,316,59,348,55"/>
+<area shape="rect" id="Node000005" href="$server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,5,167,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="223,21,168,21,168,16,223,16"/>
+<area shape="rect" id="Node000007" href="$classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,55,182,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="215,70,183,70,183,65,215,65"/>
+<area shape="rect" id="Node000008" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,55,55,80"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="87,70,55,70,55,65,87,65"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="603,61,561,56,561,51,604,55"/>
 </map>

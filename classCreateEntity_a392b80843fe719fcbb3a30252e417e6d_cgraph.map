@@ -1,0 +1,11 @@
+<map id="CreateEntity::createBigShip" name="CreateEntity::createBigShip">
+<area shape="rect" id="Node000001" title="Creates an Big Ship boss." alt="" coords="5,35,184,60"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="232,8,398,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,34,216,30,216,35,184,39"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="240,59,390,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,55,225,59,224,64,183,60"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="446,5,616,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,17,430,17,430,22,398,22"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="462,55,600,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="390,70,446,71,446,77,390,76"/>
+</map>

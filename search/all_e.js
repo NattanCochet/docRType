@@ -1,18 +1,15 @@
 var searchData=
 [
-  ['languages_0',['Programming Languages',['../md_docs_2md__docs_2technologies.html#autotoc_md9',1,'']]],
-  ['left_1',['LEFT',['../classHitbox.html#a0a84c2a7660f7ee53c1075dfd1d7cce2ae87c83074eaa42dea8b9a025b9c247b3',1,'Hitbox::LEFT'],['../classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04a92582fb1f57e627a6e946bdd1f424466',1,'VirtualKeyBoard::LEFT']]],
-  ['levelscaling_2',['levelScaling',['../classSpawnRule_1_1EntityType.html#a3489d5ac319c243933aeb72fd2fb482d',1,'SpawnRule::EntityType']]],
-  ['libraries_3',['Graphical libraries',['../md_docs_2md__docs_2technologies.html#autotoc_md11',1,'']]],
-  ['linear_5fshooter_5fhorizontal_4',['LINEAR_SHOOTER_HORIZONTAL',['../classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a9ff795fd1c0f4c04498e8be3c3c1beae',1,'SpawnRule::Generator']]],
-  ['linear_5fshooter_5fvertical_5',['LINEAR_SHOOTER_VERTICAL',['../classSpawnRule_1_1Generator.html#aab3562cbda5c76472c4bec0a8aa92974a284dc8c63d54fd6df056649134a99f99',1,'SpawnRule::Generator']]],
-  ['linearshooter_6',['LinearShooter',['../classLinearShooter.html',1,'LinearShooter'],['../classLinearShooter.html#abab0aff26cfe019f9aeb423abaed28fd',1,'LinearShooter::LinearShooter()']]],
-  ['linearshooter_2ecpp_7',['LinearShooter.cpp',['../LinearShooter_8cpp.html',1,'']]],
-  ['linearshooter_2ehpp_8',['LinearShooter.hpp',['../LinearShooter_8hpp.html',1,'']]],
-  ['linux_20version_9',['No audio on linux version',['../md_docs_2md__docs_2td__known__issues.html#autotoc_md7',1,'']]],
-  ['loadsprite_10',['LoadSprite',['../classAssets.html#abfe784b31b6d3e7d52fb481d6aed05b6',1,'Assets']]],
-  ['loadsystems_2ecpp_11',['LoadSystems.cpp',['../LoadSystems_8cpp.html',1,'']]],
-  ['loadsystemsinworld_12',['loadSystemsInWorld',['../classSystems.html#a82478e58000d97f5439663a6fe8c1c43',1,'Systems']]],
-  ['loosesystem_13',['looseSystem',['../classSystems.html#a05e6139cdda8e7ba6dbc5ac93a18ea9e',1,'Systems']]],
-  ['loosesystem_2ecpp_14',['LooseSystem.cpp',['../LooseSystem_8cpp.html',1,'']]]
+  ['kamikazeshooter_0',['KamikazeShooter',['../classKamikazeShooter.html',1,'KamikazeShooter'],['../classKamikazeShooter.html#ae79ea2c8ada6e45c626857b06913aab3',1,'KamikazeShooter::KamikazeShooter()']]],
+  ['kamikazeshooter_2ecpp_1',['KamikazeShooter.cpp',['../KamikazeShooter_8cpp.html',1,'']]],
+  ['kamikazeshooter_2ehpp_2',['KamikazeShooter.hpp',['../KamikazeShooter_8hpp.html',1,'']]],
+  ['key_20features_3',['Key Features',['../index.html#autotoc_md2',1,'']]],
+  ['keybutton_4',['KEYBUTTON',['../classClickable.html#acf4d52d5eab6dfde022a5bed74af1bbea3fc87176ca8628300a4932195465a0d8',1,'Clickable']]],
+  ['keybutton_5',['keyButton',['../classButtons.html#a78686400f8b70fc3610b5d4ce11b7497',1,'Buttons']]],
+  ['keybutton_5fs_6',['KeyButton_s',['../structButtons_1_1KeyButton__s.html',1,'Buttons']]],
+  ['keybutton_5ft_7',['KeyButton_t',['../classButtons.html#a300054fc1416b085f73996106dc5cdc8',1,'Buttons']]],
+  ['kill_5fentity_8',['kill_entity',['../classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a',1,'Registry::kill_entity(Entity const &amp;e)'],['../classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a',1,'Registry::kill_entity(Entity const &amp;e)']]],
+  ['killentity_9',['killEntity',['../classNetwork.html#a30623ad0f7094878c1549fa11575adbd',1,'Network::killEntity(Message&lt; Protocol &gt; msg)'],['../classNetwork.html#aa384d6fa693197ecb9b31b60c10e028f',1,'Network::killEntity(World *world, Message&lt; Protocol &gt; msg)']]],
+  ['known_20issues_10',['Known issues',['../md_docs_2md__docs_2td__known__issues.html',1,'']]],
+  ['koanswer_11',['koAnswer',['../classNetwork.html#acafeede4dc2aaccfb682e9205e749316',1,'Network']]]
 ];

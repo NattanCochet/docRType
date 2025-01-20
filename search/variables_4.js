@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['maxthresholdbonus_0',['maxThresholdBonus',['../classSpawnRule_1_1EntityType.html#a74ef573986e6ef481d0a4df345f79980',1,'SpawnRule::EntityType']]],
-  ['minlevel_1',['minLevel',['../classSpawnRule_1_1EntityType.html#affe3d2211292de442010e48a94a2d341',1,'SpawnRule::EntityType']]]
+  ['id_0',['id',['../classSpawnRule_1_1EntityType.html#a806f195e7107a0ff3fe1fce2c4531e31',1,'SpawnRule::EntityType::id'],['../structMessageHeader.html#ab268604c80711362d38e30cea3452ee7',1,'MessageHeader::id']]],
+  ['isactivate_1',['isActivate',['../classHitbox_1_1RectHitbox.html#a788c29611ff40599fc6ecb8297933e2c',1,'Hitbox::RectHitbox']]]
 ];

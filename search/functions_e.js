@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['reattachedforce_0',['reattachedForce',['../classForce.html#ae4340c8e2c3782de37f8666badc21e96',1,'Force']]],
-  ['register_5fcomponents_1',['register_components',['../classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70',1,'Registry']]],
-  ['register_5fsystems_2',['register_systems',['../classRegistry.html#a0352d3443bb37960c776b8fa581d512f',1,'Registry']]],
-  ['remove_5fcomponent_3',['remove_component',['../classRegistry.html#ae83c694e0e30125b850edcc343406b76',1,'Registry']]],
-  ['resetclock_4',['resetClock',['../classDrawable_1_1Drawable.html#a37c4d83f3372508dacbc9d2b8ba31c31',1,'Drawable::Drawable']]],
-  ['resetcollisions_5',['resetCollisions',['../classHitbox.html#a9e3334e2fcfff8a4edd93583a60befc0',1,'Hitbox']]],
-  ['resetfinishedlevel_6',['resetFinishedLevel',['../classWorld.html#a96e02765280312fa865c22fded73afea',1,'World']]],
-  ['restart_7',['restart',['../classMyClock.html#a5dfb974c7c0a8a4cd547239e1973fa91',1,'MyClock']]],
-  ['restartandpause_8',['restartAndPause',['../classMyClock.html#ab059eebba1705a5b6845c49b8a87edb6',1,'MyClock']]]
+  ['ok_5fpacket_0',['ok_packet',['../client_8cpp.html#a67abbe8728c7349883e0391d0a3f73dc',1,'ok_packet(World &amp;world, NetworkClient &amp;client, Message&lt; Protocol &gt; msg, SceneScreen &amp;current_screen):&#160;client.cpp'],['../Client_8cpp.html#a67abbe8728c7349883e0391d0a3f73dc',1,'ok_packet(World &amp;world, NetworkClient &amp;client, Message&lt; Protocol &gt; msg, SceneScreen &amp;current_screen):&#160;Client.cpp']]],
+  ['okanswer_1',['okAnswer',['../classNetwork.html#afc9e86f8f217f5a07fd897e5fdcb7960',1,'Network']]],
+  ['on_5fclient_5fdisconnected_2',['on_client_disconnected',['../classNetworkServer.html#a303484eef3699728be563359948497b3',1,'NetworkServer']]],
+  ['oneup_3',['OneUp',['../classOneUp.html#a8cbd06cee857c45ba1fd3bb52beb41ee',1,'OneUp']]],
+  ['operator_20std_3a_3asize_5ft_4',['operator std::size_t',['../classEntity.html#a3bad6d2f78b9927b87518fce827dab30',1,'Entity::size_t() const'],['../classEntity.html#a3bad6d2f78b9927b87518fce827dab30',1,'Entity::size_t() const']]],
+  ['operator_2a_5',['operator*',['../classVector.html#a624a21bed59c1e8667cf7d5e72d3029c',1,'Vector::operator*(const Vector&lt; T, N &gt; &amp;other) const'],['../classVector.html#ac50981f6fd762bfab3860219d4398508',1,'Vector::operator*(const T coeff) const']]],
+  ['operator_2b_6',['operator+',['../classVector.html#a17e45f26c99c85f13cec27f23b390951',1,'Vector']]],
+  ['operator_2d_7',['operator-',['../classVector.html#a28dbe731041a9e72f59f8114baa61c33',1,'Vector']]],
+  ['operator_3c_3c_8',['operator&lt;&lt;',['../client_2ECS_2ComponentArray_8hpp.html#ac661ced941a6aece957429e8c26f497f',1,'operator&lt;&lt;(std::ostream &amp;os, const ComponentArray&lt; Component &gt; &amp;arr):&#160;ComponentArray.hpp'],['../client_2ECS_2ComponentArray_8hpp.html#a3f90cc39ae0e268726a27bdb4c6cd00b',1,'operator&lt;&lt;(std::ostream &amp;os, const std::optional&lt; T &gt; &amp;opt):&#160;ComponentArray.hpp']]],
+  ['operator_3d_9',['operator=',['../classComponentArray.html#a29e2ec8d0ffe17a351f875fdb9594fbc',1,'ComponentArray::operator=(ComponentArray const &amp;other)'],['../classComponentArray.html#a072202f097367dc297b1d10851f86c54',1,'ComponentArray::operator=(ComponentArray &amp;&amp;other) noexcept'],['../classComponentArray.html#a29e2ec8d0ffe17a351f875fdb9594fbc',1,'ComponentArray::operator=(ComponentArray const &amp;other)'],['../classComponentArray.html#a072202f097367dc297b1d10851f86c54',1,'ComponentArray::operator=(ComponentArray &amp;&amp;other) noexcept']]],
+  ['operator_3d_3d_10',['operator==',['../classClickable.html#a47210b235c34963ffaa7f6c29dee9780',1,'Clickable']]],
+  ['operator_5b_5d_11',['operator[]',['../classComponentArray.html#aedf72995413cfda4677663d8cf13b321',1,'ComponentArray::operator[](size_t idx)'],['../classComponentArray.html#af6b40eb28857dd29880eb3f0a59a8f51',1,'ComponentArray::operator[](size_t idx) const'],['../classVector.html#a654faf8af69c0fe84fe09c9e6232728b',1,'Vector::operator[](std::size_t index)'],['../classVector.html#a4384af6802d6062f57b7de962a89586d',1,'Vector::operator[](std::size_t index) const'],['../classComponentArray.html#aedf72995413cfda4677663d8cf13b321',1,'ComponentArray::operator[](size_t idx)'],['../classComponentArray.html#af6b40eb28857dd29880eb3f0a59a8f51',1,'ComponentArray::operator[](size_t idx) const']]]
 ];

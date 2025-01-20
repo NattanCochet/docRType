@@ -1,0 +1,9 @@
+<map id="server/HandlingParameters.hpp" name="server/HandlingParameters.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="20,5,224,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,63,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,34,62,71,59,67,105,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="86,79,158,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,31,125,63,119,63,119,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="182,79,235,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="138,29,184,67,181,71,135,34"/>
+</map>

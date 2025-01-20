@@ -1,0 +1,13 @@
+<map id="World::getOnlineRegistry" name="World::getOnlineRegistry">
+<area shape="rect" id="Node000001" title=" " alt="" coords="242,104,404,130"/>
+<area shape="rect" id="Node000002" href="$classSystems.html#ac7d957f4e5e174a1f3e2884549429031" title="The clickable system that handles interaction with clickable components." alt="" coords="13,5,186,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,97,244,70,193,45,162,34,163,29,195,40,247,65,291,93"/>
+<area shape="rect" id="Node000003" href="$classSystems.html#aac61658b7f432b6a39aa2d829a001904" title=" " alt="" coords="5,55,194,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,103,160,84,162,78,247,97"/>
+<area shape="rect" id="Node000004" href="$classNetwork.html#a5b5d88b4b51f19a03fa09462431e7d3b" title=" " alt="" coords="27,104,172,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,120,172,120,172,114,226,114"/>
+<area shape="rect" id="Node000005" href="$classSystems.html#add744a11eebec239976335667eabaa3c" title="The drawable system that handles rendering drawable components." alt="" coords="12,153,187,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="247,136,162,155,160,150,246,131"/>
+<area shape="rect" id="Node000006" href="$classNetwork.html#aa384d6fa693197ecb9b31b60c10e028f" title=" " alt="" coords="37,203,162,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="291,141,247,168,195,194,163,205,161,200,193,189,244,164,288,136"/>
+</map>

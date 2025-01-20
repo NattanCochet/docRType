@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['levelscaling_0',['levelScaling',['../classSpawnRule_1_1EntityType.html#a3489d5ac319c243933aeb72fd2fb482d',1,'SpawnRule::EntityType']]]
+  ['header_0',['header',['../structMessage.html#a2ece1b227415b5279f831b7b966afecb',1,'Message']]],
+  ['heighthitbox_1',['heightHitbox',['../classHitbox_1_1RectHitbox.html#a60a95ad2006b15205e1963a4735a4cbd',1,'Hitbox::RectHitbox']]]
 ];

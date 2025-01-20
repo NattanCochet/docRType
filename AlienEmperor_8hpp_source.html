@@ -105,7 +105,7 @@ $(function(){initNavTree('AlienEmperor_8hpp_source.html',''); initResizable(true
 <div class="contents">
 <a href="AlienEmperor_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">** EPITECH PROJECT, 2025</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** B-CPP-500-MAR-5-2-rtype-tom.calogheris [WSL: Ubuntu-22.04]</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">** B-CPP-500-MAR-5-2-rtype-tom.calogheris</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">** File description:</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">** AlienEmperor</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
@@ -117,35 +117,31 @@ $(function(){initNavTree('AlienEmperor_8hpp_source.html',''); initResizable(true
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="ABot_8hpp.html">../ABot.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classAlienEmperor.html">   22</a></span><span class="keyword">class </span><a class="code hl_function" href="classAlienEmperor.html#ab629f195d604522ff0003eb8cc7b01bb">AlienEmperor</a> : <span class="keyword">public</span> <a class="code hl_class" href="classABot.html">ABot</a> {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="classAlienEmperor.html#ab629f195d604522ff0003eb8cc7b01bb">AlienEmperor</a>(<span class="keywordtype">float</span> delay, <span class="keywordtype">float</span> delay2 = 5.0f);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="classAlienEmperor.html#a31dfa478aac463de76c7bc67efc35f25">~AlienEmperor</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classAlienEmperor.html#a16548e534555915dfa145720c935b01d">shootProjectile</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classAlienEmperor.html#af18dd53dfdfe82d6319d1c139572983e">   48</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classAlienEmperor.html#af18dd53dfdfe82d6319d1c139572983e">moveBot</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classAlienEmperor.html">   22</a></span><span class="keyword">class </span><a class="code hl_function" href="classAlienEmperor.html#ab629f195d604522ff0003eb8cc7b01bb">AlienEmperor</a> : <span class="keyword">public</span> <a class="code hl_class" href="classABot.html">ABot</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="classAlienEmperor.html#ab629f195d604522ff0003eb8cc7b01bb">AlienEmperor</a>(<span class="keywordtype">float</span> delay, <span class="keywordtype">float</span> delay2 = 5.0f);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="classAlienEmperor.html#a31dfa478aac463de76c7bc67efc35f25">~AlienEmperor</a>();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAlienEmperor.html#a16548e534555915dfa145720c935b01d">shootProjectile</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAlienEmperor.html#af18dd53dfdfe82d6319d1c139572983e">moveBot</a>(<a class="code hl_class" href="classWorld.html">World</a> &amp;world, std::size_t myIndexEntity) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">float</span> _delayShip;     </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    sf::Clock _shipSpawn; </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">float</span> _delayShip; </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        sf::Clock _shipSpawn; </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">/* !AlienEmperor_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">/* !AlienEmperor_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aABot_8hpp_html"><div class="ttname"><a href="ABot_8hpp.html">ABot.hpp</a></div></div>
 <div class="ttc" id="aclassABot_html"><div class="ttname"><a href="classABot.html">ABot</a></div><div class="ttdoc">Abstract base class for a bot in the game.</div><div class="ttdef"><b>Definition</b> <a href="ABot_8hpp_source.html#l00024">ABot.hpp:24</a></div></div>
-<div class="ttc" id="aclassAlienEmperor_html_a16548e534555915dfa145720c935b01d"><div class="ttname"><a href="classAlienEmperor.html#a16548e534555915dfa145720c935b01d">AlienEmperor::shootProjectile</a></div><div class="ttdeci">void shootProjectile(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Shoots a projectile in the world.</div><div class="ttdef"><b>Definition</b> <a href="AlienEmperor_8cpp_source.html#l00020">AlienEmperor.cpp:20</a></div></div>
+<div class="ttc" id="aclassAlienEmperor_html_a16548e534555915dfa145720c935b01d"><div class="ttname"><a href="classAlienEmperor.html#a16548e534555915dfa145720c935b01d">AlienEmperor::shootProjectile</a></div><div class="ttdeci">void shootProjectile(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Shoots a projectile in the world.</div><div class="ttdef"><b>Definition</b> <a href="AlienEmperor_8cpp_source.html#l00034">AlienEmperor.cpp:34</a></div></div>
 <div class="ttc" id="aclassAlienEmperor_html_a31dfa478aac463de76c7bc67efc35f25"><div class="ttname"><a href="classAlienEmperor.html#a31dfa478aac463de76c7bc67efc35f25">AlienEmperor::~AlienEmperor</a></div><div class="ttdeci">~AlienEmperor()</div><div class="ttdoc">Destructor for AlienEmperor.</div><div class="ttdef"><b>Definition</b> <a href="AlienEmperor_8cpp_source.html#l00016">AlienEmperor.cpp:16</a></div></div>
 <div class="ttc" id="aclassAlienEmperor_html_ab629f195d604522ff0003eb8cc7b01bb"><div class="ttname"><a href="classAlienEmperor.html#ab629f195d604522ff0003eb8cc7b01bb">AlienEmperor::AlienEmperor</a></div><div class="ttdeci">AlienEmperor(float delay, float delay2=5.0f)</div><div class="ttdoc">Constructor for AlienEmperor.</div><div class="ttdef"><b>Definition</b> <a href="AlienEmperor_8cpp_source.html#l00010">AlienEmperor.cpp:10</a></div></div>
-<div class="ttc" id="aclassAlienEmperor_html_af18dd53dfdfe82d6319d1c139572983e"><div class="ttname"><a href="classAlienEmperor.html#af18dd53dfdfe82d6319d1c139572983e">AlienEmperor::moveBot</a></div><div class="ttdeci">void moveBot(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Moves the bot within the world.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">AlienEmperor.hpp:48</a></div></div>
-<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="World_8hpp_source.html#l00058">World.hpp:58</a></div></div>
+<div class="ttc" id="aclassAlienEmperor_html_af18dd53dfdfe82d6319d1c139572983e"><div class="ttname"><a href="classAlienEmperor.html#af18dd53dfdfe82d6319d1c139572983e">AlienEmperor::moveBot</a></div><div class="ttdeci">void moveBot(World &amp;world, std::size_t myIndexEntity) override</div><div class="ttdoc">Moves the bot within the world.</div><div class="ttdef"><b>Definition</b> <a href="AlienEmperor_8cpp_source.html#l00020">AlienEmperor.cpp:20</a></div></div>
+<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="server_2Logic_2include_2ECS_2World_8hpp_source.html#l00060">World.hpp:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

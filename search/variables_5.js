@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['scorebydeath_0',['scoreByDeath',['../classSpawnRule_1_1EntityType.html#a2658260e093f569e289583ba8aa6ad2a',1,'SpawnRule::EntityType']]],
-  ['sizeentity_1',['sizeEntity',['../classSpawnRule_1_1EntityType.html#aa349bda991480d22e1225f47c2b98831',1,'SpawnRule::EntityType']]]
+  ['levelscaling_0',['levelScaling',['../classSpawnRule_1_1EntityType.html#a3489d5ac319c243933aeb72fd2fb482d',1,'SpawnRule::EntityType']]]
 ];

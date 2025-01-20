@@ -1,7 +1,7 @@
 <map id="server/Logic/include/Components/Force.hpp" name="server/Logic/include/Components/Force.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="32,5,191,46"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,48,64,84,60,80,92,45"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="100,94,267,120"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,45,164,80,160,84,127,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="80,5,239,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,172,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,48,112,84,108,80,140,45"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="196,94,267,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,45,212,80,208,84,175,48"/>
 </map>

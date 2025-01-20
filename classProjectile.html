@@ -116,7 +116,7 @@ Collaboration diagram for Projectile:</div>
 <div class="dyncontent">
 <div class="center"><img src="classProjectile__coll__graph.png" border="0" usemap="#aProjectile_coll__map" alt="Collaboration graph"/></div>
 <map name="aProjectile_coll__map" id="aProjectile_coll__map">
-<area shape="rect" title="A class representing a projectile with various properties." alt="" coords="5,5,146,336"/>
+<area shape="rect" title="A class representing a projectile with various properties." alt="" coords="5,5,141,275"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -164,12 +164,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44b7355c8d389e5d56c6b158a38e19bf" id="r_a44b7355c8d389e5d56c6b158a38e19bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44b7355c8d389e5d56c6b158a38e19bf">getStack</a> (void)</td></tr>
 <tr class="memdesc:a44b7355c8d389e5d56c6b158a38e19bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stack count of the projectile.  <br /></td></tr>
 <tr class="separator:a44b7355c8d389e5d56c6b158a38e19bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d1c408aebcb8f8f8f59e4688698bae" id="r_a13d1c408aebcb8f8f8f59e4688698bae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13d1c408aebcb8f8f8f59e4688698bae">addEntityIDAlreadyTouch</a> (const std::size_t &amp;entityID) noexcept</td></tr>
+<tr class="separator:a13d1c408aebcb8f8f8f59e4688698bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9186c84e88953041d7efea11341ac4a" id="r_ab9186c84e88953041d7efea11341ac4a"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9186c84e88953041d7efea11341ac4a">isEntityIDAlreadyTouch</a> (const std::size_t &amp;entityID) noexcept</td></tr>
+<tr class="separator:ab9186c84e88953041d7efea11341ac4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70fe68c59e06d4ac35ef07f66ee42dc3" id="r_a70fe68c59e06d4ac35ef07f66ee42dc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70fe68c59e06d4ac35ef07f66ee42dc3">clearEntityIDAlreadyTouch</a> () noexcept</td></tr>
+<tr class="separator:a70fe68c59e06d4ac35ef07f66ee42dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing a projectile with various properties. </p>
 <p>This class manages the properties of a projectile, including damage, loading time, rebound behavior, charging capability, damage reduction, and damage fall-off. It provides getter and setter methods for each property. </p>
 
-<p class="definition">Definition at line <a class="el" href="Projectile_8hpp_source.html#l00021">21</a> of file <a class="el" href="Projectile_8hpp_source.html">Projectile.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Projectile_8hpp_source.html#l00022">22</a> of file <a class="el" href="Projectile_8hpp_source.html">Projectile.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0668989b4af11105ea235699eff363eb" name="a0668989b4af11105ea235699eff363eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0668989b4af11105ea235699eff363eb">&#9670;&#160;</a></span>Projectile()</h2>
@@ -243,6 +249,60 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a13d1c408aebcb8f8f8f59e4688698bae" name="a13d1c408aebcb8f8f8f59e4688698bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d1c408aebcb8f8f8f59e4688698bae">&#9670;&#160;</a></span>addEntityIDAlreadyTouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Projectile::addEntityIDAlreadyTouch </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>entityID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00088">88</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a70fe68c59e06d4ac35ef07f66ee42dc3" name="a70fe68c59e06d4ac35ef07f66ee42dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fe68c59e06d4ac35ef07f66ee42dc3">&#9670;&#160;</a></span>clearEntityIDAlreadyTouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Projectile::clearEntityIDAlreadyTouch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00103">103</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a674bae09f0b0111a7f487881c4882413" name="a674bae09f0b0111a7f487881c4882413"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a674bae09f0b0111a7f487881c4882413">&#9670;&#160;</a></span>getCanHoldCharge()</h2>
 
@@ -372,6 +432,33 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>The stack count of the projectile. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00083">83</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab9186c84e88953041d7efea11341ac4a" name="ab9186c84e88953041d7efea11341ac4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9186c84e88953041d7efea11341ac4a">&#9670;&#160;</a></span>isEntityIDAlreadyTouch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool Projectile::isEntityIDAlreadyTouch </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>entityID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Projectile_8cpp_source.html#l00093">93</a> of file <a class="el" href="Projectile_8cpp_source.html">Projectile.cpp</a>.</p>
 
 </div>
 </div>

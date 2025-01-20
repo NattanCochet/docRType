@@ -1,0 +1,5 @@
+<map id="World::setRoomName" name="World::setRoomName">
+<area shape="rect" id="Node000001" title="Sets the room name for the game." alt="" coords="188,5,335,31"/>
+<area shape="rect" id="Node000002" href="$classNetwork.html#acafeede4dc2aaccfb682e9205e749316" title=" " alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,21,140,21,140,16,172,16"/>
+</map>

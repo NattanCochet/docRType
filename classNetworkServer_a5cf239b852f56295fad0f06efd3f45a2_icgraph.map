@@ -1,0 +1,6 @@
+<map id="NetworkServer::start_receive" name="NetworkServer::start_receive">
+<area shape="rect" id="Node000001" title=" " alt="" coords="206,5,346,46"/>
+<area shape="rect" id="Node000002" href="$classNetworkServer.html#ada7b21d0cd3795c5eece898215e83a22" title=" " alt="" coords="5,5,158,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,37,158,37,158,32,190,32"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="173,14,205,14,205,20,173,19"/>
+</map>

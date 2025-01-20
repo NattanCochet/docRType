@@ -1,0 +1,8 @@
+<map id="NetworkClient::get_nb_players" name="NetworkClient::get_nb_players">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,22,133,62"/>
+<area shape="rect" id="Node000002" href="$classNetworkClient.html#aeb02cfcb79882eb7a052fbf115216599" title=" " alt="" coords="181,29,372,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,40,165,40,165,45,133,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="242,31,235,21,239,11,253,5,276,3,302,5,315,12,312,17,300,10,276,8,254,10,243,15,240,20,246,27"/>
+<area shape="rect" id="Node000003" href="$classNetworkClient.html#a58aa98babae92ed89f439fd1e09511ec" title=" " alt="" coords="420,29,557,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="372,40,404,40,404,45,372,45"/>
+</map>

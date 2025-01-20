@@ -110,13 +110,13 @@ $(function(){initNavTree('classAssets.html',''); initResizable(true); });
 <p>Manages loading and accessing game assets like sprites.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Assets_8hpp_source.html">Assets.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="server_2Logic_2include_2ECS_2Assets_8hpp_source.html">Assets.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Assets:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAssets__coll__graph.png" border="0" usemap="#aAssets_coll__map" alt="Collaboration graph"/></div>
 <map name="aAssets_coll__map" id="aAssets_coll__map">
-<area shape="rect" title="Manages loading and accessing game assets like sprites." alt="" coords="5,5,100,133"/>
+<area shape="rect" title="Manages loading and accessing game assets like sprites." alt="" coords="5,5,119,295"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -131,18 +131,44 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abfe784b31b6d3e7d52fb481d6aed05b6" id="r_abfe784b31b6d3e7d52fb481d6aed05b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfe784b31b6d3e7d52fb481d6aed05b6">LoadSprite</a> (std::string filePath, std::vector&lt; int &gt; dimensions)</td></tr>
 <tr class="memdesc:abfe784b31b6d3e7d52fb481d6aed05b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a sprite into the assets container.  <br /></td></tr>
 <tr class="separator:abfe784b31b6d3e7d52fb481d6aed05b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a0a8abbe21ee20c27ad6083022c188" id="r_a72a0a8abbe21ee20c27ad6083022c188"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72a0a8abbe21ee20c27ad6083022c188">getSprite</a> (std::string filePath)</td></tr>
-<tr class="memdesc:a72a0a8abbe21ee20c27ad6083022c188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a sprite from the asset container.  <br /></td></tr>
-<tr class="separator:a72a0a8abbe21ee20c27ad6083022c188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18da352a26da689efd2fc49931ecf1a5" id="r_a18da352a26da689efd2fc49931ecf1a5"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18da352a26da689efd2fc49931ecf1a5">getSprite</a> (std::string filePath)</td></tr>
+<tr class="memdesc:a18da352a26da689efd2fc49931ecf1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a sprite from the asset container.  <br /></td></tr>
+<tr class="separator:a18da352a26da689efd2fc49931ecf1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552bf7f55194d9a4469ccc38c6938142" id="r_a552bf7f55194d9a4469ccc38c6938142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a552bf7f55194d9a4469ccc38c6938142">Assets</a> ()</td></tr>
+<tr class="memdesc:a552bf7f55194d9a4469ccc38c6938142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classAssets.html" title="Manages loading and accessing game assets like sprites.">Assets</a> class.  <br /></td></tr>
+<tr class="separator:a552bf7f55194d9a4469ccc38c6938142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47d41f4f674807c271f64ffc1771b7f" id="r_ae47d41f4f674807c271f64ffc1771b7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae47d41f4f674807c271f64ffc1771b7f">~Assets</a> ()</td></tr>
+<tr class="memdesc:ae47d41f4f674807c271f64ffc1771b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classAssets.html" title="Manages loading and accessing game assets like sprites.">Assets</a> class.  <br /></td></tr>
+<tr class="separator:ae47d41f4f674807c271f64ffc1771b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5260e7477ddecd5b44ce1023c9fee3df" id="r_a5260e7477ddecd5b44ce1023c9fee3df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5260e7477ddecd5b44ce1023c9fee3df">loadSprite</a> (std::string filepath, sf::IntRect rect, std::string name, sf::Vector2f scale)</td></tr>
+<tr class="memdesc:a5260e7477ddecd5b44ce1023c9fee3df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a sprite from a file path with the specified rectangle area.  <br /></td></tr>
+<tr class="separator:a5260e7477ddecd5b44ce1023c9fee3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af568c56a6d7f737a1260f51cd563a041" id="r_af568c56a6d7f737a1260f51cd563a041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af568c56a6d7f737a1260f51cd563a041">loadText</a> (std::string filepath, std::string name)</td></tr>
+<tr class="memdesc:af568c56a6d7f737a1260f51cd563a041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads text from a file path.  <br /></td></tr>
+<tr class="separator:af568c56a6d7f737a1260f51cd563a041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfdbf6b1f789afddc9acd51724fcdc5" id="r_a6dfdbf6b1f789afddc9acd51724fcdc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dfdbf6b1f789afddc9acd51724fcdc5">loadRectangle</a> ()</td></tr>
+<tr class="memdesc:a6dfdbf6b1f789afddc9acd51724fcdc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a default rectangle shape.  <br /></td></tr>
+<tr class="separator:a6dfdbf6b1f789afddc9acd51724fcdc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3d1cec5e178eaddc7be5255854f141" id="r_aec3d1cec5e178eaddc7be5255854f141"><td class="memItemLeft" align="right" valign="top">sf::Sprite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec3d1cec5e178eaddc7be5255854f141">getSprite</a> (std::string name)</td></tr>
+<tr class="memdesc:aec3d1cec5e178eaddc7be5255854f141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a sprite from the loaded assets based on its file path.  <br /></td></tr>
+<tr class="separator:aec3d1cec5e178eaddc7be5255854f141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ec77ace18fc5aec24fdf2336ac7360" id="r_ac3ec77ace18fc5aec24fdf2336ac7360"><td class="memItemLeft" align="right" valign="top">sf::Text *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3ec77ace18fc5aec24fdf2336ac7360">getText</a> (std::string name)</td></tr>
+<tr class="memdesc:ac3ec77ace18fc5aec24fdf2336ac7360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves text from the loaded assets based on its file path.  <br /></td></tr>
+<tr class="separator:ac3ec77ace18fc5aec24fdf2336ac7360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5feb2d87afcad45c39a0a893817b6b81" id="r_a5feb2d87afcad45c39a0a893817b6b81"><td class="memItemLeft" align="right" valign="top">sf::RectangleShape *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5feb2d87afcad45c39a0a893817b6b81">getRectangle</a> (std::string name)</td></tr>
+<tr class="memdesc:a5feb2d87afcad45c39a0a893817b6b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a rectangle shape from the loaded assets based on its name.  <br /></td></tr>
+<tr class="separator:a5feb2d87afcad45c39a0a893817b6b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages loading and accessing game assets like sprites. </p>
-<p>This class allows for loading sprites from files and storing them in a map. </p>
+<p>Class to load and manage sprites, text, and rectangles.</p>
+<p>This class allows for loading sprites from files and storing them in a map.</p>
+<p>This class handles the loading of different graphical assets (sprites, texts, rectangles) and provides access methods to retrieve them based on their file paths or names. </p>
 
-<p class="definition">Definition at line <a class="el" href="Assets_8hpp_source.html#l00024">24</a> of file <a class="el" href="Assets_8hpp_source.html">Assets.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2Assets_8hpp_source.html#l00024">24</a> of file <a class="el" href="server_2Logic_2include_2ECS_2Assets_8hpp_source.html">Assets.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a552bf7f55194d9a4469ccc38c6938142" name="a552bf7f55194d9a4469ccc38c6938142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a552bf7f55194d9a4469ccc38c6938142">&#9670;&#160;</a></span>Assets()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a552bf7f55194d9a4469ccc38c6938142">&#9670;&#160;</a></span>Assets() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -158,7 +184,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Default constructor for <a class="el" href="classAssets.html" title="Manages loading and accessing game assets like sprites.">Assets</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="Assets_8cpp_source.html#l00010">10</a> of file <a class="el" href="Assets_8cpp_source.html">Assets.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html#l00010">10</a> of file <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -173,7 +199,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ae47d41f4f674807c271f64ffc1771b7f" name="ae47d41f4f674807c271f64ffc1771b7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae47d41f4f674807c271f64ffc1771b7f">&#9670;&#160;</a></span>~Assets()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47d41f4f674807c271f64ffc1771b7f">&#9670;&#160;</a></span>~Assets() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,19 +216,87 @@ Here is the call graph for this function:</div>
 <p>Destructor for <a class="el" href="classAssets.html" title="Manages loading and accessing game assets like sprites.">Assets</a>. </p>
 <p>Cleans up any loaded assets. </p>
 
-<p class="definition">Definition at line <a class="el" href="Assets_8cpp_source.html#l00015">15</a> of file <a class="el" href="Assets_8cpp_source.html">Assets.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html#l00015">15</a> of file <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a72a0a8abbe21ee20c27ad6083022c188" name="a72a0a8abbe21ee20c27ad6083022c188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72a0a8abbe21ee20c27ad6083022c188">&#9670;&#160;</a></span>getSprite()</h2>
+<a id="a552bf7f55194d9a4469ccc38c6938142" name="a552bf7f55194d9a4469ccc38c6938142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552bf7f55194d9a4469ccc38c6938142">&#9670;&#160;</a></span>Assets() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">sf::Sprite Assets::getSprite </td>
+          <td class="memname">Assets::Assets </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default constructor for the <a class="el" href="classAssets.html" title="Manages loading and accessing game assets like sprites.">Assets</a> class. </p>
+<p>Initializes the internal maps for storing loaded assets. </p>
+
+</div>
+</div>
+<a id="ae47d41f4f674807c271f64ffc1771b7f" name="ae47d41f4f674807c271f64ffc1771b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47d41f4f674807c271f64ffc1771b7f">&#9670;&#160;</a></span>~Assets() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Assets::~Assets </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructor for the <a class="el" href="classAssets.html" title="Manages loading and accessing game assets like sprites.">Assets</a> class. </p>
+<p>Cleans up any dynamically allocated resources. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5feb2d87afcad45c39a0a893817b6b81" name="a5feb2d87afcad45c39a0a893817b6b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5feb2d87afcad45c39a0a893817b6b81">&#9670;&#160;</a></span>getRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::RectangleShape * Assets::getRectangle </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a rectangle shape from the loaded assets based on its name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the rectangle shape. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the corresponding <code>sf::RectangleShape</code> object. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Assets_8cpp_source.html#l00121">121</a> of file <a class="el" href="client_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a18da352a26da689efd2fc49931ecf1a5" name="a18da352a26da689efd2fc49931ecf1a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18da352a26da689efd2fc49931ecf1a5">&#9670;&#160;</a></span>getSprite() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sprite * Assets::getSprite </td>
           <td>(</td>
           <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span></td><td>)</td>
           <td></td>
@@ -225,7 +319,83 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Assets_8cpp_source.html#l00046">46</a> of file <a class="el" href="Assets_8cpp_source.html">Assets.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html#l00046">46</a> of file <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec3d1cec5e178eaddc7be5255854f141" name="aec3d1cec5e178eaddc7be5255854f141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3d1cec5e178eaddc7be5255854f141">&#9670;&#160;</a></span>getSprite() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Sprite * Assets::getSprite </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves a sprite from the loaded assets based on its file path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>The path to the sprite file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the corresponding <code>sf::Sprite</code> object. </dd></dl>
+
+</div>
+</div>
+<a id="ac3ec77ace18fc5aec24fdf2336ac7360" name="ac3ec77ace18fc5aec24fdf2336ac7360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ec77ace18fc5aec24fdf2336ac7360">&#9670;&#160;</a></span>getText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Text * Assets::getText </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves text from the loaded assets based on its file path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>The path to the text file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the corresponding <code>sf::Text</code> object. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Assets_8cpp_source.html#l00112">112</a> of file <a class="el" href="client_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6dfdbf6b1f789afddc9acd51724fcdc5" name="a6dfdbf6b1f789afddc9acd51724fcdc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dfdbf6b1f789afddc9acd51724fcdc5">&#9670;&#160;</a></span>loadRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Assets::loadRectangle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a default rectangle shape. </p>
+<p>Initializes a basic rectangle shape for later use. </p>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Assets_8cpp_source.html#l00097">97</a> of file <a class="el" href="client_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +427,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Assets_8cpp_source.html#l00019">19</a> of file <a class="el" href="Assets_8cpp_source.html">Assets.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html#l00019">19</a> of file <a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -271,9 +441,84 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a5260e7477ddecd5b44ce1023c9fee3df" name="a5260e7477ddecd5b44ce1023c9fee3df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5260e7477ddecd5b44ce1023c9fee3df">&#9670;&#160;</a></span>loadSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Assets::loadSprite </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::IntRect</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Vector2f</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a sprite from a file path with the specified rectangle area. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>The path to the sprite file. </td></tr>
+    <tr><td class="paramname">rect</td><td>The rectangle defining the area to be used from the sprite. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Assets_8cpp_source.html#l00075">75</a> of file <a class="el" href="client_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af568c56a6d7f737a1260f51cd563a041" name="af568c56a6d7f737a1260f51cd563a041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af568c56a6d7f737a1260f51cd563a041">&#9670;&#160;</a></span>loadText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Assets::loadText </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>filepath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads text from a file path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filepath</td><td>The path to the text file. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Assets_8cpp_source.html#l00088">88</a> of file <a class="el" href="client_2ECS_2Assets_8cpp_source.html">Assets.cpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>server/Logic/include/ECS/<a class="el" href="Assets_8hpp_source.html">Assets.hpp</a></li>
-<li>server/Logic/src/ECS/<a class="el" href="Assets_8cpp_source.html">Assets.cpp</a></li>
+<li>server/Logic/include/ECS/<a class="el" href="server_2Logic_2include_2ECS_2Assets_8hpp_source.html">Assets.hpp</a></li>
+<li>client/ECS/<a class="el" href="client_2ECS_2Assets_8hpp_source.html">Assets.hpp</a></li>
+<li>server/Logic/src/ECS/<a class="el" href="server_2Logic_2src_2ECS_2Assets_8cpp_source.html">Assets.cpp</a></li>
+<li>client/ECS/<a class="el" href="client_2ECS_2Assets_8cpp_source.html">Assets.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

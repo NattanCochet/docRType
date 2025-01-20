@@ -1,0 +1,29 @@
+<map id="Systems::positionSystem" name="Systems::positionSystem">
+<area shape="rect" id="Node000001" title="A system that destroys entities when too far away from the game screen." alt="" coords="5,333,173,358"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="258,5,396,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,332,101,281,123,206,141,166,162,126,188,88,219,56,242,41,245,45,222,60,192,92,166,129,145,168,128,208,106,282,95,333"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="242,70,412,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,332,104,288,129,227,167,162,191,132,219,106,227,101,230,105,222,110,195,136,171,165,134,229,109,290,96,333"/>
+<area shape="rect" id="Node000004" href="$classPosition.html#a501e87cf1da5691bfadd4eaee02f3cdc" title="Gets the boolean of the appearing onn the window." alt="" coords="236,120,419,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="94,331,111,299,139,255,175,210,219,170,226,166,229,170,222,174,179,213,143,258,116,301,99,334"/>
+<area shape="rect" id="Node000005" href="$classPosition.html#abeb42e349764f30df958b993d27bd120" title="Gets the current position of the object." alt="" coords="258,185,397,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="98,331,146,276,180,245,219,219,242,210,244,214,222,224,184,250,150,280,102,334"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="265,234,390,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="108,330,157,299,220,269,249,259,250,264,222,273,160,304,111,335"/>
+<area shape="rect" id="Node000007" href="$classHitbox_1_1Hitbox.html#a911b6112aac15c03e95e876c9246525f" title="Gets the rotation of the hitbox." alt="" coords="241,284,414,309"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="154,330,246,310,247,316,155,335"/>
+<area shape="rect" id="Node000008" href="$classHitbox_1_1Hitbox.html#ad646ee20a4c451494d35bb79a90ea6e9" title="Gets the size of the hitbox." alt="" coords="234,333,421,358"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="173,343,218,343,218,348,173,348"/>
+<area shape="rect" id="Node000009" href="$classWorld.html#aabec2b8f296f40aa91b99eae028e2288" title=" " alt="" coords="253,382,402,408"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="155,357,247,376,246,381,154,362"/>
+<area shape="rect" id="Node000010" href="$classHitbox_1_1Hitbox.html#a35a4cc716df94a657b58f9334f1052aa" title="Gets the type of the hitbox." alt="" coords="251,432,404,457"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="111,357,160,387,222,418,240,424,238,429,220,423,157,392,108,361"/>
+<area shape="rect" id="Node000011" href="$classRegistry.html#a9f8e76e4f67a4e33dd7273d065d6be7a" title="Marks an entity as &quot;dead&quot; and removes its components." alt="" coords="263,481,392,506"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="102,357,150,411,184,442,222,467,249,479,247,483,219,472,180,446,146,415,98,361"/>
+<area shape="rect" id="Node000012" href="$classWorld.html#a1a676acd43047c63de405572319cb388" title=" " alt="" coords="221,530,434,556"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="99,358,115,391,142,434,178,479,222,517,230,521,227,526,219,521,174,483,138,437,111,393,94,360"/>
+<area shape="rect" id="Node000013" href="$classPosition.html#ad7e875cf9c4d369a06e9040023ee827c" title="Sets the state of appearing on the window." alt="" coords="236,580,419,621"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="97,358,111,399,137,455,174,515,196,542,222,566,227,570,224,574,219,570,193,546,169,518,132,458,106,401,92,360"/>
+<area shape="rect" id="Node000014" href="$classComponentArray.html#a94967730379ca431f1ec900185c8b874" title="Get the size of the array." alt="" coords="254,645,400,670"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="95,358,105,410,127,484,144,524,165,563,191,599,222,630,241,642,239,647,219,634,187,603,161,566,139,526,122,486,100,411,90,359"/>
+</map>

@@ -1,11 +1,21 @@
 <map id="Position::getPosition" name="Position::getPosition">
-<area shape="rect" id="Node000001" title="Gets the current position of the object." alt="" coords="563,42,703,68"/>
-<area shape="rect" id="Node000002" href="$classSinusoidalShooter.html#a07429c99d7e53a5121ff6d0460d2f999" title="Moves the bot within the game world following a sinusoidal pattern." alt="" coords="366,5,498,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="547,45,498,38,499,33,548,40"/>
-<area shape="rect" id="Node000003" href="$classSystems.html#a687c7b353125f259dc60d1eea10ccd74" title="A system that destroys entities when too far away from the game screen." alt="" coords="348,70,515,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="548,69,516,74,515,69,547,64"/>
-<area shape="rect" id="Node000004" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="103,70,300,96"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="332,86,301,86,301,80,332,80"/>
-<area shape="rect" id="Node000005" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,70,55,96"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,86,55,86,55,80,87,80"/>
+<area shape="rect" id="Node000001" title="Gets the current position of the object." alt="" coords="841,63,980,88"/>
+<area shape="rect" id="Node000002" href="$classControllable.html#a573cebafa78df19dca7831f6bc4144d8" title=" " alt="" coords="609,5,793,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="846,61,750,34,752,29,847,55"/>
+<area shape="rect" id="Node000003" href="$classSinusoidalShooter.html#a07429c99d7e53a5121ff6d0460d2f999" title="Moves the bot within the game world following a sinusoidal pattern." alt="" coords="635,55,767,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="825,78,767,78,767,73,825,73"/>
+<area shape="rect" id="Node000004" href="$classSystems.html#aca2f5681d9b94dd3536cfe43abd641a4" title="A system that destroys entities when too far away from the game screen." alt="" coords="617,120,784,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="847,96,752,122,750,117,846,90"/>
+<area shape="rect" id="Node000005" href="$classSystems.html#a82478e58000d97f5439663a6fe8c1c43" title="Loads all systems into the world." alt="" coords="363,120,561,146"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="602,136,561,136,561,130,602,130"/>
+<area shape="rect" id="Node000006" href="$Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="239,95,306,120"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="347,120,306,115,307,109,348,115"/>
+<area shape="rect" id="Node000008" href="$classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Main game loop that handles the game play." alt="" coords="230,144,315,170"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="348,150,316,154,316,149,348,145"/>
+<area shape="rect" id="Node000007" href="$server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="118,95,167,120"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="223,110,168,110,168,105,223,105"/>
+<area shape="rect" id="Node000009" href="$classGame.html#a66bffb23fb564e9bb3067532c6cc8d4e" title=" " alt="" coords="103,144,182,170"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="215,160,183,160,183,154,215,154"/>
+<area shape="rect" id="Node000010" href="$client_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,144,55,170"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="87,160,55,160,55,154,87,154"/>
 </map>

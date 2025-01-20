@@ -116,7 +116,7 @@ Collaboration diagram for ClientInWorld:</div>
 <div class="dyncontent">
 <div class="center"><img src="classClientInWorld__coll__graph.png" border="0" usemap="#aClientInWorld_coll__map" alt="Collaboration graph"/></div>
 <map name="aClientInWorld_coll__map" id="aClientInWorld_coll__map">
-<area shape="rect" title="Represents a client within the game world, with properties like client ID, score, and name." alt="" coords="5,5,121,295"/>
+<area shape="rect" title="Represents a client within the game world, with properties like client ID, score, and name." alt="" coords="5,5,165,275"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a80b7106e20bfaeb5b15bab615af3c43a" id="r_a80b7106e20bfaeb5b15bab615af3c43a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80b7106e20bfaeb5b15bab615af3c43a">ClientInWorld</a> ()</td></tr>
 <tr class="memdesc:a80b7106e20bfaeb5b15bab615af3c43a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classClientInWorld.html" title="Represents a client within the game world, with properties like client ID, score, and name.">ClientInWorld</a>.  <br /></td></tr>
 <tr class="separator:a80b7106e20bfaeb5b15bab615af3c43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49b10497ff40fdcb130c9fa0e06e0f58" id="r_a49b10497ff40fdcb130c9fa0e06e0f58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49b10497ff40fdcb130c9fa0e06e0f58">ClientInWorld</a> (std::size_t clientID, std::string name=&quot;Unknown&quot;, int maxScore=-1)</td></tr>
-<tr class="memdesc:a49b10497ff40fdcb130c9fa0e06e0f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrized constructor for <a class="el" href="classClientInWorld.html" title="Represents a client within the game world, with properties like client ID, score, and name.">ClientInWorld</a>.  <br /></td></tr>
-<tr class="separator:a49b10497ff40fdcb130c9fa0e06e0f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91f92c334215c37cd8f82466d3a0433" id="r_aa91f92c334215c37cd8f82466d3a0433"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa91f92c334215c37cd8f82466d3a0433">ClientInWorld</a> (std::size_t clientID, std::string name=&quot;Unknown&quot;)</td></tr>
+<tr class="memdesc:aa91f92c334215c37cd8f82466d3a0433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrized constructor for <a class="el" href="classClientInWorld.html" title="Represents a client within the game world, with properties like client ID, score, and name.">ClientInWorld</a>.  <br /></td></tr>
+<tr class="separator:aa91f92c334215c37cd8f82466d3a0433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20842370cf861453f498feae0abcab3b" id="r_a20842370cf861453f498feae0abcab3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20842370cf861453f498feae0abcab3b">~ClientInWorld</a> ()</td></tr>
 <tr class="memdesc:a20842370cf861453f498feae0abcab3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classClientInWorld.html" title="Represents a client within the game world, with properties like client ID, score, and name.">ClientInWorld</a>.  <br /></td></tr>
 <tr class="separator:a20842370cf861453f498feae0abcab3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,33 +137,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa200f3e93f87e36bf3b1d6d1232a02b1" id="r_aa200f3e93f87e36bf3b1d6d1232a02b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa200f3e93f87e36bf3b1d6d1232a02b1">getScore</a> ()</td></tr>
 <tr class="memdesc:aa200f3e93f87e36bf3b1d6d1232a02b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the current score of the client.  <br /></td></tr>
 <tr class="separator:aa200f3e93f87e36bf3b1d6d1232a02b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a5c8b4fe6b53b9fe129f496e32a892" id="r_a93a5c8b4fe6b53b9fe129f496e32a892"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93a5c8b4fe6b53b9fe129f496e32a892">getMaxScore</a> ()</td></tr>
-<tr class="memdesc:a93a5c8b4fe6b53b9fe129f496e32a892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the client's maximum score.  <br /></td></tr>
-<tr class="separator:a93a5c8b4fe6b53b9fe129f496e32a892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758b4464779a68f8e0b6010819d7e953" id="r_a758b4464779a68f8e0b6010819d7e953"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a758b4464779a68f8e0b6010819d7e953">getName</a> ()</td></tr>
-<tr class="memdesc:a758b4464779a68f8e0b6010819d7e953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the client's name.  <br /></td></tr>
-<tr class="separator:a758b4464779a68f8e0b6010819d7e953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa60acc189a7f0683f38a67f189218554" id="r_aa60acc189a7f0683f38a67f189218554"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa60acc189a7f0683f38a67f189218554">setClientID</a> (std::size_t newClientID)</td></tr>
-<tr class="memdesc:aa60acc189a7f0683f38a67f189218554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the client ID.  <br /></td></tr>
-<tr class="separator:aa60acc189a7f0683f38a67f189218554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd1d7b65369f5292143bf061092fa605" id="r_afd1d7b65369f5292143bf061092fa605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd1d7b65369f5292143bf061092fa605">setScore</a> (int newScore)</td></tr>
-<tr class="memdesc:afd1d7b65369f5292143bf061092fa605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the current score of the client.  <br /></td></tr>
-<tr class="separator:afd1d7b65369f5292143bf061092fa605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fae8e3a70f8d6c5a7ae28844480f015" id="r_a0fae8e3a70f8d6c5a7ae28844480f015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fae8e3a70f8d6c5a7ae28844480f015">addScore</a> (int scoreToAdd)</td></tr>
-<tr class="memdesc:a0fae8e3a70f8d6c5a7ae28844480f015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a specified score to the client's current score.  <br /></td></tr>
-<tr class="separator:a0fae8e3a70f8d6c5a7ae28844480f015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af61ff7381add8eab13688c2dfa5e13b8" id="r_af61ff7381add8eab13688c2dfa5e13b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af61ff7381add8eab13688c2dfa5e13b8">setMaxScore</a> (int newMaxScore)</td></tr>
-<tr class="memdesc:af61ff7381add8eab13688c2dfa5e13b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the maximum score of the client.  <br /></td></tr>
-<tr class="separator:af61ff7381add8eab13688c2dfa5e13b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74ed66834883506fe454bdb15ae77d8" id="r_af74ed66834883506fe454bdb15ae77d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af74ed66834883506fe454bdb15ae77d8">setName</a> (std::string newName)</td></tr>
-<tr class="memdesc:af74ed66834883506fe454bdb15ae77d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the client's name.  <br /></td></tr>
-<tr class="separator:af74ed66834883506fe454bdb15ae77d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12cf5edba4bd230a4b251ab219ace48" id="r_ae12cf5edba4bd230a4b251ab219ace48"><td class="memItemLeft" align="right" valign="top">const std::size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae12cf5edba4bd230a4b251ab219ace48">getMaxScorePerLevel</a> (const std::size_t &amp;level) const</td></tr>
+<tr class="memdesc:ae12cf5edba4bd230a4b251ab219ace48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the client's maximum score.  <br /></td></tr>
+<tr class="separator:ae12cf5edba4bd230a4b251ab219ace48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a382db2a0d0f8cca887ff19fac632f7" id="r_a4a382db2a0d0f8cca887ff19fac632f7"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a382db2a0d0f8cca887ff19fac632f7">getName</a> () const noexcept</td></tr>
+<tr class="memdesc:a4a382db2a0d0f8cca887ff19fac632f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the client's name.  <br /></td></tr>
+<tr class="separator:a4a382db2a0d0f8cca887ff19fac632f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5cd0a3a793512e10a8f2f042795953" id="r_ace5cd0a3a793512e10a8f2f042795953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace5cd0a3a793512e10a8f2f042795953">setClientID</a> (const std::size_t &amp;newClientID) noexcept</td></tr>
+<tr class="memdesc:ace5cd0a3a793512e10a8f2f042795953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the client ID.  <br /></td></tr>
+<tr class="separator:ace5cd0a3a793512e10a8f2f042795953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6999c81c47bf0d6907f2a33905338630" id="r_a6999c81c47bf0d6907f2a33905338630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6999c81c47bf0d6907f2a33905338630">addScore</a> (const int scoreToAdd, const std::size_t scoringInLevel) noexcept</td></tr>
+<tr class="memdesc:a6999c81c47bf0d6907f2a33905338630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a specified score to the client's current score.  <br /></td></tr>
+<tr class="separator:a6999c81c47bf0d6907f2a33905338630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35dee5675f429230720d682569088b0b" id="r_a35dee5675f429230720d682569088b0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35dee5675f429230720d682569088b0b">saveScore</a> () noexcept</td></tr>
+<tr class="separator:a35dee5675f429230720d682569088b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e82fac5af71dd8624ec5dba5cfb2f4" id="r_ab6e82fac5af71dd8624ec5dba5cfb2f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6e82fac5af71dd8624ec5dba5cfb2f4">resetScore</a> () noexcept</td></tr>
+<tr class="separator:ab6e82fac5af71dd8624ec5dba5cfb2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab747e428c462266e7571c05c76377a90" id="r_ab747e428c462266e7571c05c76377a90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab747e428c462266e7571c05c76377a90">setName</a> (const std::string &amp;newName) noexcept</td></tr>
+<tr class="memdesc:ab747e428c462266e7571c05c76377a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the client's name.  <br /></td></tr>
+<tr class="separator:ab747e428c462266e7571c05c76377a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729a4b97daa0f46bb086ac00d6b28e38" id="r_a729a4b97daa0f46bb086ac00d6b28e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a729a4b97daa0f46bb086ac00d6b28e38">clientIsReady</a> () noexcept</td></tr>
+<tr class="separator:a729a4b97daa0f46bb086ac00d6b28e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048bf2546a94b2fcf53baaa7a0092584" id="r_a048bf2546a94b2fcf53baaa7a0092584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a048bf2546a94b2fcf53baaa7a0092584">clientIsntReady</a> () noexcept</td></tr>
+<tr class="separator:a048bf2546a94b2fcf53baaa7a0092584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa6e2302a72ca22a805accf6dfaf2eb" id="r_a7aa6e2302a72ca22a805accf6dfaf2eb"><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aa6e2302a72ca22a805accf6dfaf2eb">isReady</a> () const noexcept</td></tr>
+<tr class="separator:a7aa6e2302a72ca22a805accf6dfaf2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8f9177a387530f0ccd17698fd83784" id="r_a2c8f9177a387530f0ccd17698fd83784"><td class="memItemLeft" align="right" valign="top">std::size_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8f9177a387530f0ccd17698fd83784">getRowSkin</a> () noexcept</td></tr>
+<tr class="separator:a2c8f9177a387530f0ccd17698fd83784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ac671a1fd07e431fb6f92ac89fd9ba" id="r_a49ac671a1fd07e431fb6f92ac89fd9ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49ac671a1fd07e431fb6f92ac89fd9ba">setRowSkin</a> (const std::size_t rowSkin) noexcept</td></tr>
+<tr class="separator:a49ac671a1fd07e431fb6f92ac89fd9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a client within the game world, with properties like client ID, score, and name. </p>
 <p>This class is used to store and manage the client's information such as their unique ID, score during the game, maximum score they have achieved, and their name (defaulting to "Unknown"). </p>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8hpp_source.html#l00021">21</a> of file <a class="el" href="ClientInWorld_8hpp_source.html">ClientInWorld.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8hpp_source.html#l00023">23</a> of file <a class="el" href="ClientInWorld_8hpp_source.html">ClientInWorld.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a80b7106e20bfaeb5b15bab615af3c43a" name="a80b7106e20bfaeb5b15bab615af3c43a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80b7106e20bfaeb5b15bab615af3c43a">&#9670;&#160;</a></span>ClientInWorld() <span class="overload">[1/2]</span></h2>
@@ -187,8 +195,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a49b10497ff40fdcb130c9fa0e06e0f58" name="a49b10497ff40fdcb130c9fa0e06e0f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49b10497ff40fdcb130c9fa0e06e0f58">&#9670;&#160;</a></span>ClientInWorld() <span class="overload">[2/2]</span></h2>
+<a id="aa91f92c334215c37cd8f82466d3a0433" name="aa91f92c334215c37cd8f82466d3a0433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa91f92c334215c37cd8f82466d3a0433">&#9670;&#160;</a></span>ClientInWorld() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,12 +209,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Unknown&quot;</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxScore</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span>&#160;)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Unknown&quot;</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,12 +220,11 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">clientID</td><td>The unique ID of the client. </td></tr>
     <tr><td class="paramname">name</td><td>The name of the client (default is "Unknown"). </td></tr>
-    <tr><td class="paramname">maxScore</td><td>The maximum score for the client (default is -1). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00014">14</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00015">15</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
@@ -243,24 +245,36 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for <a class="el" href="classClientInWorld.html" title="Represents a client within the game world, with properties like client ID, score, and name.">ClientInWorld</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00019">19</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00020">20</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0fae8e3a70f8d6c5a7ae28844480f015" name="a0fae8e3a70f8d6c5a7ae28844480f015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fae8e3a70f8d6c5a7ae28844480f015">&#9670;&#160;</a></span>addScore()</h2>
+<a id="a6999c81c47bf0d6907f2a33905338630" name="a6999c81c47bf0d6907f2a33905338630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6999c81c47bf0d6907f2a33905338630">&#9670;&#160;</a></span>addScore()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ClientInWorld::addScore </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>scoreToAdd</em></span></td><td>)</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>scoreToAdd</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>scoringInLevel</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a specified score to the client's current score. </p>
@@ -271,7 +285,71 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00056">56</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00052">52</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classClientInWorld_a6999c81c47bf0d6907f2a33905338630_cgraph.png" border="0" usemap="#aclassClientInWorld_a6999c81c47bf0d6907f2a33905338630_cgraph" alt=""/></div>
+<map name="aclassClientInWorld_a6999c81c47bf0d6907f2a33905338630_cgraph" id="aclassClientInWorld_a6999c81c47bf0d6907f2a33905338630_cgraph">
+<area shape="rect" title="Adds a specified score to the client&#39;s current score." alt="" coords="5,5,165,31"/>
+<area shape="rect" href="classClientInWorld.html#a35dee5675f429230720d682569088b0b" title=" " alt="" coords="213,5,379,31"/>
+<area shape="poly" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a048bf2546a94b2fcf53baaa7a0092584" name="a048bf2546a94b2fcf53baaa7a0092584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048bf2546a94b2fcf53baaa7a0092584">&#9670;&#160;</a></span>clientIsntReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientInWorld::clientIsntReady </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00082">82</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a729a4b97daa0f46bb086ac00d6b28e38" name="a729a4b97daa0f46bb086ac00d6b28e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729a4b97daa0f46bb086ac00d6b28e38">&#9670;&#160;</a></span>clientIsReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientInWorld::clientIsReady </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00077">77</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
@@ -293,21 +371,21 @@ Public Member Functions</h2></td></tr>
 <p>Getter for the client ID. </p>
 <dl class="section return"><dt>Returns</dt><dd>The unique client ID. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00023">23</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00024">24</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a93a5c8b4fe6b53b9fe129f496e32a892" name="a93a5c8b4fe6b53b9fe129f496e32a892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a5c8b4fe6b53b9fe129f496e32a892">&#9670;&#160;</a></span>getMaxScore()</h2>
+<a id="ae12cf5edba4bd230a4b251ab219ace48" name="ae12cf5edba4bd230a4b251ab219ace48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12cf5edba4bd230a4b251ab219ace48">&#9670;&#160;</a></span>getMaxScorePerLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ClientInWorld::getMaxScore </td>
+          <td class="memname">const std::size_t &amp; ClientInWorld::getMaxScorePerLevel </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -315,29 +393,64 @@ Public Member Functions</h2></td></tr>
 <p>Getter for the client's maximum score. </p>
 <dl class="section return"><dt>Returns</dt><dd>The maximum score the client has achieved. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00033">33</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00034">34</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a758b4464779a68f8e0b6010819d7e953" name="a758b4464779a68f8e0b6010819d7e953"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a758b4464779a68f8e0b6010819d7e953">&#9670;&#160;</a></span>getName()</h2>
+<a id="a4a382db2a0d0f8cca887ff19fac632f7" name="a4a382db2a0d0f8cca887ff19fac632f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a382db2a0d0f8cca887ff19fac632f7">&#9670;&#160;</a></span>getName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string ClientInWorld::getName </td>
+          <td class="memname">const std::string &amp; ClientInWorld::getName </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Getter for the client's name. </p>
 <dl class="section return"><dt>Returns</dt><dd>The name of the client. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00038">38</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00042">42</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2c8f9177a387530f0ccd17698fd83784" name="a2c8f9177a387530f0ccd17698fd83784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8f9177a387530f0ccd17698fd83784">&#9670;&#160;</a></span>getRowSkin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t &amp; ClientInWorld::getRowSkin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00097">97</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
@@ -359,23 +472,122 @@ Public Member Functions</h2></td></tr>
 <p>Getter for the current score of the client. </p>
 <dl class="section return"><dt>Returns</dt><dd>The client's current score. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00028">28</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00029">29</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
-<a id="aa60acc189a7f0683f38a67f189218554" name="aa60acc189a7f0683f38a67f189218554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa60acc189a7f0683f38a67f189218554">&#9670;&#160;</a></span>setClientID()</h2>
+<a id="a7aa6e2302a72ca22a805accf6dfaf2eb" name="a7aa6e2302a72ca22a805accf6dfaf2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa6e2302a72ca22a805accf6dfaf2eb">&#9670;&#160;</a></span>isReady()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool &amp; ClientInWorld::isReady </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00087">87</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab6e82fac5af71dd8624ec5dba5cfb2f4" name="ab6e82fac5af71dd8624ec5dba5cfb2f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e82fac5af71dd8624ec5dba5cfb2f4">&#9670;&#160;</a></span>resetScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientInWorld::resetScore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00092">92</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a35dee5675f429230720d682569088b0b" name="a35dee5675f429230720d682569088b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35dee5675f429230720d682569088b0b">&#9670;&#160;</a></span>saveScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ClientInWorld::saveScore </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00062">62</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classClientInWorld_a35dee5675f429230720d682569088b0b_icgraph.png" border="0" usemap="#aclassClientInWorld_a35dee5675f429230720d682569088b0b_icgraph" alt=""/></div>
+<map name="aclassClientInWorld_a35dee5675f429230720d682569088b0b_icgraph" id="aclassClientInWorld_a35dee5675f429230720d682569088b0b_icgraph">
+<area shape="rect" title=" " alt="" coords="213,5,379,31"/>
+<area shape="rect" href="classClientInWorld.html#a6999c81c47bf0d6907f2a33905338630" title="Adds a specified score to the client&#39;s current score." alt="" coords="5,5,165,31"/>
+<area shape="poly" title=" " alt="" coords="197,21,165,21,165,16,197,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ace5cd0a3a793512e10a8f2f042795953" name="ace5cd0a3a793512e10a8f2f042795953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5cd0a3a793512e10a8f2f042795953">&#9670;&#160;</a></span>setClientID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ClientInWorld::setClientID </td>
           <td>(</td>
-          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>newClientID</em></span></td><td>)</td>
+          <td class="paramtype">const std::size_t &amp;</td>          <td class="paramname"><span class="paramname"><em>newClientID</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Setter for the client ID. </p>
@@ -386,50 +598,31 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00043">43</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00047">47</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
-<a id="af61ff7381add8eab13688c2dfa5e13b8" name="af61ff7381add8eab13688c2dfa5e13b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af61ff7381add8eab13688c2dfa5e13b8">&#9670;&#160;</a></span>setMaxScore()</h2>
+<a id="ab747e428c462266e7571c05c76377a90" name="ab747e428c462266e7571c05c76377a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab747e428c462266e7571c05c76377a90">&#9670;&#160;</a></span>setName()</h2>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ClientInWorld::setMaxScore </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newMaxScore</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Setter for the maximum score of the client. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newMaxScore</td><td>The new maximum score to set. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00064">64</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af74ed66834883506fe454bdb15ae77d8" name="af74ed66834883506fe454bdb15ae77d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af74ed66834883506fe454bdb15ae77d8">&#9670;&#160;</a></span>setName()</h2>
-
-<div class="memitem">
-<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void ClientInWorld::setName </td>
           <td>(</td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>newName</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>newName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Setter for the client's name. </p>
@@ -440,34 +633,34 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00069">69</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00072">72</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>
-<a id="afd1d7b65369f5292143bf061092fa605" name="afd1d7b65369f5292143bf061092fa605"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd1d7b65369f5292143bf061092fa605">&#9670;&#160;</a></span>setScore()</h2>
+<a id="a49ac671a1fd07e431fb6f92ac89fd9ba" name="a49ac671a1fd07e431fb6f92ac89fd9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ac671a1fd07e431fb6f92ac89fd9ba">&#9670;&#160;</a></span>setRowSkin()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ClientInWorld::setScore </td>
+          <td class="memname">void ClientInWorld::setRowSkin </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newScore</em></span></td><td>)</td>
+          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>rowSkin</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Setter for the current score of the client. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newScore</td><td>The new score to set. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00048">48</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ClientInWorld_8cpp_source.html#l00102">102</a> of file <a class="el" href="ClientInWorld_8cpp_source.html">ClientInWorld.cpp</a>.</p>
 
 </div>
 </div>

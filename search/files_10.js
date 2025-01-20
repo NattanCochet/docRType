@@ -1,12 +1,19 @@
 var searchData=
 [
-  ['vector_2ehpp_0',['Vector.hpp',['../Vector_8hpp.html',1,'']]],
-  ['velocity_2ecpp_1',['Velocity.cpp',['../Velocity_8cpp.html',1,'']]],
-  ['velocity_2ehpp_2',['Velocity.hpp',['../Velocity_8hpp.html',1,'']]],
-  ['velocitysystem_2ecpp_3',['VelocitySystem.cpp',['../VelocitySystem_8cpp.html',1,'']]],
-  ['virtualkeyboard_2ecpp_4',['VirtualKeyBoard.cpp',['../VirtualKeyBoard_8cpp.html',1,'']]],
-  ['virtualkeyboard_2ehpp_5',['VirtualKeyBoard.hpp',['../VirtualKeyBoard_8hpp.html',1,'']]],
-  ['vitality_2ecpp_6',['Vitality.cpp',['../Vitality_8cpp.html',1,'']]],
-  ['vitality_2ehpp_7',['Vitality.hpp',['../Vitality_8hpp.html',1,'']]],
-  ['vitalitysystem_2ecpp_8',['VitalitySystem.cpp',['../VitalitySystem_8cpp.html',1,'']]]
+  ['sinusoidalshooter_2ecpp_0',['SinusoidalShooter.cpp',['../SinusoidalShooter_8cpp.html',1,'']]],
+  ['sinusoidalshooter_2ehpp_1',['SinusoidalShooter.hpp',['../SinusoidalShooter_8hpp.html',1,'']]],
+  ['spatialdustman_2ecpp_2',['SpatialDustman.cpp',['../SpatialDustman_8cpp.html',1,'']]],
+  ['spatialdustman_2ehpp_3',['SpatialDustman.hpp',['../SpatialDustman_8hpp.html',1,'']]],
+  ['spawnafterdead_2ecpp_4',['SpawnAfterDead.cpp',['../SpawnAfterDead_8cpp.html',1,'']]],
+  ['spawnafterdead_2ehpp_5',['SpawnAfterDead.hpp',['../SpawnAfterDead_8hpp.html',1,'']]],
+  ['spawnafterdeadsystem_2ecpp_6',['SpawnAfterDeadSystem.cpp',['../SpawnAfterDeadSystem_8cpp.html',1,'']]],
+  ['spawnrulegenerator_2ecpp_7',['SpawnRuleGenerator.cpp',['../SpawnRuleGenerator_8cpp.html',1,'']]],
+  ['spawnrulegenerator_2ehpp_8',['SpawnRuleGenerator.hpp',['../SpawnRuleGenerator_8hpp.html',1,'']]],
+  ['spawnsystem_2ecpp_9',['SpawnSystem.cpp',['../SpawnSystem_8cpp.html',1,'']]],
+  ['speed_2ecpp_10',['Speed.cpp',['../Speed_8cpp.html',1,'']]],
+  ['speed_2ehpp_11',['Speed.hpp',['../Speed_8hpp.html',1,'']]],
+  ['star_2ecpp_12',['Star.cpp',['../Star_8cpp.html',1,'']]],
+  ['star_2ehpp_13',['Star.hpp',['../Star_8hpp.html',1,'']]],
+  ['systems_2ecpp_14',['Systems.cpp',['../Systems_8cpp.html',1,'']]],
+  ['systems_2ehpp_15',['Systems.hpp',['../client_2ECS_2Systems_8hpp.html',1,'(Global Namespace)'],['../server_2Logic_2include_2Systems_8hpp.html',1,'(Global Namespace)']]]
 ];

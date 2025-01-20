@@ -1,0 +1,23 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,220,106,245"/>
+<area shape="rect" id="Node000001" href="$classAError.html" title="Custom exception class for handling errors." alt="" coords="154,194,211,220"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="121,217,153,210,154,215,122,222"/>
+<area shape="rect" id="Node000010" href="$classError.html" title=" " alt="" coords="158,244,206,269"/>
+<area shape="poly" id="edge22_Node000000_Node000010" title=" " alt="" coords="122,242,158,249,157,254,121,247"/>
+<area shape="rect" id="Node000002" href="$classErrorClientAlreadyPresentInWorld.html" title="Exception class for handling the case where a client is already present in the world." alt="" coords="263,5,432,46"/>
+<area shape="poly" id="edge14_Node000001_Node000002" title=" " alt="" coords="188,178,212,117,232,84,257,56,273,44,276,49,261,60,236,88,217,120,193,180"/>
+<area shape="rect" id="Node000003" href="$classErrorGenerationMap.html" title="Exception class for handling errors during map generation." alt="" coords="280,70,416,96"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="195,179,221,140,238,121,258,105,278,94,281,99,260,109,241,125,225,144,199,182"/>
+<area shape="rect" id="Node000004" href="$classErrorKeyAlreadyExistInMap.html" title="Represents an error when a key already exists in a map." alt="" coords="259,120,436,145"/>
+<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="211,182,258,154,286,143,288,148,260,159,213,187"/>
+<area shape="rect" id="Node000005" href="$classErrorKeyNotFound.html" title="Exception class for handling errors when a key is not found." alt="" coords="284,169,411,194"/>
+<area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="226,198,283,189,284,194,227,203"/>
+<area shape="rect" id="Node000006" href="$classErrorNoObject.html" title="Represents an error when a specific object is not found." alt="" coords="296,218,399,244"/>
+<area shape="poly" id="edge18_Node000001_Node000006" title=" " alt="" coords="227,211,296,221,295,226,226,216"/>
+<area shape="rect" id="Node000007" href="$classErrorPasswordIncorrect.html" title="Exception class for handling incorrect password errors." alt="" coords="269,268,426,293"/>
+<area shape="poly" id="edge19_Node000001_Node000007" title=" " alt="" coords="214,227,260,254,289,264,287,269,258,259,212,232"/>
+<area shape="rect" id="Node000008" href="$classErrorVector.html" title="Exception class for handling errors related to vectors." alt="" coords="304,317,391,342"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="213,229,213,229,227,251,235,270,244,287,261,304,282,315,305,322,303,327,280,320,257,308,240,290,230,272,223,253,209,233,209,232"/>
+<area shape="rect" id="Node000009" href="$classErrorWorldFull.html" title="Exception class for handling the &quot;world full&quot; error." alt="" coords="296,366,399,392"/>
+<area shape="poly" id="edge21_Node000001_Node000009" title=" " alt="" coords="212,231,227,268,233,299,241,326,261,353,278,364,297,371,295,376,275,369,257,357,236,329,228,300,222,269,207,233"/>
+</map>

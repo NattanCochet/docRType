@@ -111,13 +111,13 @@ $(function(){initNavTree('classEntity.html',''); initResizable(true); });
 <p>Represents a basic entity with a unique identifier.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="Entity_8hpp_source.html">Entity.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html">Entity.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Entity:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEntity__coll__graph.png" border="0" usemap="#aEntity_coll__map" alt="Collaboration graph"/></div>
 <map name="aEntity_coll__map" id="aEntity_coll__map">
-<area shape="rect" title="Represents a basic entity with a unique identifier." alt="" coords="5,5,145,92"/>
+<area shape="rect" title="Represents a basic entity with a unique identifier." alt="" coords="5,5,145,133"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -129,21 +129,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3bad6d2f78b9927b87518fce827dab30" id="r_a3bad6d2f78b9927b87518fce827dab30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bad6d2f78b9927b87518fce827dab30">operator std::size_t</a> () const</td></tr>
 <tr class="memdesc:a3bad6d2f78b9927b87518fce827dab30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a> object to be implicitly converted to its ID.  <br /></td></tr>
 <tr class="separator:a3bad6d2f78b9927b87518fce827dab30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13c8d01ed0b9d2a950d442151af7ca3" id="r_ad13c8d01ed0b9d2a950d442151af7ca3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad13c8d01ed0b9d2a950d442151af7ca3">Entity</a> (std::size_t entity_id)</td></tr>
+<tr class="memdesc:ad13c8d01ed0b9d2a950d442151af7ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a> with a unique ID.  <br /></td></tr>
+<tr class="separator:ad13c8d01ed0b9d2a950d442151af7ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bad6d2f78b9927b87518fce827dab30" id="r_a3bad6d2f78b9927b87518fce827dab30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bad6d2f78b9927b87518fce827dab30">operator std::size_t</a> () const</td></tr>
+<tr class="memdesc:a3bad6d2f78b9927b87518fce827dab30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion to <code>std::size_t</code>.  <br /></td></tr>
+<tr class="separator:a3bad6d2f78b9927b87518fce827dab30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a382126a2b921138394e56c8318bf6887" id="r_a382126a2b921138394e56c8318bf6887"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a382126a2b921138394e56c8318bf6887">registry</a></td></tr>
-<tr class="memdesc:a382126a2b921138394e56c8318bf6887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the registry class to access the private members of <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a>.  <br /></td></tr>
-<tr class="separator:a382126a2b921138394e56c8318bf6887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb46a2a5e74e3eb6067dcd08f27b5e99" id="r_acb46a2a5e74e3eb6067dcd08f27b5e99"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb46a2a5e74e3eb6067dcd08f27b5e99">registry</a></td></tr>
+<tr class="memdesc:acb46a2a5e74e3eb6067dcd08f27b5e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the registry class to access the private members of <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a>.  <br /></td></tr>
+<tr class="separator:acb46a2a5e74e3eb6067dcd08f27b5e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a basic entity with a unique identifier. </p>
 <p>The <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a> class provides a way to represent an entity with a unique ID. The ID is used to track and manage entities in a system, such as in a game or an entity-component system (ECS). </p>
 
-<p class="definition">Definition at line <a class="el" href="Entity_8hpp_source.html#l00020">20</a> of file <a class="el" href="Entity_8hpp_source.html">Entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html#l00020">20</a> of file <a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html">Entity.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad13c8d01ed0b9d2a950d442151af7ca3" name="ad13c8d01ed0b9d2a950d442151af7ca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13c8d01ed0b9d2a950d442151af7ca3">&#9670;&#160;</a></span>Entity()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13c8d01ed0b9d2a950d442151af7ca3">&#9670;&#160;</a></span>Entity() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,13 +180,69 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Entity_8hpp_source.html#l00030">30</a> of file <a class="el" href="Entity_8hpp_source.html">Entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html#l00030">30</a> of file <a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html">Entity.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad13c8d01ed0b9d2a950d442151af7ca3" name="ad13c8d01ed0b9d2a950d442151af7ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13c8d01ed0b9d2a950d442151af7ca3">&#9670;&#160;</a></span>Entity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity::Entity </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>entity_id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct an <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a> with a unique ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity_id</td><td>The unique identifier for this entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="client_2ECS_2Entity_8hpp_source.html#l00028">28</a> of file <a class="el" href="client_2ECS_2Entity_8hpp_source.html">Entity.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3bad6d2f78b9927b87518fce827dab30" name="a3bad6d2f78b9927b87518fce827dab30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bad6d2f78b9927b87518fce827dab30">&#9670;&#160;</a></span>operator std::size_t()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bad6d2f78b9927b87518fce827dab30">&#9670;&#160;</a></span>operator std::size_t() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Entity::operator std::size_t </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implicit conversion to <code>std::size_t</code>. </p>
+<p>This operator allows the entity to be treated as a <code>std::size_t</code> directly. For example, an <code><a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a></code> object can be used in containers or comparisons that expect a <code>std::size_t</code> value.</p>
+<dl class="section return"><dt>Returns</dt><dd>The unique ID of the entity. </dd></dl>
+
+</div>
+</div>
+<a id="a3bad6d2f78b9927b87518fce827dab30" name="a3bad6d2f78b9927b87518fce827dab30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bad6d2f78b9927b87518fce827dab30">&#9670;&#160;</a></span>operator std::size_t() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,13 +260,13 @@ Friends</h2></td></tr>
 <p>This operator provides a way to use the <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a> object directly as its unique ID (std::size_t).</p>
 <dl class="section return"><dt>Returns</dt><dd>The unique ID of the entity. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Entity_8cpp_source.html#l00010">10</a> of file <a class="el" href="Entity_8cpp_source.html">Entity.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2src_2ECS_2Entity_8cpp_source.html#l00010">10</a> of file <a class="el" href="server_2Logic_2src_2ECS_2Entity_8cpp_source.html">Entity.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
-<a id="a382126a2b921138394e56c8318bf6887" name="a382126a2b921138394e56c8318bf6887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a382126a2b921138394e56c8318bf6887">&#9670;&#160;</a></span>registry</h2>
+<a id="acb46a2a5e74e3eb6067dcd08f27b5e99" name="acb46a2a5e74e3eb6067dcd08f27b5e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb46a2a5e74e3eb6067dcd08f27b5e99">&#9670;&#160;</a></span>registry</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +275,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class registry</td>
+          <td class="memname">registry</td>
         </tr>
       </table>
   </td>
@@ -224,14 +286,17 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allows the registry class to access the private members of <a class="el" href="classEntity.html" title="Represents a basic entity with a unique identifier.">Entity</a>. </p>
+<p>Grant access to the <code>registry</code> class. </p>
 
-<p class="definition">Definition at line <a class="el" href="Entity_8hpp_source.html#l00049">49</a> of file <a class="el" href="Entity_8hpp_source.html">Entity.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html#l00049">49</a> of file <a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html">Entity.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>server/Logic/include/ECS/<a class="el" href="Entity_8hpp_source.html">Entity.hpp</a></li>
-<li>server/Logic/src/ECS/<a class="el" href="Entity_8cpp_source.html">Entity.cpp</a></li>
+<li>server/Logic/include/ECS/<a class="el" href="server_2Logic_2include_2ECS_2Entity_8hpp_source.html">Entity.hpp</a></li>
+<li>client/ECS/<a class="el" href="client_2ECS_2Entity_8hpp_source.html">Entity.hpp</a></li>
+<li>server/Logic/src/ECS/<a class="el" href="server_2Logic_2src_2ECS_2Entity_8cpp_source.html">Entity.cpp</a></li>
+<li>client/ECS/<a class="el" href="client_2ECS_2Entity_8cpp_source.html">Entity.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

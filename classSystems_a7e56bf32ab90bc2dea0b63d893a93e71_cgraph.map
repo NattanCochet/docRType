@@ -1,0 +1,11 @@
+<map id="Systems::PlayerAISystem" name="Systems::PlayerAISystem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,177,121"/>
+<area shape="rect" id="Node000002" href="$classVirtualKeyBoard.html#af20d83783c1b08f01d441f413719c603" title="Changes the state of a specific control key." alt="" coords="225,5,420,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,93,224,55,242,49,243,54,226,60,127,97"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="237,70,408,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,96,222,91,222,97,177,102"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="260,120,385,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,115,245,122,244,127,177,120"/>
+<area shape="rect" id="Node000005" href="$classVirtualKeyBoard.html#a2646b213ad9845f14ceb7ad16bd153c9" title="Retrieves a reference to the internal virtual keyboard state." alt="" coords="235,169,410,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="128,119,226,155,244,161,242,166,224,160,126,124"/>
+</map>

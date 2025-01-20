@@ -1,0 +1,11 @@
+<map id="CreateEntity::createUpgradeForceBonus" name="CreateEntity::createUpgradeForceBonus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,188,68"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a6dffccb5b3c5c133c9b15d8e0fa441db" title="Adds a component to an entity." alt="" coords="236,8,402,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,34,220,30,220,35,188,39"/>
+<area shape="rect" id="Node000004" href="$classRegistry.html#a3d6e1501dab60caa62a8511245f0b0b3" title="Spawns a new entity and returns it." alt="" coords="244,59,394,84"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,55,228,59,228,64,188,60"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="450,5,620,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,17,434,17,434,22,402,22"/>
+<area shape="rect" id="Node000005" href="$classRegistry.html#ac70337b25a28a2f2915c984f79f1a3d4" title="Converts an entity index to an entity object." alt="" coords="466,55,604,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="394,70,450,71,450,77,394,76"/>
+</map>

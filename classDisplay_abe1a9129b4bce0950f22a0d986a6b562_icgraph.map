@@ -1,0 +1,5 @@
+<map id="Display::displayRectangle" name="Display::displayRectangle">
+<area shape="rect" id="Node000001" title="Displays a rectangle on the screen." alt="" coords="201,5,368,31"/>
+<area shape="rect" id="Node000002" href="$classDisplay.html#a8459a24ed6d19a790235adf5d31b01c7" title="Displays a button on the screen with associated functionality." alt="" coords="5,5,153,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>

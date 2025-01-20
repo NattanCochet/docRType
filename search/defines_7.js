@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['systems_5fhpp_5f_0',['SYSTEMS_HPP_',['../Systems_8hpp.html#aa9f1d0ba1b695050dd804448e730d715',1,'Systems.hpp']]]
+  ['hitbox_5fhpp_5f_0',['HITBOX_HPP_',['../Hitbox_8hpp.html#a7673cec7ee9fa4b3d2d3bb2fa99628d7',1,'Hitbox.hpp']]]
 ];

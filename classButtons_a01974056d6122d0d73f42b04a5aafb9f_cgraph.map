@@ -1,0 +1,6 @@
+<map id="Buttons::unReadyButton" name="Buttons::unReadyButton">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,166,31"/>
+<area shape="rect" id="Node000002" href="$classButtons.html#a3e8a9ed96eb9c868bc0057fdb5adf9cc" title="Handles the action for the start button." alt="" coords="214,5,350,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,24,198,24,198,30,166,30"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="213,12,181,12,181,7,213,7"/>
+</map>

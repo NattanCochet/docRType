@@ -2,7 +2,8 @@ var classDrawable_1_1Drawable =
 [
     [ "Drawable", "classDrawable_1_1Drawable.html#aa500202a6df7db634a6802ef7578827c", null ],
     [ "~Drawable", "classDrawable_1_1Drawable.html#a3aa2b11f71ce27c3beb1a3af53943d9f", null ],
-    [ "draw", "classDrawable_1_1Drawable.html#a86e34a4335e1f92c38969f19686aed9c", null ],
+    [ "getClock", "classDrawable_1_1Drawable.html#abcd41f63fb91f18862075c8cefbb346c", null ],
+    [ "getCurrentFrame", "classDrawable_1_1Drawable.html#aa85aaecf2bba7110099bab1b10b4a2d8", null ],
     [ "getCurrentRect", "classDrawable_1_1Drawable.html#ad3c53872ebf2872230c112973d42a4af", null ],
     [ "getDefaultFrame", "classDrawable_1_1Drawable.html#affb28484e8c73898ee913bf000b6a8dc", null ],
     [ "getFrameDown", "classDrawable_1_1Drawable.html#af30286f023fcd2e6b75c0bd502313653", null ],
@@ -18,9 +19,10 @@ var classDrawable_1_1Drawable =
     [ "getSecondForFrameRight", "classDrawable_1_1Drawable.html#a8bd1b9203436b6954e01b8157eb2c223", null ],
     [ "getSecondForFrameUp", "classDrawable_1_1Drawable.html#a46d12cc58e37ed5694c8f5b8b883ad97", null ],
     [ "getType", "classDrawable_1_1Drawable.html#a9a1c1b0e8f1ceeee2cee178ed7d100f7", null ],
-    [ "resetClock", "classDrawable_1_1Drawable.html#a37c4d83f3372508dacbc9d2b8ba31c31", null ],
+    [ "passNextFrame", "classDrawable_1_1Drawable.html#a2cd4d720acf110a656e3600f85ff8d58", null ],
     [ "setCurrentRect", "classDrawable_1_1Drawable.html#a57caeacf984b01bfb260a678e2021ae7", null ],
     [ "setDefaultFrame", "classDrawable_1_1Drawable.html#a83963322e03b12f37ce8afd7124cba36", null ],
+    [ "setDirectionFrame", "classDrawable_1_1Drawable.html#aa0e716dc9e2823a9a127137b9b88f03c", null ],
     [ "setFrameDown", "classDrawable_1_1Drawable.html#a4c731870ffb00010be8179aa4527005f", null ],
     [ "setFrameLeft", "classDrawable_1_1Drawable.html#a31d9e38818316e892858eca201070f56", null ],
     [ "setFrameRight", "classDrawable_1_1Drawable.html#aae8bcace29dbb630b0142dfc9d821613", null ],
@@ -32,6 +34,5 @@ var classDrawable_1_1Drawable =
     [ "setSecondForFrameLeft", "classDrawable_1_1Drawable.html#a3b63b27533230661df52a022340da16e", null ],
     [ "setSecondForFrameRight", "classDrawable_1_1Drawable.html#a62107ded5a3e36249c1750d12fbf5a48", null ],
     [ "setSecondForFrameUp", "classDrawable_1_1Drawable.html#aa0269dc0800e45e0d2f21680be63c8c9", null ],
-    [ "setType", "classDrawable_1_1Drawable.html#ac26684da95a1f8a624e3675b7c597745", null ],
-    [ "updateFrame", "classDrawable_1_1Drawable.html#a3b748ea728d43e977caa63d87d695a55", null ]
+    [ "setType", "classDrawable_1_1Drawable.html#ac26684da95a1f8a624e3675b7c597745", null ]
 ];

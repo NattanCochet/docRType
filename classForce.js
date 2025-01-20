@@ -2,6 +2,7 @@ var classForce =
 [
     [ "Force", "classForce.html#a454a177495a905fb5fc49b072ce20103", null ],
     [ "~Force", "classForce.html#a8767ca332cee738a462befe1bfbfa454", null ],
+    [ "checkSkinDone", "classForce.html#af92c0b6bf72cc6a13ba73183f007a051", null ],
     [ "equipped", "classForce.html#a4d45b111fbd35c97911b63e6893d01fc", null ],
     [ "getClockShoot", "classForce.html#aec2b471d1ecb4b0704a70ac087b41fe7", null ],
     [ "getFinalPosition", "classForce.html#a2c9067b829a660a9260bc2dbdb94c5f8", null ],
@@ -10,6 +11,7 @@ var classForce =
     [ "getInitialDamage", "classForce.html#a9b99d0182dc52b1a96b748ae74c953f3", null ],
     [ "getIsShootToTheRight", "classForce.html#a2ea21aca152cab2c0459abb6b056e7b2", null ],
     [ "getLevelForce", "classForce.html#a6b4cf51f5201445279907c324f69ec0d", null ],
+    [ "HaveIToCheckSkin", "classForce.html#aa59efa01698107a4e8cfd6258a89aad0", null ],
     [ "haveToShoot", "classForce.html#aab232fa963fbcc1b71a73ae78d9b549c", null ],
     [ "isEquipped", "classForce.html#a597c01ef01b2bbd3e02623baf456af55", null ],
     [ "isShootForward", "classForce.html#a7559f8dbc1886e742d912b009e21d655", null ],

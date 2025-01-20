@@ -1,0 +1,7 @@
+<map id="World::getState" name="World::getState">
+<area shape="rect" id="Node000001" title="Gets the current state of the game." alt="" coords="188,31,297,56"/>
+<area shape="rect" id="Node000002" href="$classNetwork.html#acafeede4dc2aaccfb682e9205e749316" title=" " alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,36,139,31,140,26,173,30"/>
+<area shape="rect" id="Node000003" href="$classNetwork.html#afc9e86f8f217f5a07fd897e5fdcb7960" title=" " alt="" coords="5,55,140,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,56,140,61,139,55,172,51"/>
+</map>

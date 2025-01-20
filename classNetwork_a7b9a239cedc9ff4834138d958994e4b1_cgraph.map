@@ -1,0 +1,5 @@
+<map id="Network::startGame" name="Network::startGame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,143,31"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#acd5cef9e5f5592b0f5c7aa03cd70a488" title="Sets the current state of the game." alt="" coords="191,5,300,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,16,175,16,175,21,143,21"/>
+</map>

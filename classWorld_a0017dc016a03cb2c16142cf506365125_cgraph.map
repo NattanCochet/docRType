@@ -1,0 +1,13 @@
+<map id="World::applyFonctionInWorld" name="World::applyFonctionInWorld">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,190,96"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#ab74e693f047056ccffdee70a85936418" title="Constructs a new World with specific parameters." alt="" coords="238,70,331,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,80,222,80,222,86,190,86"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ab614b1aab9b306cfc6f238b2b4dd596c" title="Adds a client to the world." alt="" coords="393,41,551,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="331,73,377,66,378,71,332,78"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#af0e0b79b93c01844040f61ae8c837b2f" title="Generates the next seed for the next level." alt="" coords="379,91,565,131"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="332,87,364,92,363,97,331,93"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#aec0abf8973d0f04f7c3c12eccf295a18" title="Checks if a client with the given ID is present in the world." alt="" coords="613,5,775,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="551,41,598,35,598,40,552,46"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#aff3988b4920975c42b2b518dc96a5dba" title="Checks if the world is full (has reached the maximum number of players)." alt="" coords="632,70,756,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="552,61,617,70,616,75,551,67"/>
+</map>

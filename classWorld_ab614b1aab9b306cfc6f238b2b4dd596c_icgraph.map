@@ -1,7 +1,15 @@
 <map id="World::addClientInWorld" name="World::addClientInWorld">
-<area shape="rect" id="Node000001" title="Adds a client to the world." alt="" coords="154,31,312,56"/>
-<area shape="rect" id="Node000002" href="$server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="31,5,80,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,33,80,24,81,19,139,27"/>
-<area shape="rect" id="Node000003" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="5,55,106,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,59,107,63,106,58,138,54"/>
+<area shape="rect" id="Node000001" title="Adds a client to the world." alt="" coords="625,29,783,55"/>
+<area shape="rect" id="Node000002" href="$Test_8cpp.html#a07302458eb7d8767cf0b68ff59af99ca" title=" " alt="" coords="119,5,186,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="632,28,576,19,465,13,354,12,187,18,187,13,354,6,465,7,577,14,633,23"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ab74e693f047056ccffdee70a85936418" title="Constructs a new World with specific parameters." alt="" coords="483,29,577,55"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="609,45,577,45,577,40,609,40"/>
+<area shape="rect" id="Node000006" href="$classWorld.html#a3d07ed2f713c3946fbbaa3a1b7b7f8c0" title="Destructor for the World class." alt="" coords="103,55,203,80"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="633,61,577,70,473,77,369,78,203,73,203,68,369,73,472,72,576,65,632,56"/>
+<area shape="rect" id="Node000003" href="$server_2main_8cpp.html#a0c99d968a34e803d378692bde2e3f18f" title=" " alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,21,55,21,55,16,104,16"/>
+<area shape="rect" id="Node000005" href="$classWorld.html#a0017dc016a03cb2c16142cf506365125" title=" " alt="" coords="251,29,435,55"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="467,45,436,45,436,40,467,40"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="235,31,187,25,187,20,236,26"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="236,59,204,63,203,58,235,54"/>
 </map>

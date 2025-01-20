@@ -1,0 +1,5 @@
+<map id="Clickable::Clickable" name="Clickable::Clickable">
+<area shape="rect" id="Node000001" title="Default constructor for the Clickable class." alt="" coords="197,5,330,31"/>
+<area shape="rect" id="Node000002" href="$classClickable.html#a47210b235c34963ffaa7f6c29dee9780" title="Equality operator to compare two Clickable objects based on their ID." alt="" coords="5,5,149,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,21,149,21,149,16,181,16"/>
+</map>

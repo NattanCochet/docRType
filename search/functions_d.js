@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['pause_0',['pause',['../classMyClock.html#a1c5df76e56c7ca9796b49eb6f1fef5e9',1,'MyClock']]],
-  ['position_1',['Position',['../classPosition.html#a369a577425f8ba02e8750d04b6a088db',1,'Position::Position()'],['../classPosition.html#a0fcf086215651352e72253fcaccff191',1,'Position::Position(sf::Vector2f pos)'],['../classPosition.html#a6e36cf0fee251e74cfedb86f4e99558d',1,'Position::Position(int x, int y)']]],
-  ['positionsystem_2',['positionSystem',['../classSystems.html#a687c7b353125f259dc60d1eea10ccd74',1,'Systems']]],
-  ['projectile_3',['Projectile',['../classProjectile.html#a0668989b4af11105ea235699eff363eb',1,'Projectile']]],
-  ['projectilesystem_4',['ProjectileSystem',['../classSystems.html#a77fd1819a1530ccf9dd906f7de620478',1,'Systems']]]
+  ['network_0',['Network',['../classNetwork.html#a3cc2fb4f8fa4d507077e8da85ce5a1c8',1,'Network::Network()'],['../classNetwork.html#accb3721d9d462d09676ed0770301a208',1,'Network::Network(World *world)'],['../classNetwork.html#a3cc2fb4f8fa4d507077e8da85ce5a1c8',1,'Network::Network()'],['../classNetwork.html#accb3721d9d462d09676ed0770301a208',1,'Network::Network(World *world)']]],
+  ['networkclient_1',['NetworkClient',['../classNetworkClient.html#aeb02cfcb79882eb7a052fbf115216599',1,'NetworkClient::NetworkClient(std::string host, std::string server_port, unsigned short local_port=0)'],['../classNetworkClient.html#aeb02cfcb79882eb7a052fbf115216599',1,'NetworkClient::NetworkClient(std::string host, std::string server_port, unsigned short local_port=0)']]],
+  ['networkfunctions_2',['NetworkFunctions',['../classNetworkFunctions.html#a19c256c3d4e680cfccaab0eed21af497',1,'NetworkFunctions']]],
+  ['networkserver_3',['NetworkServer',['../classNetworkServer.html#a0c186453ad2f0c3ed77c22834d3500a2',1,'NetworkServer']]],
+  ['new_5fentity_4',['new_entity',['../client_8cpp.html#a67a39e906f9aedc73445394ce9b938f7',1,'new_entity(World &amp;world, NetworkClient &amp;client, Message&lt; Protocol &gt; msg, SceneScreen &amp;current_screen):&#160;client.cpp'],['../client_8hpp.html#a67a39e906f9aedc73445394ce9b938f7',1,'new_entity(World &amp;world, NetworkClient &amp;client, Message&lt; Protocol &gt; msg, SceneScreen &amp;current_screen):&#160;client.cpp'],['../Client_8cpp.html#a67a39e906f9aedc73445394ce9b938f7',1,'new_entity(World &amp;world, NetworkClient &amp;client, Message&lt; Protocol &gt; msg, SceneScreen &amp;current_screen):&#160;Client.cpp'],['../Client_8hpp.html#a67a39e906f9aedc73445394ce9b938f7',1,'new_entity(World &amp;world, NetworkClient &amp;client, Message&lt; Protocol &gt; msg, SceneScreen &amp;current_screen):&#160;client.cpp']]],
+  ['new_5fplayer_5',['new_player',['../client_8cpp.html#a274908e0f80248d89b449380d0438dff',1,'new_player(World &amp;world, size_t srv_entity_id, sf::Vector2f pos, NetworkClient &amp;client):&#160;client.cpp'],['../Client_8cpp.html#a274908e0f80248d89b449380d0438dff',1,'new_player(World &amp;world, size_t srv_entity_id, sf::Vector2f pos, NetworkClient &amp;client):&#160;Client.cpp']]],
+  ['nextroomspage_6',['nextRoomsPage',['../classButtons.html#a96708e82834b7e88072e849c6e869c33',1,'Buttons']]]
 ];

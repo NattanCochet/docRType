@@ -1,5 +1,5 @@
 <map id="ComponentArray::erase" name="ComponentArray::erase">
 <area shape="rect" id="Node000001" title="Erase a component at a specific index." alt="" coords="171,13,326,38"/>
-<area shape="rect" id="Node000002" href="$classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Registers a component type and returns a reference to the component array for that type." alt="" coords="5,5,123,46"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a7df8d6a4b19e7226181abeffd4117e70" title="Register a new component type and its associated array." alt="" coords="5,5,123,46"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,28,123,28,123,23,155,23"/>
 </map>

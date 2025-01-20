@@ -1,0 +1,11 @@
+<map id="ABonus" name="ABonus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="142,5,256,194"/>
+<area shape="rect" id="Node000002" href="$classOneUp.html" title=" " alt="" coords="5,242,85,349"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,186,87,246,83,242,130,182"/>
+<area shape="rect" id="Node000003" href="$classSpeed.html" title=" " alt="" coords="109,242,187,349"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,209,164,242,159,241,168,208"/>
+<area shape="rect" id="Node000004" href="$classStar.html" title=" " alt="" coords="212,242,290,349"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,207,239,241,234,242,225,209"/>
+<area shape="rect" id="Node000005" href="$classUpgradeForce.html" title=" " alt="" coords="314,242,435,349"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="267,172,330,240,326,244,263,176"/>
+</map>

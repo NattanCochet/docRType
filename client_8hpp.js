@@ -1,5 +1,5 @@
 var client_8hpp =
 [
-    [ "UDPClient", "classUDPClient.html", "classUDPClient" ],
-    [ "UDPClient::ClientError", "classUDPClient_1_1ClientError.html", "classUDPClient_1_1ClientError" ]
+    [ "NetworkClient", "classNetworkClient.html", "classNetworkClient" ],
+    [ "new_entity", "client_8hpp.html#a67a39e906f9aedc73445394ce9b938f7", null ]
 ];

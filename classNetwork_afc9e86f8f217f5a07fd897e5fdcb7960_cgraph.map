@@ -1,0 +1,9 @@
+<map id="Network::okAnswer" name="Network::okAnswer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,140,80"/>
+<area shape="rect" id="Node000002" href="$classWorld.html#aa69f0bda1dcb5ec332e2a7b2d8cbc0e9" title="Gets the current state of the game." alt="" coords="224,5,333,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,51,208,32,209,37,130,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#a914cd9a2a0dd40c098fe40455599979f" title=" " alt="" coords="188,55,369,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,65,172,65,172,70,140,70"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#acd5cef9e5f5592b0f5c7aa03cd70a488" title="Sets the current state of the game." alt="" coords="224,104,333,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,78,209,98,208,103,129,84"/>
+</map>

@@ -111,17 +111,17 @@ Commands Table</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone"><b>Command</b>   </th><th class="markdownTableHeadNone"><b>Parameters</b>   </th><th class="markdownTableHeadNone"><b>Description</b>   </th><th class="markdownTableHeadNone"><b>Source</b>    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>CLIENT_JOIN</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone">Client requests to join the game.   </td><td class="markdownTableBodyNone">Client 💻    </td></tr>
+<td class="markdownTableBodyNone"><b>CLIENT_JOIN</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> requests to join the game.   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> 💻    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CLIENT_LEAVE</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone">Client requests to leave the game.   </td><td class="markdownTableBodyNone">Client 💻    </td></tr>
+<td class="markdownTableBodyNone"><b>CLIENT_LEAVE</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> requests to leave the game.   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> 💻    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>CLIENT_SHOOT</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone">Client sends a shooting action.   </td><td class="markdownTableBodyNone">Client 💻    </td></tr>
+<td class="markdownTableBodyNone"><b>CLIENT_SHOOT</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> sends a shooting action.   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> 💻    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CLIENT_MOVEMENT</b>   </td><td class="markdownTableBodyNone"><code><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> (float)</code>   </td><td class="markdownTableBodyNone">Client sends movement data.   </td><td class="markdownTableBodyNone">Client 💻    </td></tr>
+<td class="markdownTableBodyNone"><b>CLIENT_MOVEMENT</b>   </td><td class="markdownTableBodyNone"><code><a class="el" href="classPosition.html" title="A class to represent and manage the position of an object.">Position</a> (float)</code>   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> sends movement data.   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> 💻    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>CLIENT_START_GAME</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone">Client requests to start the game.   </td><td class="markdownTableBodyNone">Client 💻    </td></tr>
+<td class="markdownTableBodyNone"><b>CLIENT_START_GAME</b>   </td><td class="markdownTableBodyNone">None   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> requests to start the game.   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> 💻    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CLIENT_SELECT_SHIP</b>   </td><td class="markdownTableBodyNone"><code>ShipID (int)</code>   </td><td class="markdownTableBodyNone">Client selects a ship.   </td><td class="markdownTableBodyNone">Client 💻    </td></tr>
+<td class="markdownTableBodyNone"><b>CLIENT_SELECT_SHIP</b>   </td><td class="markdownTableBodyNone"><code>ShipID (int)</code>   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> selects a ship.   </td><td class="markdownTableBodyNone"><a class="el" href="NetworkServer_8hpp.html#a621a3d0b1af26fc6b724a97c867da53b">Client</a> 💻    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><b>SERVER_ENTITY_NEW</b>   </td><td class="markdownTableBodyNone"><code>EntityID (int)</code>   </td><td class="markdownTableBodyNone">Server notifies of a new entity.   </td><td class="markdownTableBodyNone">Server 🗄️    </td></tr>
 <tr class="markdownTableRowEven">
@@ -155,8 +155,8 @@ CLIENT_JOIN</h2>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_JOIN&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Return Value:</b> 200 OK</p>
-<p><b>Error Value:</b></p><ul>
-<li>500: Game is full, cannot join at the moment</li>
+<p><b><a class="el" href="classError.html">Error</a> Value:</b></p><ul>
+<li>500: <a class="el" href="classGame.html">Game</a> is full, cannot join at the moment</li>
 <li>503: Server is down/not found</li>
 <li>504: Not connected to the internet</li>
 </ul>
@@ -167,7 +167,7 @@ CLIENT_LEAVE</h2>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_LEAVE&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Return Value:</b> 200 OK</p>
-<p><b>Error Value:</b></p><ul>
+<p><b><a class="el" href="classError.html">Error</a> Value:</b></p><ul>
 <li>500: Not in a game</li>
 </ul>
 <hr  />
@@ -177,7 +177,7 @@ CLIENT_SHOOT</h2>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_SHOOT&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Return Value:</b> 200 OK</p>
-<p><b>Error Value:</b></p><ul>
+<p><b><a class="el" href="classError.html">Error</a> Value:</b></p><ul>
 <li>500: Not in a game</li>
 <li>503: No Ammo</li>
 </ul>
@@ -192,7 +192,7 @@ CLIENT_MOVEMENT</h2>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Return Value:</b> 200 OK</p>
-<p><b>Error Value:</b></p><ul>
+<p><b><a class="el" href="classError.html">Error</a> Value:</b></p><ul>
 <li>500: Can't move</li>
 </ul>
 <hr  />
@@ -202,7 +202,7 @@ CLIENT_START_GAME</h2>
 <div class="line">  &quot;command&quot;: &quot;CLIENT_START_GAME&quot;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Return Value:</b> 200 OK</p>
-<p><b>Error Value:</b></p><ul>
+<p><b><a class="el" href="classError.html">Error</a> Value:</b></p><ul>
 <li>500: Unable to start game</li>
 </ul>
 <hr  />
@@ -213,7 +213,7 @@ CLIENT_SELECT_SHIP</h2>
 <div class="line">  &quot;shipId&quot;: 3</div>
 <div class="line">}</div>
 </div><!-- fragment --><p><b>Return Value:</b> 200 OK</p>
-<p><b>Error Value:</b></p><ul>
+<p><b><a class="el" href="classError.html">Error</a> Value:</b></p><ul>
 <li>500: Invalid ship ID</li>
 </ul>
 <hr  />

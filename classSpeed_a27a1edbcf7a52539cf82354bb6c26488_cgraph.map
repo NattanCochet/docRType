@@ -1,0 +1,9 @@
+<map id="Speed::activate" name="Speed::activate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,116,80"/>
+<area shape="rect" id="Node000002" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="164,5,334,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,51,182,33,183,38,113,57"/>
+<area shape="rect" id="Node000003" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="186,55,312,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,65,171,65,171,70,116,70"/>
+<area shape="rect" id="Node000004" href="$classControllable.html#a71f14cac3e8b877c65d8aae0fb85ac32" title=" " alt="" coords="174,104,324,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="113,78,183,97,182,102,112,84"/>
+</map>

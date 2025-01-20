@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rulegenerator_0',['RuleGenerator',['../namespaceRuleGenerator.html',1,'']]]
+  ['hitbox_0',['Hitbox',['../namespaceHitbox.html',1,'']]]
 ];

@@ -1,0 +1,17 @@
+<map id="client/ECS/Components/Drawable.hpp" name="client/ECS/Components/Drawable.hpp">
+<area shape="rect" id="Node000001" title="Header file for the Drawable class." alt="" coords="308,5,467,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,77,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,47,92,96,91,91,307,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,94,230,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="333,49,214,91,212,86,331,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="254,94,391,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="374,48,344,83,340,80,369,45"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="416,94,493,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="406,45,436,80,432,83,402,48"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="516,94,555,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="426,44,504,86,501,90,423,49"/>
+<area shape="rect" id="Node000007" href="$Error_8hpp.html" title="Header file for the Error class, which defines custom error types for the application." alt="" coords="579,94,703,120"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="452,44,588,86,586,91,450,49"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="603,168,679,193"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="644,120,644,152,638,152,638,120"/>
+</map>

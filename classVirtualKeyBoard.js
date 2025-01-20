@@ -6,8 +6,7 @@ var classVirtualKeyBoard =
       [ "LEFT", "classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04a92582fb1f57e627a6e946bdd1f424466", null ],
       [ "RIGHT", "classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04a44942d774a6cb06c5406fd25ceafd563", null ],
       [ "SHOOT", "classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04a207dbe967e4438c9dcf19ac20a868c38", null ],
-      [ "FORCE", "classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04aab4e4d6349f771f41ed9c63b8809312f", null ],
-      [ "START", "classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04aedc63bb348f9f085a430c6a3a29a2583", null ]
+      [ "FORCE", "classVirtualKeyBoard.html#a787843931c9b1b020eb8d06e65de5d04aab4e4d6349f771f41ed9c63b8809312f", null ]
     ] ],
     [ "VirtualKeyBoard", "classVirtualKeyBoard.html#a7f9269f36bd2e75156fd0ab4358d9a93", null ],
     [ "~VirtualKeyBoard", "classVirtualKeyBoard.html#ad84ac5bb5d4caf1329eecaa0c26d43f2", null ],

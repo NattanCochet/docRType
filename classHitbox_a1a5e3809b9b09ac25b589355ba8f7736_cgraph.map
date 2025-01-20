@@ -1,5 +1,0 @@
-<map id="Hitbox::isCollisionWithID" name="Hitbox::isCollisionWithID">
-<area shape="rect" id="Node000001" title="Checks if there is a collision for a specific ID." alt="" coords="5,5,168,31"/>
-<area shape="rect" id="Node000002" href="$classHitbox.html#a424421a2384abf5ebc055fdb5f68bc5c" title="Checks if the hitbox is in a collision state." alt="" coords="216,5,339,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,16,200,16,200,21,168,21"/>
-</map>

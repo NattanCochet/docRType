@@ -111,8 +111,8 @@ $(function(){initNavTree('ABot_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;SFML/System.hpp&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="World_8hpp.html">../ECS/World.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="Position_8hpp.html">Position.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="server_2Logic_2include_2ECS_2World_8hpp.html">../ECS/World.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="server_2Logic_2include_2Components_2Position_8hpp.html">Position.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="Projectile_8hpp.html">Projectile.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="Hitbox_8hpp.html">Hitbox.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="Velocity_8hpp.html">Velocity.hpp</a>&quot;</span></div>
@@ -143,10 +143,8 @@ $(function(){initNavTree('ABot_8hpp_source.html',''); initResizable(true); });
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">/* !ABOT_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aHitbox_8hpp_html"><div class="ttname"><a href="Hitbox_8hpp.html">Hitbox.hpp</a></div></div>
-<div class="ttc" id="aPosition_8hpp_html"><div class="ttname"><a href="Position_8hpp.html">Position.hpp</a></div></div>
 <div class="ttc" id="aProjectile_8hpp_html"><div class="ttname"><a href="Projectile_8hpp.html">Projectile.hpp</a></div></div>
 <div class="ttc" id="aVelocity_8hpp_html"><div class="ttname"><a href="Velocity_8hpp.html">Velocity.hpp</a></div></div>
-<div class="ttc" id="aWorld_8hpp_html"><div class="ttname"><a href="World_8hpp.html">World.hpp</a></div></div>
 <div class="ttc" id="aclassABot_html"><div class="ttname"><a href="classABot.html">ABot</a></div><div class="ttdoc">Abstract base class for a bot in the game.</div><div class="ttdef"><b>Definition</b> <a href="#l00024">ABot.hpp:24</a></div></div>
 <div class="ttc" id="aclassABot_html_a2d7d8413d9a93be34aec0271faa61ca2"><div class="ttname"><a href="classABot.html#a2d7d8413d9a93be34aec0271faa61ca2">ABot::~ABot</a></div><div class="ttdeci">virtual ~ABot()=default</div><div class="ttdoc">Destructor for ABot.</div></div>
 <div class="ttc" id="aclassABot_html_a5d8c9bf9489c347df397a03cdd26e045"><div class="ttname"><a href="classABot.html#a5d8c9bf9489c347df397a03cdd26e045">ABot::_delay</a></div><div class="ttdeci">float _delay</div><div class="ttdoc">The delay value for the bot.</div><div class="ttdef"><b>Definition</b> <a href="#l00059">ABot.hpp:59</a></div></div>
@@ -155,7 +153,9 @@ $(function(){initNavTree('ABot_8hpp_source.html',''); initResizable(true); });
 <div class="ttc" id="aclassABot_html_a9bbd1332cd10405eb731203ed162f687"><div class="ttname"><a href="classABot.html#a9bbd1332cd10405eb731203ed162f687">ABot::shootProjectile</a></div><div class="ttdeci">virtual void shootProjectile(World &amp;world, std::size_t myIndexEntity)=0</div><div class="ttdoc">Shoots the bot&#39;s projectile.</div></div>
 <div class="ttc" id="aclassABot_html_a9c19f42cf1de9d09d8faa1ddfc8a3a77"><div class="ttname"><a href="classABot.html#a9c19f42cf1de9d09d8faa1ddfc8a3a77">ABot::_clock</a></div><div class="ttdeci">sf::Clock _clock</div><div class="ttdoc">The clock used to track time for the bot&#39;s actions.</div><div class="ttdef"><b>Definition</b> <a href="#l00064">ABot.hpp:64</a></div></div>
 <div class="ttc" id="aclassABot_html_aee5fa4934ac813fe492c73dedb09098e"><div class="ttname"><a href="classABot.html#aee5fa4934ac813fe492c73dedb09098e">ABot::moveBot</a></div><div class="ttdeci">virtual void moveBot(World &amp;world, std::size_t myIndexEntity)=0</div><div class="ttdoc">Moves the bot.</div></div>
-<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="World_8hpp_source.html#l00058">World.hpp:58</a></div></div>
+<div class="ttc" id="aclassWorld_html"><div class="ttname"><a href="classWorld.html">World</a></div><div class="ttdoc">Represents a game world that manages clients, levels, and world state.</div><div class="ttdef"><b>Definition</b> <a href="server_2Logic_2include_2ECS_2World_8hpp_source.html#l00060">World.hpp:61</a></div></div>
+<div class="ttc" id="aserver_2Logic_2include_2Components_2Position_8hpp_html"><div class="ttname"><a href="server_2Logic_2include_2Components_2Position_8hpp.html">Position.hpp</a></div></div>
+<div class="ttc" id="aserver_2Logic_2include_2ECS_2World_8hpp_html"><div class="ttname"><a href="server_2Logic_2include_2ECS_2World_8hpp.html">World.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

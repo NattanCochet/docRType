@@ -1,0 +1,9 @@
+<map id="Buttons::setKeyButton" name="Buttons::setKeyButton">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$classButtons.html#a6b6e32108bb627790becff1b2fef2dc8" title=" " alt="" coords="204,31,364,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,41,188,41,188,46,156,46"/>
+<area shape="rect" id="Node000003" href="$classRegistry.html#a117df2fe1f6df5ac54afe5955c374469" title="Retrieves the component array for a specific component type." alt="" coords="412,5,582,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,31,396,27,397,33,365,37"/>
+<area shape="rect" id="Node000004" href="$classWorld.html#ac30a80a7ae2e882de4b42e1308b01af9" title="Gets the world registry containing all game entities." alt="" coords="434,55,560,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="365,50,420,56,419,61,364,55"/>
+</map>

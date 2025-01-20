@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['tpshooter_0',['TpShooter',['../classTpShooter.html',1,'']]]
+  ['playerai_0',['PlayerAI',['../classPlayerAI.html',1,'']]],
+  ['position_1',['Position',['../classPosition.html',1,'']]],
+  ['projectile_2',['Projectile',['../classProjectile.html',1,'']]]
 ];
