@@ -33,7 +33,6 @@ class VirtualKeyBoard
             RIGHT = 3, ///< Control for moving right.
             SHOOT = 4, ///< Control for shooting.
             FORCE = 5, ///< Control for activating a force action.
-            START = 6, ///< Control for starting the game.
         };
 
         /**

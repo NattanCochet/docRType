@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2025
-** B-CPP-500-MAR-5-2-rtype-tom.calogheris [WSL: Ubuntu-22.04]
+** B-CPP-500-MAR-5-2-rtype-tom.calogheris
 ** File description:
 ** KamikazeShooter
 */
@@ -48,7 +48,6 @@ void KamikazeShooter::moveBot(World &world, std::size_t myIndexEntity)
 void KamikazeShooter::shootProjectile(World &world, std::size_t myIndexEntity)
 {
     std::optional<Velocity> &speed = world.getRegistry().get_components<Velocity>()[myIndexEntity];
-    std::optional<Hitbox> &hitbox = world.getRegistry().get_components<Hitbox>()[myIndexEntity];
     std::optional<Position> &pos = world.getRegistry().get_components<Position>()[myIndexEntity];
 
     CreateEntity &create = world.getClassCreateEntity();

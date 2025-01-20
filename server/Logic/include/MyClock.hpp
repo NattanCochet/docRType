@@ -9,7 +9,8 @@
 #define MYCLOCK_HPP_
 #include <SFML/System/Clock.hpp>
 
-class MyClock {
+class MyClock
+{
     public:
         MyClock();
         ~MyClock();

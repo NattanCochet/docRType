@@ -7,7 +7,7 @@
 
 #include "../include/WorldsIndex.hpp"
 
-WorldsIndex::WorldsIndex() : _nbrWorlds(0), _wordMap(), _nextIDWorld(0), _systems()
+WorldsIndex::WorldsIndex() : _nbrWorlds(0), _wordMap(), _nextIDWorld(1), _systems()
 {
 }
 
@@ -29,9 +29,7 @@ std::unordered_map<std::size_t, World> &WorldsIndex::getWorld()
 }
 
 std::size_t WorldsIndex::addWorld(
-    bool isClient, bool isPublic, int nbrPlayerMax, std::string nameRoom,
-    std::size_t clientID, std::string password
-)
+    bool isClient, bool isPublic, int nbrPlayerMax, std::string nameRoom, std::size_t clientID, std::string password)
 {
     _wordMap[_nextIDWorld] = World(isClient, isPublic, nbrPlayerMax, nameRoom, clientID, password);
     _systems.loadSystemsInWorld(_wordMap[_nextIDWorld]);
@@ -42,10 +40,13 @@ std::size_t WorldsIndex::addWorld(
 
 World WorldsIndex::deleteWorld(std::size_t index)
 {
-    World deletedWorld = _wordMap[index];
-    _wordMap.erase(index);
-    _nbrWorlds -= 1;
-    return (deletedWorld);
+    if (_wordMap.contains(index)) {
+        World deletedWorld = _wordMap[index];
+        _wordMap.erase(index);
+        _nbrWorlds -= 1;
+        return (deletedWorld);
+    }
+    throw ErrorKeyNotFound(std::to_string(index), "WorldsIndex::deleteWorld");
 }
 
 World WorldsIndex::deleteWorld(std::unordered_map<std::size_t, World>::iterator it)
@@ -61,9 +62,9 @@ std::size_t WorldsIndex::getNbrWorlds() const noexcept
     return (_nbrWorlds);
 }
 
-void WorldsIndex::applyFunctionsInWorlds()
+void WorldsIndex::applyFunctionsInWorlds(NetworkServer &server)
 {
     for (auto &it : _wordMap) {
-        it.second.applyFonctionInWorld();
+        it.second.applyFonctionInWorld(server);
     }
 }

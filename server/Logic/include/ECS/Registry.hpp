@@ -16,6 +16,7 @@
 #include <any>
 #include "ComponentArray.hpp"
 #include "Entity.hpp"
+#include "../../../Network/NetworkServer.hpp"
 
 class World;
 
@@ -34,7 +35,7 @@ class Registry
          *
          * @param system_func A function that takes a reference to a World object and returns an int.
          */
-        void register_systems(std::function<int(World &)> system_func)
+        void register_systems(std::function<int(World &, NetworkServer &)> system_func)
         {
             this->_system_array.push_back(system_func);
         }
@@ -44,7 +45,7 @@ class Registry
          *
          * @return A vector containing system functions.
          */
-        std::vector<std::function<int(World &)>> get_systems()
+        std::vector<std::function<int(World &, NetworkServer &)>> get_systems()
         {
             return (this->_system_array);
         }
@@ -197,7 +198,7 @@ class Registry
         std::unordered_map<std::type_index, std::any> _components_arrays; ///< A map of component arrays, indexed by component type.
         std::vector<std::function<void(Registry &, Entity const &)>> _erase_functions_array; ///< A list of erase functions for components.
 
-        std::vector<std::function<int(World &)>> _system_array; ///< A list of system functions.
+        std::vector<std::function<int(World &, NetworkServer &)>> _system_array; ///< A list of system functions.
 
         ComponentArray<Entity> _entity_array; ///< The array of entities in the registry.
         std::vector<Entity> _dead_entities_array; ///< A list of dead entities.

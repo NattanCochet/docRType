@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::spawnAfterDeadSystem(World &world)
+int Systems::spawnAfterDeadSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
     ComponentArray<SpawnAfterDead> &sads = r.get_components<SpawnAfterDead>();
@@ -16,14 +16,14 @@ int Systems::spawnAfterDeadSystem(World &world)
     std::size_t index = 0;
 
     for (std::optional<SpawnAfterDead> sad : sads) {
-        if (!sad || !sad.has_value() || index >= positions.size() ||
-            !positions[index] || !positions[index].has_value() || !sad->getIsDead()
-        ) {
+        if (!sad || !sad.has_value() || index >= positions.size() || !positions[index] ||
+            !positions[index].has_value() || !sad->getIsDead()) {
             index += 1;
             continue;
         }
         const sf::Vector2f &pos = positions[index]->getPosition();
         world.spawnEntityFromGeneratedWorld(sad->getIdBeforeDead(), pos.x, pos.y);
+        world.sendToAllClientEntityDead(server, index, false);
         r.kill_entity(r.entity_from_index(index));
     }
     return (0);

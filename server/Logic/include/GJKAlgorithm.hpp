@@ -53,7 +53,7 @@ class GJKAlgorithm {
          * @param shapeB The second hitbox for collision detection.
          * @return An array of booleans representing the collision zones.
          */
-        const std::optional<std::array<bool, 8>> gjkCollision(const Hitbox& shapeA, const Hitbox& shapeB);
+        const std::optional<std::array<bool, 8>> gjkCollision(const Hitbox::RectHitbox &shapeA, const Hitbox::RectHitbox &shapeB);
 
     private:
         /**
@@ -104,7 +104,7 @@ class GJKAlgorithm {
          * @param direction The direction in which to compute the support point.
          * @return The support point between the two shapes in the given direction.
          */
-        Vector<float, 2> support(const Hitbox& shapeA, const Hitbox& shapeB, const Vector<float, 2>& direction);
+        Vector<float, 2> support(const Hitbox::RectHitbox &shapeA, const Hitbox::RectHitbox &shapeB, const Vector<float, 2>& direction);
 
         /**
          * @brief Handles the simplex and updates the direction vector.
@@ -129,7 +129,7 @@ class GJKAlgorithm {
          * @param direction The direction in which to find the farthest point.
          * @return The farthest point of the rectangle in the given direction.
          */
-        Vector<float, 2> getFarthestPointRectangle(const Hitbox& shape, const Vector<float, 2>& direction);
+        Vector<float, 2> getFarthestPointRectangle(const Hitbox::RectHitbox &shape, const Vector<float, 2>& direction);
 
         /**
          * @brief Retrieves the farthest point from a circle in a given direction.
@@ -141,27 +141,7 @@ class GJKAlgorithm {
          * @param direction The direction in which to find the farthest point.
          * @return The farthest point of the circle in the given direction.
          */
-        Vector<float, 2> getFarthestPointCircle(const Hitbox& shape, const Vector<float, 2>& direction);
-
-        /**
-         * @brief Transforms a vector of arbitrary dimension into a 2D vector.
-         *
-         * This template function transforms a vector of any size into a 2D vector by
-         * extracting the first two elements and converting them to a `Vector<float, 2>`.
-         *
-         * @tparam T The type of the elements in the vector.
-         * @tparam N The size of the vector.
-         * @param toTransform The vector to transform into 2D.
-         * @return The transformed 2D vector.
-         */
-        template<typename T, std::size_t N>
-        Vector<float, 2> transformeVectorToVector2F(Vector<T, N> toTransform)
-        {
-            Vector<float, 2> result;
-
-            result = {static_cast<float>(toTransform[0]), static_cast<float>(toTransform[1])};
-            return (result);
-        }
+        Vector<float, 2> getFarthestPointCircle(const Hitbox::RectHitbox &shape, const Vector<float, 2>& direction);
 
         /**
          * @brief Analyzes the collision zones between two hitboxes.
@@ -173,7 +153,7 @@ class GJKAlgorithm {
          * @param shapeB The second hitbox for collision detection.
          * @param result The array that will hold the results of the collision analysis.
          */
-        void analyzeCollisionZones(const Hitbox& shapeA, const Hitbox& shapeB, std::array<bool, 8> &result);
+        void analyzeCollisionZones(const Hitbox::RectHitbox &shapeA, const Hitbox::RectHitbox &shapeB, std::array<bool, 8> &result);
 };
 
 #endif /* !GJKALGORITHM_HPP_ */

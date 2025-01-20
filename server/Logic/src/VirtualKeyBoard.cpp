@@ -16,7 +16,6 @@ VirtualKeyBoard::VirtualKeyBoard()
         {CONTROL::RIGHT, false},
         {CONTROL::SHOOT, false},
         {CONTROL::FORCE, false},
-        {CONTROL::START, false}
     };
     _isChargingShoot = false;
     _isChargingForce = false;

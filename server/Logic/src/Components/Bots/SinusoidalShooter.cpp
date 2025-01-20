@@ -43,5 +43,5 @@ void SinusoidalShooter::shootProjectile(World &world, std::size_t myIndexEntity)
         return;
     }
 
-    world.getClassCreateEntity().createLaser(pos->getPosition(), world.getRegistry(), myIndexEntity, false, false);
+    world.getClassCreateEntity().createShootEnnemy(pos->getPosition(), world.getRegistry(), myIndexEntity);
 }

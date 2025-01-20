@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::winSystem(World &world)
+int Systems::winSystem(World &world, NetworkServer &server)
 {
     if (!world.getIsLevelFinishedToSpawn()) {
         return (0);
@@ -16,11 +16,13 @@ int Systems::winSystem(World &world)
     if (clockGenrationWorld.getElapsedTime().asSeconds() < world.getSpawnTimeThreshold()) {
         return (0);
     }
-    clockGenrationWorld.restartAndPause();
-    if (world.getBossIDAtTheEnd() == -1) {
-        world.resetFinishedLevel(true);
-        return (0);
+    ComponentArray<Ennemy> enemies = world.getRegistry().get_components<Ennemy>();
+    for (std::optional<Ennemy> enemy : enemies) {
+        if (enemy && enemy.has_value()) {
+            return (0);
+        }
     }
-    // attendre que le boss soit mort pour reinitalise la partie
+    clockGenrationWorld.restartAndPause();
+    world.resetFinishedLevel(true, server);
     return (0);
 }

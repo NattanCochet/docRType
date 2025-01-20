@@ -7,12 +7,8 @@
 
 #include "../../../include/Components/Bots/TpShooter.hpp"
 
-TpShooter::TpShooter(float delay, std::size_t nbrShoot)
-    : _clockShoot(),
-      _clockWaitShoot(),
-      _isShooting(false),
-      _nbrShootTotal(nbrShoot),
-      _nbrShoot(0)
+TpShooter::TpShooter(float delay, std::size_t nbrShoot) :
+    _clockShoot(), _clockWaitShoot(), _isShooting(false), _nbrShootTotal(nbrShoot), _nbrShoot(0)
 {
     _delay = delay;
 }
@@ -26,7 +22,8 @@ void TpShooter::moveBot(World &world, std::size_t myIndexEntity)
     if (!this->_isShooting) {
         const auto &[widthWindow, heightWindow] = world.getSizeWindow();
         std::optional<Position> &pos = world.getRegistry().get_components<Position>()[myIndexEntity];
-        std::optional<Drawable::Drawable> &draw = world.getRegistry().get_components<Drawable::Drawable>()[myIndexEntity];
+        std::optional<Drawable::Drawable> &draw =
+            world.getRegistry().get_components<Drawable::Drawable>()[myIndexEntity];
 
         if (!pos || !pos.has_value() || !draw || !draw.has_value()) {
             return;
@@ -63,7 +60,8 @@ void TpShooter::shootProjectile(World &world, std::size_t myIndexEntity)
             if (this->_nbrShoot < this->_nbrShootTotal) {
                 if (this->_clockShoot.getElapsedTime().asSeconds() >= 0.2f) {
                     this->_nbrShoot += 1;
-                    world.getClassCreateEntity().createLaser(pos->getPosition(), world.getRegistry(), myIndexEntity, false, false);
+                    world.getClassCreateEntity().createShootEnnemy(
+                        pos->getPosition(), world.getRegistry(), myIndexEntity);
                     this->_clockShoot.restart();
                 }
             } else {

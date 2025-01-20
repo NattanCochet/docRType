@@ -7,41 +7,36 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::positionSystem(World &world)
+int Systems::positionSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
     ComponentArray<Position> &positions = r.get_components<Position>();
-    ComponentArray<Hitbox> &hitboxs = r.get_components<Hitbox>();
-    ComponentArray<Drawable::Drawable> &drawables = r.get_components<Drawable::Drawable>();
+    ComponentArray<Hitbox::Hitbox> &hitboxs = r.get_components<Hitbox::Hitbox>();
     const auto [windowWidth, windowHeight] = world.getSizeWindow();
     std::size_t sizeArrayPositions = positions.size();
 
-    const auto isCircleInWindow = [windowWidth, windowHeight](const sf::Vector2f &pos, const Vector<int, 2> &size) {
-        const int radius = size[0];
+    const auto isCircleInWindow = [windowWidth, windowHeight](const sf::Vector2f &pos, const sf::Vector2i &size) {
+        const int radius = size.x;
         return (pos.x + radius >= 0 && pos.x - radius <= windowWidth) &&
                (pos.y + radius >= 0 && pos.y - radius <= windowHeight);
     };
 
     for (std::size_t index = 0; index < sizeArrayPositions; index++) {
         if (index >= positions.size() || !positions[index].has_value() ||
-            index >= hitboxs.size() || !hitboxs[index].has_value() ||
-            index >= drawables.size() || !drawables[index].has_value()) {
+            index >= hitboxs.size() || !hitboxs[index].has_value()) {
             continue;
         }
 
         Position &position = positions[index].value();
-        Hitbox &hitbox = hitboxs[index].value();
-        Drawable::Drawable &drawable = drawables[index].value();
+        Hitbox::Hitbox &hitbox = hitboxs[index].value();
 
         const sf::Vector2f &pos = position.getPosition();
-        Vector<int, 2> sizeHitbox = hitbox.getSize();
-        sizeHitbox[0] *= drawable.getScale().x;
-        sizeHitbox[1] *= drawable.getScale().y;
+        const sf::Vector2i sizeHitbox = hitbox.getSizeHitbox(0);
         bool isInWindow = false;
 
-        switch (hitbox.getType()) {
+        switch (hitbox.getType(0)) {
             case Hitbox::TYPE::RECTANGLE:
-                isInWindow = isRectangleInWindow(windowWidth, windowHeight, pos, sizeHitbox, hitbox.getRotation());
+                isInWindow = isRectangleInWindow(windowWidth, windowHeight, pos, sizeHitbox, hitbox.getRotation(0));
                 break;
             case Hitbox::TYPE::CIRCULAR:
                 isInWindow = isCircleInWindow(pos, sizeHitbox);
@@ -53,13 +48,14 @@ int Systems::positionSystem(World &world)
         if (!position.getIsAppearOnTheWindow() && isInWindow) {
             position.setIsAppearOnTheWindow(true);
         } else if (position.getIsAppearOnTheWindow() && !isInWindow) {
+            world.sendToAllClientEntityDead(server, index, false);
             r.kill_entity(r.entity_from_index(index));
         }
     }
     return (0);
 }
 
-bool Systems::isRectangleInWindow(const std::size_t &windowWidth, const std::size_t &windowHeight, const sf::Vector2f &pos, const Vector<int, 2> &size, const float &rotation)
+bool Systems::isRectangleInWindow(const std::size_t &windowWidth, const std::size_t &windowHeight, const sf::Vector2f &pos, const sf::Vector2i &size, const float &rotation)
 {
     float rad = rotation * M_PI / 180.0f;
     float cos_r = std::cos(rad);
@@ -67,9 +63,9 @@ bool Systems::isRectangleInWindow(const std::size_t &windowWidth, const std::siz
 
     std::array<sf::Vector2f, 4> corners = {
         sf::Vector2f(0, 0),
-        sf::Vector2f(size[0], 0),
-        sf::Vector2f(size[0], size[1]),
-        sf::Vector2f(0, size[1])
+        sf::Vector2f(size.x, 0),
+        sf::Vector2f(size.x, size.y),
+        sf::Vector2f(0, size.y)
     };
 
     for (auto& corner : corners) {

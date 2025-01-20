@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::vitalitySystem(World &world)
+int Systems::vitalitySystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
     ComponentArray<Vitality> &vitalities = r.get_components<Vitality>();
@@ -20,6 +20,7 @@ int Systems::vitalitySystem(World &world)
                 if (index < sad.size() && sad[index].has_value()) {
                     sad[index]->entityIsDead();
                 } else {
+                    world.sendToAllClientEntityDead(server, index, false);
                     r.kill_entity(r.entity_from_index(index));
                 }
             }

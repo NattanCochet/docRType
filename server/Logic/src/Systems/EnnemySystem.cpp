@@ -8,7 +8,7 @@
 #include "../../include/Systems.hpp"
 
 
-int Systems::ennemySystem(World &world)
+int Systems::ennemySystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
 

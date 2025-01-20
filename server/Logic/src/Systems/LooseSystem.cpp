@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::looseSystem(World &world)
+int Systems::looseSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
 
@@ -18,6 +18,6 @@ int Systems::looseSystem(World &world)
             return (0);
         }
     }
-    world.resetFinishedLevel(false);
+    world.resetFinishedLevel(false, server);
     return (0);
 }

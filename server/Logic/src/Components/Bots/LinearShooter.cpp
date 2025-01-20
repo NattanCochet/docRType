@@ -41,8 +41,8 @@ void LinearShooter::shootProjectile(World &world, std::size_t myIndexEntity)
     }
 
     if (this->_honrizontal) {
-        c.createBomb(pos->getPosition(), world.getRegistry(), myIndexEntity, false);
+        c.createBomb(pos->getPosition(), world.getRegistry(), myIndexEntity, Hitbox::TEAM::ENNEMY);
     } else {
-        c.createLaser(pos->getPosition(), world.getRegistry(), myIndexEntity, false, false);
+        c.createShootEnnemy(pos->getPosition(), world.getRegistry(), myIndexEntity);
     }
 }

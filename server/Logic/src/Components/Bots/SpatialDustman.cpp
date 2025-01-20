@@ -20,15 +20,34 @@ SpatialDustman::~SpatialDustman()
 {
 }
 
+void SpatialDustman::moveBot(World &world, std::size_t myIndexEntity)
+{
+    Registry &r = world.getRegistry();
+    std::optional<Position> &pos = r.get_components<Position>()[myIndexEntity];
+    std::optional<Velocity> &vel = r.get_components<Velocity>()[myIndexEntity];
+
+    if (!pos.has_value() || !vel.has_value()) {
+        return;
+    }
+    if (pos->getPosition().x <= 1650) {
+        r.remove_component<Velocity>(r.entity_from_index(myIndexEntity));
+    }
+}
+
 void SpatialDustman::shootProjectile(World &world, std::size_t myIndexEntity)
 {
     CreateEntity &ce = world.getClassCreateEntity();
-    std::optional<Position> &pos = world.getRegistry().get_components<Position>()[myIndexEntity];
-    std::optional<Drawable::Drawable> &drawables = world.getRegistry().get_components<Drawable::Drawable>()[myIndexEntity];
+    Registry &r = world.getRegistry();
+    std::optional<Position> &pos = r.get_components<Position>()[myIndexEntity];
+    std::optional<Velocity> &vel = r.get_components<Velocity>()[myIndexEntity];
 
-    if (drawables->getCurrentFrame() == 3)
-    {
-        ce.createLaser(sf::Vector2f(pos->getPosition().x - 30, pos->getPosition().y + 120), world.getRegistry(), myIndexEntity, false, false);
+    if (!pos.has_value() || vel.has_value()) {
+        return;
+    }
+    std::optional<Drawable::Drawable> &drawables = r.get_components<Drawable::Drawable>()[myIndexEntity];
+
+    if (drawables->getCurrentFrame() == 3) {
+        ce.createShootEnnemy(sf::Vector2f(pos->getPosition().x - 30, pos->getPosition().y + 120), r, myIndexEntity);
     }
 
     std::vector<sf::Vector2f> columnPositions = {
@@ -39,20 +58,15 @@ void SpatialDustman::shootProjectile(World &world, std::size_t myIndexEntity)
     static std::uniform_real_distribution<float> timeDist(1.0f, 5.0f);
 
     static std::vector<float> timers = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f};
-    static std::vector<float> thresholds = {
-        timeDist(rng), timeDist(rng), timeDist(rng),
-        timeDist(rng), timeDist(rng), timeDist(rng),
-        timeDist(rng), timeDist(rng)
-    };
+    static std::vector<float> thresholds = {timeDist(rng), timeDist(rng), timeDist(rng), timeDist(rng), timeDist(rng),
+        timeDist(rng), timeDist(rng), timeDist(rng)};
 
     float elapsedTime = _clock.getElapsedTime().asSeconds();
 
-    for (int i = 0; i < columnPositions.size() - 1; ++i)
-    {
+    for (int i = 0; i < columnPositions.size() - 1; ++i) {
         timers[i] += elapsedTime;
-        if (timers[i] > thresholds[i])
-        {
-            ce.createBossBomb(columnPositions[i], world.getRegistry(), myIndexEntity);
+        if (timers[i] > thresholds[i]) {
+            ce.createBossBomb(columnPositions[i], r, myIndexEntity);
             timers[i] = 0.0f;
             thresholds[i] = timeDist(rng);
         }

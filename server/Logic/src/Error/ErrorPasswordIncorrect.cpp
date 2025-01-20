@@ -7,7 +7,7 @@
 
 #include "../../include/Error/ErrorPasswordIncorrect.hpp"
 
-ErrorPasswordIncorrect::ErrorPasswordIncorrect(std::string password)
-    : AError("Error with password: Not the same password (" + password + ")")
+ErrorPasswordIncorrect::ErrorPasswordIncorrect(std::string password) :
+    AError("Error with password: Not the same password (\"" + password + "\")")
 {
 }

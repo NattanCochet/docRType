@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::controllableSystem(World &world)
+int Systems::controllableSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
     CreateEntity &ce = world.getClassCreateEntity();
@@ -15,7 +15,7 @@ int Systems::controllableSystem(World &world)
     ComponentArray<Position> &position = r.get_components<Position>();
     ComponentArray<Controllable> &controllables = r.get_components<Controllable>();
     ComponentArray<Clock> &clocks = r.get_components<Clock>();
-    ComponentArray<Hitbox> &hitboxs = r.get_components<Hitbox>();
+    ComponentArray<Hitbox::Hitbox> &hitboxs = r.get_components<Hitbox::Hitbox>();
     ComponentArray<Force> &forces = r.get_components<Force>();
     ComponentArray<Area> &areas = r.get_components<Area>();
     ComponentArray<Drawable::Drawable> &drawables = r.get_components<Drawable::Drawable>();
@@ -24,48 +24,34 @@ int Systems::controllableSystem(World &world)
 
     for (std::optional<Controllable> &controllable : controllables) {
         if (!controllable.has_value() || index >= position.size() || !position[index].has_value() ||
-            index >= clocks.size() || !clocks[index].has_value())
-        {
+            index >= clocks.size() || !clocks[index].has_value()) {
             index += 1;
             continue;
         }
         VirtualKeyBoard &keyBoardControllable = controllable->getVirtualKeyboard();
         if (index < hitboxs.size() && hitboxs[index].has_value()) {
-            movePlayerFromControllable(
-                position[index]->getPosition(), hitboxs[index].value(),
-                keyBoardControllable,
-                clocks[index].value(), sizeWindow
-            );
+            movePlayerFromControllable(position[index]->getPosition(), hitboxs[index].value(), keyBoardControllable,
+                clocks[index].value(), sizeWindow, controllable->getSpeed());
             position[index]->setPosition(position[index]->getPosition());
         }
         int indexForce = isForceEquipped(forces, index);
         if (indexForce != -1) {
-            shootHandling(
-                ce, r, keyBoardControllable,
-                position[index].value(), clocks[index].value(), index,
-                forces[indexForce].value()
-            );
+            shootHandling(ce, r, keyBoardControllable, position[index].value(), clocks[index].value(), index,
+                forces[indexForce].value());
         } else {
-            shootHandling(
-                ce, r, keyBoardControllable,
-                position[index].value(), clocks[index].value(), index
-            );
+            shootHandling(ce, r, keyBoardControllable, position[index].value(), clocks[index].value(), index);
         }
         if (index < areas.size() && areas[index].has_value()) {
             forceHandling(
-                keyBoardControllable, clocks[index].value(), areas[index].value(),
-                forces, position, index, drawables
-            );
+                keyBoardControllable, clocks[index].value(), areas[index].value(), forces, position, index, drawables);
         }
         index += 1;
     }
     return (0);
 }
 
-void Systems::shootHandling(
-    CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
-    Clock &clocks, const std::size_t &index, Force &forces
-)
+void Systems::shootHandling(CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
+    Clock &clocks, const std::size_t &index, Force &forces)
 {
     static constexpr float SPAM_PROTECTION_DELAY = 0.1f;
     static constexpr float CHARGE_THRESHOLD = 0.3f;
@@ -82,6 +68,7 @@ void Systems::shootHandling(
     if (keyboard.isKeyIsPressed(VirtualKeyBoard::CONTROL::SHOOT)) {
         if (!keyboard.isChargingShoot()) {
             keyboard.setIsChargingShoot(true);
+            forces.stopShoot();
             keyPressing.restart();
         }
         return;
@@ -99,18 +86,16 @@ void Systems::shootHandling(
     if (chargeTime >= CHARGE_THRESHOLD) {
         const float clampedTime = std::min(chargeTime, MAX_CHARGE_TIME);
         const float damage = BASE_DAMAGE * (clampedTime / MAX_CHARGE_TIME);
-        ce.createBeam(currentPosition.getPosition(), r, damage, index, true, true);
+        ce.createBeam(currentPosition.getPosition(), r, damage, index);
     } else {
-        ce.createLaser(currentPosition.getPosition(), r, index, true, true);
+        ce.createShootPlayer(currentPosition.getPosition(), r, index);
     }
 
     spamProtection.restart();
 }
 
-void Systems::shootHandling(
-    CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
-    Clock &clocks, const std::size_t &index
-)
+void Systems::shootHandling(CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
+    Clock &clocks, const std::size_t &index)
 {
     static constexpr float SPAM_PROTECTION_DELAY = 0.1f;
     static constexpr float CHARGE_THRESHOLD = 0.3f;
@@ -142,59 +127,53 @@ void Systems::shootHandling(
     if (chargeTime >= CHARGE_THRESHOLD) {
         const float clampedTime = std::min(chargeTime, MAX_CHARGE_TIME);
         const float damage = BASE_DAMAGE * (clampedTime / MAX_CHARGE_TIME);
-        ce.createBeam(currentPosition.getPosition(), r, damage, index, true, true);
+        ce.createBeam(currentPosition.getPosition(), r, damage, index);
     } else {
-        ce.createLaser(currentPosition.getPosition(), r, index, true, true);
+        ce.createShootPlayer(currentPosition.getPosition(), r, index);
     }
 
     spamProtection.restart();
 }
 
-void Systems::movePlayerFromControllable(
-    sf::Vector2f &pos, const Hitbox &hitbox, VirtualKeyBoard &keyboard, Clock &clock,
-    const std::pair<std::size_t, std::size_t> &sizeWindow
-)
+void Systems::movePlayerFromControllable(sf::Vector2f &pos, const Hitbox::Hitbox &hitbox, VirtualKeyBoard &keyboard,
+    Clock &clock, const std::pair<std::size_t, std::size_t> &sizeWindow, const int speed)
 {
     sf::Clock &movePlayer = clock.getClock("movePlayer");
     if (movePlayer.getElapsedTime().asMilliseconds() <= 16) {
         return;
     }
 
-    static const float speedValue = 15; // a changer en fonction de la vitesse
-
     float newPosX = 0.0f;
     float newPosY = 0.0f;
 
     if (keyboard.isKeyIsPressed(VirtualKeyBoard::CONTROL::DOWN)) {
         if (!hitbox.isCollisionInDirection(Hitbox::DIRECTION::DOWN) &&
-            pos.y + hitbox.getSize()[1] <= sizeWindow.second) {
-            newPosY += speedValue;
+            pos.y + hitbox.getSizeHitbox(0).y <= sizeWindow.second) {
+            newPosY += speed;
         }
     }
 
     if (keyboard.isKeyIsPressed(VirtualKeyBoard::CONTROL::RIGHT)) {
         if (!hitbox.isCollisionInDirection(Hitbox::DIRECTION::RIGHT) &&
-            pos.x + hitbox.getSize()[0] <= sizeWindow.first) {
-            newPosX += speedValue;
+            pos.x + hitbox.getSizeHitbox(0).x <= sizeWindow.first) {
+            newPosX += speed;
         }
     }
 
     if (keyboard.isKeyIsPressed(VirtualKeyBoard::CONTROL::LEFT)) {
-        if (!hitbox.isCollisionInDirection(Hitbox::DIRECTION::LEFT) &&
-            pos.x >= 0) {
-            newPosX -= speedValue;
+        if (!hitbox.isCollisionInDirection(Hitbox::DIRECTION::LEFT) && pos.x >= 0) {
+            newPosX -= speed;
         }
     }
 
     if (keyboard.isKeyIsPressed(VirtualKeyBoard::CONTROL::UP)) {
-        if (!hitbox.isCollisionInDirection(Hitbox::DIRECTION::UP) &&
-            pos.y >= 0) {
-            newPosY -= speedValue;
+        if (!hitbox.isCollisionInDirection(Hitbox::DIRECTION::UP) && pos.y >= 0) {
+            newPosY -= speed;
         }
     }
 
     if (newPosX != 0.0f && newPosY != 0.0f) {
-        float scale = speedValue / (std::sqrt(newPosX * newPosX + newPosY * newPosY));
+        float scale = speed / (std::sqrt(newPosX * newPosX + newPosY * newPosY));
         newPosX *= scale;
         newPosY *= scale;
     }
@@ -203,10 +182,9 @@ void Systems::movePlayerFromControllable(
     movePlayer.restart();
 }
 
-void Systems::forceHandling(
-    VirtualKeyBoard &keyboard, Clock &clocks, Area &areaControllable, ComponentArray<Force> &forces,
-    ComponentArray<Position> &position, const std::size_t &idBelong, ComponentArray<Drawable::Drawable> &drawable
-)
+void Systems::forceHandling(VirtualKeyBoard &keyboard, Clock &clocks, Area &areaControllable,
+    ComponentArray<Force> &forces, ComponentArray<Position> &position, const std::size_t &idBelong,
+    ComponentArray<Drawable::Drawable> &drawable)
 {
     static constexpr float SPAM_PROTECTION_DELAY = 0.1f;
     static constexpr float CHARGE_THRESHOLD = 0.3f;
@@ -257,17 +235,15 @@ void Systems::shootForwardForce(ComponentArray<Force> &forces, const float &dama
         }
         if (force->isEquipped()) {
             force->stopShoot();
-            force->shootForwardForce(damage);
+            force->shootForwardForce(damage * ((force->getLevelForce() + 1) / 3));
             return;
         }
         index += 1;
     }
 }
 
-void Systems::equipedForce(
-    const Area &areaControllable, ComponentArray<Force> &forces, ComponentArray<Position> &position,
-    const std::size_t &idBelong, ComponentArray<Drawable::Drawable> &drawable
-)
+void Systems::equipedForce(const Area &areaControllable, ComponentArray<Force> &forces,
+    ComponentArray<Position> &position, const std::size_t &idBelong, ComponentArray<Drawable::Drawable> &drawable)
 {
     std::size_t index = 0;
 
@@ -287,9 +263,11 @@ void Systems::equipedForce(
         if (areaControllable.isInAreaOfEntity(index)) {
             float sizeForce = 0.0;
             float sizeControllable = 0.0;
-            if (index < drawable.size() && idBelong < drawable.size() && drawable[index].has_value() && drawable[idBelong].has_value()) {
+            if (index < drawable.size() && idBelong < drawable.size() && drawable[index].has_value() &&
+                drawable[idBelong].has_value()) {
                 sizeForce = (drawable[index]->getCurrentRect()._rectWidth * drawable[index]->getScale().x) / 2;
-                sizeControllable = (drawable[idBelong]->getCurrentRect()._rectWidth * drawable[idBelong]->getScale().x) / 2;
+                sizeControllable =
+                    (drawable[idBelong]->getCurrentRect()._rectWidth * drawable[idBelong]->getScale().x) / 2;
             }
             force->equipped(idBelong, isToTheRight(position, idBelong, index, sizeForce, sizeControllable));
             return;
@@ -298,10 +276,8 @@ void Systems::equipedForce(
     }
 }
 
-bool Systems::isToTheRight(
-    ComponentArray<Position> &position, const std::size_t &idBelong, const std::size_t &index,
-    const float &sizeForce, const float &sizeControllable
-)
+bool Systems::isToTheRight(ComponentArray<Position> &position, const std::size_t &idBelong, const std::size_t &index,
+    const float &sizeForce, const float &sizeControllable)
 {
     sf::Vector2f &posControllable = position[idBelong].value().getPosition();
     sf::Vector2f &posForce = position[index].value().getPosition();

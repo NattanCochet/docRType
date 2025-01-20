@@ -7,9 +7,9 @@
 
 #include "../../include/Components/Force.hpp"
 
-Force::Force(int x)
-    : _xFinal(x), _idBelong(-1), _levelForce(0), _haveToShoot(false),
-      _toTheRight(true), _clockShoot(), _isShootForward(false), _initialeDamage(0.0), _isEquipped(false)
+Force::Force(int x) :
+    _xFinal(x), _idBelong(-1), _levelForce(0), _haveToShoot(false), _toTheRight(true), _clockShoot(),
+    _isShootForward(false), _initialeDamage(0.0), _isEquipped(false), _haveToCheckSkin(true)
 {
 }
 
@@ -50,6 +50,7 @@ void Force::equipped(const std::size_t &idBelongForce, const bool &isToTheRight)
     this->_isEquipped = true;
     this->_idBelong = idBelongForce;
     this->_toTheRight = isToTheRight;
+    this->_haveToCheckSkin = true;
 }
 
 void Force::unEquipped() noexcept
@@ -63,6 +64,7 @@ void Force::upgrade() noexcept
     if (this->_levelForce >= 2) {
         return;
     }
+    this->_haveToCheckSkin = true;
     this->_levelForce += 1;
 }
 
@@ -116,4 +118,14 @@ void Force::reattachedForce() noexcept
         this->_isShootForward = false;
         this->_isEquipped = true;
     }
+}
+
+const bool Force::HaveIToCheckSkin() const noexcept
+{
+    return (this->_haveToCheckSkin);
+}
+
+const void Force::checkSkinDone() noexcept
+{
+    this->_haveToCheckSkin = false;
 }

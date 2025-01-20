@@ -7,23 +7,21 @@
 
 #include "../../include/Systems.hpp"
 
-#include <boost/random.hpp>
 #include <boost/atomic.hpp>
+#include <boost/random.hpp>
 
-int Systems::ProjectileSystem(World &world)
+int Systems::ProjectileSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
 
-    ComponentArray<Hitbox> &hitboxs = r.get_components<Hitbox>();
+    ComponentArray<Hitbox::Hitbox> &hitboxs = r.get_components<Hitbox::Hitbox>();
     ComponentArray<Projectile> &projectiles = r.get_components<Projectile>();
     ComponentArray<Vitality> &vitalities = r.get_components<Vitality>();
 
     std::size_t index = 0;
 
     for (std::optional<Projectile> &projectile : projectiles) {
-        if (!projectile || !projectile.has_value() || index >= hitboxs.size() ||
-            !hitboxs[index].has_value())
-        {
+        if (!projectile || !projectile.has_value() || index >= hitboxs.size() || !hitboxs[index].has_value()) {
             index += 1;
             continue;
         }
@@ -34,13 +32,20 @@ int Systems::ProjectileSystem(World &world)
             }
 
             if (collisionID >= vitalities.size() || !vitalities[collisionID].has_value()) {
+                world.sendToAllClientEntityDead(server, index, false);
                 r.kill_entity(r.entity_from_index(index));
                 continue;
             }
-            vitalities[collisionID]->damageEntity(std::round(projectile->getDamage()));
-            attributeScore(world, vitalities[collisionID], projectile);
+            if (!projectile->isEntityIDAlreadyTouch(collisionID)) {
+                if (isHitboxHittenIsActivated(hitboxs, index, collisionID)) {
+                    vitalities[collisionID]->damageEntity(std::round(projectile->getDamage()));
+                }
+                projectile->addEntityIDAlreadyTouch(collisionID);
+                attributeScore(world, vitalities[collisionID], projectile);
+            }
 
             if (!projectile->getCanHoldCharge()) {
+                world.sendToAllClientEntityDead(server, index, false);
                 r.kill_entity(r.entity_from_index(index));
             }
         }
@@ -67,7 +72,29 @@ void Systems::attributeScore(World &world, std::optional<Vitality> &vitality, st
 
     std::size_t entityID = vitality->getEntityID();
     SpawnRule::Generator &srg = world.getClassSpawnRuleGenerator();
-    SpawnRule::EntityType &entity = srg.getEntity(entityID);
-    world.getClientsID()[controlableShooter.getClientID()].addScore(entity.scoreByDeath);
+    try {
+        SpawnRule::EntityType &entity = srg.getEntity(entityID);
+        world.getClientsID()[controlableShooter.getClientID()].addScore(entity.scoreByDeath, world.getCurrentLevel());
+    }
+    catch (ErrorKeyNotFound &e) {
+        std::cerr << e.what() << "\n";
+    }
     return;
+}
+
+bool Systems::isHitboxHittenIsActivated(
+    ComponentArray<Hitbox::Hitbox> &hitboxs, std::size_t indexCollision, std::size_t collisionWithEntityID)
+{
+    if (collisionWithEntityID >= hitboxs.size() || !hitboxs[collisionWithEntityID].has_value()) {
+        return (true);
+    }
+    std::size_t index = 0;
+    try {
+        index = hitboxs[collisionWithEntityID]->getHitboxsIndexInCollisionsWithEntityID(indexCollision);
+    }
+    catch (ErrorKeyNotFound &e) {
+        return (true);
+    }
+    const Hitbox::RectHitbox &rectHitbox = hitboxs[collisionWithEntityID]->getDataOfHitbox(index);
+    return (rectHitbox.isActivate);
 }

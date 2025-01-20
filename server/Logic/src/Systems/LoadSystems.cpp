@@ -30,7 +30,9 @@ void Systems::loadSystemsInWorld(World &world)
     r.register_systems(this->ennemySystem);
     r.register_systems(this->winSystem);
     r.register_systems(this->looseSystem);
-    // r.register_systems(this->spawnSystem);
+    r.register_systems(this->spawnSystem);
     r.register_systems(this->forceSystem);
     r.register_systems(this->areaSystem);
+    r.register_systems(this->bonusSystem);
+    r.register_systems(this->PlayerAISystem);
 }

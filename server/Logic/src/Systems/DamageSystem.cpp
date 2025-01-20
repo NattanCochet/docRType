@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::damageSystem(World &world) {
+int Systems::damageSystem(World &world, NetworkServer &server) {
     Registry &r = world.getRegistry();
     ComponentArray<Velocity> &velocity = r.get_components<Velocity>();
     ComponentArray<Position> &position = r.get_components<Position>();

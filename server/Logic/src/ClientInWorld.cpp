@@ -7,12 +7,13 @@
 
 #include "../include/ClientInWorld.hpp"
 
-ClientInWorld::ClientInWorld() : _clientID(0), _score(0), _maxScore(-1), _name("Unkwown")
+ClientInWorld::ClientInWorld() :
+    _clientID(0), _currentLevel(0), _score(0), _maxScorePerLevel(), _name("Unkwown"), _isReady(false), _rowSkin(0)
 {
 }
 
-ClientInWorld::ClientInWorld(std::size_t clientID, std::string name, int maxScore)
-    : _clientID(clientID), _score(0), _name(name), _maxScore(maxScore)
+ClientInWorld::ClientInWorld(std::size_t clientID, std::string name) :
+    _clientID(clientID), _currentLevel(0), _score(0), _maxScorePerLevel(), _name(name), _isReady(false), _rowSkin(0)
 {
 }
 
@@ -30,43 +31,75 @@ int ClientInWorld::getScore()
     return (this->_score);
 }
 
-int ClientInWorld::getMaxScore()
+const std::size_t &ClientInWorld::getMaxScorePerLevel(const std::size_t &level) const
 {
-    return (this->_maxScore);
+    if (level >= this->_maxScorePerLevel.size()) {
+        throw ErrorKeyNotFound(std::to_string(level), "ClientInWorld::getMaxScorePerLevel");
+    }
+    return (this->_maxScorePerLevel[level]);
 }
 
-std::string ClientInWorld::getName()
+const std::string &ClientInWorld::getName() const noexcept
 {
     return (this->_name);
 }
 
-void ClientInWorld::setClientID(std::size_t newClientID)
+void ClientInWorld::setClientID(const std::size_t &newClientID) noexcept
 {
     this->_clientID = newClientID;
 }
 
-void ClientInWorld::setScore(int newScore)
+void ClientInWorld::addScore(const int scoreToAdd, const std::size_t scoringInLevel) noexcept
 {
-    this->_score = newScore;
-    if (this->_maxScore > 0 && this->_score > this->_maxScore) {
-        this->_score = this->_maxScore;
+    if (this->_currentLevel != scoringInLevel) {
+        this->saveScore();
+        this->_score = 0;
+        this->_currentLevel = scoringInLevel;
     }
-}
-
-void ClientInWorld::addScore(int scoreToAdd)
-{
     this->_score += scoreToAdd;
-    if (this->_maxScore > 0 && this->_score > this->_maxScore) {
-        this->_score = this->_maxScore;
+}
+
+void ClientInWorld::saveScore() noexcept
+{
+    if (this->_currentLevel >= this->_maxScorePerLevel.size()) {
+        this->_maxScorePerLevel.resize(this->_currentLevel + 1, 0);
+    }
+    if (this->_score > this->_maxScorePerLevel.at(this->_currentLevel)) {
+        this->_maxScorePerLevel[this->_currentLevel] = this->_score;
     }
 }
 
-void ClientInWorld::setMaxScore(int newMaxScore)
-{
-    this->_maxScore = newMaxScore;
-}
-
-void ClientInWorld::setName(std::string newName)
+void ClientInWorld::setName(const std::string &newName) noexcept
 {
     this->_name = newName;
+}
+
+void ClientInWorld::clientIsReady() noexcept
+{
+    this->_isReady = true;
+}
+
+void ClientInWorld::clientIsntReady() noexcept
+{
+    this->_isReady = false;
+}
+
+const bool &ClientInWorld::isReady() const noexcept
+{
+    return (this->_isReady);
+}
+
+void ClientInWorld::resetScore() noexcept
+{
+    this->_score = 0;
+}
+
+std::size_t &ClientInWorld::getRowSkin() noexcept
+{
+    return (this->_rowSkin);
+}
+
+void ClientInWorld::setRowSkin(const std::size_t rowSkin) noexcept
+{
+    this->_rowSkin = rowSkin % 5;
 }

@@ -45,7 +45,7 @@ class LinearShooter : public ABot {
         void shootProjectile(World &world, std::size_t myIndexEntity) override;
 
     private:
-        bool _horizontal; /**< Boolean indicating whether the bot shoots horizontally or vertically. */
+        bool _honrizontal; /**< Boolean indicating whether the bot shoots horizontally or vertically. */
         int _vSpeed; /**< Vertical speed of the bot. */
 };
 

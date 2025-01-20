@@ -5,15 +5,9 @@
 ** Drawable
 */
 
-/**
- * @file Drawable.hpp
- * @brief Declaration of the Drawable class, which represents an object that can be drawn on the screen.
- */
-
 #pragma once
 #ifndef DRAWABLE_HPP_
 #define DRAWABLE_HPP_
-
 #include <iostream>
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
@@ -22,37 +16,18 @@
 
 namespace Drawable
 {
-    /**
-     * @class FrameRect
-     * @brief Represents a frame of the sprite in the sprite sheet.
-     * 
-     * FrameRect holds the position and dimensions of a frame in the sprite sheet.
-     */
     class FrameRect
     {
         public:
-            /**
-             * @brief Constructor for FrameRect.
-             *
-             * Initializes the frame rectangle with the provided position and size.
-             * 
-             * @param rectLeft The left position of the rectangle in the sprite sheet.
-             * @param rectTop The top position of the rectangle in the sprite sheet.
-             * @param rectWidth The width of the rectangle in the sprite sheet.
-             * @param rectHeight The height of the rectangle in the sprite sheet.
-             */
             FrameRect(int rectLeft, int rectTop, int rectWidth, int rectHeight);
 
-            /**
-             * @brief Destructor for FrameRect.
-             */
             ~FrameRect() = default;
 
         public:
-            int _rectLeft;  /**< Left position of the frame in the sprite sheet */
-            int _rectTop;   /**< Top position of the frame in the sprite sheet */
-            int _rectWidth; /**< Width of the frame in the sprite sheet */
-            int _rectHeight; /**< Height of the frame in the sprite sheet */
+            int _rectLeft;
+            int _rectTop;
+            int _rectWidth;
+            int _rectHeight;
     };
 
     /**
@@ -70,20 +45,16 @@ namespace Drawable
              *
              * Initializes the Drawable object with specific values for the path, sprite sheet rectangle, animation,
              * scale, player status, and frame data for each direction (up, down, left, right).
-             * 
-             * @param type The type of the drawable object (e.g., "player", "enemy").
+             *
+             * @param path The file path to the image (sprite sheet).
+             * @param rect A vector containing the sprite sheet's position and size ([x, y, width, height]).
              * @param isAnimated A flag indicating if the sprite is animated.
              * @param scale The scale of the sprite.
-             * @param defaultFrame Frame data for the default (static) animation.
-             * @param secondForDefaultFrame Duration for each frame of the default animation.
-             * @param frameUP Frame data for the "up" animation.
-             * @param secondForFrameUp Duration for each frame of the "up" animation.
-             * @param frameDown Frame data for the "down" animation.
-             * @param secondForFrameDown Duration for each frame of the "down" animation.
-             * @param frameLeft Frame data for the "left" animation.
-             * @param secondForFrameLeft Duration for each frame of the "left" animation.
-             * @param frameRight Frame data for the "right" animation.
-             * @param secondForFrameRight Duration for each frame of the "right" animation.
+             * @param player A flag indicating if the sprite represents a player.
+             * @param frameUp Frame data for the sprite's "up" animation (optional).
+             * @param frameDown Frame data for the sprite's "down" animation (optional).
+             * @param frameLeft Frame data for the sprite's "left" animation (optional).
+             * @param frameRight Frame data for the sprite's "right" animation (optional).
              */
             Drawable(std::string type, bool isAnimated, sf::Vector2f scale,
                 std::vector<FrameRect> defaultFrame, float secondForDefaultFrame,
@@ -129,9 +100,9 @@ namespace Drawable
             FrameRect &getCurrentRect() noexcept;
 
             /**
-             * @brief Gets the frame data for the default animation.
+             * @brief Gets the frame data for the "up" animation.
              *
-             * @return A vector containing the frame indices for the default animation.
+             * @return A vector containing the frame indices for the "up" animation.
              */
             const std::vector<FrameRect> &getDefaultFrame() noexcept;
 
@@ -163,52 +134,18 @@ namespace Drawable
              */
             const std::vector<FrameRect> &getFrameRight() noexcept;
 
-            /**
-             * @brief Gets the duration for each frame of the default animation.
-             *
-             * @return The duration as a float.
-             */
             const float getSecondForDefaultFrame() const noexcept;
-
-            /**
-             * @brief Gets the duration for each frame of the "up" animation.
-             *
-             * @return The duration as a float.
-             */
             const float getSecondForFrameUp() const noexcept;
-
-            /**
-             * @brief Gets the duration for each frame of the "down" animation.
-             *
-             * @return The duration as a float.
-             */
             const float getSecondForFrameDown() const noexcept;
-
-            /**
-             * @brief Gets the duration for each frame of the "left" animation.
-             *
-             * @return The duration as a float.
-             */
             const float getSecondForFrameLeft() const noexcept;
-
-            /**
-             * @brief Gets the duration for each frame of the "right" animation.
-             *
-             * @return The duration as a float.
-             */
             const float getSecondForFrameRight() const noexcept;
 
-            /**
-             * @brief Gets the duration for the current animation direction.
-             *
-             * @return The duration as a float.
-             */
             const float getSecondDependOnDirection() const noexcept;
 
             /**
              * @brief Sets the file path to the sprite image.
              *
-             * @param newType The new file path to set.
+             * @param newPath The new file path to set.
              */
             void setType(const std::string &newType) noexcept;
 
@@ -234,9 +171,9 @@ namespace Drawable
             void setCurrentRect(const FrameRect &newCurrentRect) noexcept;
 
             /**
-             * @brief Sets the frame data for the default animation.
+             * @brief Sets the frame data for the "up" animation.
              *
-             * @param newDefaultFrame A vector containing the new frame indices for the default animation.
+             * @param newFrameUp A vector containing the new frame indices for the "up" animation.
              */
             void setDefaultFrame(const std::vector<FrameRect> &newDefaultFrame);
 
@@ -268,76 +205,94 @@ namespace Drawable
              */
             void setFrameRight(const std::vector<FrameRect> &newFrameRight) noexcept;
 
-            /**
-             * @brief Sets the duration for each frame of the default animation.
-             *
-             * @param newSecondForDefaultFrame The new duration as a float.
-             */
             void setSecondForDefaultFrame(const float &newSecondForDefaultFrame) noexcept;
-
-            /**
-             * @brief Sets the duration for each frame of the "up" animation.
-             *
-             * @param newSecondForFrameUp The new duration as a float.
-             */
             void setSecondForFrameUp(const float &newSecondForFrameUp) noexcept;
-
-            /**
-             * @brief Sets the duration for each frame of the "down" animation.
-             *
-             * @param newSecondForFrameDown The new duration as a float.
-             */
             void setSecondForFrameDown(const float &newSecondForFrameDown) noexcept;
-
-            /**
-             * @brief Sets the duration for each frame of the "left" animation.
-             *
-             * @param newSecondForFrameLeft The new duration as a float.
-             */
             void setSecondForFrameLeft(const float &newSecondForFrameLeft) noexcept;
-
-            /**
-             * @brief Sets the duration for each frame of the "right" animation.
-             *
-             * @param newSecondForFrameRight The new duration as a float.
-             */
             void setSecondForFrameRight(const float &newSecondForFrameRight) noexcept;
 
-            /**
-             * @brief Resets the clock and frame counter for the animation.
-             */
-            void resetClock() noexcept;
+            void passNextFrame() noexcept;
+            void setDirectionFrame(const int &direction) noexcept;
 
-            /**
-             * @brief Updates the frame for the animation based on the time elapsed.
-             */
-            void updateFrame() noexcept;
-            
-            /**
-             * @brief Draws the sprite on the given window.
-             *
-             * @param window The window on which the sprite should be drawn.
-             */
-            void draw(sf::RenderWindow &window) noexcept;
+            sf::Clock &getClock() noexcept;
 
+            std::size_t getCurrentFrame() const;
+
+        protected:
         private:
-            std::string _type; /**< The file path of the sprite image */
-            bool _isAnimate; /**< Flag indicating if the sprite is animated */
-            sf::Vector2f _scale; /**< Scaling factor for the sprite */
-            FrameRect _currentRect; /**< Texture rectangle for the sprite */
-            std::vector<FrameRect> _defaultFrame; /**< Frame data for the default (static) animation */
-            std::vector<FrameRect> _frameUP; /**< Frame data for the "up" animation */
-            std::vector<FrameRect> _frameDown; /**< Frame data for the "down" animation */
-            std::vector<FrameRect> _frameLeft; /**< Frame data for the "left" animation */
-            std::vector<FrameRect> _frameRight; /**< Frame data for the "right" animation */
-            float _secondForDefaultFrame; /**< Duration for each frame of the default animation */
-            float _secondForFrameUp; /**< Duration for each frame of the "up" animation */
-            float _secondForFrameDown; /**< Duration for each frame of the "down" animation */
-            float _secondForFrameLeft; /**< Duration for each frame of the "left" animation */
-            float _secondForFrameRight; /**< Duration for each frame of the "right" animation */
-            sf::Clock _clock; /**< Clock to manage frame transitions */
-            int _actualFrame; /**< The current frame of animation */
-            int _direction; /**< Current animation direction (up, down, left, right) */
+            /**
+             * @brief The file path to the sprite image.
+             *
+             * This private member stores the file path for the image (sprite sheet) used to draw the sprite.
+             */
+            std::string _type;
+
+            /**
+             * @brief A flag indicating if the sprite is animated.
+             *
+             * This private member determines whether the sprite should be animated.
+             */
+            bool _isAnimated;
+
+            /**
+             * @brief The scale factor for the sprite.
+             *
+             * This private member defines how much to scale the sprite when rendering.
+             */
+            sf::Vector2f _scale;
+
+            /**
+             * @brief Frame data for the "up" animation.
+             *
+             * This private member stores the frame indices for the "up" animation.
+             */
+            std::vector<FrameRect> _defaultFrame;
+
+            /**
+             * @brief Frame data for the "down" animation.
+             *
+             * This private member stores the frame indices for the "down" animation.
+             */
+            std::vector<FrameRect> _frameUP;
+
+            /**
+             * @brief Frame data for the "left" animation.
+             *
+             * This private member stores the frame indices for the "left" animation.
+             */
+            std::vector<FrameRect> _frameDown;
+
+            /**
+             * @brief Frame data for the "right" animation.
+             *
+             * This private member stores the frame indices for the "right" animation.
+             */
+            std::vector<FrameRect> _frameLeft;
+
+            /**
+             * @brief Frame data for the "right" animation.
+             *
+             * This private member stores the frame indices for the "right" animation.
+             */
+            std::vector<FrameRect> _frameRight;
+
+            /**
+             * @brief The current frame of the animation.
+             *
+             * This private member keeps track of the current animation frame.
+             */
+            std::size_t _currentFrame;
+
+            int _directionFrame;
+
+            float _secondForDefaultFrame;
+            float _secondForFrameUp;
+            float _secondForFrameDown;
+            float _secondForFrameLeft;
+            float _secondForFrameRight;
+
+            sf::Clock _clock;
     };
-}
+};
+
 #endif /* !DRAWABLE_HPP_ */

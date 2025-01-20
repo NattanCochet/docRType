@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::spawnSystem(World &world)
+int Systems::spawnSystem(World &world, NetworkServer &server)
 {
     if (world.getIsLevelFinishedToSpawn()) {
         return (0);

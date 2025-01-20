@@ -5,30 +5,33 @@
 ** Systems
 */
 
-#pragma once
-
 #ifndef SYSTEMS_HPP_
 #define SYSTEMS_HPP_
-#include <optional>
-#include "ECS/World.hpp"
-#include "ECS/CreateEntity.hpp"
-#include "ECS/ComponentArray.hpp"
-#include "ECS/Registry.hpp"
-#include "Components/Vitality.hpp"
+#include "../../Network/NetworkServer.hpp"
+#include "Components/ABonus.hpp"
+#include "Components/Clock.hpp"
+#include "Components/Hitbox.hpp"
 #include "Components/Position.hpp"
 #include "Components/Velocity.hpp"
-#include "Components/Hitbox.hpp"
-#include "Components/Clock.hpp"
+#include "Components/Vitality.hpp"
+#include "ECS/ComponentArray.hpp"
+#include "ECS/CreateEntity.hpp"
+#include "ECS/Registry.hpp"
+#include "ECS/World.hpp"
 #include "GJKAlgorithm.hpp"
+#include <optional>
+#pragma once
 
 /**
  * @class Systems
  * @brief A class that contains all the systems for managing game logic related to entities in the ECS architecture.
  *
- * This class handles various game systems like vitality, velocity, damage, controllable input, hitbox collision, and drawable entities.
- * Each system is responsible for updating or processing certain components associated with entities in the world.
+ * This class handles various game systems like vitality, velocity, damage, controllable input, hitbox collision, and
+ * drawable entities. Each system is responsible for updating or processing certain components associated with entities
+ * in the world.
  */
-class Systems {
+class Systems
+{
     public:
         /**
          * @brief Constructor for the Systems class.
@@ -47,7 +50,8 @@ class Systems {
         /**
          * @brief Loads all systems into the world.
          *
-         * This method registers all available systems into the world, allowing them to be executed during the game loop.
+         * This method registers all available systems into the world, allowing them to be executed during the game
+         * loop.
          *
          * @param world A reference to the World object to load the systems into.
          */
@@ -61,17 +65,18 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system (typically 0 for success).
          */
-        static int vitalitySystem(World &world);
+        static int vitalitySystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes the velocity components of entities.
          *
-         * This system is responsible for updating the velocity and position of entities based on their current velocity.
+         * This system is responsible for updating the velocity and position of entities based on their current
+         * velocity.
          *
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int velocitySystem(World &world);
+        static int velocitySystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that handles damage calculations and application to entities.
@@ -81,17 +86,18 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int damageSystem(World &world);
+        static int damageSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes controllable components for player input.
          *
-         * This system updates entities that can be controlled by the player, like moving or rotating entities based on input.
+         * This system updates entities that can be controlled by the player, like moving or rotating entities based on
+         * input.
          *
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int controllableSystem(World &world);
+        static int controllableSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes the hitbox components for entities.
@@ -101,17 +107,18 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int hitboxSystem(World &world);
+        static int hitboxSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes drawable entities for rendering.
          *
-         * This system is responsible for updating or managing the graphical representations of entities to be rendered on screen.
+         * This system is responsible for updating or managing the graphical representations of entities to be rendered
+         * on screen.
          *
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int drawableSystem(World &world);
+        static int drawableSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes projectiles and their collisions.
@@ -121,7 +128,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int ProjectileSystem(World &world);
+        static int ProjectileSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that destroys entities when too far away from the game screen.
@@ -131,7 +138,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int positionSystem(World &world);
+        static int positionSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that checks if the player has won the game.
@@ -141,7 +148,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int winSystem(World &world);
+        static int winSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that checks if the player has lost the game.
@@ -151,7 +158,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int looseSystem(World &world);
+        static int looseSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system responsible for spawning entities.
@@ -161,7 +168,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int spawnSystem(World &world);
+        static int spawnSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes enemy behaviors and actions.
@@ -171,7 +178,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int ennemySystem(World &world);
+        static int ennemySystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that handles spawning of entities after their death.
@@ -181,7 +188,7 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int spawnAfterDeadSystem(World &world);
+        static int spawnAfterDeadSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes the force components for entities.
@@ -191,18 +198,22 @@ class Systems {
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int forceSystem(World &world);
+        static int forceSystem(World &world, NetworkServer &server);
 
         /**
          * @brief A system that processes area components for entities.
          *
-         * This system is responsible for managing areas of influence or effect, such as power-ups or environmental hazards.
+         * This system is responsible for managing areas of influence or effect, such as power-ups or environmental
+         * hazards.
          *
          * @param world A reference to the World object containing the entities to update.
          * @return An integer indicating the success or status of the system.
          */
-        static int areaSystem(World &world);
+        static int areaSystem(World &world, NetworkServer &server);
 
+        static int bonusSystem(World &world, NetworkServer &server);
+
+        static int PlayerAISystem(World &world, NetworkServer &server);
 
     private:
         /**
@@ -216,7 +227,9 @@ class Systems {
          * @param clock The clock to avoid player to move too fast
          * @param sizeWindow The pair including the size of the window (width, height)
          */
-        static void movePlayerFromControllable(sf::Vector2f &pos, const Hitbox &hitbox, VirtualKeyBoard &keyboard, Clock &clock, const std::pair<std::size_t, std::size_t> &sizeWindow);
+        static void movePlayerFromControllable(sf::Vector2f &pos, const Hitbox::Hitbox &hitbox,
+            VirtualKeyBoard &keyboard, Clock &clock, const std::pair<std::size_t, std::size_t> &sizeWindow,
+            const int speed);
 
         /**
          * @brief A helper function that calculates collisions between hitboxes using the GJK algorithm.
@@ -228,7 +241,9 @@ class Systems {
          * @param algoCollision The GJK collision algorithm instance to perform the collision check.
          * @return A vector of pairs, each containing an index and an array of collision states.
          */
-        static std::vector<std::pair<std::size_t, std::array<bool, 8>>> calculateCollision(ComponentArray<Hitbox> &hitboxs, std::size_t &indexToAnalyse, GJKAlgorithm &algoCollision);
+        static std::vector<std::pair<std::size_t, std::array<bool, 8>>> calculateCollision(
+            ComponentArray<Hitbox::Hitbox> &hitboxs, const std::size_t &indexToAnalyse, const std::size_t &indexHitbox,
+            GJKAlgorithm &algoCollision);
 
         /**
          * @brief A function that handles player input for projectile shooting.
@@ -240,24 +255,21 @@ class Systems {
          * @param r A reference to the Registry object containing the entities to update.
          * @param keyboard A reference to the keyboard to the client to know if the user has pressed a key.
          * @param currentPosition The position of the player to create a projectile at their position.
-         * @param clocks The clocks to know when the player is available to shoot and if the player is shooting a laser or a beam.
+         * @param clocks The clocks to know when the player is available to shoot and if the player is shooting a laser
+         * or a beam.
          * @param index The index of the shooter (or ID).
          * @param forces A reference to the forces that may affect the projectile.
          */
-        static void shootHandling(
-            CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
-            Clock &clocks, const std::size_t &index, Force &forces
-        );
+        static void shootHandling(CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
+            Clock &clocks, const std::size_t &index, Force &forces);
 
         /**
          * @brief A version of shootHandling without the 'forces' parameter.
          *
          * This variant of the shootHandling function does not take the forces parameter.
          */
-        static void shootHandling(
-            CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
-            Clock &clocks, const std::size_t &index
-        );
+        static void shootHandling(CreateEntity &ce, Registry &r, VirtualKeyBoard &keyboard, Position &currentPosition,
+            Clock &clocks, const std::size_t &index);
 
         /**
          * @brief Checks if a rectangle is within the boundaries of the window.
@@ -271,10 +283,8 @@ class Systems {
          * @param rotation The rotation of the rectangle (used to determine the rotated bounding box).
          * @return True if the rectangle is within the window, false otherwise.
          */
-        static bool isRectangleInWindow(
-            const std::size_t &windowWidth, const std::size_t &windowHeight, const sf::Vector2f &pos,
-            const Vector<int, 2> &size, const float &rotation
-        );
+        static bool isRectangleInWindow(const std::size_t &windowWidth, const std::size_t &windowHeight,
+            const sf::Vector2f &pos, const sf::Vector2i &size, const float &rotation);
 
         /**
          * @brief Updates the score of the player based on vitality and projectile components.
@@ -285,7 +295,8 @@ class Systems {
          * @param vitality An optional reference to the Vitality component of the player.
          * @param projectile An optional reference to the Projectile component.
          */
-        static void attributeScore(World &world, std::optional<Vitality> &vitality, std::optional<Projectile> &projectile);
+        static void attributeScore(
+            World &world, std::optional<Vitality> &vitality, std::optional<Projectile> &projectile);
 
         /**
          * @brief Retrieves the direction of the controllable entity based on the keyboard input.
@@ -311,7 +322,8 @@ class Systems {
         /**
          * @brief Executes a shooting action with a force applied.
          *
-         * This function handles shooting behavior where a force is involved, affecting the trajectory or behavior of the shot.
+         * This function handles shooting behavior where a force is involved, affecting the trajectory or behavior of
+         * the shot.
          *
          * @param world A reference to the World object containing entities to update.
          * @param index The index of the shooter entity.
@@ -332,7 +344,8 @@ class Systems {
         /**
          * @brief Handles force-related actions such as applying or moving forces.
          *
-         * This function processes input related to forces, such as moving them or applying them based on player controls.
+         * This function processes input related to forces, such as moving them or applying them based on player
+         * controls.
          *
          * @param keyboard A reference to the VirtualKeyBoard object for input.
          * @param clocks A reference to the Clock object for time-based actions.
@@ -342,10 +355,9 @@ class Systems {
          * @param idBelong The index of the entity associated with the forces.
          * @param drawable A reference to the array of Drawable components for rendering.
          */
-        static void forceHandling(
-            VirtualKeyBoard &keyboard, Clock &clocks, Area &areaControllable, ComponentArray<Force> &forces,
-            ComponentArray<Position> &position, const std::size_t &idBelong, ComponentArray<Drawable::Drawable> &drawable
-        );
+        static void forceHandling(VirtualKeyBoard &keyboard, Clock &clocks, Area &areaControllable,
+            ComponentArray<Force> &forces, ComponentArray<Position> &position, const std::size_t &idBelong,
+            ComponentArray<Drawable::Drawable> &drawable);
 
         /**
          * @brief Shoots a forward force with damage applied.
@@ -368,10 +380,9 @@ class Systems {
          * @param idBelong The index of the entity to equip the force.
          * @param drawable A reference to the array of Drawable components for rendering.
          */
-        static void equipedForce(
-            const Area &areaControllable, ComponentArray<Force> &forces, ComponentArray<Position> &position,
-            const std::size_t &idBelong, ComponentArray<Drawable::Drawable> &drawable
-        );
+        static void equipedForce(const Area &areaControllable, ComponentArray<Force> &forces,
+            ComponentArray<Position> &position, const std::size_t &idBelong,
+            ComponentArray<Drawable::Drawable> &drawable);
 
         /**
          * @brief Checks if a force is equipped on an entity.
@@ -387,7 +398,8 @@ class Systems {
         /**
          * @brief Checks if an entity is positioned to the right of another entity.
          *
-         * This function checks whether one entity is positioned to the right of another based on their respective positions.
+         * This function checks whether one entity is positioned to the right of another based on their respective
+         * positions.
          *
          * @param position A reference to the array of Position components.
          * @param idBelong The index of the first entity.
@@ -396,10 +408,8 @@ class Systems {
          * @param sizeControllable The size of the controllable entity.
          * @return True if the second entity is to the right of the first, false otherwise.
          */
-        static bool isToTheRight(
-            ComponentArray<Position> &position, const std::size_t &idBelong, const std::size_t &index,
-            const float &sizeForce, const float &sizeControllable
-        );
+        static bool isToTheRight(ComponentArray<Position> &position, const std::size_t &idBelong,
+            const std::size_t &index, const float &sizeForce, const float &sizeControllable);
 
         /**
          * @brief Checks if an entity touches the border of the screen.
@@ -412,11 +422,15 @@ class Systems {
          * @param index The index of the entity to check.
          * @return True if the entity touches the border, false otherwise.
          */
-        static bool touchTheBorderScreen(
-            float posX, std::pair<std::size_t, std::size_t> sizeWindow,
-            ComponentArray<Drawable::Drawable> &drawables, std::size_t index
-        );
+        static bool touchTheBorderScreen(float posX, std::pair<std::size_t, std::size_t> sizeWindow,
+            ComponentArray<Drawable::Drawable> &drawables, std::size_t index);
 
+        static bool isHitboxHittenIsActivated(
+            ComponentArray<Hitbox::Hitbox> &hitboxs, std::size_t indexCollision, std::size_t collisionWithEntityID);
+
+        static void checkIfEquippedBonus(std::shared_ptr<ABonus> &bon, Area &areaBonus, Registry &r);
+
+        static void changeSkinForce(Force &force, Drawable::Drawable &drawable);
 };
 
 #endif /* !SYSTEMS_HPP_ */

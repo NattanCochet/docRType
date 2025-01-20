@@ -30,7 +30,7 @@ class Controllable {
          * @brief Constructor for the Controllable class.
          *
          * Initializes the Controllable object with a given client ID.
-         * 
+         *
          * @param isPlayer A flag indicating if the controllable entity is a player.
          * @param clientID The ID of the client controlling the entity.
          */
@@ -47,7 +47,7 @@ class Controllable {
          * @brief Gets the client ID of the controllable entity.
          *
          * This method returns the client ID associated with the controllable entity.
-         * 
+         *
          * @return The client ID.
          */
         std::size_t getClientID() const noexcept;
@@ -56,7 +56,7 @@ class Controllable {
          * @brief Sets the client ID for the controllable entity.
          *
          * This method allows updating the client ID of the controllable entity.
-         * 
+         *
          * @param clientID The new client ID to be set.
          */
         void setClientID(const std::size_t &clientID) noexcept;
@@ -65,7 +65,7 @@ class Controllable {
          * @brief Gets the player flag.
          *
          * This method returns whether the entity is a player or not.
-         * 
+         *
          * @return A boolean indicating whether the entity is a player.
          */
         const bool getIsPlayer() const noexcept;
@@ -74,7 +74,7 @@ class Controllable {
          * @brief Sets the player flag.
          *
          * This method sets the flag indicating whether the entity is a player.
-         * 
+         *
          * @param isPlayer A boolean flag to set whether the entity is a player.
          */
         void setIsPlayer(const bool &isPlayer) noexcept;
@@ -83,10 +83,14 @@ class Controllable {
          * @brief Gets the virtual keyboard associated with the controllable entity.
          *
          * This method returns a reference to the virtual keyboard of the entity.
-         * 
+         *
          * @return A reference to the VirtualKeyBoard object.
          */
         VirtualKeyBoard &getVirtualKeyboard() noexcept;
+
+        const int getSpeed() const noexcept;
+
+        void setSpeed(int newSpeed) noexcept;
 
     private:
         /**
@@ -105,6 +109,8 @@ class Controllable {
          * @brief The virtual keyboard used by the controllable entity for input.
          */
         VirtualKeyBoard _keyBoard;
+
+        int _speed;
 };
 
 #endif /* !CONTROLLABLE_HPP_ */

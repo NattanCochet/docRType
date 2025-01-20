@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::velocitySystem(World &world)
+int Systems::velocitySystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
     ComponentArray<Velocity> &velocity = r.get_components<Velocity>();

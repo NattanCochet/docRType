@@ -9,6 +9,7 @@
 #ifndef APROJECTILE_HPP_
 #define APROJECTILE_HPP_
 #include <iostream>
+#include <vector>
 
 /**
  * @class Projectile
@@ -27,6 +28,7 @@ class Projectile {
         float _damageFallOff; ///< The amount of damage fall-off over distance or time.
         std::size_t _entityIDBelong; ///< The ID of the shooter
         int _stack; ///< The stack count for the projectile (if applicable).
+        std::vector<std::size_t> _entityIDAlreadyTouch;
 
     public:
         /**
@@ -130,6 +132,12 @@ class Projectile {
          * @return The stack count of the projectile.
          */
         int getStack(void);
+
+        void addEntityIDAlreadyTouch(const std::size_t &entityID) noexcept;
+
+        const bool isEntityIDAlreadyTouch(const std::size_t &entityID) noexcept;
+
+        void clearEntityIDAlreadyTouch() noexcept;
 };
 
 #endif /* !APROJECTILE_HPP_ */

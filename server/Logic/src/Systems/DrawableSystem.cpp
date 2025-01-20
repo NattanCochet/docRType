@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::drawableSystem(World &world)
+int Systems::drawableSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
 

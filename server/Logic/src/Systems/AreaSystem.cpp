@@ -7,7 +7,7 @@
 
 #include "../../include/Systems.hpp"
 
-int Systems::areaSystem(World &world)
+int Systems::areaSystem(World &world, NetworkServer &server)
 {
     Registry &r = world.getRegistry();
 

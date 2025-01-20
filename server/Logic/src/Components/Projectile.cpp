@@ -84,3 +84,23 @@ int Projectile::getStack(void)
 {
     return this->_stack;
 }
+
+void Projectile::addEntityIDAlreadyTouch(const std::size_t &entityID) noexcept
+{
+    this->_entityIDAlreadyTouch.push_back(entityID);
+}
+
+const bool Projectile::isEntityIDAlreadyTouch(const std::size_t &entityID) noexcept
+{
+    for (std::size_t id : this->_entityIDAlreadyTouch) {
+        if (id == entityID) {
+            return (true);
+        }
+    }
+    return (false);
+}
+
+void Projectile::clearEntityIDAlreadyTouch() noexcept
+{
+    this->_entityIDAlreadyTouch.clear();
+}

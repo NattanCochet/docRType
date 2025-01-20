@@ -8,7 +8,7 @@
 #include "../../include/Components/Controllable.hpp"
 
 Controllable::Controllable(bool isPlayer, std::size_t clientID)
-    : _isPlayer(isPlayer), _clientID(clientID), _keyBoard()
+    : _isPlayer(isPlayer), _clientID(clientID), _keyBoard(), _speed(15)
 {
 }
 
@@ -39,4 +39,14 @@ void Controllable::setIsPlayer(const bool &isPlayer) noexcept
 VirtualKeyBoard &Controllable::getVirtualKeyboard() noexcept
 {
     return (this->_keyBoard);
+}
+
+const int Controllable::getSpeed() const noexcept
+{
+    return (this->_speed);
+}
+
+void Controllable::setSpeed(int newSpeed) noexcept
+{
+    this->_speed = newSpeed;
 }

@@ -11,6 +11,7 @@
 #include <unordered_map>
 #include "ECS/World.hpp"
 #include "Systems.hpp"
+#include "../../Network/NetworkServer.hpp"
 
 /**
  * @class WorldsIndex
@@ -93,7 +94,7 @@ public:
     /**
      * @brief Apply all functions in each world for the Logic part
      */
-    void applyFunctionsInWorlds();
+    void applyFunctionsInWorlds(NetworkServer &server);
 
 private:
     Systems _systems;
