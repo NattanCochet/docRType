@@ -64,14 +64,24 @@ var NAVTREE =
         [ "SERVER_ENTITY_DEAD", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md43", null ],
         [ "SERVER_GAME_END", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md45", null ],
         [ "SERVER_MOVEMENT", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md47", null ],
-        [ "SERVER_UPDATE_STATS", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md49", null ]
-      ] ]
+        [ "SERVER_UPDATE_STATS", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md49", null ],
+        [ "SERVER_OK", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md51", null ],
+        [ "SERVER_KO", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md53", null ],
+        [ "SERVER_SEND_ROOMS", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md55", null ],
+        [ "SERVER_WELL_CREATED_ROOM", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md57", null ],
+        [ "SERVER_NBR_CLIENT_IN_ROOM", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md59", null ],
+        [ "SERVER_START_GAME", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md61", null ],
+        [ "SERVER_SEND_SCORE", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md63", null ],
+        [ "SERVER_SEND_LEVEL", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md65", null ],
+        [ "SERVER_SEND_PLAYER_INDEX", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md67", null ]
+      ] ],
+      [ "A bit about the Binary protocol", "md_docs_2md__docs_2zprotocol__commands.html#autotoc_md68", null ]
     ] ],
     [ "How to add content", "md_docs_2md__docs_2zznew__ennemy.html", [
-      [ "Ennemies", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md51", [
-        [ "Child class", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md52", null ],
-        [ "Choosing a sprite sheet", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md53", null ],
-        [ "Adding the entity", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md54", null ]
+      [ "Ennemies", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md70", [
+        [ "Child class", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md71", null ],
+        [ "Choosing a sprite sheet", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md72", null ],
+        [ "Adding the entity", "md_docs_2md__docs_2zznew__ennemy.html#autotoc_md73", null ]
       ] ]
     ] ],
     [ "Namespaces", "namespaces.html", [
@@ -115,7 +125,7 @@ var NAVTREEINDEX =
 "classNetwork.html#a7b9a239cedc9ff4834138d958994e4b1",
 "classSystems.html#adf42298863fcfe27407edf6a29c3dea5",
 "client_2ECS_2Message_8hpp.html#a278fa4ed07a92a8874fd355479d9df93ab078ffd28db767c502ac367053f6e0ac",
-"server_2Logic_2include_2ECS_2Registry_8hpp_source.html"
+"server_2Logic_2include_2ECS_2Assets_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
