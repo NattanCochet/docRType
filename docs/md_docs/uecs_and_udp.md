@@ -6,7 +6,7 @@ The Entity-Component-System (ECS) is a software architecture pattern primarily u
 
 <div style="background-color: white; padding: 10px; width: 600px; margin: 0 auto; text-align: center;">
 
-<img src="../docs/assets/ecs.svg" alt="R-Type" width="600">
+<img src="./docs/assets/ecs.svg" alt="R-Type" width="600">
 
 </div>
 
@@ -40,7 +40,7 @@ The Entity-Component-System (ECS) is a software architecture pattern primarily u
 UDP is a transport layer protocol used for sending and receiving data across networks. Unlike TCP, UDP focuses on speed and simplicity, often at the expense of reliability.
 
 <p align="center">
-    <img src="../docs/assets/udp.jpg" alt="R-Type" width="600">
+    <img src="./docs/assets/udp.jpg" alt="R-Type" width="600">
 </p>
 
 ### Characteristics of UDP
@@ -75,5 +75,5 @@ By understanding and leveraging ECS for modular software design and UDP for ligh
 
 
 <p align="center">
-    <img src="../docs/assets/video-game.png" alt="R-Type" width="600">
+    <img src="./docs/assets/video-game.png" alt="R-Type" width="600">
 </p>
